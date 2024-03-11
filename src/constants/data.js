@@ -1,7 +1,9 @@
 import { HiArrowLongRight } from "react-icons/hi2";
 import logo from "../assets/logo.png";
+import introVideo from "../assets/intro_video.mp4";
+import ichchha from "../assets/ichchha.webp";
 
-export { HiArrowLongRight, logo }; 
+export { HiArrowLongRight, logo, introVideo, ichchha }; 
 
 export const navLinks = [
   {

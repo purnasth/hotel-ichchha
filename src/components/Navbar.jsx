@@ -65,7 +65,8 @@ const Navbar = () => {
                     </div>
 
                     <div className="mt-1">
-                        <button className="bg-gradient text-navy px-4 py-2 font-bold rounded-md">Book Now</button>
+                        <button className="bg-gradient text-navy px-4 py-2 font-bold rounded-lg">Book Now</button>
+                        {/* <button className="text-gradient font-medium text-lg">Book Now</button> */}
                     </div>
                 </div>
 
@@ -79,7 +80,7 @@ const Navbar = () => {
                         <ul className="flex flex-col items-center gap-4">
                             {navLinks.map((link) => (
                                 <li key={link.id}>
-                                    <a href={link.link} className="text-xl">{link.title}</a>
+                                    <a href={link.link}>{link.title}</a>
                                 </li>
                             ))}
                         </ul>
