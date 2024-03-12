@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import { ichchha } from "./constants/data";
 import AboutHome from "./components/About/AboutHome";
 import Accomodation from "./components/Rooms/Accomodation";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
 
       <AboutHome />
       <Accomodation />
+      <Testimonials />
     </>
   );
 };
