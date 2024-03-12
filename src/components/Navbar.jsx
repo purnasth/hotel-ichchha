@@ -40,6 +40,8 @@ const Navbar = () => {
             </a>
           </div>
 
+          {/* <div className="logo-wrapper absolute top-2 left-1/2 -translate-x-1/2"> */}
+
           <div className="logo-wrapper">
             <img src={logo} alt="logo" className="w-auto h-24 object-contain" />
           </div>

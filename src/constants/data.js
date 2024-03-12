@@ -176,3 +176,62 @@ export const testimonialContents = [
     ],
   },
 ];
+
+export const hotelFacilities = [
+  {
+    id: "roomsAndSuites",
+    title: "Rooms & Suites",
+    description:
+      "Unwind in our elegantly decorated rooms that are equipped with all the modern day amenities.",
+    icon: "https://www.hotelichchha.com/images/services/43hsW-rooms.jpg",
+  },
+  {
+    id: "restaurantAndBar",
+    title: "Restaurant & Bar",
+    description:
+      "Perfect place to indulge in the finest wines and signature cocktails with friends and family.",
+    icon: "https://www.hotelichchha.com/images/services/MWHKx-gallery-bar.jpg",
+  },
+  {
+    id: "conferenceAndEvents",
+    title: "Conference & Events",
+    description:
+      "Remember us for your various events and make your events well managed and fulfilled.",
+    icon: "https://www.hotelichchha.com/images/services/S1FZI-gallery-hall.jpg",
+  },
+  {
+    id: "healthAndSpa",
+    title: "Health & Spa",
+    description:
+      "Relax yourself from your stressful works and get a cool spa massage from professional masseurs.",
+    icon: "https://www.hotelichchha.com/images/services/FqRR6-spa.jpg",
+  },
+  {
+    id: "swimmingPool",
+    title: "Swimming Pool",
+    description:
+      "Enjoy memorable time in our swimming pool. Have fun with your family and friends.",
+    icon: "https://www.hotelichchha.com/images/services/fIIuL-pool.jpg",
+  },
+  {
+    id: "miniCasino",
+    title: "Mini Casino",
+    description:
+      "A perfect place to relive your days with exciting games along with the family.",
+    icon: "https://www.hotelichchha.com/images/services/fWNzQ-casino.jpg",
+  },
+  {
+    id: "weddingAndCeremonyVenues",
+    title: "Wedding & Ceremony Venues",
+    description:
+      "Create lasting and unforgettable memories of your dream wedding.",
+    icon: "https://www.hotelichchha.com/images/services/O0UvR-gallery-event.jpg",
+  },
+  {
+    id: "jeepSafari",
+    title: "Jeep Safari",
+    description:
+      "An exciting experience is to spotting and viewing wildlife on a jeep safari. Prepare yourself for a magnificent glance to capture on camera.",
+    icon: "https://www.hotelichchha.com/images/services/fY4Ra-safari.jpg",
+  },
+];
