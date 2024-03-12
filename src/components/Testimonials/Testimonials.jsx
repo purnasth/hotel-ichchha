@@ -36,8 +36,8 @@ const Testimonials = () => {
               <p className="text-base">{testimonialContents[0].subheading}</p>
             </div>
             <div className="button flex items-center justify-center gap-4">
-              <button onClick={handlePrevSlide}>Left</button>
-              <button onClick={handleNextSlide}>Right</button>
+              <button onClick={handlePrevSlide}>Prev</button>
+              <button onClick={handleNextSlide}>Next</button>
             </div>
           </div>
         </div>
