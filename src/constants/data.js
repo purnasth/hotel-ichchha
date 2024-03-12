@@ -235,3 +235,31 @@ export const hotelFacilities = [
     icon: "https://www.hotelichchha.com/images/services/fY4Ra-safari.jpg",
   },
 ];
+
+export const galleryImages = [
+  {
+    id: "image1",
+    url: "https://www.hotelichchha.com/images/gallery/galleryimages/gIdo9-h2.jpg",
+    alt: "Gallery Image 1",
+  },
+  {
+    id: "image2",
+    url: "https://www.hotelichchha.com/images/gallery/galleryimages/0ij49-h6.jpg",
+    alt: "Gallery Image 2",
+  },
+  {
+    id: "image3",
+    url: "https://www.hotelichchha.com/images/gallery/galleryimages/uOwrl-h7.jpg",
+    alt: "Gallery Image 3",
+  },
+  {
+    id: "image4",
+    url: "https://www.hotelichchha.com/images/gallery/galleryimages/7y81Q-h4.jpg",
+    alt: "Gallery Image 4",
+  },
+  {
+    id: "image5",
+    url: "https://www.hotelichchha.com/images/gallery/galleryimages/IvmkE-h1.jpg",
+    alt: "Gallery Image 5",
+  },
+];
