@@ -30,9 +30,9 @@ const Gallery = () => {
   };
 
   return (
-    <section
+    <div
       id="gallery"
-      className="bg-bg-gold-light p-0 overflow-hidden bg-gradient"
+      className="bg-bg-gold-light p-0 overflow-hidden h-auto"
     >
       <Slider {...settings}>
         {galleryImages.map((image) => (
@@ -68,7 +68,7 @@ const Gallery = () => {
           </div>
         </div>
       )}
-    </section>
+    </div>
   );
 };
 

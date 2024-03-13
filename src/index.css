@@ -16,6 +16,7 @@
 
     .bg-gradient {
         background-image: linear-gradient(108deg, #C79D4F 22%, #FAD694 55%, #FAD694 55%, #E9C279 80%);
+        /* background: #C79D4F; */
     }
 
     /* .bg-gradient {
@@ -104,5 +105,9 @@
 
     body {
         @apply text-navy;
+    }
+
+    .container {
+        @apply mx-auto w-full 2xl:max-w-7xl;
     }
 }

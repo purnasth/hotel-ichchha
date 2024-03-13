@@ -42,9 +42,9 @@ const Navbar = () => {
 
           {/* <div className="logo-wrapper absolute top-2 left-1/2 -translate-x-1/2"> */}
 
-          <div className="logo-wrapper">
-            <img src={logo} alt="logo" className="w-auto h-24 object-contain" />
-          </div>
+          <a href="/" className="logo-wrapper">
+            <img src={logo} alt="logo" className="w-32 h-24 object-contain p-2" />
+          </a>
 
           <div
             className={`flex items-center gap-2 cursor-pointer transition-all duration-300 text-gradient`}

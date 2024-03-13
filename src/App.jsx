@@ -5,8 +5,9 @@ import AboutHome from "./components/About/AboutHome";
 import Accomodation from "./components/Rooms/Accomodation";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Facilities from "./components/Facilities/Facilities";
-import Footer from "./components/Footer";
 import Gallery from "./components/Gallery/Gallery";
+import NearbyLocations from "./components/Nearby";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
       <Accomodation />
       <Facilities />
       <Testimonials />
-      <section className="bg-bg-gold-light min-h-screen"></section>
+      <NearbyLocations />
       <Gallery />
       <Footer />
     </>
