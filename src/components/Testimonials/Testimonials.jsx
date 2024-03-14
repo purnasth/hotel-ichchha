@@ -45,9 +45,14 @@ const Testimonials = () => {
           <Slider {...settings} ref={sliderRef}>
             {testimonialContents[0].testimonials.map((testimonial) => (
               <div key={testimonial.id} className="p-4">
-                <div className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="p-6 rounded-lg shadow-lg">
                   <p className="text-lg">{testimonial.content}</p>
-                  <p className="text-base mt-4">- {testimonial.author}</p>
+                  <div className="flex items-center justify-between gap-4">
+                    <p className="text-xl font-bold mt-4">
+                      - {testimonial.author}
+                    </p>
+                    <p className="text-base mt-2">- via {testimonial.source}</p>
+                  </div>
                 </div>
               </div>
             ))}

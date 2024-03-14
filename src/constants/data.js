@@ -160,31 +160,34 @@ export const testimonialContents = [
         content:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
         author: "John Doe",
+        source: "Google Reviews",
       },
       {
         id: 2,
         content:
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
         author: "Jane Doe",
+        source: "TripAdvisor",
       },
       {
         id: 3,
         content:
           "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
         author: "Alice Smith",
+        source: "Agoda",
       },
     ],
   },
 ];
 
 export const hotelFacilities = [
-  {
-    id: "roomsAndSuites",
-    title: "Rooms & Suites",
-    description:
-      "Unwind in our elegantly decorated rooms that are equipped with all the modern day amenities.",
-    icon: "https://www.hotelichchha.com/images/services/43hsW-rooms.jpg",
-  },
+  // {
+  //   id: "roomsAndSuites",
+  //   title: "Rooms & Suites",
+  //   description:
+  //     "Unwind in our elegantly decorated rooms that are equipped with all the modern day amenities.",
+  //   icon: "https://www.hotelichchha.com/images/services/43hsW-rooms.jpg",
+  // },
   {
     id: "restaurantAndBar",
     title: "Restaurant & Bar",
@@ -220,16 +223,16 @@ export const hotelFacilities = [
       "A perfect place to relive your days with exciting games along with the family.",
     icon: "https://www.hotelichchha.com/images/services/fWNzQ-casino.jpg",
   },
-  {
-    id: "weddingAndCeremonyVenues",
-    title: "Wedding & Ceremony Venues",
-    description:
-      "Create lasting and unforgettable memories of your dream wedding.",
-    icon: "https://www.hotelichchha.com/images/services/O0UvR-gallery-event.jpg",
-  },
+  // {
+  //   id: "weddingAndCeremonyVenues",
+  //   title: "Wedding & Ceremony Venues",
+  //   description:
+  //     "Create lasting and unforgettable memories of your dream wedding.",
+  //   icon: "https://www.hotelichchha.com/images/services/O0UvR-gallery-event.jpg",
+  // },
   {
     id: "jeepSafari",
-    title: "Jeep Safari",
+    title: "Adventure Activities",
     description:
       "An exciting experience is to spotting and viewing wildlife on a jeep safari. Prepare yourself for a magnificent glance to capture on camera.",
     icon: "https://www.hotelichchha.com/images/services/fY4Ra-safari.jpg",

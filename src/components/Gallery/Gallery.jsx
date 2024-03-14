@@ -32,7 +32,7 @@ const Gallery = () => {
   return (
     <div
       id="gallery"
-      className="bg-bg-gold-light p-0 overflow-hidden h-auto"
+      className="bg-bg-gold-dark p-0 overflow-hidden h-auto"
     >
       <Slider {...settings}>
         {galleryImages.map((image) => (

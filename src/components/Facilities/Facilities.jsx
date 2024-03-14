@@ -6,9 +6,7 @@ const Facilities = () => {
     <section id="facilities" className="bg-bg-gold-light">
       <div className="container mx-auto">
         <div className="flexCenter flex-col w-3/4 mx-auto mb-8">
-          <h3 className="text-gradient font-medium">
-            Lorem ipsum dolor sit amet.
-          </h3>
+          <h3 className="text-navy font-medium">Lorem ipsum dolor sit amet.</h3>
           <h4 className="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
             laudantium aperiam incidunt excepturi, architecto rerum quasi.

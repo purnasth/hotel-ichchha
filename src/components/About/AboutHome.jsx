@@ -9,7 +9,7 @@ const AboutHome = () => {
           {aboutContents.map((content) => (
             <div key={content.id} className="flexCenter flex-col w-3/4 mx-auto">
               {/* <h2>{content.title}</h2> */}
-              <h3 className="text-gradient font-medium">{content.subtitle}</h3>
+              <h3 className="text-navy font-medium">{content.subtitle}</h3>
               <h4 className="text-center">{content.subheading}</h4>
               <p className="text-lg text-center">{content.description}</p>
 

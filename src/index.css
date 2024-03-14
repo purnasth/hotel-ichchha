@@ -47,6 +47,7 @@
         text-fill-color: transparent;
         text-shadow: 0 0 1px #ffd90043;
 
+        /* @apply text-navy; */
     }
 
     h1,

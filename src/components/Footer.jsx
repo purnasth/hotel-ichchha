@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaTripadvisor } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient text-navy">
+    <footer className="bg-bg-gold-dark text-navy">
       <section>
         <div className="container mx-auto py-8 px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -12,7 +12,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Footer Logo"
-                className="w-40 h-40 object-contain mb-4"
+                className="w-40 h-auto object-contain mb-4"
                 style={{
                   filter:
                     "brightness(0) saturate(100%) invert(0%) sepia(82%) saturate(7492%) hue-rotate(123deg) brightness(77%) contrast(93%)",
@@ -65,33 +65,14 @@ const Footer = () => {
               </ul>
             </div>
             <div className="footer-column">
-              <h3 className="font-bold text-lg mb-4">Quick Links</h3>
+              <h3 className="font-bold text-lg mb-4">Room & Hall Booking</h3>
               <ul className="list-none">
-                <li>
-                  <a href="#" className="hover:text-gray-400">
-                    Gallery
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-400">
-                    Contact Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-400">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-400">
-                    Cancellation Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-400">
-                    Terms & Conditions
-                  </a>
-                </li>
+              <p className="mt-4">For Room & Other Informations</p>
+              <p>+977 9802738092, 9855029591, 9855029592</p>
+              <p>info@hotelichchha.com</p>
+              <p className="mt-4">For Conference & Events</p>
+              <p>+977 9855029591</p>
+              <p>info@hotelichchha.com</p>
               </ul>
             </div>
             <div className="footer-column">
@@ -101,17 +82,13 @@ const Footer = () => {
               <p>Simara, Bara, Nepal (View Map)</p>
               <p>+977-9802738099</p>
               <p>Rating: 5 Star</p>
-              <p className="mt-4">For Room & Other Informations</p>
-              <p>+977 9802738092, 9855029591, 9855029592</p>
-              <p>info@hotelichchha.com</p>
-              <p className="mt-4">For Conference & Events</p>
-              <p>+977 9855029591</p>
-              <p>info@hotelichchha.com</p>
+              
             </div>
           </div>
         </div>
       </section>
-      <div className="container mx-auto py-4 border-t-[1px]">
+      <hr className="container w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.5] to-transparent"/>
+      <div className="container mx-auto py-4">
         <div className="flex justify-between items-center">
           <p className="text-sm">&copy; 2024 Hotel Ichchha Pvt. Ltd.</p>
           <p className="text-sm">Developed by Longtail e-media</p>
