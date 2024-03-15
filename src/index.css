@@ -65,7 +65,9 @@
     a,
     input,
     textarea,
-    button {
+    button,
+    ul,
+    li {
         font-family: 'Inria Serif', serif;
     }
 
@@ -100,7 +102,7 @@
     nav {
         @apply bg-bg-gold-light;
     }
-   
+
     .flexCenter {
         @apply flex items-center justify-center gap-4;
     }

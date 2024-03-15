@@ -4,7 +4,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { accomodationContents } from "../constants/data.js";
 
 const Suites = () => {
-  const accomodationData = accomodationContents[0]; // Extract accomodationContents data
+  const accomodationData = accomodationContents[0];
 
   return (
     <>
@@ -21,7 +21,6 @@ const Suites = () => {
             </p>
           </div>
 
-          {/* Map over each suite in accomodationData.accomodation */}
           <section className="mt-8">
             <div className="border-2 border-navy/40 rounded-3xl overflow-hidden">
               {accomodationData.accomodation.map((suite) => (
