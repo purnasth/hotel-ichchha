@@ -26,8 +26,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="relative">
-        <div className="flex items-start justify-between p-4 z-40 bg-gradient-to-t from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.8)]">
+      <nav className="relative top-0">
+      {/* <nav className="absolute top-0 w-full"> */}
+        <div className="flex items-start justify-between p-4 z-40 bg-gradient-to-t from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.6)]">
           {/* <div className="flex items-center gap-2 cursor-pointer transition-all duration-300 text-gradient">
                         <FaWhatsapp className="w-8 h-8 text-gold" />
                         <a href="tel:+1234567890" className="text-peepal-300 text-base opacity-0 lg:opacity-100 lg:text-xl select-none">

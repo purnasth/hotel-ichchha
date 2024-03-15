@@ -19,7 +19,7 @@ export const navLinks = [
   {
     id: "accomodation",
     title: "Rooms & Suites",
-    link: "/accomodation",
+    link: "/accommodation",
   },
   {
     id: "restaurants",
@@ -99,7 +99,7 @@ export const accomodationContents = [
     title: "Exclusive Rooms and Suites",
     subtitle: "",
     subheading:
-      "Experienve the ultimate Staycation in Hotel Ichchha, where city center charm meets tailored luxury.",
+      "Experience the ultimate Staycation in Hotel Ichchha, where city center charm meets tailored luxury.",
     description:
       "Light, bright and with a smart layout that enhances the feeling of spaciousness, our rooms feature all the world class furniture, air conditioning, amenities, toiletries and technology. Super deluxe rooms are ingeniously designed with splendid interiors. The junior suite rooms are spacious rooms with a cozy living room separated by a partial wall. The executive rooms feature a large bedroom and a living room. Elegantly decorated with opulent interiors and varnished in soft tones, all the rooms are spacious with classy comfortable beds.",
     accomodation: [
@@ -108,8 +108,9 @@ export const accomodationContents = [
         title: "Deluxe Room",
         subtitle: "",
         description:
-          "The Deluxe Room offers a comfortable stay with modern amenities and elegant decor.",
+          "The Deluxe Room offers a comfortable stay with modern amenities and elegant decoration.",
         url: "https://www.hotelichchha.com/images/subpackage/image/JqbZx-deluxeroom.jpg",
+        router: "/accommodation/deluxe",
       },
       {
         id: "superDeluxeRoom",
@@ -118,6 +119,7 @@ export const accomodationContents = [
         description:
           "Experience luxury and sophistication in our Super Deluxe Room, featuring splendid interiors and top-notch facilities.",
         url: "https://www.hotelichchha.com/images/subpackage/image/ewcPn-super.jpg",
+        router: "/accommodation/super-deluxe",
       },
       {
         id: "premiumRoom",
@@ -126,6 +128,7 @@ export const accomodationContents = [
         description:
           "Indulge in luxury and comfort with our Premium Room, designed to offer a lavish experience for our guests.",
         url: "https://www.hotelichchha.com/images/subpackage/image/5842r-room-banner.jpg",
+        router: "/accommodation/premium",
       },
       {
         id: "juniorSuite",
@@ -134,6 +137,7 @@ export const accomodationContents = [
         description:
           "Our Junior Suite offers spacious accommodation with a cozy living room, perfect for relaxation and comfort.",
         url: "https://www.hotelichchha.com/images/subpackage/image/9gKt1-one.jpg",
+        router: "/accommodation/junior-suite",
       },
       {
         id: "executiveSuite",
@@ -142,6 +146,7 @@ export const accomodationContents = [
         description:
           "Elegance meets comfort in our Executive Suite, featuring a large bedroom and a separate living room for your convenience.",
         url: "https://www.hotelichchha.com/images/subpackage/image/x64rS-room-2.jpg",
+        router: "/accommodation/executive-suite",
       },
     ],
   },
@@ -188,7 +193,7 @@ export const hotelFacilities = [
       "Unwind in the delight that is your home away from home. Our property's location offers a mix of quiet tranquillity and bustling hustle.",
     description:
       "Embark on a journey of your business, leisure, pilgrimage, or adventure to discover the hospitality of Hotel Ichchha, From the Hotel’s vibrant restaurant and lounge to its tranquil gardens, this is where the city comes to connect and be inspired. Centrally located, it’s an ideal choice for business travelers, pilgrimage tours, and recreational tours. The best choice for a destination wedding is to make your special moments more memorable.",
-    icon: "", 
+    icon: "",
   },
   // {
   //   id: "roomsAndSuites",

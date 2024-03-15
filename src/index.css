@@ -96,6 +96,11 @@
 }
 
 @layer components {
+
+    nav {
+        @apply bg-bg-gold-light;
+    }
+   
     .flexCenter {
         @apply flex items-center justify-center gap-4;
     }
