@@ -163,22 +163,22 @@ export const testimonialContents = [
       {
         id: 1,
         content:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        author: "John Doe",
+          "Mid range prices, well managed and friendly staff. Decent breakfast buffet. 5 minute walk to bars and restaurants. A pool thats heated, great after treks. Nice soft and comfortable beds good to relax after trekking.",
+        author: "Shane F",
         source: "Google Reviews",
       },
       {
         id: 2,
         content:
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        author: "Jane Doe",
+          "It indeed was a pleasant experience when we arrived. The front office staff made us most welcome with their charming and pleasing smiles. The moment we stepped into the resort we realised that we did not make a wrong choice.",
+        author: "Naga Seetharam",
         source: "TripAdvisor",
       },
       {
         id: 3,
         content:
-          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        author: "Alice Smith",
+          "A good place to spend your holiday, business trip and conference. The place is executive, with excellent reception, welcoming personnel like Geeta and her crew. Good food, clean rooms and conference hall.",
+        author: "Valerie Machuku",
         source: "Agoda",
       },
     ],
@@ -393,15 +393,18 @@ export const eventVenues = {
   janakiHall: {
     id: "janakiHall",
     title: "Janaki Hall",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
     enquiryLink: "Enquiry",
-    imageUrl: "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
+    imageUrl:
+      "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
     amenities: ["Mandap", "Pavilion", "Meeting rooms", "Garden venue"],
   },
   jyamireHall: {
     id: "jyamireHall",
     title: "Jyamire Hall",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
     enquiryLink: "Enquiry",
     imageUrl: "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
     amenities: ["Mandap", "Pavilion", "Meeting rooms", "Garden venue"],
@@ -409,7 +412,8 @@ export const eventVenues = {
   narayaniHall: {
     id: "narayaniHall",
     title: "Narayani Hall",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
     enquiryLink: "Enquiry",
     imageUrl: "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
     amenities: ["Meeting rooms", "Pool Bar", "Courtyard"],
@@ -417,10 +421,10 @@ export const eventVenues = {
   balmikiHall: {
     id: "balmikiHall",
     title: "Balmiki Hall",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
     enquiryLink: "Enquiry",
     imageUrl: "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
     amenities: ["Meeting rooms", "Pool Bar", "Courtyard"],
   },
 };
-

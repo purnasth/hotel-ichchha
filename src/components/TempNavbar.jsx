@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa";
 import ichchha from "../assets/ichchha.webp";
 
-const Navbar = () => {
+const TempNavbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -26,9 +26,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="relative top-0 w-full">
-      {/* <nav className="absolute top-0 w-full"> */}
-        <div className="flex items-start justify-between p-4 z-40 bg-gradient-to-t from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.6)]">
+      {/* <nav className="relative"> */}
+      <header className="absolute top-0 w-full z-50">
+        <div className="flex items-start justify-between p-4 z-40 bg-gradient-to-t from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.8)]">
           {/* <div className="flex items-center gap-2 cursor-pointer transition-all duration-300 text-gradient">
                         <FaWhatsapp className="w-8 h-8 text-gold" />
                         <a href="tel:+1234567890" className="text-peepal-300 text-base opacity-0 lg:opacity-100 lg:text-xl select-none">
@@ -36,7 +36,8 @@ const Navbar = () => {
                         </a>
                     </div> */}
 
-          <div className="cursor-pointer transition-all duration-300 text-gradient mt-1">
+          {/* <div className="cursor-pointer transition-all duration-300 text-gradient mt-1"> */}
+          <div className="cursor-pointer transition-all duration-300 text-gold mt-1 w-32">
             <a
               href="https://wa.me/+9779802738099"
               target="_blank"
@@ -53,12 +54,13 @@ const Navbar = () => {
             <img
               src={logo}
               alt="logo"
-              className="w-32 h-24 object-contain p-2"
+              className="w-32 h-24 object-contain p-2 scale-150 mt-4"
             />
           </a>
 
           <div
-            className={`flex items-center gap-2 cursor-pointer transition-all duration-300 text-gradient`}
+            // className={`flex items-center gap-2 cursor-pointer transition-all duration-300 text-gradient`}
+            className={`flex items-center justify-end gap-2 cursor-pointer transition-all duration-300 text-gold w-32`}
             onClick={toggleNav}
           >
             <span className="text-base opacity-0 lg:opacity-100 lg:text-xl select-none">
@@ -215,9 +217,9 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </header>
     </>
   );
 };
 
-export default Navbar;
+export default TempNavbar;
