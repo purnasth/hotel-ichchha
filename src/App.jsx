@@ -8,6 +8,7 @@ import Facilities from "./components/Facilities/Facilities";
 import Gallery from "./components/Gallery/Gallery";
 import NearbyLocations from "./components/Nearby";
 import Footer from "./components/Footer";
+// import Hero from "./components/Hero";
 
 const App = () => {
   return (
@@ -20,6 +21,8 @@ const App = () => {
       >
         <Navbar />
       </div>
+
+      {/* <Hero /> */}
 
       <AboutHome />
       <Accomodation />

@@ -96,10 +96,10 @@ export const aboutContents = [
 export const accomodationContents = [
   {
     id: "accomodationTitle",
-    title: "Accomodations",
+    title: "Exclusive Rooms and Suites",
     subtitle: "",
     subheading:
-      "In the heart of the city, we offer a wide range of rooms and suites to suit your needs.",
+      "Experienve the ultimate Staycation in Hotel Ichchha, where city center charm meets tailored luxury.",
     description:
       "Light, bright and with a smart layout that enhances the feeling of spaciousness, our rooms feature all the world class furniture, air conditioning, amenities, toiletries and technology. Super deluxe rooms are ingeniously designed with splendid interiors. The junior suite rooms are spacious rooms with a cozy living room separated by a partial wall. The executive rooms feature a large bedroom and a living room. Elegantly decorated with opulent interiors and varnished in soft tones, all the rooms are spacious with classy comfortable beds.",
     accomodation: [
@@ -150,10 +150,10 @@ export const accomodationContents = [
 export const testimonialContents = [
   {
     id: "testimonialSection",
-    title: "Testimonials",
+    title: "Valued guest feedback",
     subtitle: "",
     subheading:
-      "Here's what our customers have to say about their experience with us.",
+      "Positive feedback and a simple thank you go a long way. It motivates us to provide world-class hospitality to our guests.",
     testimonials: [
       {
         id: 1,

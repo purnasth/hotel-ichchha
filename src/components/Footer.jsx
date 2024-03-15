@@ -67,12 +67,12 @@ const Footer = () => {
             <div className="footer-column">
               <h3 className="font-bold text-lg mb-4">Room & Hall Booking</h3>
               <ul className="list-none">
-              <p className="mt-4">For Room & Other Informations</p>
-              <p>+977 9802738092, 9855029591, 9855029592</p>
-              <p>info@hotelichchha.com</p>
-              <p className="mt-4">For Conference & Events</p>
-              <p>+977 9855029591</p>
-              <p>info@hotelichchha.com</p>
+                <p className="mt-4">For Room & Other Informations</p>
+                <p>+977 9802738092, 9855029591, 9855029592</p>
+                <p>info@hotelichchha.com</p>
+                <p className="mt-4">For Conference & Events</p>
+                <p>+977 9855029591</p>
+                <p>info@hotelichchha.com</p>
               </ul>
             </div>
             <div className="footer-column">
@@ -82,12 +82,11 @@ const Footer = () => {
               <p>Simara, Bara, Nepal (View Map)</p>
               <p>+977-9802738099</p>
               <p>Rating: 5 Star</p>
-              
             </div>
           </div>
         </div>
       </section>
-      <hr className="container w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.5] to-transparent"/>
+      <div className="container w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.5] to-transparent" />
       <div className="container mx-auto py-4">
         <div className="flex justify-between items-center">
           <p className="text-sm">&copy; 2024 Hotel Ichchha Pvt. Ltd.</p>
@@ -99,5 +98,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-

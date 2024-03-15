@@ -6,21 +6,22 @@ const Facilities = () => {
     <section id="facilities" className="bg-bg-gold-light">
       <div className="container mx-auto">
         <div className="flexCenter flex-col w-3/4 mx-auto mb-8">
-          <h3 className="text-navy font-medium">Lorem ipsum dolor sit amet.</h3>
+          <h3 className="text-navy font-medium">
+            Explore and Experience What's on at Hotel Ichchha
+          </h3>
           <h4 className="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-            laudantium aperiam incidunt excepturi, architecto rerum quasi.
+            Unwind in the delight that is your home away from home. Our
+            property's location offers a mix of quiet tranquillity and bustling
+            hustle.
           </h4>
           <p className="text-lg text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            dolor ratione iusto laudantium culpa eveniet blanditiis illo vitae
-            veritatis unde velit magnam ipsum, minus illum rerum, voluptatibus
-            corporis deleniti magni libero architecto, fuga est modi? Tempora
-            quia cumque officia fuga mollitia libero eligendi non impedit quos,
-            praesentium delectus veniam magni molestias repudiandae vitae
-            laboriosam fugit saepe velit in, enim hic facilis numquam corrupti
-            soluta? Alias omnis corrupti ut, ea magnam odio error, eos tempora
-            fugiat nulla, aliquam unde voluptas voluptate?
+            Embark on a journey of your business, leisure, pilgrimage, or
+            adventure to discover the hospitality of Hotel Ichchha, From the
+            Hotel’s vibrant restaurant and lounge to its tranquil gardens, this
+            is where the city comes to connect and be inspired. Centrally
+            located, it’s an ideal choice for business travelers, pilgrimage
+            tours, and recreational tours. The best choice for a destination
+            wedding is to make your special moments more memorable.
           </p>
         </div>
       </div>
