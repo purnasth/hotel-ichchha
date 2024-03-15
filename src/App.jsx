@@ -19,6 +19,7 @@ import Suites from "./components/Suites";
 // import Hero from "./components/Hero";
 import DeluxeRoom from "./components/Rooms/DeluxeRoom";
 import Restaurant from "./components/Restaurant";
+import EventsHall from "./components/EventsHall";
 
 const App = () => {
   return (
@@ -46,6 +47,7 @@ const App = () => {
             element={<SuperDeluxeRoom />}
           /> */}
           <Route path="/restaurants" element={<Restaurant />} />
+          <Route path="/events" element={<EventsHall />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/nearby" element={<NearbyLocations />} />
