@@ -2,31 +2,24 @@ import React from "react";
 import { hotelFacilities } from "../../constants/data.js";
 
 const Facilities = () => {
+  
+  const facilitiesTitle = hotelFacilities.find(
+    (facility) => facility.id === "facilitiesTitle"
+  );
+
+  const otherFacilities = hotelFacilities.filter(
+    (facility) => facility.id !== "facilitiesTitle"
+  );
+
   return (
     <section id="facilities" className="bg-bg-gold-light">
-      <div className="container mx-auto">
-        <div className="flexCenter flex-col w-3/4 mx-auto mb-8">
-          <h3 className="text-navy font-medium">
-            Explore and Experience What's on at Hotel Ichchha
-          </h3>
-          <h4 className="text-center">
-            Unwind in the delight that is your home away from home. Our
-            property's location offers a mix of quiet tranquillity and bustling
-            hustle.
-          </h4>
-          <p className="text-lg text-center">
-            Embark on a journey of your business, leisure, pilgrimage, or
-            adventure to discover the hospitality of Hotel Ichchha, From the
-            Hotel’s vibrant restaurant and lounge to its tranquil gardens, this
-            is where the city comes to connect and be inspired. Centrally
-            located, it’s an ideal choice for business travelers, pilgrimage
-            tours, and recreational tours. The best choice for a destination
-            wedding is to make your special moments more memorable.
-          </p>
-        </div>
+      <div className="flexCenter flex-col w-3/4 mx-auto mb-8">
+        <h3 className="text-navy font-medium">{facilitiesTitle.title}</h3>
+        <h4 className="text-center">{facilitiesTitle.subtitle}</h4>
+        <p className="text-lg text-center">{facilitiesTitle.description}</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-28">
-        {hotelFacilities.map((facility) => (
+        {otherFacilities.map((facility) => (
           <div
             key={facility.id}
             className="relative overflow-hidden group"

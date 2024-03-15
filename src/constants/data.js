@@ -181,6 +181,15 @@ export const testimonialContents = [
 ];
 
 export const hotelFacilities = [
+  {
+    id: "facilitiesTitle",
+    title: "Explore and Experience What's on at Hotel Ichchha",
+    subtitle:
+      "Unwind in the delight that is your home away from home. Our property's location offers a mix of quiet tranquillity and bustling hustle.",
+    description:
+      "Embark on a journey of your business, leisure, pilgrimage, or adventure to discover the hospitality of Hotel Ichchha, From the Hotel’s vibrant restaurant and lounge to its tranquil gardens, this is where the city comes to connect and be inspired. Centrally located, it’s an ideal choice for business travelers, pilgrimage tours, and recreational tours. The best choice for a destination wedding is to make your special moments more memorable.",
+    icon: "", 
+  },
   // {
   //   id: "roomsAndSuites",
   //   title: "Rooms & Suites",
