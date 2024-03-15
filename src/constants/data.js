@@ -323,3 +323,68 @@ export const nearbyLocations = [
     map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7099.910196047883!2d84.96976494252185!3d27.157702956007654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eb548a698be7cf%3A0x94b1a58231a84514!2sSimara%20Airport%2C%20Airport%20Rd%2044412%2C%20Gadhimai%2044400!3m2!1d27.1636195!2d84.9795716!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1710325185542!5m2!1sen!2snp",
   },
 ];
+
+export const diningOptions = {
+  "fountain-restaurant": {
+    id: "fountain-restaurant",
+    title: "Fountain Restaurant",
+    subtitle: "Splendid Ambience for Fine Dines",
+    description:
+      "Cozy Fountain Restaurant is our splendid ambience for fine dines. Adorned with unique features, our restaurant serves quality food and beverages.",
+    imageUrl: "https://www.hotelichchha.com/images/subpackage/eA6ys-three.jpg",
+    occupancy: "100 guests",
+    openingTime: "12:00 PM",
+    closingTime: "10:00 PM",
+    foodMenu: ["Appetizers", "Main Course", "Desserts", "Beverages"],
+  },
+  "courtyard-dining": {
+    id: "courtyard-dining",
+    title: "Courtyard Dining",
+    subtitle: "Enjoyable Dining with Pool View",
+    description:
+      "Our courtyard dining serves quality food and beverages. You can also enjoy the swimming pool view that makes your dining even more enjoyable.",
+    imageUrl: "https://www.hotelichchha.com/images/subpackage/VqVoP-one.jpg",
+    occupancy: "50 guests",
+    openingTime: "11:00 AM",
+    closingTime: "9:00 PM",
+    foodMenu: ["Starters", "Salads", "Grilled Specialties", "Mocktails"],
+  },
+  "sports-lounge": {
+    id: "sports-lounge",
+    title: "Sports Lounge",
+    subtitle: "Relaxing Dining and Entertainment",
+    description:
+      "You can also enjoy the swimming pool view that makes your dining even more enjoyable. Corporate Madhusala Bar of private ambience provides you the best sitting with your associates. Designed in an exclusive way, the bar assures a relaxing environment for the guests. Hanging Garden Bar with cultural dance, fun, and entertainment gives you a memorable time during your stay. Located between a beautiful garden and swimming pool view, the bar provides a relaxing environment.",
+    imageUrl:
+      "https://www.hotelichchha.com/images/subpackage/oij7R-vqvop-one.jpg",
+    occupancy: "80 guests",
+    openingTime: "2:00 PM",
+    closingTime: "11:00 PM",
+    foodMenu: ["Snacks", "Craft Beers", "Cocktails", "Live Music"],
+  },
+  "madhushala-bar": {
+    id: "madhushala-bar",
+    title: "Madhushala Bar",
+    subtitle: "Private Ambience for Corporate Gatherings",
+    description:
+      "Corporate Madhusala Bar of private ambience provides you the best sitting with your associates. Designed in an exclusive way, the bar assures a relaxing environment for the guests.",
+    imageUrl: "https://www.hotelichchha.com/images/subpackage/z9VkB-three.jpg",
+    occupancy: "40 guests",
+    openingTime: "4:00 PM",
+    closingTime: "12:00 AM",
+    foodMenu: ["Signature Cocktails", "Wines", "Whiskeys", "Bar Snacks"],
+  },
+  "pool-bar": {
+    id: "pool-bar",
+    title: "Pool Bar",
+    subtitle: "Relaxing Environment by the Pool",
+    description:
+      "Designed in an exclusive way, the bar assures a relaxing environment for the guests. Hanging Garden Bar with cultural dance, fun, and entertainment gives you a memorable time during your stay. Located between a beautiful garden and swimming pool view, the bar provides a relaxing environment.",
+    imageUrl:
+      "https://www.hotelichchha.com/images/subpackage/XDgPW-vqvop-one.jpg",
+    occupancy: "30 guests",
+    openingTime: "10:00 AM",
+    closingTime: "8:00 PM",
+    foodMenu: ["Frozen Cocktails", "Light Bites", "Juices", "Smoothies"],
+  },
+};

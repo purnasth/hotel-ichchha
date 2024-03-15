@@ -18,6 +18,7 @@ import Home from "./components/Home";
 import Suites from "./components/Suites";
 // import Hero from "./components/Hero";
 import DeluxeRoom from "./components/Rooms/DeluxeRoom";
+import Restaurant from "./components/Restaurant";
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
             path="/accommodation/super-deluxe"
             element={<SuperDeluxeRoom />}
           /> */}
+          <Route path="/restaurants" element={<Restaurant />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/nearby" element={<NearbyLocations />} />
