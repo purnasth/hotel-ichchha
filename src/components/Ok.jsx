@@ -18,6 +18,7 @@ const SliderCarousel = ({ images }) => {
     <Slider {...settings} className="max-w-screen overflow-hidden">
       {images.map((image, index) => (
         <div key={index} className="relative">
+          <div className="overlay absolute inset-0 bg-black opacity-50 z-0"></div>
           <img
             src={image.src}
             alt={image.title}
