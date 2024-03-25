@@ -380,6 +380,74 @@ export const hotelFacilities = [
   },
 ];
 
+export const facilitiesSectionIcon = {
+  spa: {
+    icon: "url_to_spa_icon",
+    title: "Spa",
+  },
+  gym: {
+    icon: "url_to_gym_icon",
+    title: "Gym",
+  },
+  pool: {
+    icon: "url_to_pool_icon",
+    title: "Pool",
+  },
+  restaurant: {
+    icon: "url_to_restaurant_icon",
+    title: "Restaurant",
+  },
+  bar: {
+    icon: "url_to_bar_icon",
+    title: "Bar",
+  },
+  conferenceRoom: {
+    icon: "url_to_conference_room_icon",
+    title: "Conference Room",
+  },
+  roomService: {
+    icon: "url_to_room_service_icon",
+    title: "Room Service",
+  },
+  wifi: {
+    icon: "url_to_wifi_icon",
+    title: "Wifi",
+  },
+  parking: {
+    icon: "url_to_parking_icon",
+    title: "Parking",
+  },
+  laundry: {
+    icon: "url_to_laundry_icon",
+    title: "Laundry",
+  },
+  concierge: {
+    icon: "url_to_concierge_icon",
+    title: "Concierge",
+  },
+  businessCenter: {
+    icon: "url_to_business_center_icon",
+    title: "Business Center",
+  },
+  childcare: {
+    icon: "url_to_childcare_icon",
+    title: "Childcare",
+  },
+  airportTransfer: {
+    icon: "url_to_airport_transfer_icon",
+    title: "Airport Transfer",
+  },
+  valetParking: {
+    icon: "url_to_valet_parking_icon",
+    title: "Valet Parking",
+  },
+  petFriendly: {
+    icon: "url_to_pet_friendly_icon",
+    title: "Pet Friendly",
+  },
+};
+
+
 export const galleryImages = [
   {
     id: "image1",

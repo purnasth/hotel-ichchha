@@ -9,7 +9,6 @@ import Navbar from "./components/Navbar";
 import AboutHome from "./components/About/AboutHome";
 import Accomodation from "./components/Rooms/Accomodation";
 import Testimonials from "./components/Testimonials/Testimonials";
-import Facilities from "./components/Facilities/Facilities";
 import Gallery from "./components/Gallery/Gallery";
 import NearbyLocations from "./components/Nearby";
 import Footer from "./components/Footer";
@@ -21,6 +20,7 @@ import DeluxeRoom from "./components/Rooms/DeluxeRoom";
 import Restaurant from "./components/Restaurant";
 import EventsHall from "./components/EventsHall";
 import Contact from "./components/Contact";
+import IchchhaFacilities from "./components/IchchhaFacilities";
 
 const App = () => {
   return (
@@ -49,7 +49,7 @@ const App = () => {
           /> */}
           <Route path="/restaurants" element={<Restaurant />} />
           <Route path="/events" element={<EventsHall />} />
-          <Route path="/facilities" element={<Facilities />} />
+          <Route path="/facilities" element={<IchchhaFacilities />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/nearby" element={<NearbyLocations />} />
           <Route path="/gallery" element={<Gallery />} />
