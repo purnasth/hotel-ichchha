@@ -22,6 +22,7 @@ import EventsHall from "./components/EventsHall";
 import Contact from "./components/Contact";
 import IchchhaFacilities from "./components/IchchhaFacilities";
 import Recreation from "./components/Recreation";
+import BackToTop from "./components/BackToTop";
 
 const App = () => {
   return (
@@ -57,6 +58,7 @@ const App = () => {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <BackToTop scrollStepInPx={50} delayInMs={16.66} />
       </>
     </Router>
   );
