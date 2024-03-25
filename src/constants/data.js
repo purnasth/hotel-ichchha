@@ -93,6 +93,133 @@ export const aboutContents = [
   },
 ];
 
+export const messageFromChairman = [
+  {
+    id: "chairmanMessage",
+    image:
+      "https://ichhagroup.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-23-at-13.27.28.jpeg",
+    title: "Message from the Chairman",
+    fullName: "Ichchha Bahadur Wagle",
+    position: "Executive Chairman",
+    subtitle: "",
+    subheading:
+      "We are committed to providing the best hospitality services to our guests.",
+    description:
+      "First and foremost, I would like to thank each and every one of you for your kind and encouraging support in creating Hotel Ichchha, first 5-Star Deluxe Hotel in Terai Region with its own hospitality brand. Your support to our organization has allowed us to transform a non- tourist Market to a new Tourist Market exploring and promoting a variety of tourist destinations and activities in this region such as Jungle Safari at Parsa National Park, religious visits to Gadimai Temple as well as Janaki Temple at Janakpur to name a few. From the beginning, we have been able to provide ample services to our valued customers.",
+
+    associatedVentures: [
+      {
+        title: "Nepal Land & Housing Developer's Association",
+        post: "President",
+        description: "Description of the association",
+        url: "URL of the association's website",
+        logo: "logo",
+      },
+      {
+        title: "K & K International College",
+        post: "Chairman",
+        description: "Description of the association",
+        url: "URL of the association's website",
+        logo: "logo",
+      },
+      {
+        title: "City Homes Ltd",
+        post: "Chairman",
+        description: "Description of the association",
+        url: "URL of the association's website",
+        logo: "logo",
+      },
+      {
+        title: "Property Management Associates",
+        post: "Chairman",
+        description: "Description of the association",
+        url: "URL of the association's website",
+        logo: "logo",
+      },
+      {
+        title: "Kantipur Mall",
+        post: "Managing Director",
+        description: "Description of the association",
+        url: "URL of the association's website",
+        logo: "logo",
+      },
+      {
+        title: "Heart to Heart Nepal",
+        post: "Sr. Vice Chairman",
+        description: "Description of the association",
+        url: "URL of the association's website",
+        logo: "logo",
+      },
+      {
+        title: "Lions Club of Kathmandu Metro",
+        post: "Director",
+        description: "Description of the association",
+        url: "URL of the association's website",
+        logo: "logo",
+      },
+      {
+        title: "Infrastructure Development Bank (NCC Bank Ltd)",
+        post: "Founder Director",
+        description: "Description of the association",
+        url: "URL of the association's website",
+        logo: "logo",
+      },
+    ],
+  },
+];
+
+export const ourTeamMembers = [
+  {
+    id: 1,
+    name: "Purna Shrestha",
+    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
+    position: "CEO",
+  },
+  {
+    id: 2,
+    name: "Purna Shrestha",
+    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
+    position: "CTO",
+  },
+  {
+    id: 3,
+    name: "Purna Shrestha",
+    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
+    position: "COO",
+  },
+  {
+    id: 4,
+    name: "Purna Shrestha",
+    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
+    position: "COO",
+  },
+  {
+    id: 5,
+    name: "Purna Shrestha",
+    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
+    position: "CEO",
+  },
+  {
+    id: 26,
+    name: "Purna Shrestha",
+    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
+    position: "CTO",
+  },
+  {
+    id: 7,
+    name: "Purna Shrestha",
+    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
+    position: "COO",
+  },
+  {
+    id: 8,
+    name: "Purna Shrestha",
+    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
+    position: "COO",
+  },
+  // Add more team members as needed
+];
+
 export const accomodationContents = [
   {
     id: "accomodationTitle",

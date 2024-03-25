@@ -50,6 +50,10 @@
         /* @apply text-navy; */
     }
 
+    /* .filter-black {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(82%) saturate(7492%) hue-rotate(123deg) brightness(77%) contrast(93%);
+    } */
+
     h1,
     h2,
     h3,
