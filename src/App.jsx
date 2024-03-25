@@ -20,6 +20,7 @@ import Suites from "./components/Suites";
 import DeluxeRoom from "./components/Rooms/DeluxeRoom";
 import Restaurant from "./components/Restaurant";
 import EventsHall from "./components/EventsHall";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -52,7 +53,7 @@ const App = () => {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/nearby" element={<NearbyLocations />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/footer" element={<Footer />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </>
     </Router>
