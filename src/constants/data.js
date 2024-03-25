@@ -447,7 +447,6 @@ export const facilitiesSectionIcon = {
   },
 };
 
-
 export const galleryImages = [
   {
     id: "image1",
@@ -621,5 +620,80 @@ export const eventVenues = {
     enquiryLink: "Enquiry",
     imageUrl: "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
     amenities: ["Meeting rooms", "Pool Bar", "Courtyard"],
+  },
+};
+
+export const recreationVenues = {
+  swimmingPool: {
+    id: "swimmingPool",
+    title: "Swimming Pool",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/O4QRJ-pool2.jpg",
+      "https://www.hotelichchha.com/images/subpackage/O4QRJ-pool2.jpg",
+      "https://www.hotelichchha.com/images/subpackage/O4QRJ-pool2.jpg",
+    ],
+    description:
+      "Dive into an inviting sea of sparkling blue water to refresh your weary bones on a hot day. Have a wonderful time in our refreshing pool with your family and friends. With plentiful sunbeams streaming through its full-length skylight, our outdoor pool is an excellent place to swim laps, relax with family or simply unwind in the peaceful surroundings. For your convenience, items such as goggles, swim caps are in place.",
+    amenities: ["Outdoor Pool", "Sunbathing Area", "Goggles and Swim Sets"],
+  },
+  steamSaunaJacuzzi: {
+    id: "steamSaunaJacuzzi",
+    title: "Steam, Sauna, Jacuzzi",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/HffJa-hke0k-six.jpg",
+      "https://www.hotelichchha.com/images/subpackage/HffJa-hke0k-six.jpg",
+      "https://www.hotelichchha.com/images/subpackage/HffJa-hke0k-six.jpg",
+    ],
+    description:
+      "Relax and enjoy a treat at Hotel Ichchha with a uniquely cultured, nurturing and optimal pampering environment for total refreshment. Each one of our unique spa services nourishes and heals your body, replaces trace minerals. Time-honored Massage techniques of ancient era are expertly crafted on the hands of our Therapists. Enjoy services such as manicure, pedicure and makeup artist offered by our hotel.",
+    amenities: ["Steam Room", "Sauna", "Jacuzzi", "Spa Services"],
+  },
+  gamingZoneKidsClub: {
+    id: "gamingZoneKidsClub",
+    title: "Gaming Zone & Kids Club",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/SMyv7-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/SMyv7-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/SMyv7-one.jpg",
+    ],
+    description:
+      "The hotel comprises a gaming zone with the most exciting gaming floor with more tables and coin machine, choose among loads of Blackjack games. We have set up a separate fun zone for kids ensuring a relaxing time with play areas offering an array of kid’s fun activities. All in all, we have got a variety of fun activities delivering lavish relaxation for guests of all ages that one deserves.",
+    amenities: ["Gaming Floor", "Blackjack", "Kids Play Area"],
+  },
+  casino: {
+    id: "casino",
+    title: "Casino",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/cbLpA-8f7ca-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/cbLpA-8f7ca-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/cbLpA-8f7ca-one.jpg",
+    ],
+    description:
+      "Relax and enjoy a treat at Hotel Ichchha with a uniquely cultured, nurturing and optimal pampering environment for total refreshment. Each one of our unique spa services nourishes and heals your body, replaces trace minerals. Time-honored Massage techniques of ancient era are expertly crafted on the hands of our Therapists. Enjoy services such as manicure, pedicure and makeup artist offered by our hotel.",
+    amenities: ["Various Casino Games", "Entertainment"],
+  },
+  spa: {
+    id: "spa",
+    title: "Spa",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/KCK9p-kmxaw-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/KCK9p-kmxaw-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/KCK9p-kmxaw-one.jpg",
+    ],
+    description:
+      "Relax and enjoy a treat at Hotel Ichchha with a uniquely cultured, nurturing and optimal pampering environment for total refreshment. Each one of our unique spa services nourishes and heals your body, replaces trace minerals. Time-honored Massage techniques of ancient era are expertly crafted on the hands of our Therapists. Enjoy services such as manicure, pedicure and makeup artist offered by our hotel.",
+    amenities: ["Spa Treatments", "Massage Services", "Manicure/Pedicure"],
+  },
+  healthClub: {
+    id: "healthClub",
+    title: "Health Club",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/iOGPu-five.jpg",
+      "https://www.hotelichchha.com/images/subpackage/iOGPu-five.jpg",
+      "https://www.hotelichchha.com/images/subpackage/iOGPu-five.jpg",
+    ],
+    description:
+      "The hotel comprises a gaming zone with the most exciting gaming floor with more tables and coin machine, choose among loads of Blackjack games. We have set up a separate fun zone for kids ensuring a relaxing time with play areas offering an array of kid’s fun activities. All in all, we have got a variety of fun activities delivering lavish relaxation for guests of all ages that one deserves.",
+    amenities: ["Fitness Equipment", "Exercise Classes", "Personal Training"],
   },
 };
