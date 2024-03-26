@@ -6,7 +6,8 @@ export default {
       colors: {
         ivory: "#FFFFF0",
         navy: "#011222",
-        gold: "#E9C279",
+        goldLight: "#E9C279",
+        gold: "#cd9c31",
         "bg-gold-light": "#846d1e21",
         "bg-gold-dark": "#846d1e63",
       },

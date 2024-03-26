@@ -31,7 +31,7 @@ const BackToTop = () => {
     <button
       className={`${
         showButton ? "scale-100 translate-y-0" : "scale-0 translate-y-20"
-      } fixed bottom-8 right-8 bg-gold text-navy p-3 rounded-full shadow-lg transition-all duration-500 ease-in-out hover:bg-ivory`}
+      } fixed bottom-8 right-8 bg-gold/30 backdrop-blur-md text-navy p-3 rounded-full shadow-lg transition-all duration-500 ease-in-out hover:bg-ivory`}
       onClick={scrollToTop}
     >
       <HiOutlineArrowNarrowRight className="w-6 h-6 -rotate-90 animate-arrow-up" />

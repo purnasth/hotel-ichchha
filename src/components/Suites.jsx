@@ -1,7 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "./NavbarTest";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { accomodationContents } from "../constants/data.js";
+import Footer from "./Footer.jsx";
 
 const Suites = () => {
   const accomodationData = accomodationContents[0];
@@ -22,11 +23,11 @@ const Suites = () => {
           </div>
 
           <section className="mt-8">
-            <div className="border-2 border-navy/40 rounded-3xl overflow-hidden">
+            <div className="border-[1px] border-navy/40 rounded-3xl overflow-hidden">
               {accomodationData.accomodation.map((suite) => (
                 <div
                   key={suite.id}
-                  className="border-b-2 border-navy/40 flex items-center justify-between gap-0 bg-gradient"
+                  className="border-b-[1px] border-navy/30 flex items-center justify-between gap-0 bg-gold/20"
                 >
                   <div className="flex w-1/3">
                     <img
@@ -43,7 +44,7 @@ const Suites = () => {
                     <div className="flex">
                       <a
                         href={suite.router}
-                        className="bg-navy text-gold hover:text-ivory hover:bg-bg-gold-dark px-4 py-1 rounded-full text-2xl transition-all duration-300 ease-linear"
+                        className="bg-navy text-gold hover:text-ivory hover:bg-gold px-4 py-1 rounded-full text-2xl transition-all duration-300 ease-linear"
                       >
                         <HiArrowLongRight />
                       </a>
@@ -55,6 +56,7 @@ const Suites = () => {
           </section>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

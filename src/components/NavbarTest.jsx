@@ -45,7 +45,7 @@ const Navbar = () => {
     <>
       {/* LATER MAKE THIS DIV NAV */}
       <div
-        className={`fixed top-0 w-full transition-all duration-${duration} durat z-50 ${
+        className={`fixed top-0 w-full transition-all duration-${duration} z-50 ${
           window.scrollY > 0 ? "bg-[#efece2]" : ""
         } ${visible ? "" : "-translate-y-full"}`}
       >
@@ -57,13 +57,13 @@ const Navbar = () => {
                : "bg-transparent"
            }${
             window.scrollY > 0
-              ? "flex items-center justify-between p-2 px-4"
+              ? "flex items-center justify-between py-6 px-4"
               : "p-4"
           } 
           `}
         >
           <div
-            className={`cursor-pointer transition-all duration-${duration} text-gradient mt-1 ${
+            className={`cursor-pointer transition-all duration-${duration} text-gold mt-1 ${
               visible ? "scale-100 translate-x-0" : "scale-0 translate-x-full"
             } ${window.scrollY > 0 ? "filter-black" : ""}`}
           >
@@ -77,17 +77,20 @@ const Navbar = () => {
             </a>
           </div>
 
-          <a href="/" className="logo-wrapper">
+          <a
+            href="/"
+            className="absolute left-1/2 -translate-x-1/2 logo-wrapper"
+          >
             <img
               src={logo}
               alt="logo"
               className={`object-contain transition-all duration-${duration}  ${
                 visible
-                  ? "w-32 h-24 scale-150 mt-4 p-2 translate-y-0"
-                  : "scale-0 -translate-y-6"
+                  ? "w-auto h-28 mt-0 p-2 -translate-y-1"
+                  : "scale-0 -translate-y-6 bg-transparent"
               } ${
                 window.scrollY > 0
-                  ? "w-12 h-8 scale-[3] p-2 -translate-y-2"
+                  ? "w-auto h-12 scale-75 p-4 -translate-y-0"
                   : // ? "filter-black w-16 h-12 object-contain scale-150 -mt-[4px] p-2"
                     ""
               }`}
@@ -95,7 +98,7 @@ const Navbar = () => {
           </a>
 
           <div
-            className={`flex items-center gap-2 cursor-pointer transition-all duration-${duration} text-gradient ${
+            className={`flex items-center gap-2 cursor-pointer transition-all duration-${duration} text-gold ${
               visible ? "scale-100 translate-x-0" : "scale-0 -translate-x-full"
             } ${window.scrollY > 0 ? "filter-black" : ""}`}
             onClick={toggleNav}
@@ -103,8 +106,9 @@ const Navbar = () => {
             <span className="text-base lg:text-xl select-none">Menu</span>
             <svg
               className="w-8 h-8 text-gold"
-              fill="none"
+              fill="currentColor"
               stroke="currentColor"
+              strokeWidth="0"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -117,16 +121,17 @@ const Navbar = () => {
                 ></path>
               ) : (
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 8h16M4 16h16"
-                />
+                  className="translate-y-[2px] scale-[0.85]"
+                  d="M21 18H2v2h19v-2zm-2-8v4H4v-4h15m1-2H3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h17c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm1-4H2v2h19V4z"
+                ></path>
               )}
             </svg>
           </div>
         </div>
+
+        <div className="h-px w-full bg-gradient-to-r from-navy/30 via-transparent to-navy/30" />
       </div>
+
       <div
         className="fixed inset-0 bg-gradient flex justify-center items-center transition-all duration-${duration} z-50 max-h-screen"
         style={{
