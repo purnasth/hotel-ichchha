@@ -147,7 +147,7 @@ const Recreation = () => {
                 </a>
                 <a
                   href={venue.enquiryLink}
-                  className="ml-4 bg-gold text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
+                  className="ml-4 bg-gold/50 text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
                 >
                   Book Now
                 </a>
