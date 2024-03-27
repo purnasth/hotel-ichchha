@@ -315,7 +315,7 @@ export const testimonialContents = [
 export const hotelFacilities = [
   {
     id: "facilitiesTitle",
-    title: "Explore and Experience What's on at Hotel Ichchha",
+    title: "Explore What's on at Hotel Ichchha",
     subtitle:
       "Unwind in the delight that is your home away from home. Our property's location offers a mix of quiet tranquillity and bustling hustle.",
     description:
