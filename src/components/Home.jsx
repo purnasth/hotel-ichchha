@@ -10,7 +10,6 @@ import Footer from "./Footer";
 import AboutHome from "./About/AboutHome";
 import Navbar from "./Navbar";
 import HeroSliderCarousel from "./HeroSliderCarousel";
-import GallerySlider from "./Gallery/GallerySlider";
 
 const images = [
   {
@@ -34,7 +33,7 @@ const images = [
 const Home = () => {
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
 
       <HeroSliderCarousel
         images={images}
@@ -46,10 +45,9 @@ const Home = () => {
       <Facilities />
       <Testimonials />
       <NearbyLocations />
-      <Gallery /> */}
-      <GallerySlider />
-      
-      {/* <Footer /> */}
+      <Gallery />
+
+      <Footer />
     </>
   );
 };
