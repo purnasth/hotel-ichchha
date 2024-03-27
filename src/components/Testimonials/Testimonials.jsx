@@ -19,7 +19,7 @@ const Testimonials = () => {
     <section id="testimonials" className="bg-bg-gold-dark px-0">
       <div className="container mx-auto">
         <div className="flexCenter flex-col w-3/4 p-4 mx-auto text-navy text-center">
-          <h2 className="font-medium">{testimonialContents[0].title}</h2>
+          <h3 className="font-medium">{testimonialContents[0].title}</h3>
           <h4 className="">{testimonialContents[0].subheading}</h4>
           <p className="text-lg">{testimonialContents[0].description}</p>
         </div>

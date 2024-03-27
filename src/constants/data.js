@@ -97,7 +97,7 @@ export const messageFromChairman = [
   {
     id: "chairmanMessage",
     image:
-      "https://ichhagroup.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-23-at-13.27.28.jpeg",
+      "https://www.hotelichchha.com/template/cms/images/chairman.jpg",
     title: "Message from the Chairman",
     fullName: "Ichchha Bahadur Wagle",
     position: "Executive Chairman",

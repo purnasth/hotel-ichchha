@@ -27,7 +27,7 @@ const About = () => {
                   <img
                     src={message.image}
                     alt="Ichchha Hotel"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
                 <h2 className="text-2xl font-medium mt-8">
