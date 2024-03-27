@@ -37,7 +37,7 @@ const ContactForm = () => {
 
   return (
     // <div className="ml-auto w-1/2 h-[80vh] sticky top-6">
-    <div className="bg-bg-gold-dark text-2xl p-12">
+    <div className="bg-[#f0e1c1] text-2xl p-12">
       <p>
         Can't find the contact and information you're looking for? Write to us
         via this quick form.
