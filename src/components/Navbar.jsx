@@ -170,61 +170,106 @@ const Navbar = () => {
               }}
             >
               <div className="overlay absolute inset-0 bg-black opacity-80 z-0"></div>
-              <ul className="flex flex-1 flex-col items-start justify-center gap-8 z-10">
-                {navLinks.map((link) => (
+              <ul className="flex flex-1 flex-col items-start justify-center gap-8 z-10 text-ivory/90 font-medium">
+                {/* {navLinks.map((link) => (
                   <li key={link.id}>
-                    <a href={link.link} className="text-3xl ">
+                    <a href={link.link} className="text-3xl">
                       {link.title}
                     </a>
                   </li>
-                ))}
+                ))} */}
+                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                  <a href="/" className="text-4xl font-title">
+                    Home
+                  </a>
+                </li>
+                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                  <a href="/about" className="text-4xl font-title">
+                    About
+                  </a>
+                </li>
+                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                  <a href="/restaurants" className="text-4xl font-title">
+                    Restaurants & Bars
+                  </a>
+                </li>
+                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                  <a href="/recreation" className="text-4xl font-title">
+                    Recreation
+                  </a>
+                </li>
+                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                  <a href="/facilities" className="text-4xl font-title">
+                    Facilities
+                  </a>
+                </li>
+                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                  <a href="/gallery" className="text-4xl font-title">
+                    Gallery
+                  </a>
+                </li>
+                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                  <a href="/contact" className="text-4xl font-title">
+                    Contact
+                  </a>
+                </li>
               </ul>
               <div className="flex flex-1 justify-center flex-col gap-20 z-10">
                 <ul className="flex  flex-col items-start gap-4">
-                  <h4>More about Rooms</h4>
-                  <li>
-                    <a href="">40 Deluxe Rooms</a>
+                  <li className="peer peer-hover:opacity-50 hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                    <a href="/accommodation" className="text-4xl font-title">
+                      Rooms & Suites
+                    </a>
                   </li>
-                  <li>
-                    <a href="">30 Super Deluxe Rooms</a>
+                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                    <a href="/accommodation/deluxe">Deluxe Rooms</a>
                   </li>
-                  <li>
-                    <a href="">20 Premium Rooms</a>
+                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                    <a href="">Super Deluxe Rooms</a>
                   </li>
-                  <li>
-                    <a href="">10 Junior Suite</a>
+                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                    <a href="">Premium Rooms</a>
                   </li>
-                  <li>
-                    <a href="#Suite">10 Executive Rooms</a>
+                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                    <a href="">Junior Suite</a>
+                  </li>
+                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                    <a href="#Suite">Executive Rooms</a>
                   </li>
                 </ul>
                 <ul className="flex flex-col items-start gap-4">
-                  <h4>More about Halls</h4>
-                  <li>
+                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
+                    <a href="/events" className="text-4xl font-title">
+                      Conference & Events
+                    </a>
+                  </li>
+                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
                     <a href="">Janaki Hall</a>
                   </li>
-                  <li>
+                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
                     <a href="">Jyamire Hall</a>
                   </li>
-                  <li>
+                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
                     <a href="">Narayani Hall</a>
                   </li>
-                  <li>
+                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
                     <a href="">Balmiki Hall</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="w-1/3 flex items-center justify-center flex-col gap-1 bg-gradient h-full ">
-              <img
-                src={logo}
-                alt="Footer Logo"
-                className="w-40 h-auto object-contain mb-4"
-                style={{
-                  filter:
-                    "brightness(0) saturate(100%) invert(0%) sepia(82%) saturate(7492%) hue-rotate(123deg) brightness(77%) contrast(93%)",
-                }}
-              />
+            <div className="w-1/3 flex items-center justify-center flex-col gap-1 bg-goldLight/10 h-full ">
+              <a href="/">
+                <img
+                  src={logo}
+                  alt="Footer Logo"
+                  className="w-40 h-auto object-contain mb-4"
+                  style={{
+                    filter:
+                      "brightness(0) saturate(100%) invert(0%) sepia(82%) saturate(7492%) hue-rotate(123deg) brightness(77%) contrast(93%)",
+                  }}
+                />
+              </a>
               <p className="mb-4">Hotel Ichchha</p>
               <p> Simara, Bara, Nepal</p>
               <p>+977-9802738099</p>
