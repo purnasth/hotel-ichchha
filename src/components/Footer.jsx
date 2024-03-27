@@ -93,7 +93,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <div className="container w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.5] to-transparent" />
+      <div className="container w-full h-px bg-gradient-to-l from-transparent via-navy/50 to-transparent" />
       <div className="container mx-auto py-4">
         <div className="flex justify-between items-center">
           <p className="text-sm">&copy; 2024 Hotel Ichchha Pvt. Ltd.</p>

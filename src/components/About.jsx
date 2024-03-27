@@ -22,49 +22,55 @@ const About = () => {
             <h4 className="text-2xl text-center mb-20">{message.subheading}</h4>
 
             <div className="flex align-center justify-between gap-12 my-8">
-              <img
-                src={message.image}
-                alt="Ichchha Hotel"
-                className="w-72 h-80 object-cover"
-              />
-              <div className="flex items-start flex-col gap-4 justify-center">
-                <h2 className="text-3xl font-medium text-center">
+              <div className="flex items-start flex-col gap-0 max-h-[400px] sticky top-6">
+                <div className="w-72 h-80 rounded-md overflow-hidden">
+                  <img
+                    src={message.image}
+                    alt="Ichchha Hotel"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h2 className="text-2xl font-medium mt-8">
                   {message.fullName}
                 </h2>
                 <span>{message.position}</span>
-
+              </div>
+              <div className="flex items-start flex-col gap-4 justify-center">
                 <p className="text-lg">{message.description}</p>
+                <p className="text-lg">
+                  We are a 5-Star Deluxe Hotel; nevertheless, we have all the
+                  facilities as well as the infrastructure as that of a 5-Star
+                  property and we are aiming for the same so as to fulfill the
+                  need of high-end clients in this region. Meanwhile, we have
+                  expanded our wing at Amlekhgunj as Garden Safari Resort which
+                  is under construction and at the completion phase, located
+                  just next to the entrance of Parsa National Park.
+                </p>
+                <p className="text-lg">
+                  Since this area has already been developed as an industrial
+                  area having Birgunj-Pathlaiya Industrial Corridor already in
+                  place, new developments have been going on such as domestic as
+                  well as Indian/foreign tourism, agro tourism, infrastructure
+                  projects run by the government like Nijgadh-Kathmandu
+                  Expressway connecting the whole Terai Region to the Capital
+                  city of Nepal in just a little over 1-hour drive and Nijgadh
+                  International Airport, all favoring rapid growth of tourism in
+                  this part of the country.
+                </p>
+                <p className="text-lg">
+                  We believe that these enterprises will provide opportunities
+                  for future sustainable growth in tourism and travel trade
+                  industry of Nepal. We also recognize and embrace our
+                  obligation to become good corporate citizens. We are highly
+                  dedicated to maintain corporate transparency and act ethically
+                  in all aspects of our business. We will play whatever role
+                  possible to make the world a better place to live. We will do
+                  all that we can to provide good services to our valued
+                  customers.
+                </p>
               </div>
             </div>
-            <p className="text-lg">
-              We are a 5-Star Deluxe Hotel; nevertheless, we have all the
-              facilities as well as the infrastructure as that of a 5-Star
-              property and we are aiming for the same so as to fulfill the need
-              of high-end clients in this region. Meanwhile, we have expanded
-              our wing at Amlekhgunj as Garden Safari Resort which is under
-              construction and at the completion phase, located just next to the
-              entrance of Parsa National Park.
-            </p>
-            <p className="text-lg">
-              Since this area has already been developed as an industrial area
-              having Birgunj-Pathlaiya Industrial Corridor already in place, new
-              developments have been going on such as domestic as well as
-              Indian/foreign tourism, agro tourism, infrastructure projects run
-              by the government like Nijgadh-Kathmandu Expressway connecting the
-              whole Terai Region to the Capital city of Nepal in just a little
-              over 1-hour drive and Nijgadh International Airport, all favoring
-              rapid growth of tourism in this part of the country.
-            </p>
-            <p className="text-lg">
-              We believe that these enterprises will provide opportunities for
-              future sustainable growth in tourism and travel trade industry of
-              Nepal. We also recognize and embrace our obligation to become good
-              corporate citizens. We are highly dedicated to maintain corporate
-              transparency and act ethically in all aspects of our business. We
-              will play whatever role possible to make the world a better place
-              to live. We will do all that we can to provide good services to
-              our valued customers.
-            </p>
+
             <div className="venture mt-16">
               <h3 className="text-4xl font-medium py-8">Associated Venture:</h3>
               <div className="w-full grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
