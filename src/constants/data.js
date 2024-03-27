@@ -96,8 +96,7 @@ export const aboutContents = [
 export const messageFromChairman = [
   {
     id: "chairmanMessage",
-    image:
-      "https://www.hotelichchha.com/template/cms/images/chairman.jpg",
+    image: "https://www.hotelichchha.com/template/cms/images/chairman.jpg",
     title: "Message from the Chairman",
     fullName: "Ichchha Bahadur Wagle",
     position: "Executive Chairman",
@@ -489,6 +488,31 @@ export const galleryImages = [
     id: "image5",
     url: "https://www.hotelichchha.com/images/gallery/galleryimages/IvmkE-h1.jpg",
     alt: "Gallery Image 5",
+  },
+  {
+    id: "image5",
+    url: "https://www.hotelichchha.com/images/gallery/galleryimages/gIdo9-h2.jpg",
+    alt: "Gallery Image 5",
+  },
+  {
+    id: "image6",
+    url: "https://www.hotelichchha.com/images/gallery/galleryimages/0ij49-h6.jpg",
+    alt: "Gallery Image 6",
+  },
+  {
+    id: "image7",
+    url: "https://www.hotelichchha.com/images/gallery/galleryimages/uOwrl-h7.jpg",
+    alt: "Gallery Image 7",
+  },
+  {
+    id: "image8",
+    url: "https://www.hotelichchha.com/images/gallery/galleryimages/7y81Q-h4.jpg",
+    alt: "Gallery Image 8",
+  },
+  {
+    id: "image9",
+    url: "https://www.hotelichchha.com/images/gallery/galleryimages/IvmkE-h1.jpg",
+    alt: "Gallery Image 9",
   },
 ];
 

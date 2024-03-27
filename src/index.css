@@ -125,6 +125,26 @@
         animation: arrow-up 1s infinite alternate;
     }
 
+
+
+    @keyframes bannermove {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .animation-paused {
+        animation-play-state: paused;
+    }
+
+    .photobanner {
+        animation: bannermove 20s linear infinite;
+    }
+
 }
 
 @layer components {
