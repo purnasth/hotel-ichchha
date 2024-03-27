@@ -71,7 +71,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="venture mt-16">
+            {/* <div className="venture mt-16">
               <h3 className="text-4xl font-medium py-8">Associated Venture:</h3>
               <div className="w-full grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
                 {message.associatedVentures.map((venture) => (
@@ -87,7 +87,6 @@ const About = () => {
                     />
                     <h4 className="text-lg font-semibold">{venture.title}</h4>
                     <h5 className="text-lg">- {venture.post}</h5>
-                    {/* <p className="text-sm text-gray-600">{venture.description}</p> */}
                     <a
                       href={venture.url}
                       className="block text-blue-500 hover:underline"
@@ -99,17 +98,16 @@ const About = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         ))}
       </section>
-      <section className="bg-bg-gold-light">
+      {/* <section className="bg-bg-gold-light">
         <div className="flexCenter flex-col w-3/4 mx-auto">
           <h3 className="text-navy font-medium">
             Get to Know the Faces Behind Our Success
           </h3>
           <h4 className="text-center">
-            {/* Unveiling the Exceptional Team Elevating Your Luxurious Experience */}
             Unveil the Talented Individuals Who Embark on a Collective Mission
             to Elevate Your Experience at Hotel Ichchha
           </h4>
@@ -122,7 +120,6 @@ const About = () => {
               style={{ perspective: "1000px" }}
             >
               <img
-                // src={member.image}
                 src={member.image}
                 alt={member.name}
                 className="w-full h-96 object-cover shadow-md transition duration-500 ease-in-out transform group-hover:scale-125"
@@ -142,7 +139,7 @@ const About = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
       <Footer />
     </>
   );
