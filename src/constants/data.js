@@ -286,12 +286,16 @@ export const testimonialContents = [
     subtitle: "",
     subheading:
       "Positive feedback and a simple thank you go a long way. It motivates us to provide world-class hospitality to our guests.",
+    description:
+      "We are proud to have received positive feedback from our guests. Here are some of the testimonials from our valued guests. We are grateful for their kind words and look forward to welcoming them back to Hotel Ichchha. We are committed to providing the best hospitality services to our guests.",
     testimonials: [
       {
         id: 1,
         content:
           "Mid range prices, well managed and friendly staff. Decent breakfast buffet. 5 minute walk to bars and restaurants. A pool thats heated, great after treks. Nice soft and comfortable beds good to relax after trekking.",
         author: "Shane F",
+        image:
+          "https://cdt.org/wp-content/uploads/2015/10/2015-10-06-FB-person.png",
         source: "Google Reviews",
       },
       {
@@ -299,6 +303,8 @@ export const testimonialContents = [
         content:
           "It indeed was a pleasant experience when we arrived. The front office staff made us most welcome with their charming and pleasing smiles. The moment we stepped into the resort we realised that we did not make a wrong choice.",
         author: "Naga Seetharam",
+        image:
+          "https://cdt.org/wp-content/uploads/2015/10/2015-10-06-FB-person.png",
         source: "TripAdvisor",
       },
       {
@@ -306,7 +312,18 @@ export const testimonialContents = [
         content:
           "A good place to spend your holiday, business trip and conference. The place is executive, with excellent reception, welcoming personnel like Geeta and her crew. Good food, clean rooms and conference hall.",
         author: "Valerie Machuku",
+        image:
+          "https://cdt.org/wp-content/uploads/2015/10/2015-10-06-FB-person.png",
         source: "Agoda",
+      },
+      {
+        id: 4,
+        content:
+          "Mid range prices, well managed and friendly staff. Decent breakfast buffet. 5 minute walk to bars and restaurants. A pool thats heated, great after treks. Nice soft and comfortable beds good to relax after trekking. Mid range prices, well managed and friendly staff. Decent breakfast buffet. 5 minute walk to bars and restaurants. A pool thats heated, great after treks. Nice soft and comfortable beds good to relax after trekking. Mid range prices, well managed and friendly staff. Decent breakfast buffet. 5 minute walk to bars and restaurants. A pool thats heated, great after treks. Nice soft and comfortable beds good to relax after trekking. Mid range prices, well managed and friendly staff. Decent breakfast buffet. 5 minute walk to bars and restaurants. A pool thats heated, great after treks. Nice soft and comfortable beds good to relax after trekking. Mid range prices, well managed and friendly staff. Decent breakfast buffet. 5 minute walk to bars and restaurants. A pool thats heated, great after treks. Nice soft and comfortable beds good to relax after trekking.",
+        author: "Test",
+        image:
+          "https://cdt.org/wp-content/uploads/2015/10/2015-10-06-FB-person.png",
+        source: "lorem lorem",
       },
     ],
   },
