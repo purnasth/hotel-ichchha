@@ -123,6 +123,9 @@
 
 @layer components {
 
+    ::selection {
+        @apply bg-goldLight text-navy;
+    }
 
     .flexCenter {
         @apply flex items-center justify-center gap-4;
