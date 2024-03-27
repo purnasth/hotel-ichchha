@@ -9,8 +9,7 @@ import NearbyLocations from "./Nearby";
 import Footer from "./Footer";
 import AboutHome from "./About/AboutHome";
 import SliderCarousel from "./Ok";
-import TempNavbar from "./TempNavbar";
-import Navbar from "./NavbarTest";
+import Navbar from "./Navbar";
 
 const images = [
   {
@@ -34,15 +33,6 @@ const images = [
 const Home = () => {
   return (
     <>
-      {/* <div
-        className="bg-cover bg-center h-screen"
-        style={{
-          backgroundImage: `url(${ichchha})`,
-        }}
-      > */}
-      {/* <Navbar/> */}
-      {/* </div> */}
-      {/* <TempNavbar /> */}
       <Navbar />
 
       <SliderCarousel images={images} />

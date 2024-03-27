@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./NavbarTest";
+import Navbar from "./Navbar";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { accomodationContents } from "../constants/data.js";
 import Footer from "./Footer.jsx";
