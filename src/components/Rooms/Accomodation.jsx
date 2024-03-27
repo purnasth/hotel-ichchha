@@ -157,13 +157,13 @@ const Accomodation = () => {
       </div>
       <div className="flexCenter mt-4">
         <button
-          className="group bg-gold/60 text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-xl transition-all duration-300 ease-linear"
+          className="group bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-xl transition-all duration-300 ease-linear"
           onClick={() => sliderRef.current.slickPrev()}
         >
           <HiArrowLongLeft className="group-hover:-translate-x-2 transition-all duration-150 ease-linear" />
         </button>
         <button
-          className="group bg-gold/60 text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-xl transition-all duration-300 ease-linear"
+          className="group bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-xl transition-all duration-300 ease-linear"
           onClick={() => sliderRef.current.slickNext()}
         >
           <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-150 ease-linear" />

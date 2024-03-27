@@ -5,6 +5,26 @@ import { accomodationContents } from "../../constants/data.js";
 import Footer from "../Footer.jsx";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { MdOutlineInsertEmoticon } from "react-icons/md";
+import HeroSliderCarousel from "../HeroSliderCarousel";
+
+const images = [
+  // {
+  //   src: ichchha,
+  //   title: "Hotel Ichchha, Hospitality at its best!",
+  // },
+  {
+    src: "https://www.hotelichchha.com/images/slideshow/UVh7T-ichchha-room.jpg",
+    title: "The Homely Ambience",
+  },
+  // {
+  //   src: "https://www.hotelichchha.com/images/slideshow/mmMDi-pool.jpg",
+  //   title: "Plentiful sunbeams streaming pool",
+  // },
+  {
+    src: "https://s3-alpha-sig.figma.com/img/84cf/a38a/65923184216c09d7f3dcab6961136f45?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H~ZakV3Kt5v697SLSpU9WQu7M6fvc90iqu0RcguhVcp6m-IlzBmpFaWEEnTdmqXXNVD4ZkD80O8kP0CTdL0IVNlykFb~L3jc~wu2uMhtuyx4RStFVvuAIp-nL4sQe2otFmce3TbcBclgNf~Aq0iYymLjVOtf7IswSI89Ntk~2kdMxKfwDs1Cg-ErHEHuZzNweWtOKnWJYCBvpG0Y7KZHOjJieytpn-hkMCYO~jOLKwIA2yV8w30syheqjbHlzLhp-Uy3uyv9q9wODFUzTtqd1zg-tYpuHiPJepWV9OdnJV0RVZ6qfR~eqLcYhezGrjaO879siYdKK2nr~uwKg8V4Jg__",
+    title: "The Hotel Ichchha",
+  },
+];
 
 const DeluxeRoom = () => {
   const accomodationData = accomodationContents[0];
@@ -14,14 +34,12 @@ const DeluxeRoom = () => {
 
   return (
     <>
-      <div
-        className="bg-cover bg-center h-screen -z-10"
-        style={{
-          backgroundImage: `url(${ichchha})`,
-        }}
-      >
-        <Navbar />
-      </div>
+      <Navbar />
+
+      <HeroSliderCarousel
+        images={images}
+        className="w-screen h-[80vh] object-cover"
+      />
 
       <section className="bg-bg-gold-light">
         <div className="container mb-24">
@@ -135,7 +153,7 @@ const DeluxeRoom = () => {
               </div>
             </div>
             <div className="ml-auto w-1/2 h-[80vh] sticky top-6">
-              <div className="bg-bg-gold-dark text-2xl p-12">
+              <div className="bg-gold/30 text-2xl p-12">
                 <ul className="flex items-center justify-between gap-2 py-8">
                   <li className="flex items-center gap-4">
                     <MdOutlineInsertEmoticon />
@@ -181,7 +199,7 @@ const DeluxeRoom = () => {
                 <div className="pt-12">
                   <a
                     href=""
-                    className="group flex items-center justify-center gap-2 w-40 bg-navy text-gold hover:bg-navy/60 px-6 py-4 rounded-full text-lg transition-all duration-300 ease-linear"
+                    className="group flex items-center justify-center gap-2 w-40 bg-navy text-gold hover:bg-ivory px-6 py-4 rounded-full text-lg transition-all duration-300 ease-linear"
                   >
                     Book Now
                     <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-300" />

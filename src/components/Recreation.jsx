@@ -121,7 +121,6 @@ const Recreation = () => {
             }`}
           >
             <div className="w-full">
-              {/* Replace <img> with Slider component */}
               <ReusableSlider
                 images={venue.imageUrls}
                 className="w-full h-96 object-cover"

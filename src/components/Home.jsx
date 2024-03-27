@@ -8,8 +8,8 @@ import Gallery from "./Gallery/Gallery";
 import NearbyLocations from "./Nearby";
 import Footer from "./Footer";
 import AboutHome from "./About/AboutHome";
-import SliderCarousel from "./Ok";
 import Navbar from "./Navbar";
+import HeroSliderCarousel from "./HeroSliderCarousel";
 
 const images = [
   {
@@ -35,7 +35,10 @@ const Home = () => {
     <>
       <Navbar />
 
-      <SliderCarousel images={images} />
+      <HeroSliderCarousel
+        images={images}
+        className="w-screen h-screen object-cover"
+      />
 
       <AboutHome />
       <Accomodation />
