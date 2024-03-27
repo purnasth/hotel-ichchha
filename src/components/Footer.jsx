@@ -35,8 +35,8 @@ const Footer = () => {
               </div>
             </div>
             <div className="footer-column">
-              <h3 className="font-bold text-lg mb-4">Quick Links</h3>
-              <ul className="list-none">
+              <h3 className="font-bold text-lg mb-8">Quick Links</h3>
+              <ul className="list-none space-y-4">
                 <li>
                   <a href="#" className="hover:text-gray-400">
                     About Us
@@ -65,23 +65,30 @@ const Footer = () => {
               </ul>
             </div>
             <div className="footer-column">
-              <h3 className="font-bold text-lg mb-4">Room & Hall Booking</h3>
-              <ul className="list-none">
-                <p className="mt-4">For Room & Other Informations</p>
+              <h3 className="font-bold text-lg mb-8">Room Booking</h3>
+              <ul className="list-none space-y-2">
                 <p>+977 9802738092, 9855029591, 9855029592</p>
                 <p>info@hotelichchha.com</p>
-                <p className="mt-4">For Conference & Events</p>
+              </ul>
+              <h3 className="font-bold text-lg my-8">
+                Conference & Events Booking
+              </h3>
+              <ul className="list-none space-y-2">
                 <p>+977 9855029591</p>
                 <p>info@hotelichchha.com</p>
               </ul>
             </div>
             <div className="footer-column">
-              <h3 className="font-bold text-lg mb-4">Contact Us</h3>
-              <p>Hotel Ichchha Pvt. Ltd.</p>
-              <p>+977 053 520591 | 92 | 93 | 94</p>
-              <p>Simara, Bara, Nepal (View Map)</p>
-              <p>+977-9802738099</p>
-              <p>Rating: 5 Star</p>
+              <h3 className="font-bold text-lg mb-8">Dining Reservation</h3>
+              <ul className="list-none space-y-2">
+                <p>+977 9802738092, 9855029591, 9855029592</p>
+                <p>info@hotelichchha.com</p>
+              </ul>
+              <h3 className="font-bold text-lg my-8">Recreation</h3>
+              <ul className="list-none space-y-2">
+                <p>+977 9855029591</p>
+                <p>info@hotelichchha.com</p>
+              </ul>
             </div>
           </div>
         </div>
