@@ -6,6 +6,7 @@ import Footer from "./Footer.jsx";
 
 const Suites = () => {
   const accomodationData = accomodationContents[0];
+  const duration = "700";
 
   return (
     <>
@@ -25,32 +26,37 @@ const Suites = () => {
           <section className="mt-8">
             <div className="border-[1px] border-navy/40 rounded-3xl overflow-hidden">
               {accomodationData.accomodation.map((suite) => (
-                <div
+                <a
+                  href={suite.router}
                   key={suite.id}
-                  className="border-b-[1px] border-navy/30 flex items-center justify-between gap-0 bg-gold/20"
+                  className={`border-b-[1px] border-navy/30 flex items-center justify-between gap-0 bg-gold/20 hover:bg-gold/40 group transition-all duration-${duration}`}
                 >
                   <div className="flex w-1/3">
                     <img
                       src={suite.url}
                       alt={suite.title}
-                      className="w-full h-60 object-cover"
+                      className={`w-full h-60 object-cover origin-left transition-all duration-${duration} group-hover:scale-x-105`}
                     />
                   </div>
-                  <div className="flex items-center justify-between px-12 w-2/3 gap-10">
+                  <div
+                    className={`flex items-center justify-between px-12 w-2/3 gap-10 transition-all duration-${duration} group-hover:translate-x-4`}
+                  >
                     <div className="flex items-start flex-col gap-5">
                       <h4 className="">{suite.title}</h4>
                       <p className="text-base max-w-md">{suite.description}</p>
                     </div>
-                    <div className="flex">
-                      <a
+                    <div
+                      className={`flex transition-all duration-${duration} group-hover:translate-x-4`}
+                    >
+                      <button
                         href={suite.router}
-                        className="bg-navy text-gold hover:text-ivory hover:bg-gold px-4 py-1 rounded-full text-2xl transition-all duration-300 ease-linear"
+                        className={`bg-navy text-gold group-hover:text-ivory group-hover:bg-gold px-4 py-1 rounded-full text-2xl transition-all duration-${duration} ease-linear`}
                       >
                         <HiArrowLongRight />
-                      </a>
+                      </button>
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </section>
