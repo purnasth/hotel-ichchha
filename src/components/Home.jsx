@@ -4,12 +4,13 @@ import ichchha from "../assets/ichchha.webp";
 import Accomodation from "./Rooms/Accomodation";
 import Testimonials from "./Testimonials/Testimonials";
 import Facilities from "./Facilities/Facilities";
-import Gallery from "./Gallery/Gallery";
 import NearbyLocations from "./Nearby";
 import Footer from "./Footer";
 import AboutHome from "./About/AboutHome";
 import Navbar from "./Navbar";
 import HeroSliderCarousel from "./HeroSliderCarousel";
+import GallerySlider from "./Gallery/GallerySlider";
+import GalleryHome from "./Gallery/GalleryHome";
 
 const images = [
   {
@@ -45,7 +46,7 @@ const Home = () => {
       <Facilities />
       <Testimonials />
       <NearbyLocations />
-      <Gallery />
+      <GalleryHome />
 
       <Footer />
     </>

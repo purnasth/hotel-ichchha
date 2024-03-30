@@ -26,7 +26,7 @@ const GallerySlider = () => {
 
   return (
     <>
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden ">
         <div
           className={`photobanner whitespace-nowrap flex items-center gap-4 h-64 hover:animation-paused`}
           onMouseEnter={() => setIsAnimationPaused(true)}
@@ -39,7 +39,7 @@ const GallerySlider = () => {
               alt={image.alt}
               className={`relative ${
                 index % 2 === 0 ? "w-96" : "w-52"
-              } h-64 mr-4 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer `}
+              } h-64 mr-4 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer`}
               onClick={() => openPopup(image)}
             />
           ))}
@@ -47,7 +47,7 @@ const GallerySlider = () => {
       </div>
       {selectedImage && (
         <div
-          className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center transition-all duration-700 ease-in-out ${
+          className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center transition-all duration-700 ease-in-out z-50 ${
             isPopupVisible
               ? "opacity-1 backdrop-blur-sm"
               : "opacity-0 backdrop-blur-none"

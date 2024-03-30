@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import AboutHome from "./components/About/AboutHome";
 import Accomodation from "./components/Rooms/Accomodation";
 import Testimonials from "./components/Testimonials/Testimonials";
-import Gallery from "./components/Gallery/Gallery";
+import Gallery from "./components/Gallery/Gallery.jsx";
 import NearbyLocations from "./components/Nearby";
 import Footer from "./components/Footer";
 import About from "./components/About";
