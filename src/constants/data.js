@@ -651,8 +651,11 @@ export const eventVenues = {
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
     enquiryLink: "Enquiry",
-    imageUrl:
+    imageUrls: [
       "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
+      "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
+      "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
+    ],
     amenities: ["Mandap", "Pavilion", "Meeting rooms", "Garden venue"],
   },
   jyamireHall: {
@@ -661,7 +664,11 @@ export const eventVenues = {
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
     enquiryLink: "Enquiry",
-    imageUrl: "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
+    ],
     amenities: ["Mandap", "Pavilion", "Meeting rooms", "Garden venue"],
   },
   narayaniHall: {
@@ -670,7 +677,11 @@ export const eventVenues = {
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
     enquiryLink: "Enquiry",
-    imageUrl: "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
+    ],
     amenities: ["Meeting rooms", "Pool Bar", "Courtyard"],
   },
   balmikiHall: {
@@ -679,7 +690,11 @@ export const eventVenues = {
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
     enquiryLink: "Enquiry",
-    imageUrl: "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
+    ],
     amenities: ["Meeting rooms", "Pool Bar", "Courtyard"],
   },
 };

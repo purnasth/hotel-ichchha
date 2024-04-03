@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { eventVenues } from "../constants/data";
 import { MdOutlineInsertEmoticon } from "react-icons/md";
+import ReusableSlider from "./ReusableSlider";
 
 const EventsHall = () => {
   return (
@@ -33,9 +34,17 @@ const EventsHall = () => {
                 index % 2 === 0 ? "" : "flex-row-reverse"
               }`}
             >
-              <div className="w-full">
+              {/* <div className="w-full">
                 <img
-                  src={venue.imageUrl}
+                  src={venue.imageUrls}
+                  alt={venue.title}
+                  className="w-full h-80 object-cover"
+                />
+              </div> */}
+
+              <div className="w-full">
+                <ReusableSlider
+                  images={venue.imageUrls}
                   alt={venue.title}
                   className="w-full h-80 object-cover"
                 />
@@ -60,7 +69,7 @@ const EventsHall = () => {
                   </a>
                   <a
                     href={venue.enquiryLink}
-                    className="ml-4 bg-gold text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
+                    className="ml-4 bg-gold/50 text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
                   >
                     Book Now
                   </a>
