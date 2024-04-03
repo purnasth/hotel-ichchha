@@ -41,21 +41,23 @@ const EventsHall = () => {
       <Navbar />
       <section className="bg-bg-gold-light">
         <div className="container">
-          <ul className="events-nav flex flex-col items-start gap-4">
-            <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-              <a href="/events" className="text-4xl font-title">
-                Conference & Events
-              </a>
-            </li>
-            {Object.values(eventVenues).map((venue) => (
-              <li
-                key={venue.id}
-                className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
-              >
-                <a href={`#${venue.id}`}>{venue.title}</a>
-              </li>
-            ))}
-          </ul>
+          <div className="flexCenter flex-col w-3/4 mx-auto">
+            <h3 className="text-navy font-medium">
+              Lorem ipsum dolor sit amet.
+            </h3>
+            <h4 className="text-3xl text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+              omnis.
+            </h4>
+            <p className="text-base text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+              rerum minus sequi, quae ullam vero dignissimos, quisquam numquam
+              commodi expedita esse adipisci animi impedit magni! Obcaecati, quo
+              nostrum nihil minima nemo vero sit debitis quis optio, sint, sed
+              voluptas officia?
+            </p>
+          </div>
+
           {Object.values(eventVenues).map((venue, index) => (
             <div
               key={venue.id}

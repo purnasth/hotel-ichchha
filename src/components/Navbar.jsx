@@ -223,7 +223,13 @@ const Navbar = () => {
                             key={subLink.id}
                             className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
                           >
-                            <a href={subLink.link}>{subLink.title}</a>
+                            {/* <a href={`${subLink.link}`}>
+                              {subLink.title}
+                            </a> */}
+
+                            <a href={`/events#${subLink.id}`}>
+                              {subLink.title}
+                            </a>
                           </li>
                         ))}
                       </ul>
