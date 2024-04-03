@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { testimonialContents } from "../../constants/data.js";
+import ScrollReveal from "../ScrollReveal";
 
 const Testimonials = () => {
   const [selectedPerson, setSelectedPerson] = useState(
@@ -18,11 +19,20 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="bg-bg-gold-dark px-0">
       <div className="container mx-auto">
-        <div className="flexCenter flex-col w-3/4 p-4 mx-auto text-navy text-center">
+        {/* <div className="flexCenter flex-col w-3/4 p-4 mx-auto text-navy text-center">
           <h3 className="font-medium">{testimonialContents[0].title}</h3>
           <h4 className="">{testimonialContents[0].subheading}</h4>
           <p className="text-lg">{testimonialContents[0].description}</p>
-        </div>
+        </div> */}
+
+        <ScrollReveal
+          heading={testimonialContents[0].title}
+          subheading={testimonialContents[0].subheading}
+          para={testimonialContents[0].description}
+          textColor="text-navy"
+          highlightColor="text-navy"
+          paraColor="text-navy"
+        />
         <div className="flex mt-24">
           <div className="w-1/4 h-96 overflow-y-auto bg-ivory/10">
             {testimonialContents[0].testimonials.map((testimonial) => (

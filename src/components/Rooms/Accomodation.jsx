@@ -78,6 +78,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { accomodationContents } from "../../constants/data.js";
 import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
+import ScrollReveal from "../ScrollReveal";
 
 const Accomodation = () => {
   const sliderRef = useRef(null);
@@ -136,7 +137,7 @@ const Accomodation = () => {
       <div className="container mx-auto">
         <div className="flexCenter p-4">
           <div className="flex items-start justify-center gap-4 flex-col">
-            <div className="flexCenter flex-col w-3/4 mx-auto">
+            {/* <div className="flexCenter flex-col w-3/4 mx-auto">
               <h3 className="text-navy font-medium">
                 {accomodationContents[0].title}
               </h3>
@@ -146,7 +147,16 @@ const Accomodation = () => {
               <p className="text-base text-center">
                 {accomodationContents[0].description}
               </p>
-            </div>
+            </div> */}
+
+            <ScrollReveal
+              heading={accomodationContents[0].title}
+              subheading={accomodationContents[0].subheading}
+              para={accomodationContents[0].description}
+              textColor="text-navy"
+              highlightColor="text-navy"
+              paraColor="text-navy"
+            />
           </div>
         </div>
       </div>

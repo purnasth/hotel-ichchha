@@ -1,5 +1,6 @@
 import React from "react";
 import { hotelFacilities } from "../../constants/data.js";
+import ScrollReveal from "../ScrollReveal";
 
 const Facilities = () => {
   const facilitiesTitle = hotelFacilities.find(
@@ -13,10 +14,20 @@ const Facilities = () => {
   return (
     <section id="facilities" className="bg-bg-gold-light">
       <div className="container">
-        <div className="flexCenter flex-col w-3/4 mx-auto mb-8">
+        {/* <div className="flexCenter flex-col w-3/4 mx-auto mb-8">
           <h3 className="text-navy font-medium">{facilitiesTitle.title}</h3>
           <h4 className="text-center">{facilitiesTitle.subtitle}</h4>
           <p className="text-lg text-center">{facilitiesTitle.description}</p>
+        </div> */}
+        <div key={facilitiesTitle.id}>
+          <ScrollReveal
+            heading={facilitiesTitle.title}
+            subheading={facilitiesTitle.subtitle}
+            para={facilitiesTitle.description}
+            textColor="text-navy"
+            highlightColor="text-navy"
+            paraColor="text-navy"
+          />
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-28">

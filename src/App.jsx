@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import AboutHome from "./components/About/AboutHome";
 import Accomodation from "./components/Rooms/Accomodation";
 import Testimonials from "./components/Testimonials/Testimonials";
-import Gallery from "./components/Gallery/Gallery.jsx";
+import Gallery from "./components/Gallery/Gallery";
 import NearbyLocations from "./components/Nearby";
 import Footer from "./components/Footer";
 import About from "./components/About";
@@ -23,42 +23,57 @@ import Contact from "./components/Contact";
 import IchchhaFacilities from "./components/IchchhaFacilities";
 import Recreation from "./components/Recreation";
 import BackToTop from "./components/BackToTop";
+import Lenis from "@studio-freight/lenis";
 
 const App = () => {
+  // useEffect(() => {
+  //   const lenis = new Lenis();
+
+  //   // lenis.on("scroll", (e) => {
+  //   //   console.log(e);
+  //   // });
+
+  //   function raf(time) {
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf);
+  //   }
+  //   requestAnimationFrame(raf);
+
+  //   return () => {
+  //     // Cleanup if needed
+  //   };
+  // }, []);
+
   return (
     <Router>
       <>
-        {/* <div
-          className="bg-cover bg-center h-screen"
-          style={{
-            backgroundImage: `url(${ichchha})`,
-          }}
-        > */}
-        {/* <Navbar /> */}
-        {/* </div> */}
+        <Navbar />
 
         {/* <Hero /> */}
 
-        <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/accommodation" element={<Suites />} />
-          <Route path="/accommodation/deluxe" element={<DeluxeRoom />} />
-          {/* <Route
-            path="/accommodation/super-deluxe"
-            element={<SuperDeluxeRoom />}
-          /> */}
-          <Route path="/restaurants" element={<Restaurant />} />
-          <Route path="/events" element={<EventsHall />} />
-          <Route path="/facilities" element={<IchchhaFacilities />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/nearby" element={<NearbyLocations />} />
-          <Route path="/recreation" element={<Recreation />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <BackToTop scrollStepInPx={50} delayInMs={16.66} />
+        <div className="lf-in">
+          <Routes>
+            <Route path="/" element={<Navigate to="/home" />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/accommodation" element={<Suites />} />
+            <Route path="/accommodation/deluxe" element={<DeluxeRoom />} />
+            {/* <Route
+              path="/accommodation/super-deluxe"
+              element={<SuperDeluxeRoom />}
+            /> */}
+            <Route path="/restaurants" element={<Restaurant />} />
+            <Route path="/events" element={<EventsHall />} />
+            <Route path="/facilities" element={<IchchhaFacilities />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/nearby" element={<NearbyLocations />} />
+            <Route path="/recreation" element={<Recreation />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+
+        <BackToTop />
       </>
     </Router>
   );
