@@ -11,7 +11,6 @@ import Navbar from "./Navbar";
 import HeroSliderCarousel from "./HeroSliderCarousel";
 import GallerySlider from "./Gallery/GallerySlider";
 import GalleryHome from "./Gallery/GalleryHome";
-import Popup from "./Popup";
 
 const images = [
   {
@@ -50,7 +49,6 @@ const Home = () => {
       <GalleryHome />
 
       <Footer />
-      <Popup />
     </>
   );
 };
