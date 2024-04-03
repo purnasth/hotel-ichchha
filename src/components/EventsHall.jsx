@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { eventVenues } from "../constants/data";
@@ -6,36 +6,6 @@ import { MdOutlineInsertEmoticon } from "react-icons/md";
 import ReusableSlider from "./ReusableSlider";
 
 const EventsHall = () => {
-  useEffect(() => {
-    const handleNavClick = (event) => {
-      // Prevent default behavior
-      event.preventDefault();
-
-      // Get the href value of the clicked link
-      const href = event.target.getAttribute("href");
-
-      // Scroll to the corresponding section
-      const targetElement = document.querySelector(href);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-
-    // Attach click event listener to all navigation links
-    const navLinks = document.querySelectorAll(".events-nav a");
-    navLinks.forEach((link) => {
-      link.addEventListener("click", handleNavClick);
-    });
-
-    // Cleanup function
-    return () => {
-      // Remove event listeners when the component unmounts
-      navLinks.forEach((link) => {
-        link.removeEventListener("click", handleNavClick);
-      });
-    };
-  }, []);
-
   return (
     <>
       <Navbar />
@@ -57,7 +27,6 @@ const EventsHall = () => {
               voluptas officia?
             </p>
           </div>
-
           {Object.values(eventVenues).map((venue, index) => (
             <div
               key={venue.id}
