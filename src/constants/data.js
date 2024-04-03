@@ -26,11 +26,11 @@ export const navLinks = [
     title: "Recreation",
     link: "/recreation",
   },
-  {
-    id: "facilities",
-    title: "Facilities",
-    link: "/facilities",
-  },
+  // {
+  //   id: "facilities",
+  //   title: "Facilities",
+  //   link: "/facilities",
+  // },
   {
     id: "gallery",
     title: "Gallery",
@@ -144,7 +144,8 @@ export const aboutContents = [
     subheading:
       "Hotel Ichchha is a verdant oasis in the heart of Simara.The hotel aims to cater and accommodate business and leisure travelers passing through the zone. ",
     description:
-      "The homely ambience, facilities and amenities within the premises make your stay a memorable and luxurious one. We are one of the leading hospitality providers assuring our best services. Centrally located, its an ideal choice for business travelers, pilgrimage tour, recreational tours, etc. The best choice for destination wedding to make your special moments more memorable. With a total of 90 rooms, Hotel Ichchha is best suited for all your requirements.",
+      // "The homely ambience, facilities and amenities within the premises make your stay a memorable and luxurious one. We are one of the leading hospitality providers assuring our best services. Centrally located, its an ideal choice for business travelers, pilgrimage tour, recreational tours, etc. The best choice for destination wedding to make your special moments more memorable. With a total of 90 rooms, Hotel Ichchha is best suited for all your requirements.",
+      "Hotel Ichchha is a verdant oasis in the heart of Simara.The hotel aims to cater and accommodate business and leisure travelers passing through the zone.",
   },
 ];
 
@@ -282,7 +283,8 @@ export const accomodationContents = [
     subheading:
       "Experience the ultimate Staycation in Hotel Ichchha, where city center charm meets tailored luxury.",
     description:
-      "Light, bright and with a smart layout that enhances the feeling of spaciousness, our rooms feature all the world class furniture, air conditioning, amenities, toiletries and technology. Super deluxe rooms are ingeniously designed with splendid interiors. The junior suite rooms are spacious rooms with a cozy living room separated by a partial wall. The executive rooms feature a large bedroom and a living room. Elegantly decorated with opulent interiors and varnished in soft tones, all the rooms are spacious with classy comfortable beds.",
+      // "Light, bright and with a smart layout that enhances the feeling of spaciousness, our rooms feature all the world class furniture, air conditioning, amenities, toiletries and technology. Super deluxe rooms are ingeniously designed with splendid interiors. The junior suite rooms are spacious rooms with a cozy living room separated by a partial wall. The executive rooms feature a large bedroom and a living room. Elegantly decorated with opulent interiors and varnished in soft tones, all the rooms are spacious with classy comfortable beds.",
+      "Experience the ultimate Staycation in Hotel Ichchha, where city center charm meets tailored luxury. ",
     accomodation: [
       {
         id: "deluxeRoom",
@@ -341,7 +343,7 @@ export const testimonialContents = [
     subheading:
       "Positive feedback and a simple thank you go a long way. It motivates us to provide world-class hospitality to our guests.",
     description:
-      "We are proud to have received positive feedback from our guests. Here are some of the testimonials from our valued guests. We are grateful for their kind words and look forward to welcoming them back to Hotel Ichchha. We are committed to providing the best hospitality services to our guests.",
+      "We are proud to have received positive feedback from our guests. Here are some of the testimonials from our valued guests.",
     testimonials: [
       {
         id: 1,
@@ -386,7 +388,8 @@ export const testimonialContents = [
 export const hotelFacilities = [
   {
     id: "facilitiesTitle",
-    title: "Explore What's on at Hotel Ichchha",
+    // title: "Explore What's on at Hotel Ichchha",
+    title: "Unwind in the delighted",
     subtitle:
       "Unwind in the delight that is your home away from home. Our property's location offers a mix of quiet tranquillity and bustling hustle.",
     description:
@@ -406,6 +409,7 @@ export const hotelFacilities = [
     description:
       "Perfect place to indulge in the finest wines and signature cocktails with friends and family.",
     icon: "https://www.hotelichchha.com/images/services/MWHKx-gallery-bar.jpg",
+    router: "/restaurants",
   },
   {
     id: "conferenceAndEvents",
@@ -413,6 +417,7 @@ export const hotelFacilities = [
     description:
       "Remember us for your various events and make your events well managed and fulfilled.",
     icon: "https://www.hotelichchha.com/images/services/S1FZI-gallery-hall.jpg",
+    router: "/events",
   },
   {
     id: "healthAndSpa",

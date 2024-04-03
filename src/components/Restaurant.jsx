@@ -27,7 +27,7 @@ const Restaurant = () => {
             </p>
           </div>
 
-          <div className="flex items-center justify-center flex-col mt-32 max-w-5xl mx-auto">
+          <div className="flex items-center justify-center flex-col mt-20 max-w-5xl mx-auto">
             {Object.values(diningOptions).map((option) => (
               <div className="w-full py-8" key={option.id}>
                 {/* <img
@@ -53,7 +53,7 @@ const Restaurant = () => {
                     </div> */}
                     <a
                       href=""
-                      className="bg-navy text-gold hover:text-navy hover:bg-gradient px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
+                      className="bg-navy text-ivory hover:text-navy hover:bg-gradient px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
                     >
                       View Menu
                     </a>

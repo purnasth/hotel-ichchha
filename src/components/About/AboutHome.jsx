@@ -26,10 +26,9 @@ const AboutHome = () => {
             </div>
           ))}
 
-          <div className="video mt-28">
+          <div className="video mt-28 bg-red-600 h-xl h-[35rem] overflow-hidden">
             <video
-              width="100%"
-              height="100%"
+            className="w-full h-full object-cover"
               autoPlay
               loop
               muted
@@ -40,7 +39,7 @@ const AboutHome = () => {
               <source src={introVideo} type="video/mp4" />
               Hotel Ichchha
             </video>
-            {/* <img src={ichchha} alt="" className="w-full h-screen object-cover" /> */}
+            {/* <img src={ichchha} alt="" className="w-full h-full object-cover" /> */}
           </div>
         </div>
       </section>

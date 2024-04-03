@@ -37,14 +37,7 @@ function NearbyLocations() {
             and monuments near our hotel and create your own moments."
             para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
             excepturi consectetur repellendus libero temporibus porro tempore
-            quasi aspernatur non, maxime officia mollitia, eaque iusto ad
-            eius? Iure, eaque similique? Ad blanditiis itaque ratione
-            perspiciatis, quia architecto iste doloribus pariatur, voluptatem,
-            nemo cum sit exercitationem sunt at quisquam tenetur dolor nostrum
-            saepe ea minima inventore odio rem. Impedit perferendis
-            dignissimos illo, quas excepturi et eveniet perspiciatis dolorum
-            at quod exercitationem, labore quam ut sint cum minima tempore
-            soluta quo eaque. Assumenda."
+            quasi aspernatur "
             textColor="text-navy"
             highlightColor="text-navy"
             paraColor="text-navy"

@@ -47,7 +47,7 @@ const Navbar = () => {
     <>
       <nav
         className={`fixed top-0 w-full transition-all duration-${duration} z-50 ${
-          window.scrollY > 0 ? "bg-[#efece2]" : ""
+          window.scrollY > 0 ? "bg-bg-gold-light" : ""
         } ${visible ? "" : "-translate-y-full"}`}
       >
         <div
@@ -58,8 +58,8 @@ const Navbar = () => {
                : "bg-transparent"
            }${
             window.scrollY > 0
-              ? "flex items-center justify-between py-6 px-4"
-              : "p-4"
+              ? "flex items-center justify-between py-6 px-8"
+              : "p-6 px-8"
           } 
           `}
         >
@@ -145,7 +145,7 @@ const Navbar = () => {
         <div className="absolute top-0 bottom-0 left-0 right-0 z-50">
           <button
             onClick={closeNav}
-            className="absolute top-0 right-0 p-4 text-navy"
+            className="absolute top-0 right-0 py-6 px-8 text-navy"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -238,7 +238,7 @@ const Navbar = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-1/3 flex items-center justify-center flex-col gap-1 bg-goldLight/10 h-full ">
+            <div className="w-1/3 flex items-center justify-center flex-col gap-1 bg-pink-gold h-full ">
               <a href="/">
                 <img
                   src={logo}

@@ -38,7 +38,7 @@ const DeluxeRoom = () => {
 
       <HeroSliderCarousel
         images={images}
-        className="w-screen h-[80vh] object-cover"
+        className="w-screen h-screen object-cover"
       />
 
       <section className="bg-bg-gold-light">
@@ -157,49 +157,49 @@ const DeluxeRoom = () => {
                 <ul className="flex items-center justify-between gap-2 py-8">
                   <li className="flex items-center gap-4">
                     <MdOutlineInsertEmoticon />
-                    Design
-                  </li>
-                  <li></li>
-                </ul>
-                <hr className="border-0 w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.2] to-transparent" />
-                <ul className="flex items-center justify-between gap-2 py-8">
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Size
-                  </li>
-                  <li>Single Room</li>
-                </ul>
-                <hr className="border-0 w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.2] to-transparent" />
-
-                <ul className="flex items-center justify-between gap-2 py-8">
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Price
-                  </li>
-                  <li>Starting USD 20</li>
-                </ul>
-                <hr className="border-0 w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.2] to-transparent" />
-
-                <ul className="flex items-center justify-between gap-2 py-8">
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Area
+                    Room Size
                   </li>
                   <li>100 sq. feet</li>
                 </ul>
                 <hr className="border-0 w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.2] to-transparent" />
+                <ul className="flex items-center justify-between gap-2 py-8">
+                  <li className="flex items-center gap-4">
+                    <MdOutlineInsertEmoticon />
+                    Bed Type
+                  </li>
+                  <li>Single Bed</li>
+                </ul>
+                <hr className="border-0 w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.2] to-transparent" />
 
                 <ul className="flex items-center justify-between gap-2 py-8">
                   <li className="flex items-center gap-4">
                     <MdOutlineInsertEmoticon />
-                    No. of pax
+                    Starting Price
                   </li>
-                  <li>2 adluts + 1 child</li>
+                  <li>USD 20</li>
                 </ul>
-                <div className="pt-12">
+                <hr className="border-0 w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.2] to-transparent" />
+
+                <ul className="flex items-center justify-between gap-2 py-8">
+                  <li className="flex items-center gap-4">
+                    <MdOutlineInsertEmoticon />
+                    Occupancy
+                  </li>
+                  <li>2 adults + 1 child</li>
+                </ul>
+                <hr className="border-0 w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.2] to-transparent" />
+
+                <ul className="flex items-center justify-between gap-2 py-8">
+                  <li className="flex items-center gap-4">
+                    <MdOutlineInsertEmoticon />
+                    Smoking
+                  </li>
+                  <li>Yes</li>
+                </ul>
+                <div className="pt-12 w-full">
                   <a
                     href=""
-                    className="group flex items-center justify-center gap-2 w-40 bg-navy text-gold hover:bg-ivory px-6 py-4 rounded-full text-lg transition-all duration-300 ease-linear"
+                    className="group flex items-center justify-center gap-2 w-full bg-navy text-gold hover:bg-ivory px-6 py-4 rounded-full text-lg transition-all duration-300 ease-linear"
                   >
                     Book Now
                     <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-300" />

@@ -160,7 +160,7 @@ const Accomodation = () => {
           </div>
         </div>
       </div>
-      <div className="my-16">
+      <div className="my-16 px-10">
         <Slider {...settings} ref={sliderRef}>
           {renderSlides()}
         </Slider>

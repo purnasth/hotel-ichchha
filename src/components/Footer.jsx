@@ -4,19 +4,19 @@ import { FaFacebook, FaInstagram, FaTripadvisor } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gold/30 text-navy">
+    <footer className="bg-pink-gold text-navy">
       <section>
         <div className="container mx-auto py-8 px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="footer-column">
               <img
                 src={logo}
-                alt="Footer Logo"
+                alt="Hotel Ichchha"
                 className="w-40 h-auto object-contain mb-4"
-                style={{
-                  filter:
-                    "brightness(0) saturate(100%) invert(0%) sepia(82%) saturate(7492%) hue-rotate(123deg) brightness(77%) contrast(93%)",
-                }}
+                // style={{
+                //   filter:
+                //     "brightness(0) saturate(100%) invert(0%) sepia(82%) saturate(7492%) hue-rotate(123deg) brightness(77%) contrast(93%)",
+                // }}
               />
               <p className="mb-4">Hotel Ichchha</p>
               <p> Simara, Bara, Nepal</p>
@@ -97,7 +97,7 @@ const Footer = () => {
       <div className="container mx-auto py-4">
         <div className="flex justify-between items-center">
           <p className="text-sm">&copy; 2024 Hotel Ichchha Pvt. Ltd.</p>
-          <p className="text-sm">Developed by Longtail e-media</p>
+          <p className="text-sm">Website by Longtail e-media</p>
         </div>
       </div>
     </footer>
