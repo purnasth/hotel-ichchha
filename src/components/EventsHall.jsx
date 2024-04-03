@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { eventVenues } from "../constants/data";
 import { MdOutlineInsertEmoticon } from "react-icons/md";
 import ReusableSlider from "./ReusableSlider";
+import EnquiryForm from "./Contact/EnquiryForm";
 
 const EventsHall = () => {
+  const [showEnquiryForm, setShowEnquiryForm] = useState(false);
+
+  const toggleEnquiryForm = () => {
+    setShowEnquiryForm((prevState) => !prevState);
+  };
+
   return (
     <>
       <Navbar />
@@ -54,18 +61,12 @@ const EventsHall = () => {
                       </li>
                     ))}
                   </ul>
-                  <a
-                    href={venue.enquiryLink}
+                  <button
+                    onClick={toggleEnquiryForm}
                     className="bg-gold/50 text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
                   >
                     Enquiry
-                  </a>
-                  {/* <a
-                    href={venue.enquiryLink}
-                    className="ml-4 bg-navy text-gold hover:text-navy hover:bg-gradient px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
-                  >
-                    Book Now
-                  </a> */}
+                  </button>
                 </div>
               </div>
             </div>
@@ -73,6 +74,7 @@ const EventsHall = () => {
         </div>
       </section>
       <Footer />
+      {showEnquiryForm && <EnquiryForm onClose={toggleEnquiryForm} />} {/* Render EnquiryForm if showEnquiryForm is true */}
     </>
   );
 };
