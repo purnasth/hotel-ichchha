@@ -4,6 +4,8 @@ import {
   HiArrowLongRight,
   logo,
   navLinks,
+  navLinksRooms,
+  navLinksEvents,
   socialLinks,
 } from "../constants/data";
 import {
@@ -45,7 +47,7 @@ const Navbar = () => {
     <>
       <nav
         className={`fixed top-0 w-full transition-all duration-${duration} z-50 ${
-          window.scrollY > 0 ? "bg-[#efece2]" : ""
+          window.scrollY > 0 ? "bg-bg-gold-light" : ""
         } ${visible ? "" : "-translate-y-full"}`}
       >
         <div
@@ -56,8 +58,8 @@ const Navbar = () => {
                : "bg-transparent"
            }${
             window.scrollY > 0
-              ? "flex items-center justify-between py-6 px-4"
-              : "p-4"
+              ? "flex items-center justify-between py-6 px-8"
+              : "p-6 px-8"
           } 
           `}
         >
@@ -143,7 +145,7 @@ const Navbar = () => {
         <div className="absolute top-0 bottom-0 left-0 right-0 z-50">
           <button
             onClick={closeNav}
-            className="absolute top-0 right-0 p-4 text-navy"
+            className="absolute top-0 right-0 py-6 px-8 text-navy"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -171,94 +173,72 @@ const Navbar = () => {
             >
               <div className="overlay absolute inset-0 bg-black opacity-80 z-0"></div>
               <ul className="flex flex-1 flex-col items-start justify-center gap-8 z-10 text-ivory/90 font-medium">
-                {/* {navLinks.map((link) => (
-                  <li key={link.id}>
-                    <a href={link.link} className="text-3xl">
+                {navLinks.map((link) => (
+                  <li
+                    className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                    key={link.id}
+                  >
+                    <a href={link.link} className="text-4xl font-title">
                       {link.title}
                     </a>
                   </li>
-                ))} */}
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/" className="text-4xl font-title">
-                    Home
-                  </a>
-                </li>
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/about" className="text-4xl font-title">
-                    About
-                  </a>
-                </li>
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/restaurants" className="text-4xl font-title">
-                    Restaurants & Bars
-                  </a>
-                </li>
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/recreation" className="text-4xl font-title">
-                    Recreation
-                  </a>
-                </li>
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/facilities" className="text-4xl font-title">
-                    Facilities
-                  </a>
-                </li>
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/gallery" className="text-4xl font-title">
-                    Gallery
-                  </a>
-                </li>
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/contact" className="text-4xl font-title">
-                    Contact
-                  </a>
-                </li>
+                ))}
               </ul>
               <div className="flex flex-1 justify-center flex-col gap-20 z-10">
-                <ul className="flex  flex-col items-start gap-4">
-                  <li className="peer peer-hover:opacity-50 hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="/accommodation" className="text-4xl font-title">
-                      Rooms & Suites
-                    </a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="/accommodation/deluxe">Deluxe Rooms</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Super Deluxe Rooms</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Premium Rooms</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Junior Suite</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="#Suite">Executive Rooms</a>
-                  </li>
-                </ul>
                 <ul className="flex flex-col items-start gap-4">
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="/events" className="text-4xl font-title">
-                      Conference & Events
-                    </a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Janaki Hall</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Jyamire Hall</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Narayani Hall</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Balmiki Hall</a>
-                  </li>
+                  {navLinksRooms.map((category) => (
+                    <li key={category.id} className="group list-none">
+                      <a
+                        href={category.link}
+                        className="text-4xl font-title hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                      >
+                        {category.title}
+                      </a>
+                      <ul className="mt-4 flex flex-col items-start gap-4">
+                        {category.subLinks.map((subLink) => (
+                          <li
+                            key={subLink.id}
+                            className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                          >
+                            <a href={subLink.link}>{subLink.title}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                </ul>
+
+                <ul className="flex flex-col items-start gap-4">
+                  {navLinksEvents.map((category) => (
+                    <li key={category.id} className="group list-none">
+                      <a
+                        href={category.link}
+                        className="text-4xl font-title hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                      >
+                        {category.title}
+                      </a>
+                      <ul className="mt-4 flex flex-col items-start gap-4">
+                        {category.subLinks.map((subLink) => (
+                          <li
+                            key={subLink.id}
+                            className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                          >
+                            {/* <a href={`${subLink.link}`}>
+                              {subLink.title}
+                            </a> */}
+
+                            <a href={`/events#${subLink.id}`}>
+                              {subLink.title}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
-            <div className="w-1/3 flex items-center justify-center flex-col gap-1 bg-goldLight/10 h-full ">
+            <div className="w-1/3 flex items-center justify-center flex-col gap-1 bg-pink-gold h-full ">
               <a href="/">
                 <img
                   src={logo}

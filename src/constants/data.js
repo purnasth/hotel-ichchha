@@ -17,30 +17,20 @@ export const navLinks = [
     link: "/about",
   },
   {
-    id: "accomodation",
-    title: "Rooms & Suites",
-    link: "/accommodation",
-  },
-  {
     id: "restaurants",
     title: "Restaurant & Bars",
     link: "/restaurants",
-  },
-  {
-    id: "events",
-    title: "Conference & Events",
-    link: "/events",
   },
   {
     id: "recreation",
     title: "Recreation",
     link: "/recreation",
   },
-  {
-    id: "facilities",
-    title: "Facilities",
-    link: "/facilities",
-  },
+  // {
+  //   id: "facilities",
+  //   title: "Facilities",
+  //   link: "/facilities",
+  // },
   {
     id: "gallery",
     title: "Gallery",
@@ -51,6 +41,71 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
     link: "/contact",
+  },
+];
+
+export const navLinksRooms = [
+  {
+    id: 1,
+    title: "Rooms & Suites",
+    link: "/accommodation",
+    subLinks: [
+      {
+        id: "deluxeRoom",
+        title: "Deluxe Rooms",
+        link: "/accommodation/deluxe",
+      },
+      {
+        id: "superDeluxeRoom",
+        title: "Super Deluxe Rooms",
+        link: "/accommodation/super-deluxe",
+      },
+      {
+        id: "premiumRoom",
+        title: "Premium Rooms",
+        link: "/accommodation/premium",
+      },
+      {
+        id: "juniorSuite",
+        title: "Junior Suite",
+        link: "/accommodation/junior-suite",
+      },
+      {
+        id: "executiveSuite",
+        title: "Executive Rooms",
+        link: "/accommodation/executive-suite",
+      },
+    ],
+  },
+];
+
+export const navLinksEvents = [
+  {
+    id: 1,
+    title: "Conference & Events",
+    link: "/events",
+    subLinks: [
+      {
+        id: "janakiHall",
+        title: "Janaki Hall",
+        link: "/events#janakiHall",
+      },
+      {
+        id: "jyamireHall",
+        title: "Jyamire Hall",
+        link: "/events#jyamireHall",
+      },
+      {
+        id: "narayaniHall",
+        title: "Narayani Hall",
+        link: "/events#narayaniHall",
+      },
+      {
+        id: "balmikiHall",
+        title: "Balmiki Hall",
+        link: "/events#balmikiHall",
+      },
+    ],
   },
 ];
 
@@ -89,7 +144,8 @@ export const aboutContents = [
     subheading:
       "Hotel Ichchha is a verdant oasis in the heart of Simara.The hotel aims to cater and accommodate business and leisure travelers passing through the zone. ",
     description:
-      "The homely ambience, facilities and amenities within the premises make your stay a memorable and luxurious one. We are one of the leading hospitality providers assuring our best services. Centrally located, its an ideal choice for business travelers, pilgrimage tour, recreational tours, etc. The best choice for destination wedding to make your special moments more memorable. With a total of 90 rooms, Hotel Ichchha is best suited for all your requirements.",
+      // "The homely ambience, facilities and amenities within the premises make your stay a memorable and luxurious one. We are one of the leading hospitality providers assuring our best services. Centrally located, its an ideal choice for business travelers, pilgrimage tour, recreational tours, etc. The best choice for destination wedding to make your special moments more memorable. With a total of 90 rooms, Hotel Ichchha is best suited for all your requirements.",
+      "Hotel Ichchha is a verdant oasis in the heart of Simara.The hotel aims to cater and accommodate business and leisure travelers passing through the zone.",
   },
 ];
 
@@ -227,7 +283,8 @@ export const accomodationContents = [
     subheading:
       "Experience the ultimate Staycation in Hotel Ichchha, where city center charm meets tailored luxury.",
     description:
-      "Light, bright and with a smart layout that enhances the feeling of spaciousness, our rooms feature all the world class furniture, air conditioning, amenities, toiletries and technology. Super deluxe rooms are ingeniously designed with splendid interiors. The junior suite rooms are spacious rooms with a cozy living room separated by a partial wall. The executive rooms feature a large bedroom and a living room. Elegantly decorated with opulent interiors and varnished in soft tones, all the rooms are spacious with classy comfortable beds.",
+      // "Light, bright and with a smart layout that enhances the feeling of spaciousness, our rooms feature all the world class furniture, air conditioning, amenities, toiletries and technology. Super deluxe rooms are ingeniously designed with splendid interiors. The junior suite rooms are spacious rooms with a cozy living room separated by a partial wall. The executive rooms feature a large bedroom and a living room. Elegantly decorated with opulent interiors and varnished in soft tones, all the rooms are spacious with classy comfortable beds.",
+      "Experience the ultimate Staycation in Hotel Ichchha, where city center charm meets tailored luxury. ",
     accomodation: [
       {
         id: "deluxeRoom",
@@ -286,7 +343,7 @@ export const testimonialContents = [
     subheading:
       "Positive feedback and a simple thank you go a long way. It motivates us to provide world-class hospitality to our guests.",
     description:
-      "We are proud to have received positive feedback from our guests. Here are some of the testimonials from our valued guests. We are grateful for their kind words and look forward to welcoming them back to Hotel Ichchha. We are committed to providing the best hospitality services to our guests.",
+      "We are proud to have received positive feedback from our guests. Here are some of the testimonials from our valued guests.",
     testimonials: [
       {
         id: 1,
@@ -331,7 +388,8 @@ export const testimonialContents = [
 export const hotelFacilities = [
   {
     id: "facilitiesTitle",
-    title: "Explore What's on at Hotel Ichchha",
+    // title: "Explore What's on at Hotel Ichchha",
+    title: "Unwind in the delighted",
     subtitle:
       "Unwind in the delight that is your home away from home. Our property's location offers a mix of quiet tranquillity and bustling hustle.",
     description:
@@ -351,6 +409,7 @@ export const hotelFacilities = [
     description:
       "Perfect place to indulge in the finest wines and signature cocktails with friends and family.",
     icon: "https://www.hotelichchha.com/images/services/MWHKx-gallery-bar.jpg",
+    router: "/restaurants",
   },
   {
     id: "conferenceAndEvents",
@@ -358,6 +417,7 @@ export const hotelFacilities = [
     description:
       "Remember us for your various events and make your events well managed and fulfilled.",
     icon: "https://www.hotelichchha.com/images/services/S1FZI-gallery-hall.jpg",
+    router: "/events",
   },
   {
     id: "healthAndSpa",
@@ -566,7 +626,12 @@ export const diningOptions = {
     subtitle: "Splendid Ambience for Fine Dines",
     description:
       "Cozy Fountain Restaurant is our splendid ambience for fine dines. Adorned with unique features, our restaurant serves quality food and beverages.",
-    imageUrl: "https://www.hotelichchha.com/images/subpackage/eA6ys-three.jpg",
+
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/eA6ys-three.jpg",
+      "https://www.hotelichchha.com/images/subpackage/eA6ys-three.jpg",
+      "https://www.hotelichchha.com/images/subpackage/eA6ys-three.jpg",
+    ],
     occupancy: "100 guests",
     openingTime: "12:00 PM",
     closingTime: "10:00 PM",
@@ -578,7 +643,11 @@ export const diningOptions = {
     subtitle: "Enjoyable Dining with Pool View",
     description:
       "Our courtyard dining serves quality food and beverages. You can also enjoy the swimming pool view that makes your dining even more enjoyable.",
-    imageUrl: "https://www.hotelichchha.com/images/subpackage/VqVoP-one.jpg",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/VqVoP-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/VqVoP-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/VqVoP-one.jpg",
+    ],
     occupancy: "50 guests",
     openingTime: "11:00 AM",
     closingTime: "9:00 PM",
@@ -590,8 +659,11 @@ export const diningOptions = {
     subtitle: "Relaxing Dining and Entertainment",
     description:
       "You can also enjoy the swimming pool view that makes your dining even more enjoyable. Corporate Madhusala Bar of private ambience provides you the best sitting with your associates. Designed in an exclusive way, the bar assures a relaxing environment for the guests. Hanging Garden Bar with cultural dance, fun, and entertainment gives you a memorable time during your stay. Located between a beautiful garden and swimming pool view, the bar provides a relaxing environment.",
-    imageUrl:
+    imageUrls: [
       "https://www.hotelichchha.com/images/subpackage/oij7R-vqvop-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/oij7R-vqvop-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/oij7R-vqvop-one.jpg",
+    ],
     occupancy: "80 guests",
     openingTime: "2:00 PM",
     closingTime: "11:00 PM",
@@ -603,7 +675,11 @@ export const diningOptions = {
     subtitle: "Private Ambience for Corporate Gatherings",
     description:
       "Corporate Madhusala Bar of private ambience provides you the best sitting with your associates. Designed in an exclusive way, the bar assures a relaxing environment for the guests.",
-    imageUrl: "https://www.hotelichchha.com/images/subpackage/z9VkB-three.jpg",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/z9VkB-three.jpg",
+      "https://www.hotelichchha.com/images/subpackage/z9VkB-three.jpg",
+      "https://www.hotelichchha.com/images/subpackage/z9VkB-three.jpg",
+    ],
     occupancy: "40 guests",
     openingTime: "4:00 PM",
     closingTime: "12:00 AM",
@@ -615,8 +691,12 @@ export const diningOptions = {
     subtitle: "Relaxing Environment by the Pool",
     description:
       "Designed in an exclusive way, the bar assures a relaxing environment for the guests. Hanging Garden Bar with cultural dance, fun, and entertainment gives you a memorable time during your stay. Located between a beautiful garden and swimming pool view, the bar provides a relaxing environment.",
-    imageUrl:
+
+    imageUrls: [
       "https://www.hotelichchha.com/images/subpackage/XDgPW-vqvop-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/XDgPW-vqvop-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/XDgPW-vqvop-one.jpg",
+    ],
     occupancy: "30 guests",
     openingTime: "10:00 AM",
     closingTime: "8:00 PM",
@@ -631,8 +711,11 @@ export const eventVenues = {
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
     enquiryLink: "Enquiry",
-    imageUrl:
+    imageUrls: [
       "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
+      "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
+      "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
+    ],
     amenities: ["Mandap", "Pavilion", "Meeting rooms", "Garden venue"],
   },
   jyamireHall: {
@@ -641,7 +724,11 @@ export const eventVenues = {
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
     enquiryLink: "Enquiry",
-    imageUrl: "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
+    ],
     amenities: ["Mandap", "Pavilion", "Meeting rooms", "Garden venue"],
   },
   narayaniHall: {
@@ -650,7 +737,11 @@ export const eventVenues = {
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
     enquiryLink: "Enquiry",
-    imageUrl: "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
+    ],
     amenities: ["Meeting rooms", "Pool Bar", "Courtyard"],
   },
   balmikiHall: {
@@ -659,7 +750,11 @@ export const eventVenues = {
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
     enquiryLink: "Enquiry",
-    imageUrl: "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
+    imageUrls: [
+      "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
+      "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
+    ],
     amenities: ["Meeting rooms", "Pool Bar", "Courtyard"],
   },
 };

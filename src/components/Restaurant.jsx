@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { diningOptions } from "../constants/data";
+import ReusableSlider from "./ReusableSlider";
 
 const Restaurant = () => {
   return (
@@ -26,25 +27,36 @@ const Restaurant = () => {
             </p>
           </div>
 
-          <div className="flex items-center justify-center flex-col mt-32 max-w-5xl mx-auto">
+          <div className="flex items-center justify-center flex-col mt-20 max-w-5xl mx-auto">
             {Object.values(diningOptions).map((option) => (
               <div className="w-full py-8" key={option.id}>
-                <img
+                {/* <img
                   src={option.imageUrl}
+                  alt={option.title}
+                  className="w-full h-[600px] object-cover"
+                /> */}
+                <ReusableSlider
+                  images={option.imageUrls}
                   alt={option.title}
                   className="w-full h-[600px] object-cover"
                 />
                 <div className="my-8 flex justify-center gap-5 flex-col">
                   <div className="flex items-center justify-between gap-4">
                     <h4>{option.title}</h4>
-                    <div className="button flex items-center justify-center gap-4">
+                    {/* <div className="button flex items-center justify-center gap-4">
                       <button className="bg-gold text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear">
                         Prev
                       </button>
                       <button className="bg-gold text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear">
                         Next
                       </button>
-                    </div>
+                    </div> */}
+                    <a
+                      href=""
+                      className="bg-navy text-ivory hover:text-navy hover:bg-gradient px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
+                    >
+                      View Menu
+                    </a>
                   </div>
                   <div className="flex items-center justify-between gap-4">
                     {/* <p>{option.subtitle}</p> */}
@@ -52,12 +64,6 @@ const Restaurant = () => {
                     <p>Occupancy: {option.occupancy}</p>
                     <p>Opening Time: {option.openingTime}</p>
                     <p>Closing Time: {option.closingTime}</p>
-                    <a
-                      href=""
-                      className="bg-navy text-gold hover:text-navy hover:bg-gradient px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
-                    >
-                      View Menu
-                    </a>
 
                     {/* <p>Food Menu: {option.foodMenu}</p> */}
                   </div>

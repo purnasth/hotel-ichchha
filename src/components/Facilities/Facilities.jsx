@@ -1,5 +1,6 @@
 import React from "react";
 import { hotelFacilities } from "../../constants/data.js";
+import ScrollReveal from "../ScrollReveal";
 
 const Facilities = () => {
   const facilitiesTitle = hotelFacilities.find(
@@ -13,10 +14,20 @@ const Facilities = () => {
   return (
     <section id="facilities" className="bg-bg-gold-light">
       <div className="container">
-        <div className="flexCenter flex-col w-3/4 mx-auto mb-8">
+        {/* <div className="flexCenter flex-col w-3/4 mx-auto mb-8">
           <h3 className="text-navy font-medium">{facilitiesTitle.title}</h3>
           <h4 className="text-center">{facilitiesTitle.subtitle}</h4>
           <p className="text-lg text-center">{facilitiesTitle.description}</p>
+        </div> */}
+        <div key={facilitiesTitle.id}>
+          <ScrollReveal
+            heading={facilitiesTitle.title}
+            subheading={facilitiesTitle.subtitle}
+            para={facilitiesTitle.description}
+            textColor="text-navy"
+            highlightColor="text-navy"
+            paraColor="text-navy"
+          />
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-28">
@@ -31,7 +42,7 @@ const Facilities = () => {
               alt={facility.title}
               className="w-full h-full shadow-md transition duration-700 ease-in-out transform group-hover:scale-150 object-cover"
             />
-            <div className="absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.8)] w-full h-full"></div>
+            <div className="absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.4)] w-full h-full"></div>
             <div
               className="group absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.6)] bg-opacity-75 text-ivory text-center transition-all duration-700 ease-in-out transform translate-y-1/2 group-hover:translate-y-0"
               style={{ transformStyle: "preserve-3d" }}
@@ -41,9 +52,9 @@ const Facilities = () => {
                   {facility.title}
                 </h3>
                 <p className="text-ivory my-4">{facility.description}</p>
-                <button className="text-ivory bg-transparent border border-solid border-ivory px-4 py-2 mt-2 hover:bg-ivory hover:text-navy transition duration-300 ease-in-out">
+                <a href={facility.router} className="text-ivory bg-transparent border border-solid border-ivory px-4 py-2 mt-2 hover:bg-ivory hover:text-navy transition duration-300 ease-in-out">
                   View More
-                </button>
+                </a>
               </div>
             </div>
           </div>

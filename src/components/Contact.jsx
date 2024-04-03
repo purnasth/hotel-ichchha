@@ -56,18 +56,19 @@ const Contact = () => {
                 About Hotel Ichchha
               </h5>
               <p className="pb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                doloribus, impedit perspiciatis placeat eum quo maiores porro
-                eius quos deleniti culpa enim praesentium ipsa illum totam
-                distinctio iure blanditiis ut! Animi temporibus accusantium
-                velit excepturi possimus, at in non eius!
+                Hotel Ichchha is a verdant oasis in the heart of Simara.The
+                hotel aims to cater and accommodate business and leisure
+                travelers passing through the zone.
               </p>
               <p className="pb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                doloribus, impedit perspiciatis placeat eum quo maiores porro
-                eius quos deleniti culpa enim praesentium ipsa illum totam
-                distinctio iure blanditiis ut! Animi temporibus accusantium
-                velit excepturi possimus, at in non eius!
+                The homely ambience, facilities and amenities within the
+                premises make your stay a memorable and luxurious one. We are
+                one of the leading hospitality providers assuring our best
+                services. Centrally located, its an ideal choice for business
+                travelers, pilgrimage tour, recreational tours, etc. The best
+                choice for destination wedding to make your special moments more
+                memorable. With a total of 90 rooms, Hotel Ichchha is best
+                suited for all your requirements.
               </p>
 
               <h5 className="text-3xl leading-loose py-4">Find Us</h5>
@@ -106,7 +107,7 @@ const Contact = () => {
                   </a>
                 </li>
               </ul>
-
+{/* 
               <h5 className="text-3xl leading-loose py-4">Information</h5>
               <ul>
                 <li className="mb-2">
@@ -188,7 +189,7 @@ const Contact = () => {
                     Wi-Fi
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
             <div className="ml-auto w-1/2 h-full sticky top-6">
               <ContactForm />

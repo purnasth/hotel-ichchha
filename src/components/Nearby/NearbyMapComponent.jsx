@@ -146,13 +146,13 @@ function NearbyMapComponent() {
   }, [selectedLocation]);
 
   return (
-    <div className="flex justify-between items-center mt-20 p-8">
+    <div className="flex justify-between items-center mt-20">
       <div className="w-1/5">
         <ul>
           {nearbyLocations.map((location) => (
             <li
               key={location.name}
-              className="mb-4 cursor-pointer"
+              className="pl-12 mb-4 cursor-pointer"
               onClick={() => handleLocationClick(location)}
             >
               <span className="font-bold">{location.name}</span>

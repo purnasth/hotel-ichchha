@@ -158,7 +158,7 @@
     }
 
     section {
-        @apply py-[8rem] px-[1rem];
+        @apply py-[12rem] px-[1rem];
     }
 
     body {

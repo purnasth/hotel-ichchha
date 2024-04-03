@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { eventVenues } from "../constants/data";
 import { MdOutlineInsertEmoticon } from "react-icons/md";
+import ReusableSlider from "./ReusableSlider";
 
 const EventsHall = () => {
   return (
@@ -29,13 +30,14 @@ const EventsHall = () => {
           {Object.values(eventVenues).map((venue, index) => (
             <div
               key={venue.id}
+              id={venue.id}
               className={`flex items-center gap-10 mt-32 max-w-5xl mx-auto ${
                 index % 2 === 0 ? "" : "flex-row-reverse"
               }`}
             >
               <div className="w-full">
-                <img
-                  src={venue.imageUrl}
+                <ReusableSlider
+                  images={venue.imageUrls}
                   alt={venue.title}
                   className="w-full h-80 object-cover"
                 />
@@ -54,16 +56,16 @@ const EventsHall = () => {
                   </ul>
                   <a
                     href={venue.enquiryLink}
-                    className="bg-navy text-gold hover:text-navy hover:bg-gradient px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
+                    className="bg-gold/50 text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
                   >
                     Enquiry
                   </a>
-                  <a
+                  {/* <a
                     href={venue.enquiryLink}
-                    className="ml-4 bg-gold text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
+                    className="ml-4 bg-navy text-gold hover:text-navy hover:bg-gradient px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
                   >
                     Book Now
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
