@@ -1,74 +1,67 @@
-import React, { useState } from "react";
-import Slider from "react-slick";
+import React from "react";
+import LightGallery from "lightgallery/react";
+import lgZoom from "lightgallery/plugins/zoom";
+import lgVideo from "lightgallery/plugins/video";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgFullscreen from "lightgallery/plugins/fullscreen";
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-video.css";
+import "lightgallery/css/lg-thumbnail.css";
+import "lightgallery/css/lg-fullscreen.css";
 import { galleryImages } from "../../constants/data.js";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Navbar from "../Navbar.jsx";
+import Footer from "../Footer.jsx";
 
 const Gallery = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  const openModal = (image) => {
-    setSelectedImage(image);
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setSelectedImage(null);
-    setIsOpen(false);
-  };
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 1000,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    pauseOnHover: true,
-  };
-
   return (
-    <div
-      id="gallery"
-      className="bg-bg-gold-dark p-0 overflow-hidden h-auto"
-    >
-      <Slider {...settings}>
-        {galleryImages.map((image) => (
-          <div
-            key={image.id}
-            className="relative overflow-hidden group"
-            style={{ perspective: "1000px" }}
-          >
-            <img
-              src={image.url}
-              alt={image.alt}
-              className="w-full h-60 object-cover shadow-md transition duration-700 ease-in-out transform group-hover:scale-150 cursor-pointer"
-              onClick={() => openModal(image)}
-            />
-            <div className="absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.8)] opacity-50 w-full h-full pointer-events-none"></div>
-          </div>
-        ))}
-      </Slider>
-      {isOpen && (
-        <div className="modal-overlay fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 transition-opacity duration-500">
-          <div className="modal-content max-w-3/4 max-h-3/4">
-            <button
-              className="close-button absolute top-0 right-4 m-4 text-white text-5xl focus:outline-none"
-              onClick={closeModal}
+    <>
+      <Navbar />
+      <section>
+        <section className="container flexCenter flex-col w-3/4 mx-auto pt-16">
+          <h3 className="text-navy font-medium">Glimpse of Hotel Ichchha</h3>
+          <h4 className="text-3xl text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            reiciendis quaerat, ducimus quod cum placeat maxime?
+          </h4>
+          <p className="text-base text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repellendus autem doloribus sint id aliquam cupiditate ea architecto
+            accusamus, laudantium, quam perferendis esse ab ullam maiores sit
+            quis maxime enim sapiente aperiam nam obcaecati porro debitis
+            dolores? Nostrum, rem rerum officiis tempora iure, necessitatibus
+            blanditiis quisquam obcaecati similique, atque nam. Impedit,
+            voluptates! Vel quibusdam incidunt similique cum minima deleniti
+            accusamus commodi!
+          </p>
+        </section>
+
+        <LightGallery
+          plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
+          mode="lg-fade"
+          elementClassNames="w-full grid grid-cols-2 lg:grid-cols-4 gap-4"
+          options={{
+            thumbnail: true,
+            autoplay: true,
+          }}
+        >
+          {galleryImages.map((image) => (
+            <a
+              key={image.id}
+              className="group gallery-item overflow-hidden"
+              data-src={image.url}
             >
-              &times;
-            </button>
-            <img
-              src={selectedImage.url}
-              alt={selectedImage.alt}
-              className="w-full h-full object-contain"
-            />
-          </div>
-        </div>
-      )}
-    </div>
+              <img
+                className="w-full h-60 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer"
+                src={image.url}
+                alt={image.alt}
+              />
+            </a>
+          ))}
+        </LightGallery>
+      </section>
+      <Footer />
+    </>
   );
 };
 
