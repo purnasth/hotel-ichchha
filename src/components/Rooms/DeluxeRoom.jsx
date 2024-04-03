@@ -153,7 +153,7 @@ const DeluxeRoom = () => {
               </div>
             </div>
             <div className="ml-auto w-1/2 h-[80vh] sticky top-6">
-              <div className="bg-gold/30 text-2xl p-12">
+              <div className="bg-gold/30 text-xl p-12">
                 <ul className="flex items-center justify-between gap-2 py-8">
                   <li className="flex items-center gap-4">
                     <MdOutlineInsertEmoticon />
