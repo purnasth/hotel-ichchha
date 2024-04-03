@@ -23,7 +23,7 @@ import Contact from "./components/Contact";
 import IchchhaFacilities from "./components/IchchhaFacilities";
 import Recreation from "./components/Recreation";
 import BackToTop from "./components/BackToTop";
-import Lenis from "@studio-freight/lenis";
+// import Lenis from "@studio-freight/lenis";
 
 const App = () => {
   // useEffect(() => {
