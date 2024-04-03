@@ -4,6 +4,8 @@ import {
   HiArrowLongRight,
   logo,
   navLinks,
+  navLinksRooms,
+  navLinksEvents,
   socialLinks,
 } from "../constants/data";
 import {
@@ -171,90 +173,62 @@ const Navbar = () => {
             >
               <div className="overlay absolute inset-0 bg-black opacity-80 z-0"></div>
               <ul className="flex flex-1 flex-col items-start justify-center gap-8 z-10 text-ivory/90 font-medium">
-                {/* {navLinks.map((link) => (
-                  <li key={link.id}>
-                    <a href={link.link} className="text-3xl">
+                {navLinks.map((link) => (
+                  <li
+                    className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                    key={link.id}
+                  >
+                    <a href={link.link} className="text-4xl font-title">
                       {link.title}
                     </a>
                   </li>
-                ))} */}
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/" className="text-4xl font-title">
-                    Home
-                  </a>
-                </li>
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/about" className="text-4xl font-title">
-                    About
-                  </a>
-                </li>
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/restaurants" className="text-4xl font-title">
-                    Restaurants & Bars
-                  </a>
-                </li>
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/recreation" className="text-4xl font-title">
-                    Recreation
-                  </a>
-                </li>
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/facilities" className="text-4xl font-title">
-                    Facilities
-                  </a>
-                </li>
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/gallery" className="text-4xl font-title">
-                    Gallery
-                  </a>
-                </li>
-                <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                  <a href="/contact" className="text-4xl font-title">
-                    Contact
-                  </a>
-                </li>
+                ))}
               </ul>
               <div className="flex flex-1 justify-center flex-col gap-20 z-10">
-                <ul className="flex  flex-col items-start gap-4">
-                  <li className="peer peer-hover:opacity-50 hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="/accommodation" className="text-4xl font-title">
-                      Rooms & Suites
-                    </a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="/accommodation/deluxe">Deluxe Rooms</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Super Deluxe Rooms</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Premium Rooms</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Junior Suite</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="#Suite">Executive Rooms</a>
-                  </li>
-                </ul>
                 <ul className="flex flex-col items-start gap-4">
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="/events" className="text-4xl font-title">
-                      Conference & Events
-                    </a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Janaki Hall</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Jyamire Hall</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Narayani Hall</a>
-                  </li>
-                  <li className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear">
-                    <a href="">Balmiki Hall</a>
-                  </li>
+                  {navLinksRooms.map((category) => (
+                    <li key={category.id} className="group list-none">
+                      <a
+                        href={category.link}
+                        className="text-4xl font-title hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                      >
+                        {category.title}
+                      </a>
+                      <ul className="mt-4 flex flex-col items-start gap-4">
+                        {category.subLinks.map((subLink) => (
+                          <li
+                            key={subLink.id}
+                            className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                          >
+                            <a href={subLink.link}>{subLink.title}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                </ul>
+
+                <ul className="flex flex-col items-start gap-4">
+                  {navLinksEvents.map((category) => (
+                    <li key={category.id} className="group list-none">
+                      <a
+                        href={category.link}
+                        className="text-4xl font-title hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                      >
+                        {category.title}
+                      </a>
+                      <ul className="mt-4 flex flex-col items-start gap-4">
+                        {category.subLinks.map((subLink) => (
+                          <li
+                            key={subLink.id}
+                            className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                          >
+                            <a href={subLink.link}>{subLink.title}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
