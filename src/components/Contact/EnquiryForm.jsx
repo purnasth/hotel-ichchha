@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 import { HiArrowLongRight } from "react-icons/hi2";
 
@@ -12,6 +12,11 @@ const EnquiryForm = ({ onClose }) => {
     contact: "",
     message: "",
   });
+  const [showForm, setShowForm] = useState(false);
+
+  useEffect(() => {
+    setShowForm(true); 
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,17 +33,34 @@ const EnquiryForm = ({ onClose }) => {
     onClose(); // Close the form popup after submission
   };
 
+  const handleClose = () => {
+    setShowForm(false); // Hide the form before closing
+    setTimeout(() => {
+      onClose(); // Close the form popup after animation completes
+    }, 700); // Use the same duration as the transition for consistency
+  };
+
   const handleFormClick = (e) => {
     e.stopPropagation(); // Prevent propagation of click event
   };
 
+  const duration = 700;
+
   return (
     <div
-      className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50"
-      onClick={onClose}
+      className={`fixed top-0 left-0 w-full h-full  flex items-center justify-center z-50 transition-all duration-${duration} ${
+        showForm
+          ? "opacity-100 bg-black/60 backdrop-blur-sm"
+          : "opacity-0 bg-black pointer-events-none backdrop-blur-3xl"
+      }`}
+      onClick={handleClose}
     >
       <div
-        className="bg-bg-gold-light p-8 rounded-md"
+        className={`bg-bg-gold-light p-8 rounded-md transition-all duration-${duration} ${
+          showForm
+            ? "scale-100 translate-y-0 opacity-100"
+            : "scale-0 -translate-y-full opacity-0"
+        }`}
         onClick={handleFormClick}
       >
         <h2 className="text-3xl text-center font-semibold mb-12">
@@ -46,8 +68,8 @@ const EnquiryForm = ({ onClose }) => {
         </h2>
         <button
           type="button"
-          onClick={onClose}
-          className="text-white hover:text-white/50 transition-all duration-500 text-4xl absolute top-4 right-4 z-10"
+          onClick={handleClose}
+          className="text-navy hover:text-goldLight transition-all duration-500 text-2xl absolute top-4 right-4 z-10"
         >
           <IoClose />
         </button>
