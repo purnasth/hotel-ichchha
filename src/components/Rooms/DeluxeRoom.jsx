@@ -161,7 +161,7 @@ const DeluxeRoom = () => {
                     <MdOutlineInsertEmoticon />
                     Bed Type
                   </li>
-                  <li>King Bed</li>
+                  <li>King Size</li>
                 </ul>
                 <hr className="border-0 w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.2] to-transparent" />
 

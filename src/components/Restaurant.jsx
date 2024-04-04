@@ -63,7 +63,7 @@ const Restaurant = () => {
                     <p>Occupancy: {option.occupancy}</p>
                     <p>Opening Time: {option.openingTime} - {option.closingTime}</p>
                     {/* <p>Opening Time: 06:00 AM - 11:00 PM</p> */}
-                    <p>Type: Multicuisine</p>
+                    <p>Type: {option.type}</p>
 
                     {/* <p>Food Menu: {option.foodMenu}</p> */}
                   </div>

@@ -97,7 +97,12 @@ const Footer = () => {
       <div className="container mx-auto py-4 -translate-y-20">
         <div className="flex justify-between items-center">
           <p className="text-sm">&copy; 2024 Hotel Ichchha Pvt. Ltd.</p>
-          <p className="text-sm">Website by Longtail e-media</p>
+          <p className="text-sm">
+            Website by{" "}
+            <a href="https://longtail.info/" target="_blank" className="underline">
+              Longtail e-media
+            </a>
+          </p>
         </div>
       </div>
     </div>

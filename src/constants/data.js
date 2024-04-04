@@ -142,7 +142,7 @@ export const aboutContents = [
     title: "Hotel Ichchha",
     subtitle: "Five Star Hotel in Simara, Bara",
     subheading:
-      "Hotel Ichchha is a verdant oasis in the heart of Simara.The hotel aims to cater and accommodate business and leisure travelers passing through the zone. ",
+      "The hotel aims to cater and accommodate business and leisure travelers passing through the zone. ",
     description:
       "The homely ambience, facilities and amenities within the premises make your stay a memorable and luxurious one. We are one of the leading hospitality providers assuring our best services. Centrally located, its an ideal choice for business travelers, pilgrimage tour, recreational tours, etc. The best choice for destination wedding to make your special moments more memorable. With a total of 90 rooms, Hotel Ichchha is best suited for all your requirements.",
     // "Hotel Ichchha is a verdant oasis in the heart of Simara.The hotel aims to cater and accommodate business and leisure travelers passing through the zone.",
@@ -370,15 +370,6 @@ export const testimonialContents = [
         image:
           "https://cdt.org/wp-content/uploads/2015/10/2015-10-06-FB-person.png",
         source: "Agoda",
-      },
-      {
-        id: 4,
-        content:
-          "Mid range prices, well managed and friendly staff. Decent breakfast buffet. 5 minute walk to bars and restaurants. A pool thats heated, great after treks. Nice soft and comfortable beds good to relax after trekking. Mid range prices, well managed and friendly staff. Decent breakfast buffet. 5 minute walk to bars and restaurants. A pool thats heated, great after treks. Nice soft and comfortable beds good to relax after trekking. Mid range prices, well managed and friendly staff. Decent breakfast buffet. 5 minute walk to bars and restaurants. A pool thats heated, great after treks. Nice soft and comfortable beds good to relax after trekking. Mid range prices, well managed and friendly staff. Decent breakfast buffet. 5 minute walk to bars and restaurants. A pool thats heated, great after treks. Nice soft and comfortable beds good to relax after trekking. Mid range prices, well managed and friendly staff. Decent breakfast buffet. 5 minute walk to bars and restaurants. A pool thats heated, great after treks. Nice soft and comfortable beds good to relax after trekking.",
-        author: "Test",
-        image:
-          "https://cdt.org/wp-content/uploads/2015/10/2015-10-06-FB-person.png",
-        source: "lorem lorem",
       },
     ],
   },
@@ -635,6 +626,7 @@ export const diningOptions = {
     openingTime: "06:00 AM",
     closingTime: "11:00 PM",
     foodMenu: ["Appetizers", "Main Course", "Desserts", "Beverages"],
+    type: "Multicuisine",
   },
   "courtyard-dining": {
     id: "courtyard-dining",
@@ -651,6 +643,7 @@ export const diningOptions = {
     openingTime: "06:00 AM",
     closingTime: "11:00 PM",
     foodMenu: ["Starters", "Salads", "Grilled Specialties", "Mocktails"],
+    type: "Multicuisine",
   },
   "sports-lounge": {
     id: "sports-lounge",
@@ -667,6 +660,7 @@ export const diningOptions = {
     openingTime: "06:00 AM",
     closingTime: "11:00 PM",
     foodMenu: ["Snacks", "Craft Beers", "Cocktails", "Live Music"],
+    type: "Multicuisine",
   },
   "madhushala-bar": {
     id: "madhushala-bar",
@@ -683,6 +677,7 @@ export const diningOptions = {
     openingTime: "04:00 PM",
     closingTime: "11:00 PM",
     foodMenu: ["Signature Cocktails", "Wines", "Whiskeys", "Bar Snacks"],
+    type: "Beverages",
   },
   "pool-bar": {
     id: "pool-bar",
@@ -700,6 +695,7 @@ export const diningOptions = {
     openingTime: "04:00 PM",
     closingTime: "11:00 PM",
     foodMenu: ["Frozen Cocktails", "Light Bites", "Juices", "Smoothies"],
+    type: "Beverages",
   },
 };
 

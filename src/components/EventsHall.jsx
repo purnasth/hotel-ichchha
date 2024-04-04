@@ -49,7 +49,7 @@ const EventsHall = () => {
                 <div className="mt-0">
                   <h4 className="mb-2">{venue.title}</h4>
                   <p>{venue.description}</p>
-                  <ul className="flex items-center gap-12 py-4">
+                  <ul className="flex items-center gap-4 py-4">
                     {venue.amenities.map((amenity, index) => (
                       <li key={index} className="flex items-center gap-2">
                         {/* <MdOutlineInsertEmoticon /> */}

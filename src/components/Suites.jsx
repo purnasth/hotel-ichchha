@@ -23,7 +23,7 @@ const Suites = () => {
             </p>
           </div>
 
-          <section className="mt-8">
+          <div className="mt-32">
             <div className="border-[1px] border-navy/40 rounded-3xl overflow-hidden">
               {accomodationData.accomodation.map((suite) => (
                 <a
@@ -59,7 +59,7 @@ const Suites = () => {
                 </a>
               ))}
             </div>
-          </section>
+          </div>
         </div>
       </section>
       <Footer />

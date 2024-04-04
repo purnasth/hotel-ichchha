@@ -130,7 +130,9 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="h-px w-full bg-gradient-to-r from-navy/30 via-transparent to-navy/30" />
+        {/* <div className="h-px w-full bg-gradient-to-r from-navy/30 via-transparent to-navy/30" /> */}
+        <div className="h-px w-[45%] bg-gradient-to-r from-navy/30 to-transparent absolute left-0" />
+        <div className="h-px w-[45%] bg-gradient-to-l from-navy/30 to-transparent absolute right-0" />
       </nav>
 
       <div
@@ -175,7 +177,7 @@ const Navbar = () => {
               <ul className="flex flex-1 flex-col items-start justify-center gap-8 z-10 text-ivory/90 font-medium">
                 {navLinks.map((link) => (
                   <li
-                    className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                    className="peer peer-hover:opacity-50 hover:translate-x-4 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
                     key={link.id}
                   >
                     <a href={link.link} className="text-4xl font-title">
@@ -190,7 +192,7 @@ const Navbar = () => {
                     <li key={category.id} className="group list-none">
                       <a
                         href={category.link}
-                        className="text-4xl font-title hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                        className="text-4xl font-title hover:translate-x-2 hover:tracking-wider hover:text-goldLight transition-all duration-300 ease-linear"
                       >
                         {category.title}
                       </a>
@@ -198,7 +200,7 @@ const Navbar = () => {
                         {category.subLinks.map((subLink) => (
                           <li
                             key={subLink.id}
-                            className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                            className="peer peer-hover:opacity-50  hover:translate-x-2 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
                           >
                             <a href={subLink.link}>{subLink.title}</a>
                           </li>
@@ -213,7 +215,7 @@ const Navbar = () => {
                     <li key={category.id} className="group list-none">
                       <a
                         href={category.link}
-                        className="text-4xl font-title hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                        className="text-4xl font-title hover:translate-x-2 hover:tracking-wider hover:text-goldLight transition-all duration-300 ease-linear"
                       >
                         {category.title}
                       </a>
@@ -221,7 +223,7 @@ const Navbar = () => {
                         {category.subLinks.map((subLink) => (
                           <li
                             key={subLink.id}
-                            className="peer peer-hover:opacity-50  hover:translate-x-6 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                            className="peer peer-hover:opacity-50 hover:translate-x-2 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
                           >
                             {/* <a href={`${subLink.link}`}>
                               {subLink.title}
@@ -255,13 +257,25 @@ const Navbar = () => {
               <p>+977-9802738099</p>
               <p>info@hotelichchha.com</p>
               <div className="footer-about-social-list mt-6 text-2xl">
-                <a href="#" className="inline-block mr-4">
+                <a
+                  href="https://www.facebook.com/ichchhahotel/"
+                  target="_blank"
+                  className="inline-block mr-4"
+                >
                   <FaFacebook />
                 </a>
-                <a href="#" className="inline-block mr-4">
+                <a
+                  href="https://www.instagram.com/hotel_ichchha/?hl=en"
+                  target="_blank"
+                  className="inline-block mr-4"
+                >
                   <FaInstagram />
                 </a>
-                <a href="#" className="inline-block">
+                <a
+                  href="https://www.tripadvisor.com/Hotel_Review-g21156991-d11283455-Reviews-Hotel_Ichchha-Pipara_Simara_Narayani_Zone_Central_Region.html"
+                  target="_blank"
+                  className="inline-block"
+                >
                   <FaTripadvisor />
                 </a>
               </div>
