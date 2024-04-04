@@ -51,33 +51,27 @@ const DeluxeRoom = () => {
 
           <div className="flex justify-between">
             <div className="w-1/2 max-w-lg">
-              <h5 className="text-3xl leading-loose pb-4">
-                About Accomodation
-              </h5>
+              <h5 className="text-3xl leading-loose pb-4">Overview</h5>
               <p className="pb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                doloribus, impedit perspiciatis placeat eum quo maiores porro
-                eius quos deleniti culpa enim praesentium ipsa illum totam
-                distinctio iure blanditiis ut! Animi temporibus accusantium
-                velit excepturi possimus, at in non eius!
-              </p>
-              <p className="pb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                doloribus, impedit perspiciatis placeat eum quo maiores porro
-                eius quos deleniti culpa enim praesentium ipsa illum totam
-                distinctio iure blanditiis ut! Animi temporibus accusantium
-                velit excepturi possimus, at in non eius!
+                Step into the embrace of elegance with Hotel Ichchha Deluxe
+                Rooms. Designed for discerning travelers, these rooms blend
+                exquisite comfort with state-of-the-art facilities. Revel in the
+                sumptuous bedding, soak in the serene ambiance, and let our
+                attentive service elevate your stay to a realm of unparalleled
+                luxury.
               </p>
 
-              <h5 className="text-3xl leading-loose py-4">Information</h5>
-              <ul>
+              <h5 className="text-3xl leading-loose py-4">Child Policies:</h5>
+              <ul className="list-decimal ml-4">
                 <li className="mb-2">
-                  Lorem ipsum dolor, sit amet consectetur
+                  Child 0 - 4 yrs. sharing parent's room free of charge on same
+                  plan as adults.
                 </li>
-                <li>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Cumque, quod.
+                <li className="mb-2">
+                  Child age 5 - 10 yrs.', sharing parent's room will be charged
+                  50 % adult meal rate.
                 </li>
+                <li>Breakfast - US$ 8/ INR 500.</li>
               </ul>
 
               <h5 className="text-3xl leading-loose py-4">Amenities</h5>
@@ -167,7 +161,7 @@ const DeluxeRoom = () => {
                     <MdOutlineInsertEmoticon />
                     Bed Type
                   </li>
-                  <li>Single Bed</li>
+                  <li>King Bed</li>
                 </ul>
                 <hr className="border-0 w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.2] to-transparent" />
 
@@ -176,7 +170,7 @@ const DeluxeRoom = () => {
                     <MdOutlineInsertEmoticon />
                     Starting Price
                   </li>
-                  <li>USD 20</li>
+                  <li>USD 200</li>
                 </ul>
                 <hr className="border-0 w-full h-px bg-gradient-to-t from-transparent via-[rgba(0,0,0,1)]/[0.2] to-transparent" />
 

@@ -15,7 +15,7 @@ const EnquiryForm = ({ onClose }) => {
   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
-    setShowForm(true); 
+    setShowForm(true);
   }, []);
 
   const handleChange = (e) => {
@@ -91,7 +91,7 @@ const EnquiryForm = ({ onClose }) => {
             </div>
             <div>
               <label htmlFor="date" className="text-base text-navy">
-                Date
+                Event Date
               </label>
               <input
                 type="date"
@@ -119,7 +119,7 @@ const EnquiryForm = ({ onClose }) => {
             </div>
             <div>
               <label htmlFor="name" className="text-base text-navy">
-                Name
+                Full Name
               </label>
               <input
                 type="text"
@@ -133,7 +133,7 @@ const EnquiryForm = ({ onClose }) => {
             </div>
             <div>
               <label htmlFor="email" className="text-base text-navy">
-                Email
+                Email Address
               </label>
               <input
                 type="email"
@@ -147,7 +147,7 @@ const EnquiryForm = ({ onClose }) => {
             </div>
             <div>
               <label htmlFor="contact" className="text-base text-navy">
-                Contact
+                Contact Number
               </label>
               <input
                 type="tel"

@@ -21,20 +21,15 @@ const Gallery = () => {
       <Navbar />
       <section>
         <section className="container flexCenter flex-col w-3/4 mx-auto pt-16">
-          <h3 className="text-navy font-medium">Glimpse of Hotel Ichchha</h3>
+          <h3 className="text-navy font-medium">Photo Gallery</h3>
           <h4 className="text-3xl text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            reiciendis quaerat, ducimus quod cum placeat maxime?
+            Glimpse of Hotel Ichchha - Discover Beauty Beyond Words
           </h4>
           <p className="text-base text-center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repellendus autem doloribus sint id aliquam cupiditate ea architecto
-            accusamus, laudantium, quam perferendis esse ab ullam maiores sit
-            quis maxime enim sapiente aperiam nam obcaecati porro debitis
-            dolores? Nostrum, rem rerum officiis tempora iure, necessitatibus
-            blanditiis quisquam obcaecati similique, atque nam. Impedit,
-            voluptates! Vel quibusdam incidunt similique cum minima deleniti
-            accusamus commodi!
+            Immerse yourself in luxury, comfort, and
+            personalized service. From elegant rooms to impeccable amenities,
+            discover hospitality at its finest. Elevate your stay with us.
+            Welcome to a world of unparalleled indulgence.
           </p>
         </section>
 

@@ -32,15 +32,15 @@ const Contact = () => {
         <div className="container mx-auto">
           <div className="flexCenter flex-col w-3/4 mx-auto">
             {/* <h2></h2> */}
-            <h3 className="text-navy font-medium">How to get here from</h3>
+            <h3 className="text-navy font-medium">How to get to Hotel Ichchha?</h3>
             <h4 className="text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-              officiis temporibus nesciunt assumenda cupiditate?
+            Reach Out, Connect, and Spark Possibilities - Your Gateway to Seamless Communication.
             </h4>
             <p className="text-lg text-center">
-              Would you like to find our how to get to us or you have a question
+              {/* Would you like to find our how to get to us or you have a question
               you need to ask? Call us or e-mail us, here are all the contact
-              information you need to know.
+              information you need to know. */}
+              Have any inquiries? Reach out to Hotel Ichchha dedicated team. Whether it's booking accommodations, event planning, or dietary preferences, we're here to ensure your experience is seamless and memorable. Connect with us today for personalized service and support!"
             </p>
           </div>
         </div>
@@ -109,7 +109,9 @@ const Contact = () => {
                 </li>
               </ul>
 
-              <div className="mt-20">
+              <div className="mt-12">
+                <h5 className="text-3xl leading-loose py-4">Review Us</h5>
+
                 <TripAdvisorWidget />
               </div>
 

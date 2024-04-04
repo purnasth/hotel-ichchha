@@ -20,21 +20,18 @@ const Recreation = () => {
         <div className="container">
           <div className="container flexCenter flex-col w-3/4 mx-auto">
             <h3 className="text-navy font-medium">
-              Explore Our Exciting Recreation Venues
+              Discover Our Exciting Recreation
             </h3>
             <h4 className="text-3xl text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              reiciendis quaerat, ducimus quod cum placeat maxime?
+              Unwind, Recharge, and Explore: Your Adventure Awaits in Every
+              Recreational Endeavor.
             </h4>
             <p className="text-base text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repellendus autem doloribus sint id aliquam cupiditate ea
-              architecto accusamus, laudantium, quam perferendis esse ab ullam
-              maiores sit quis maxime enim sapiente aperiam nam obcaecati porro
-              debitis dolores? Nostrum, rem rerum officiis tempora iure,
-              necessitatibus blanditiis quisquam obcaecati similique, atque nam.
-              Impedit, voluptates! Vel quibusdam incidunt similique cum minima
-              deleniti accusamus commodi!
+              Escape to Hotel Ichchha recreational oasis. Unwind with luxurious
+              spa treatments, energize in our state-of-the-art gym, or bask by
+              the serene poolside. Our dedicated leisure concierge ensures every
+              moment is pure bliss. Perfect for relaxation seekers and adventure
+              enthusiasts.
             </p>
           </div>
         </div>
@@ -53,7 +50,7 @@ const Recreation = () => {
             </div>
             <div className="w-full">
               <div className="mt-0">
-                <h4>{venue.title}</h4>
+                <h4 className="mb-2">{venue.title}</h4>
                 <p>{venue.description}</p>
                 <ul className="flex items-center gap-4 py-4">
                   {venue.amenities.map((amenity, index) => (
@@ -63,12 +60,12 @@ const Recreation = () => {
                     </li>
                   ))}
                 </ul>
-                <button
+                {/* <button
                   onClick={toggleEnquiryForm}
                   className="bg-goldLight text-navy hover:bg-navy hover:text-ivory px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
                 >
                   Enquiry
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

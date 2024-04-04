@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
+// import Calendar from "react-calendar";
+// import "react-calendar/dist/Calendar.css";
 import { HiArrowLongRight } from "react-icons/hi2";
 
 const BookNowSection = () => {
@@ -37,10 +37,10 @@ const BookNowSection = () => {
   return (
     <div className="fixed bottom-0 w-full bg-white border-t border-gray-200 p-4 z-30">
       <div className="container flex justify-around items-center">
-        <div className="flex flex-row items-center gap-5 relative">
+        <div className="flex flex-row items-center gap-3 relative">
           <label htmlFor="check-in-date">Check-In Date</label>
           <div className="relative">
-            <input
+            {/* <input
               id="check-in-date"
               type="text"
               value={checkInDate.toDateString()}
@@ -56,7 +56,16 @@ const BookNowSection = () => {
                 minDate={new Date()}
                 className="absolute top-0 left-0 -translate-y-full -mt-8"
               />
-            )}
+            )} */}
+            <input
+              type="date"
+              id="check-in-date"
+              name="date"
+              // value={formData.date}
+              // onChange={handleChange}
+              className="text-lg w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
+              required
+            />
           </div>
         </div>
         <div className="flex">
@@ -72,7 +81,7 @@ const BookNowSection = () => {
         <div className="flex flex-row items-center gap-5 relative">
           <label htmlFor="check-out-date">Check-Out Date</label>
           <div className="relative">
-            <input
+            {/* <input
               id="check-out-date"
               type="text"
               value={checkOutDate ? checkOutDate.toDateString() : ""}
@@ -88,7 +97,16 @@ const BookNowSection = () => {
                 minDate={checkInDate}
                 className="absolute top-0 left-0 -translate-y-full -mt-8"
               />
-            )}
+            )} */}
+            <input
+              id="check-out-date"
+              type="date"
+              name="date"
+              // value={formData.date}
+              // onChange={handleChange}
+              className="text-lg w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
+              required
+            />
           </div>
         </div>
       </div>

@@ -144,8 +144,8 @@ export const aboutContents = [
     subheading:
       "Hotel Ichchha is a verdant oasis in the heart of Simara.The hotel aims to cater and accommodate business and leisure travelers passing through the zone. ",
     description:
-      // "The homely ambience, facilities and amenities within the premises make your stay a memorable and luxurious one. We are one of the leading hospitality providers assuring our best services. Centrally located, its an ideal choice for business travelers, pilgrimage tour, recreational tours, etc. The best choice for destination wedding to make your special moments more memorable. With a total of 90 rooms, Hotel Ichchha is best suited for all your requirements.",
-      "Hotel Ichchha is a verdant oasis in the heart of Simara.The hotel aims to cater and accommodate business and leisure travelers passing through the zone.",
+      "The homely ambience, facilities and amenities within the premises make your stay a memorable and luxurious one. We are one of the leading hospitality providers assuring our best services. Centrally located, its an ideal choice for business travelers, pilgrimage tour, recreational tours, etc. The best choice for destination wedding to make your special moments more memorable. With a total of 90 rooms, Hotel Ichchha is best suited for all your requirements.",
+    // "Hotel Ichchha is a verdant oasis in the heart of Simara.The hotel aims to cater and accommodate business and leisure travelers passing through the zone.",
   },
 ];
 
@@ -280,11 +280,10 @@ export const accomodationContents = [
     id: "accomodationTitle",
     title: "Exclusive Rooms and Suites",
     subtitle: "",
-    subheading:
-      "Experience the ultimate Staycation in Hotel Ichchha, where city center charm meets tailored luxury.",
+    subheading: "Experience the ultimate Staycation in Hotel Ichchha",
     description:
       // "Light, bright and with a smart layout that enhances the feeling of spaciousness, our rooms feature all the world class furniture, air conditioning, amenities, toiletries and technology. Super deluxe rooms are ingeniously designed with splendid interiors. The junior suite rooms are spacious rooms with a cozy living room separated by a partial wall. The executive rooms feature a large bedroom and a living room. Elegantly decorated with opulent interiors and varnished in soft tones, all the rooms are spacious with classy comfortable beds.",
-      "Experience the ultimate Staycation in Hotel Ichchha, where city center charm meets tailored luxury. ",
+      "Hotel Ichchha rooms and suites are a symphony of luxury and comfort, designed to enchant every guest where luxury embraces elegance, Hotel Ichchha offers an exquisite blend of comfort and grandeur. Experience unparalleled hospitality and serene elegance in every stay.",
     accomodation: [
       {
         id: "deluxeRoom",
@@ -633,8 +632,8 @@ export const diningOptions = {
       "https://www.hotelichchha.com/images/subpackage/eA6ys-three.jpg",
     ],
     occupancy: "100 guests",
-    openingTime: "12:00 PM",
-    closingTime: "10:00 PM",
+    openingTime: "06:00 AM",
+    closingTime: "11:00 PM",
     foodMenu: ["Appetizers", "Main Course", "Desserts", "Beverages"],
   },
   "courtyard-dining": {
@@ -649,8 +648,8 @@ export const diningOptions = {
       "https://www.hotelichchha.com/images/subpackage/VqVoP-one.jpg",
     ],
     occupancy: "50 guests",
-    openingTime: "11:00 AM",
-    closingTime: "9:00 PM",
+    openingTime: "06:00 AM",
+    closingTime: "11:00 PM",
     foodMenu: ["Starters", "Salads", "Grilled Specialties", "Mocktails"],
   },
   "sports-lounge": {
@@ -665,7 +664,7 @@ export const diningOptions = {
       "https://www.hotelichchha.com/images/subpackage/oij7R-vqvop-one.jpg",
     ],
     occupancy: "80 guests",
-    openingTime: "2:00 PM",
+    openingTime: "06:00 AM",
     closingTime: "11:00 PM",
     foodMenu: ["Snacks", "Craft Beers", "Cocktails", "Live Music"],
   },
@@ -681,8 +680,8 @@ export const diningOptions = {
       "https://www.hotelichchha.com/images/subpackage/z9VkB-three.jpg",
     ],
     occupancy: "40 guests",
-    openingTime: "4:00 PM",
-    closingTime: "12:00 AM",
+    openingTime: "04:00 PM",
+    closingTime: "11:00 PM",
     foodMenu: ["Signature Cocktails", "Wines", "Whiskeys", "Bar Snacks"],
   },
   "pool-bar": {
@@ -698,8 +697,8 @@ export const diningOptions = {
       "https://www.hotelichchha.com/images/subpackage/XDgPW-vqvop-one.jpg",
     ],
     occupancy: "30 guests",
-    openingTime: "10:00 AM",
-    closingTime: "8:00 PM",
+    openingTime: "04:00 PM",
+    closingTime: "11:00 PM",
     foodMenu: ["Frozen Cocktails", "Light Bites", "Juices", "Smoothies"],
   },
 };
@@ -709,53 +708,76 @@ export const eventVenues = {
     id: "janakiHall",
     title: "Janaki Hall",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
+      "Step into the grandeur of Janaki Hall at Hotel Ichchha, a venue that epitomizes elegance and charm. With its opulent decor, facilities, and versatile space, it’s the perfect setting for any prestigious event. Whether hosting a gala, conference, or wedding, Janaki Hall transforms every occasion into a memorable, world-class experience.",
     enquiryLink: "Enquiry",
     imageUrls: [
       "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
       "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
       "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
     ],
-    amenities: ["Mandap", "Pavilion", "Meeting rooms", "Garden venue"],
+    amenities: [
+      "Theatre: 100 pax",
+      "U shape: 100 pax",
+      "Classroom: 100 pax",
+      // "Round Table: 100 pax",
+    ],
   },
   jyamireHall: {
     id: "jyamireHall",
     title: "Jyamire Hall",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
+      "Ascend to the zenith of luxury with Jyamire Hall at Hotel Ichchha, a beacon of unparalleled sophistication. This majestic hall is a masterpiece, crafted to host the most prestigious international events. With its stunning interiors, state-of-the-art acoustics, and ambient lighting, it creates an atmosphere of exclusivity and grandeur, ensuring every event is nothing short of legendary.",
     enquiryLink: "Enquiry",
     imageUrls: [
       "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
       "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
       "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
     ],
-    amenities: ["Mandap", "Pavilion", "Meeting rooms", "Garden venue"],
+    // amenities: ["Mandap", "Pavilion", "Meeting rooms", "Garden venue"],
+    amenities: [
+      "Theatre: 100 pax",
+      "U shape: 100 pax",
+      "Classroom: 100 pax",
+      // "Round Table: 100 pax",
+    ],
   },
   narayaniHall: {
     id: "narayaniHall",
     title: "Narayani Hall",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
+      "Narayani Hall at Hotel Ichchha is where grandeur meets innovation, a prestigious venue that redefines the essence of high-profile events. With its breathtaking design, advanced technological integrations, and impeccable service, it stands as a testament to next-level luxury. Here, every event is transformed into an extraordinary spectacle, setting a new benchmark for elegance and sophistication in the world of hospitality.",
     enquiryLink: "Enquiry",
     imageUrls: [
       "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
       "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
       "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
     ],
-    amenities: ["Meeting rooms", "Pool Bar", "Courtyard"],
+    // amenities: ["Meeting rooms", "Pool Bar", "Courtyard"],
+    amenities: [
+      "Theatre: 100 pax",
+      "U shape: 100 pax",
+      "Classroom: 100 pax",
+      // "Round Table: 100 pax",
+    ],
   },
   balmikiHall: {
     id: "balmikiHall",
     title: "Balmiki Hall",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere totam corrupti vel odit quas, distinctio dolorem maiores possimus voluptate! Ut itaque id consequatur dolor, sunt delectus deserunt aliquam optio repudiandae esse, rem sequi quos maiores. Perspiciatis tempora, inventore praesentium dicta totam nemo voluptas expedita qui, iste doloribus, illum sit!",
+      "Balmiki Hall at Hotel Ichchha is a marvel of architectural beauty and functional elegance, designed to host events that leave a lasting impression. With its luxurious decor, state-of-the-art amenities, and adaptable space, it’s the ideal backdrop for any distinguished gathering. Here, every event is elevated to an art form, ensuring guests experience the pinnacle of refinement and grace.",
     enquiryLink: "Enquiry",
     imageUrls: [
       "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
       "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
       "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
     ],
-    amenities: ["Meeting rooms", "Pool Bar", "Courtyard"],
+    // amenities: ["Meeting rooms", "Pool Bar", "Courtyard"],
+    amenities: [
+      "Theatre: 100 pax",
+      "U shape: 100 pax",
+      "Classroom: 100 pax",
+      // "Round Table: 100 pax",
+    ],
   },
 };
 

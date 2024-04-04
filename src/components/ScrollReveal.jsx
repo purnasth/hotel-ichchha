@@ -24,8 +24,10 @@ function ScrollReveal({
       gsap.from(text.chars, {
         scrollTrigger: {
           trigger: splitType,
-          start: "top 80%",
-          end: "top 20%",
+          // start: "top 80%",
+          start: "top 100%",
+          // end: "top 20%",
+          end: "top 100%",
           scrub: true,
           markers: false,
         },
@@ -48,7 +50,7 @@ function ScrollReveal({
     <>
       <div className="font-kalnia leading-normal font-medium reveal-type flexCenter flex-col w-3/4 mx-auto mb-8">
         <h3 className={`text-${textColor} text-navy font-medium`}>{heading}</h3>
-        {/* <h4 className={`text-${highlightColor} text-center`}>{subheading}</h4> */}
+        <h4 className={`text-${highlightColor} text-3xl text-center font-normal`}>{subheading}</h4>
         <p className={`text-${paraColor} text-lg text-center`}>{para}</p>
       </div>
     </>

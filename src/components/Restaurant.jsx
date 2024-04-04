@@ -15,15 +15,14 @@ const Restaurant = () => {
               Happy hour is the best hour
             </h3>
             <h4 className="text-3xl text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-              omnis.
+              Where Every Bite is Bliss, and Every Sip, an Experience!
             </h4>
             <p className="text-base text-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
-              rerum minus sequi, quae ullam vero dignissimos, quisquam numquam
-              commodi expedita esse adipisci animi impedit magni! Obcaecati, quo
-              nostrum nihil minima nemo vero sit debitis quis optio, sint, sed
-              voluptas officia?
+              Step into Hotel Ichchha, where culinary artistry meets urban chic.
+              Relish innovative dishes and artisanal drinks in our restaurant
+              and bar. Enjoy impeccable service, intimate spaces, and a vibrant
+              atmosphere. Perfect for food connoisseurs and social butterflies
+              alike. Discover your next favorite spot in the heart of the city.
             </p>
           </div>
 
@@ -62,8 +61,9 @@ const Restaurant = () => {
                     {/* <p>{option.subtitle}</p> */}
                     {/* <p>{option.description}</p> */}
                     <p>Occupancy: {option.occupancy}</p>
-                    <p>Opening Time: {option.openingTime}</p>
-                    <p>Closing Time: {option.closingTime}</p>
+                    <p>Opening Time: {option.openingTime} - {option.closingTime}</p>
+                    {/* <p>Opening Time: 06:00 AM - 11:00 PM</p> */}
+                    <p>Type: Multicuisine</p>
 
                     {/* <p>Food Menu: {option.foodMenu}</p> */}
                   </div>

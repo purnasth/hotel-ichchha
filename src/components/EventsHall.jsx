@@ -19,19 +19,15 @@ const EventsHall = () => {
       <section className="bg-bg-gold-light">
         <div className="container">
           <div className="flexCenter flex-col w-3/4 mx-auto">
-            <h3 className="text-navy font-medium">
-              Lorem ipsum dolor sit amet.
-            </h3>
+            <h3 className="text-navy font-medium">Conference & Events</h3>
             <h4 className="text-3xl text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-              omnis.
+              Where every occasion sparkles with Ichchha touch
             </h4>
             <p className="text-base text-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
-              rerum minus sequi, quae ullam vero dignissimos, quisquam numquam
-              commodi expedita esse adipisci animi impedit magni! Obcaecati, quo
-              nostrum nihil minima nemo vero sit debitis quis optio, sint, sed
-              voluptas officia?
+              Elevate your events at Hotel Ichchha versatile halls. From
+              intimate gatherings to grand celebrations, our spaces offer luxury
+              and convenience. Your memorable moments, our impeccable service.
+              Welcome to perfection.
             </p>
           </div>
           {Object.values(eventVenues).map((venue, index) => (
@@ -51,12 +47,12 @@ const EventsHall = () => {
               </div>
               <div className="w-full">
                 <div className="mt-0">
-                  <h4>{venue.title}</h4>
+                  <h4 className="mb-2">{venue.title}</h4>
                   <p>{venue.description}</p>
-                  <ul className="flex items-center gap-4 py-4">
+                  <ul className="flex items-center gap-12 py-4">
                     {venue.amenities.map((amenity, index) => (
                       <li key={index} className="flex items-center gap-2">
-                        <MdOutlineInsertEmoticon />
+                        {/* <MdOutlineInsertEmoticon /> */}
                         {amenity}
                       </li>
                     ))}
@@ -74,7 +70,8 @@ const EventsHall = () => {
         </div>
       </section>
       <Footer />
-      {showEnquiryForm && <EnquiryForm onClose={toggleEnquiryForm} />} {/* Render EnquiryForm if showEnquiryForm is true */}
+      {showEnquiryForm && <EnquiryForm onClose={toggleEnquiryForm} />}{" "}
+      {/* Render EnquiryForm if showEnquiryForm is true */}
     </>
   );
 };

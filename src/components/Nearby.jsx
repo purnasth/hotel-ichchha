@@ -33,11 +33,10 @@ function NearbyLocations() {
           <ScrollReveal
             heading="Iconic attraction near Hotel Ichchha"
             subheading="Hotel Ichchha is a verdant oasis in the heart of Simara and is
+            perfect for scintillating experiences."
+            para="Hotel Ichchha is a verdant oasis in the heart of Simara and is
             perfect for scintillating experiences. Visit the iconic landmarks
             and monuments near our hotel and create your own moments."
-            para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            excepturi consectetur repellendus libero temporibus porro tempore
-            quasi aspernatur "
             textColor="text-navy"
             highlightColor="text-navy"
             paraColor="text-navy"

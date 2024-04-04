@@ -10,6 +10,7 @@ const About = () => {
     <>
       <Navbar />
       <AboutHome />
+
       <section className="bg-bg-gold-dark">
         {messageFromChairman.map((message) => (
           <div
@@ -36,8 +37,8 @@ const About = () => {
                 <span>{message.position}</span>
               </div>
               <div className="flex items-start flex-col gap-4 justify-center">
-                <p className="text-lg">{message.description}</p>
-                <p className="text-lg">
+                <p className="text-lg text-justify">{message.description}</p>
+                <p className="text-lg text-justify">
                   We are a 5-Star Deluxe Hotel; nevertheless, we have all the
                   facilities as well as the infrastructure as that of a 5-Star
                   property and we are aiming for the same so as to fulfill the
@@ -46,7 +47,7 @@ const About = () => {
                   is under construction and at the completion phase, located
                   just next to the entrance of Parsa National Park.
                 </p>
-                <p className="text-lg">
+                <p className="text-lg text-justify">
                   Since this area has already been developed as an industrial
                   area having Birgunj-Pathlaiya Industrial Corridor already in
                   place, new developments have been going on such as domestic as
@@ -57,7 +58,7 @@ const About = () => {
                   International Airport, all favoring rapid growth of tourism in
                   this part of the country.
                 </p>
-                <p className="text-lg">
+                <p className="text-lg text-justify">
                   We believe that these enterprises will provide opportunities
                   for future sustainable growth in tourism and travel trade
                   industry of Nepal. We also recognize and embrace our
