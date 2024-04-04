@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { IoClose } from "react-icons/io5";
+import { HiArrowLongRight } from "react-icons/hi2";
 
 const EnquiryForm = ({ onClose }) => {
   const [formData, setFormData] = useState({
@@ -26,14 +28,33 @@ const EnquiryForm = ({ onClose }) => {
     onClose(); // Close the form popup after submission
   };
 
+  const handleFormClick = (e) => {
+    e.stopPropagation(); // Prevent propagation of click event
+  };
+
   return (
-    <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white p-8 rounded-md">
-        <h2 className="text-3xl text-center font-semibold mb-8">Enquiry Form</h2>
+    <div
+      className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50"
+      onClick={onClose}
+    >
+      <div
+        className="bg-bg-gold-light p-8 rounded-md"
+        onClick={handleFormClick}
+      >
+        <h2 className="text-3xl text-center font-semibold mb-12">
+          Enquiry Form
+        </h2>
+        <button
+          type="button"
+          onClick={onClose}
+          className="text-white hover:text-white/50 transition-all duration-500 text-4xl absolute top-4 right-4 z-10"
+        >
+          <IoClose />
+        </button>
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label htmlFor="eventTitle" className="block text-gray-700 font-semibold mb-2">
+              <label htmlFor="eventTitle" className="text-base text-navy">
                 Event Title
               </label>
               <input
@@ -42,12 +63,12 @@ const EnquiryForm = ({ onClose }) => {
                 name="eventTitle"
                 value={formData.eventTitle}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"
+                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
                 required
               />
             </div>
             <div>
-              <label htmlFor="date" className="block text-gray-700 font-semibold mb-2">
+              <label htmlFor="date" className="text-base text-navy">
                 Date
               </label>
               <input
@@ -56,12 +77,12 @@ const EnquiryForm = ({ onClose }) => {
                 name="date"
                 value={formData.date}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"
+                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
                 required
               />
             </div>
             <div>
-              <label htmlFor="pax" className="block text-gray-700 font-semibold mb-2">
+              <label htmlFor="pax" className="text-base text-navy">
                 Number of Pax
               </label>
               <input
@@ -70,12 +91,12 @@ const EnquiryForm = ({ onClose }) => {
                 name="pax"
                 value={formData.pax}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"
+                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
                 required
               />
             </div>
             <div>
-              <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">
+              <label htmlFor="name" className="text-base text-navy">
                 Name
               </label>
               <input
@@ -84,12 +105,12 @@ const EnquiryForm = ({ onClose }) => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"
+                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
                 required
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">
+              <label htmlFor="email" className="text-base text-navy">
                 Email
               </label>
               <input
@@ -98,12 +119,12 @@ const EnquiryForm = ({ onClose }) => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"
+                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
                 required
               />
             </div>
             <div>
-              <label htmlFor="contact" className="block text-gray-700 font-semibold mb-2">
+              <label htmlFor="contact" className="text-base text-navy">
                 Contact
               </label>
               <input
@@ -112,12 +133,12 @@ const EnquiryForm = ({ onClose }) => {
                 name="contact"
                 value={formData.contact}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"
+                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
                 required
               />
             </div>
             <div className="col-span-2">
-              <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">
+              <label htmlFor="message" className="text-base text-navy">
                 Message
               </label>
               <textarea
@@ -126,24 +147,18 @@ const EnquiryForm = ({ onClose }) => {
                 rows="4"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500"
+                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
                 required
               ></textarea>
             </div>
           </div>
-          <div className="flex justify-end mt-4">
-            <button
-              type="button"
-              onClick={onClose}
-              className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md mr-4"
-            >
-              Cancel
-            </button>
+          <div className="w-full mt-8">
             <button
               type="submit"
-              className="bg-blue-500 text-white px-4 py-2 rounded-md"
+              className="w-full group flex items-center justify-center gap-2 bg-goldLight text-navy hover:bg-navy hover:text-ivory px-6 py-4 rounded-full text-lg transition-all duration-300 ease-linear"
             >
               Submit
+              <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-300 ease-linear" />
             </button>
           </div>
         </form>
