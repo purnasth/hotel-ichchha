@@ -26,7 +26,7 @@ const HeroSliderCarousel = ({ images, className }) => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative z-30">
       <Slider
         {...settings}
         ref={sliderRef}
