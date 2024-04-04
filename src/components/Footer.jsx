@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaTripadvisor } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-pink-gold text-navy">
+    <div className="bg-pink-gold text-navy">
       <section>
         <div className="container mx-auto py-8 px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -93,14 +93,14 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <div className="container w-full h-px bg-gradient-to-l from-transparent via-navy/50 to-transparent" />
-      <div className="container mx-auto py-4">
+      <div className="container w-full h-px bg-gradient-to-l from-transparent via-navy/50 to-transparent -translate-y-20" />
+      <div className="container mx-auto py-4 -translate-y-20">
         <div className="flex justify-between items-center">
           <p className="text-sm">&copy; 2024 Hotel Ichchha Pvt. Ltd.</p>
           <p className="text-sm">Website by Longtail e-media</p>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

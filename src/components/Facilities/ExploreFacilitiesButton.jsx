@@ -49,7 +49,7 @@ const ExploreFacilitiesButton = () => {
 const Navbar = ({ showNavbar, onClose }) => {
   return (
     <div
-      className={`fixed top-0 right-0 w-64 max-h-screen overflow-y-scroll bg-bg-gold-light z-[60] transition-transform duration-300 transform ${
+      className={`fixed top-0 right-0 w-72 max-h-screen overflow-y-scroll bg-bg-gold-light z-[60] transition-transform duration-300 transform ${
         showNavbar ? "translate-x-0" : "translate-x-full"
       }`}
     >

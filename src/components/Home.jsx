@@ -11,7 +11,6 @@ import Navbar from "./Navbar";
 import HeroSliderCarousel from "./HeroSliderCarousel";
 import GallerySlider from "./Gallery/GallerySlider";
 import GalleryHome from "./Gallery/GalleryHome";
-import ExploreFacilitiesButton from "./Facilities/ExploreFacilitiesButton";
 import BookNowSection from "./Contact/BookNowSection";
 
 const images = [
@@ -36,7 +35,6 @@ const images = [
 const Home = () => {
   return (
     <>
-      <ExploreFacilitiesButton />
       <BookNowSection />
       <Navbar />
 
