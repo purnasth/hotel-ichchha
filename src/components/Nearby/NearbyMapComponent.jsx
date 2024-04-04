@@ -146,13 +146,13 @@ function NearbyMapComponent() {
   }, [selectedLocation]);
 
   return (
-    <div className="flex justify-between items-center mt-20">
-      <div className="w-1/5">
+    <div className="flex justify-between items-center mt-20 p-12">
+      <div className="w-1/5 pl-6">
         <ul>
           {nearbyLocations.map((location) => (
             <li
               key={location.name}
-              className="pl-12 mb-4 cursor-pointer"
+              className="mb-4 cursor-pointer"
               onClick={() => handleLocationClick(location)}
             >
               <span className="font-bold">{location.name}</span>
@@ -172,17 +172,19 @@ function NearbyMapComponent() {
           ))}
         </ul>
       </div>
-      <div className="w-4/5">
+      <div className="w-4/5 h-screen">
         {/* Embedded Google Map */}
         {isMapOpen && (
-          <div className="relative bg-ivory w-full rounded-lg">
-            <iframe
-              title="Map"
-              src={mapUrl}
-              className="w-full h-[90vh] rounded-lg shadow-lg"
-              frameBorder="0"
-            ></iframe>
-          </div>
+          // <div className="relative bg-ivory w-full h-96 rounded-lg">
+          <iframe
+            title="Map"
+            src={mapUrl}
+            className="w-full h-full object-contain rounded-lg shadow-lg"
+            frameBorder="0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         )}
       </div>
     </div>

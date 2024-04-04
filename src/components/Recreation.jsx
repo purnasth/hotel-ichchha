@@ -140,7 +140,7 @@ const Recreation = () => {
                 </ul>
                 <a
                   href={venue.enquiryLink}
-                  className="bg-gold/50 text-navy hover:bg-navy hover:text-ivory px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
+                  className="bg-goldLight text-navy hover:bg-navy hover:text-ivory px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
                 >
                   Enquiry
                 </a>

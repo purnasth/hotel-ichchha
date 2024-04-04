@@ -53,7 +53,7 @@ const Restaurant = () => {
                     </div> */}
                     <a
                       href=""
-                      className="bg-navy text-ivory hover:text-navy hover:bg-gradient px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
+                      className="bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
                     >
                       View Menu
                     </a>

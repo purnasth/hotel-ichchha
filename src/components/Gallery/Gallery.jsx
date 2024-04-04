@@ -4,11 +4,13 @@ import lgZoom from "lightgallery/plugins/zoom";
 import lgVideo from "lightgallery/plugins/video";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgFullscreen from "lightgallery/plugins/fullscreen";
+import lgShare from "lightgallery/plugins/share";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-video.css";
 import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-fullscreen.css";
+import "lightgallery/css/lg-share.css";
 import { galleryImages } from "../../constants/data.js";
 import Navbar from "../Navbar.jsx";
 import Footer from "../Footer.jsx";
@@ -37,7 +39,7 @@ const Gallery = () => {
         </section>
 
         <LightGallery
-          plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
+          plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen, lgShare]}
           mode="lg-fade"
           elementClassNames="w-full grid grid-cols-2 lg:grid-cols-4 gap-4"
           options={{
@@ -52,7 +54,7 @@ const Gallery = () => {
               data-src={image.url}
             >
               <img
-                className="w-full h-60 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer"
+                className="w-full h-80 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer"
                 src={image.url}
                 alt={image.alt}
               />

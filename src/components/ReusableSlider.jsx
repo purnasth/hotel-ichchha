@@ -64,13 +64,13 @@ const ReusableSlider = ({ images, className }) => {
       <div className="flexCenter mt-4">
         <button
           onClick={prevSlide}
-          className="group bg-gold/50 text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
+          className="group bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
         >
           <HiArrowLongLeft className="group-hover:-translate-x-2 transition-all duration-150 ease-linear" />
         </button>
         <button
           onClick={nextSlide}
-          className="group bg-gold/50 text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
+          className="group bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
         >
           <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-150 ease-linear" />
         </button>

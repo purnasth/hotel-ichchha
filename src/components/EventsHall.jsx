@@ -63,7 +63,7 @@ const EventsHall = () => {
                   </ul>
                   <button
                     onClick={toggleEnquiryForm}
-                    className="bg-gold/50 text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
+                    className="bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
                   >
                     Enquiry
                   </button>

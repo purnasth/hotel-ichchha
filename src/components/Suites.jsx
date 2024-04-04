@@ -29,7 +29,7 @@ const Suites = () => {
                 <a
                   href={suite.router}
                   key={suite.id}
-                  className={`border-b-[1px] border-navy/30 flex items-center justify-between gap-0 bg-gold/20 hover:bg-gold/40 group transition-all duration-${duration}`}
+                  className={`border-b-[1px] border-navy/30 flex items-center justify-between gap-0 bg-bg-gold-dark hover:bg-goldLight/80 group transition-all duration-${duration}`}
                 >
                   <div className="flex w-1/3">
                     <img
@@ -50,7 +50,7 @@ const Suites = () => {
                     >
                       <button
                         href={suite.router}
-                        className={`bg-navy text-gold group-hover:text-ivory group-hover:bg-gold px-4 py-1 rounded-full text-2xl transition-all duration-${duration} ease-linear`}
+                        className={`bg-goldLight text-navy group-hover:text-ivory group-hover:bg-navy px-4 py-1 rounded-full text-2xl transition-all duration-${duration} ease-linear`}
                       >
                         <HiArrowLongRight />
                       </button>

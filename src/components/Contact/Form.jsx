@@ -125,7 +125,7 @@ const ContactForm = () => {
         <div className="w-full mt-4">
           <button
             type="submit"
-            className="w-full group flex items-center justify-center gap-2 bg-navy text-ivory hover:bg-gold/40 hover:text-navy px-6 py-4 rounded-full text-lg transition-all duration-150 ease-linear"
+            className="w-full group flex items-center justify-center gap-2 bg-navy text-ivory hover:bg-goldLight hover:text-navy px-6 py-4 rounded-full text-lg transition-all duration-150 ease-linear"
           >
             Send Message
             <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-300" />

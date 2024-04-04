@@ -199,7 +199,7 @@ const DeluxeRoom = () => {
                 <div className="pt-12 w-full">
                   <a
                     href=""
-                    className="group flex items-center justify-center gap-2 w-full bg-navy text-gold hover:bg-ivory px-6 py-4 rounded-full text-lg transition-all duration-300 ease-linear"
+                    className="group flex items-center justify-center gap-2 w-full bg-navy text-ivory hover:text-navy hover:bg-ivory px-6 py-4 rounded-full text-lg transition-all duration-300 ease-linear"
                   >
                     Book Now
                     <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-300" />

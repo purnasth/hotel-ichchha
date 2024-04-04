@@ -550,11 +550,6 @@ export const galleryImages = [
     alt: "Gallery Image 5",
   },
   {
-    id: "image5",
-    url: "https://www.hotelichchha.com/images/gallery/galleryimages/gIdo9-h2.jpg",
-    alt: "Gallery Image 5",
-  },
-  {
     id: "image6",
     url: "https://www.hotelichchha.com/images/gallery/galleryimages/0ij49-h6.jpg",
     alt: "Gallery Image 6",
@@ -573,6 +568,11 @@ export const galleryImages = [
     id: "image9",
     url: "https://www.hotelichchha.com/images/gallery/galleryimages/IvmkE-h1.jpg",
     alt: "Gallery Image 9",
+  },
+  {
+    id: "image10",
+    url: "https://www.hotelichchha.com/images/gallery/galleryimages/gIdo9-h2.jpg",
+    alt: "Gallery Image 10",
   },
 ];
 
