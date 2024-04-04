@@ -9,6 +9,7 @@ import { GrLocation } from "react-icons/gr";
 import { TbPhone } from "react-icons/tb";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaFacebook, FaInstagram, FaTripadvisor } from "react-icons/fa";
+import TripAdvisorWidget from "./TripAdvisorWidget";
 
 const Contact = () => {
   useEffect(() => {
@@ -52,7 +53,7 @@ const Contact = () => {
         <div className="container">
           <div className="flex justify-between">
             <div className="w-1/2 max-w-lg">
-              <h5 className="text-3xl leading-loose pb-4">
+              {/* <h5 className="text-3xl leading-loose pb-4">
                 About Hotel Ichchha
               </h5>
               <p className="pb-4">
@@ -69,7 +70,7 @@ const Contact = () => {
                 choice for destination wedding to make your special moments more
                 memorable. With a total of 90 rooms, Hotel Ichchha is best
                 suited for all your requirements.
-              </p>
+              </p> */}
 
               <h5 className="text-3xl leading-loose py-4">Find Us</h5>
 
@@ -107,7 +108,12 @@ const Contact = () => {
                   </a>
                 </li>
               </ul>
-{/* 
+
+              <div className="mt-20">
+                <TripAdvisorWidget />
+              </div>
+
+              {/* 
               <h5 className="text-3xl leading-loose py-4">Information</h5>
               <ul>
                 <li className="mb-2">

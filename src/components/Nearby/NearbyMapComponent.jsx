@@ -180,10 +180,7 @@ function NearbyMapComponent() {
             title="Map"
             src={mapUrl}
             className="w-full h-full object-contain rounded-lg shadow-lg"
-            frameBorder="0"
-            allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         )}
       </div>
