@@ -2,8 +2,16 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import logo from "../assets/logo.svg";
 import introVideo from "../assets/intro_video.mp4";
 import ichchha from "../assets/ichchha.webp";
+import { MdOutlineInsertEmoticon } from "react-icons/md";
+import {
+  FaBed,
+  FaRulerCombined,
+  FaDollarSign,
+  FaUser,
+  FaSmoking,
+} from "react-icons/fa";
 
-export { HiArrowLongRight, logo, introVideo, ichchha };
+export { HiArrowLongRight, MdOutlineInsertEmoticon, logo, introVideo, ichchha };
 
 export const navLinks = [
   {
@@ -293,6 +301,49 @@ export const accomodationContents = [
           "The Deluxe Room offers a comfortable stay with modern amenities and elegant decoration.",
         url: "https://www.hotelichchha.com/images/subpackage/image/JqbZx-deluxeroom.jpg",
         router: "/accommodation/deluxe",
+        overview: [
+          {
+            title: "Overview",
+            content: [
+              "Step into the embrace of elegance with Hotel Ichchha Deluxe Rooms. Designed for discerning travelers, these rooms blend exquisite comfort with state-of-the-art facilities. Revel in the sumptuous bedding, soak in the serene ambiance, and let our attentive service elevate your stay to a realm of unparalleled luxury.",
+            ],
+          },
+        ],
+        policies: [
+          {
+            title: "Child Policies",
+            content: [
+              "Child 0 - 4 yrs. sharing parent's room free of charge on same plan as adults.",
+              "Child age 5 - 10 yrs. sharing parent's room will be charged 50% adult meal rate.",
+              "Breakfast - US$ 8/ INR 500.",
+            ],
+          },
+        ],
+        amenities: [
+          "Air conditioning",
+          "Bathrobe",
+          "Coffee and tea set",
+          "Desk",
+          "Hairdryer",
+          "Minibar",
+          "Pillow service",
+          "Safe",
+          "Slippers",
+          "Storage cabinet",
+          "Telephone",
+          "Television",
+          "Toilet",
+          "Towel service",
+          "Twin bed/double bed",
+          "Wi-Fi",
+        ],
+        roomDetails: {
+          "Room Size": { icon: ichchha, value: "100 sq. feet" },
+          "Bed Type": { icon: "FaBed", value: "King Size" },
+          "Starting Price": { icon: "FaDollarSign", value: "USD 200" },
+          Occupancy: { icon: "FaUser", value: "2 adults + 1 child" },
+          Smoking: { icon: "FaSmoking", value: "Yes" },
+        },
       },
       {
         id: "superDeluxeRoom",
