@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 import { PiCallBell } from "react-icons/pi";
 import { MdOutlineInsertEmoticon } from "react-icons/md";
+import { HiArrowLongRight } from "react-icons/hi2";
 import { facilitiesSectionIcon } from "../../constants/data.js";
 
 const ExploreFacilitiesButton = () => {
@@ -63,13 +64,14 @@ const Navbar = ({ showNavbar, onClose }) => {
         <div
           key={index}
           className="flex items-center justify-start bg-ivor gap-4 p-4 px-6"
+          id="facilities"
         >
           {/* <img
                   src={facility.icon}
                   alt={facility.title}
                   className="w-12 h-12 mb-2"
                 /> */}
-          <MdOutlineInsertEmoticon className="text-xl" />
+          <HiArrowLongRight className="text-xl" />
           <span className="text-lg font-semibold">{facility.title}</span>
         </div>
       ))}

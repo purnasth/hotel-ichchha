@@ -7,6 +7,29 @@
     --para: 1.25rem;
 }
 
+::-webkit-scrollbar {
+    width: 0.25em;
+    border-radius: 100vw;
+}
+::-webkit-scrollbar:hover {
+    width: 0.35em;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E9C279;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ca8e0e;
+}
+
 
 
 @tailwind base;

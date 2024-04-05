@@ -509,6 +509,7 @@ export const hotelFacilities = [
     description:
       "Relax yourself from your stressful works and get a cool spa massage from professional masseurs.",
     icon: "https://www.hotelichchha.com/images/services/FqRR6-spa.jpg",
+    router: "/recreation",
   },
   {
     id: "swimmingPool",
@@ -516,6 +517,7 @@ export const hotelFacilities = [
     description:
       "Enjoy memorable time in our swimming pool. Have fun with your family and friends.",
     icon: "https://www.hotelichchha.com/images/services/fIIuL-pool.jpg",
+    router: "/recreation",
   },
   {
     id: "miniCasino",
@@ -523,6 +525,7 @@ export const hotelFacilities = [
     description:
       "A perfect place to relive your days with exciting games along with the family.",
     icon: "https://www.hotelichchha.com/images/services/fWNzQ-casino.jpg",
+    router: "/recreation",
   },
   // {
   //   id: "weddingAndCeremonyVenues",
@@ -537,6 +540,7 @@ export const hotelFacilities = [
     description:
       "An exciting experience is to spotting and viewing wildlife on a jeep safari. Prepare yourself for a magnificent glance to capture on camera.",
     icon: "https://www.hotelichchha.com/images/services/fY4Ra-safari.jpg",
+    router: "/recreation",
   },
 ];
 
