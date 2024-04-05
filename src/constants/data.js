@@ -353,6 +353,49 @@ export const accomodationContents = [
           "Experience luxury and sophistication in our Super Deluxe Room, featuring splendid interiors and top-notch facilities.",
         url: "https://www.hotelichchha.com/images/subpackage/image/ewcPn-super.jpg",
         router: "/accommodation/super-deluxe",
+        overview: [
+          {
+            title: "Overview",
+            content: [
+              "Discover unparalleled opulence in Hotel Ichchha Super Deluxe Rooms, where global standards of luxury meet personalized comfort. Each room is a masterpiece of design, featuring lavish furnishings, cutting-edge technology, and panoramic views that promise to leave you spellbound. Our commitment to excellence ensures every moment is imbued with splendor and sophistication.",
+            ],
+          },
+        ],
+        policies: [
+          {
+            title: "Child Policies",
+            content: [
+              "Child 0 - 4 yrs. sharing parent's room free of charge on same plan as adults.",
+              "Child age 5 - 10 yrs. sharing parent's room will be charged 50% adult meal rate.",
+              "Breakfast - US$ 8/ INR 500.",
+            ],
+          },
+        ],
+        amenities: [
+          "Air conditioning",
+          "Bathrobe",
+          "Coffee and tea set",
+          "Desk",
+          "Hairdryer",
+          "Minibar",
+          "Pillow service",
+          "Safe",
+          "Slippers",
+          "Storage cabinet",
+          "Telephone",
+          "Television",
+          "Toilet",
+          "Towel service",
+          "Twin bed/double bed",
+          "Wi-Fi",
+        ],
+        roomDetails: {
+          "Room Size": { icon: ichchha, value: "100 sq. feet" },
+          "Bed Type": { icon: "FaBed", value: "King Size" },
+          "Starting Price": { icon: "FaDollarSign", value: "USD 200" },
+          Occupancy: { icon: "FaUser", value: "2 adults + 1 child" },
+          Smoking: { icon: "FaSmoking", value: "Yes" },
+        },
       },
       {
         id: "premiumRoom",

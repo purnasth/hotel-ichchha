@@ -17,6 +17,7 @@ import Home from "./components/Home";
 import Suites from "./components/Suites";
 // import Hero from "./components/Hero";
 import DeluxeRoom from "./components/Rooms/DeluxeRoom";
+import SuperDeluxeRoom from "./components/Rooms/SuperDeluxeRoom";
 import Restaurant from "./components/Restaurant";
 import EventsHall from "./components/EventsHall";
 import Contact from "./components/Contact";
@@ -59,10 +60,10 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/accommodation" element={<Suites />} />
             <Route path="/accommodation/deluxe" element={<DeluxeRoom />} />
-            {/* <Route
+            <Route
               path="/accommodation/super-deluxe"
               element={<SuperDeluxeRoom />}
-            /> */}
+            />
             <Route path="/restaurants" element={<Restaurant />} />
             <Route path="/events" element={<EventsHall />} />
             <Route path="/facilities" element={<IchchhaFacilities />} />
