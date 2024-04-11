@@ -2,6 +2,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import logo from "../assets/logo.svg";
 import introVideo from "../assets/intro_video.mp4";
 import ichchha from "../assets/ichchha.webp";
+import ichchha1 from "../assets/ichchha1.jpg";
 import { MdOutlineInsertEmoticon } from "react-icons/md";
 import {
   FaBed,
@@ -29,6 +30,26 @@ import fountainR4 from "../assets/restaurant/fountainR4.webp";
 
 import bar2 from "../assets/restaurant/bar2.webp";
 import bar3 from "../assets/restaurant/bar3.webp";
+
+import pool1 from "../assets/recreation/pool1.webp";
+import pool2 from "../assets/recreation/pool2.webp";
+import pool3 from "../assets/recreation/pool3.webp";
+
+import spa2 from "../assets/recreation/spa2.webp";
+import spa3 from "../assets/recreation/spa3.webp";
+import spa4 from "../assets/recreation/spa4.webp";
+
+import ground1 from "../assets/recreation/ground1.webp";
+import ground2 from "../assets/recreation/ground2.webp";
+
+import gym1 from "../assets/recreation/gym1.webp";
+import gym2 from "../assets/recreation/gym2.webp";
+import gym3 from "../assets/recreation/gym3.webp";
+
+import casino1 from "../assets/recreation/casino1.webp";
+import casino2 from "../assets/recreation/casino2.webp";
+import casino3 from "../assets/recreation/casino3.webp";
+import casino4 from "../assets/recreation/casino4.webp";
 
 export {
   HiArrowLongRight,
@@ -926,11 +947,7 @@ export const recreationVenues = {
   swimmingPool: {
     id: "swimmingPool",
     title: "Swimming Pool",
-    imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/O4QRJ-pool2.jpg",
-      "https://www.hotelichchha.com/images/subpackage/O4QRJ-pool2.jpg",
-      "https://www.hotelichchha.com/images/subpackage/O4QRJ-pool2.jpg",
-    ],
+    imageUrls: [pool1, pool2, pool3],
     description:
       "Dive into an inviting sea of sparkling blue water to refresh your weary bones on a hot day. Have a wonderful time in our refreshing pool with your family and friends. With plentiful sunbeams streaming through its full-length skylight, our outdoor pool is an excellent place to swim laps, relax with family or simply unwind in the peaceful surroundings. For your convenience, items such as goggles, swim caps are in place.",
     amenities: ["Outdoor Pool", "Sunbathing Area", "Goggles and Swim Sets"],
@@ -950,11 +967,7 @@ export const recreationVenues = {
   gamingZoneKidsClub: {
     id: "gamingZoneKidsClub",
     title: "Gaming Zone & Kids Club",
-    imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/SMyv7-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/SMyv7-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/SMyv7-one.jpg",
-    ],
+    imageUrls: [ground1, ground2],
     description:
       "The hotel comprises a gaming zone with the most exciting gaming floor with more tables and coin machine, choose among loads of Blackjack games. We have set up a separate fun zone for kids ensuring a relaxing time with play areas offering an array of kid’s fun activities. All in all, we have got a variety of fun activities delivering lavish relaxation for guests of all ages that one deserves.",
     amenities: ["Gaming Floor", "Blackjack", "Kids Play Area"],
@@ -962,11 +975,7 @@ export const recreationVenues = {
   casino: {
     id: "casino",
     title: "Casino",
-    imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/cbLpA-8f7ca-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/cbLpA-8f7ca-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/cbLpA-8f7ca-one.jpg",
-    ],
+    imageUrls: [casino1, casino2, casino3, casino4],
     description:
       "Relax and enjoy a treat at Hotel Ichchha with a uniquely cultured, nurturing and optimal pampering environment for total refreshment. Each one of our unique spa services nourishes and heals your body, replaces trace minerals. Time-honored Massage techniques of ancient era are expertly crafted on the hands of our Therapists. Enjoy services such as manicure, pedicure and makeup artist offered by our hotel.",
     amenities: ["Various Casino Games", "Entertainment"],
@@ -974,11 +983,7 @@ export const recreationVenues = {
   spa: {
     id: "spa",
     title: "Spa",
-    imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/KCK9p-kmxaw-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/KCK9p-kmxaw-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/KCK9p-kmxaw-one.jpg",
-    ],
+    imageUrls: [spa2, spa3, spa4],
     description:
       "Relax and enjoy a treat at Hotel Ichchha with a uniquely cultured, nurturing and optimal pampering environment for total refreshment. Each one of our unique spa services nourishes and heals your body, replaces trace minerals. Time-honored Massage techniques of ancient era are expertly crafted on the hands of our Therapists. Enjoy services such as manicure, pedicure and makeup artist offered by our hotel.",
     amenities: ["Spa Treatments", "Massage Services", "Manicure/Pedicure"],
@@ -986,11 +991,7 @@ export const recreationVenues = {
   healthClub: {
     id: "healthClub",
     title: "Health Club",
-    imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/iOGPu-five.jpg",
-      "https://www.hotelichchha.com/images/subpackage/iOGPu-five.jpg",
-      "https://www.hotelichchha.com/images/subpackage/iOGPu-five.jpg",
-    ],
+    imageUrls: [gym1, gym2, gym3],
     description:
       "The hotel comprises a gaming zone with the most exciting gaming floor with more tables and coin machine, choose among loads of Blackjack games. We have set up a separate fun zone for kids ensuring a relaxing time with play areas offering an array of kid’s fun activities. All in all, we have got a variety of fun activities delivering lavish relaxation for guests of all ages that one deserves.",
     amenities: ["Fitness Equipment", "Exercise Classes", "Personal Training"],
@@ -998,10 +999,10 @@ export const recreationVenues = {
 };
 
 export const sliderImages = [
-  // {
-  //   src: ichchha,
-  //   title: "Hotel Ichchha, Hospitality at its best!",
-  // },
+  {
+    src: ichchha1,
+    title: "Hotel Ichchha, Hospitality at its best!",
+  },
   // {
   //   src: "https://www.hotelichchha.com/images/slideshow/UVh7T-ichchha-room.jpg",
   //   title: "The Homely Ambience",
