@@ -51,6 +51,31 @@ import casino2 from "../assets/recreation/casino2.webp";
 import casino3 from "../assets/recreation/casino3.webp";
 import casino4 from "../assets/recreation/casino4.webp";
 
+import g1 from "../assets/gallery/g1.webp";
+import g2 from "../assets/gallery/g2.webp";
+import g3 from "../assets/gallery/g3.webp";
+import g4 from "../assets/gallery/g4.webp";
+import g5 from "../assets/gallery/g5.webp";
+import g6 from "../assets/gallery/g6.webp";
+import g7 from "../assets/gallery/g7.webp";
+import g8 from "../assets/gallery/g8.webp";
+import g9 from "../assets/gallery/g9.webp";
+import g10 from "../assets/gallery/g10.webp";
+import g11 from "../assets/gallery/g11.webp";
+import g12 from "../assets/gallery/g12.webp";
+import g13 from "../assets/gallery/g13.webp";
+import g14 from "../assets/gallery/g14.webp";
+import g15 from "../assets/gallery/g15.webp";
+import g16 from "../assets/gallery/g16.webp";
+import g17 from "../assets/gallery/g17.webp";
+import g18 from "../assets/gallery/g18.webp";
+import g19 from "../assets/gallery/g19.webp";
+import g20 from "../assets/gallery/g20.webp";
+import g21 from "../assets/gallery/g21.webp";
+import g22 from "../assets/gallery/g22.webp";
+import g23 from "../assets/gallery/g23.webp";
+import g24 from "../assets/gallery/g24.webp";
+
 export {
   HiArrowLongRight,
   MdOutlineInsertEmoticon,
@@ -697,53 +722,123 @@ export const facilitiesSectionIcon = {
 export const galleryImages = [
   {
     id: "image1",
-    url: "https://www.hotelichchha.com/images/gallery/galleryimages/gIdo9-h2.jpg",
+    url: g1,
     alt: "Gallery Image 1",
   },
   {
     id: "image2",
-    url: "https://www.hotelichchha.com/images/gallery/galleryimages/0ij49-h6.jpg",
+    url: g2,
     alt: "Gallery Image 2",
   },
   {
     id: "image3",
-    url: "https://www.hotelichchha.com/images/gallery/galleryimages/uOwrl-h7.jpg",
+    url: g3,
     alt: "Gallery Image 3",
   },
   {
     id: "image4",
-    url: "https://www.hotelichchha.com/images/gallery/galleryimages/7y81Q-h4.jpg",
+    url: g4,
     alt: "Gallery Image 4",
   },
   {
     id: "image5",
-    url: "https://www.hotelichchha.com/images/gallery/galleryimages/IvmkE-h1.jpg",
+    url: g5,
     alt: "Gallery Image 5",
   },
   {
     id: "image6",
-    url: "https://www.hotelichchha.com/images/gallery/galleryimages/0ij49-h6.jpg",
+    url: g6,
     alt: "Gallery Image 6",
   },
   {
     id: "image7",
-    url: "https://www.hotelichchha.com/images/gallery/galleryimages/uOwrl-h7.jpg",
+    url: g7,
     alt: "Gallery Image 7",
   },
   {
     id: "image8",
-    url: "https://www.hotelichchha.com/images/gallery/galleryimages/7y81Q-h4.jpg",
+    url: g8,
     alt: "Gallery Image 8",
   },
   {
     id: "image9",
-    url: "https://www.hotelichchha.com/images/gallery/galleryimages/IvmkE-h1.jpg",
+    url: g9,
     alt: "Gallery Image 9",
   },
   {
     id: "image10",
-    url: "https://www.hotelichchha.com/images/gallery/galleryimages/gIdo9-h2.jpg",
+    url: g10,
     alt: "Gallery Image 10",
+  },
+  {
+    id: "image11",
+    url: g11,
+    alt: "Gallery Image 11",
+  },
+  {
+    id: "image12",
+    url: g12,
+    alt: "Gallery Image 12",
+  },
+  {
+    id: "image13",
+    url: g13,
+    alt: "Gallery Image 13",
+  },
+  {
+    id: "image14",
+    url: g14,
+    alt: "Gallery Image 14",
+  },
+  {
+    id: "image15",
+    url: g15,
+    alt: "Gallery Image 15",
+  },
+  {
+    id: "image16",
+    url: g16,
+    alt: "Gallery Image 16",
+  },
+  {
+    id: "image17",
+    url: g17,
+    alt: "Gallery Image 17",
+  },
+  {
+    id: "image18",
+    url: g18,
+    alt: "Gallery Image 18",
+  },
+  {
+    id: "image19",
+    url: g19,
+    alt: "Gallery Image 19",
+  },
+  {
+    id: "image20",
+    url: g20,
+    alt: "Gallery Image 20",
+  },
+  {
+    id: "image21",
+    url: g21,
+    alt: "Gallery Image 21",
+  },
+  {
+    id: "image22",
+    url: g22,
+    alt: "Gallery Image 22",
+  },
+  {
+    id: "image23",
+    url: g23,
+    alt: "Gallery Image 23",
+  },
+  {
+    id: "image24",
+    url: g24,
+    alt: "Gallery Image 24",
   },
 ];
 

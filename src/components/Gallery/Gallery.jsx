@@ -49,7 +49,7 @@ const Gallery = () => {
               data-src={image.url}
             >
               <img
-                className="w-full h-80 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer"
+                className="w-full h-72 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer"
                 src={image.url}
                 alt={image.alt}
               />
