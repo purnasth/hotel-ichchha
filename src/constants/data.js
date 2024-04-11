@@ -10,8 +10,21 @@ import {
   FaUser,
   FaSmoking,
 } from "react-icons/fa";
+import slider1 from "../assets/slider/slider1.webp";
+import slider2 from "../assets/slider/slider2.webp";
+import slider3 from "../assets/slider/slider3.webp";
+import slider4 from "../assets/slider/slider4.webp";
+import slider5 from "../assets/slider/slider5.webp";
+import slider6 from "../assets/slider/slider6.webp";
 
-export { HiArrowLongRight, MdOutlineInsertEmoticon, logo, introVideo, ichchha };
+export {
+  HiArrowLongRight,
+  MdOutlineInsertEmoticon,
+  logo,
+  introVideo,
+  ichchha,
+  slider1,
+};
 
 export const navLinks = [
   {
@@ -969,3 +982,45 @@ export const recreationVenues = {
     amenities: ["Fitness Equipment", "Exercise Classes", "Personal Training"],
   },
 };
+
+export const sliderImages = [
+  // {
+  //   src: ichchha,
+  //   title: "Hotel Ichchha, Hospitality at its best!",
+  // },
+  // {
+  //   src: "https://www.hotelichchha.com/images/slideshow/UVh7T-ichchha-room.jpg",
+  //   title: "The Homely Ambience",
+  // },
+  // {
+  //   src: "https://www.hotelichchha.com/images/slideshow/mmMDi-pool.jpg",
+  //   title: "Plentiful sunbeams streaming pool",
+  // },
+  {
+    src: slider1,
+    title: "Crafting Dreams into Concrete Realities: Your Ultimate Destination",
+  },
+  {
+    src: slider2,
+    title: "Rooms Designed for Comfort, Styled for Luxury: Unwind Here!",
+  },
+  {
+    src: slider3,
+    title: "Dive into Refreshing Bliss: Our Pool is Your Oasis Escape",
+  },
+  {
+    src: slider4,
+    title:
+      "Elegant Halls, Timeless Memories: Celebrate Life's Special Moments Here",
+  },
+  {
+    src: slider5,
+    title:
+      "Savor Every Bite, Indulge in Culinary Delights: Our Restaurant Beckons",
+  },
+  {
+    src: slider6,
+    title:
+      "Seamless Transitions: Our Indoor-Outdoor Spaces Embrace Nature's Beauty",
+  },
+];
