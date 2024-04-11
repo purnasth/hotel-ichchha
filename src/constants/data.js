@@ -22,6 +22,14 @@ import dlx2 from "../assets/rooms/dlx2.webp";
 import dlx3 from "../assets/rooms/dlx3.webp";
 import dlx4 from "../assets/rooms/dlx4.webp";
 
+import fountainR1 from "../assets/restaurant/fountainR1.webp";
+import fountainR2 from "../assets/restaurant/fountainR2.webp";
+import fountainR3 from "../assets/restaurant/fountainR3.webp";
+import fountainR4 from "../assets/restaurant/fountainR4.webp";
+
+import bar2 from "../assets/restaurant/bar2.webp";
+import bar3 from "../assets/restaurant/bar3.webp";
+
 export {
   HiArrowLongRight,
   MdOutlineInsertEmoticon,
@@ -769,11 +777,7 @@ export const diningOptions = {
     description:
       "Cozy Fountain Restaurant is our splendid ambience for fine dines. Adorned with unique features, our restaurant serves quality food and beverages.",
 
-    imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/eA6ys-three.jpg",
-      "https://www.hotelichchha.com/images/subpackage/eA6ys-three.jpg",
-      "https://www.hotelichchha.com/images/subpackage/eA6ys-three.jpg",
-    ],
+    imageUrls: [fountainR1, fountainR2, fountainR3, fountainR4],
     occupancy: "100 guests",
     openingTime: "06:00 AM",
     closingTime: "11:00 PM",
@@ -786,11 +790,8 @@ export const diningOptions = {
     subtitle: "Enjoyable Dining with Pool View",
     description:
       "Our courtyard dining serves quality food and beverages. You can also enjoy the swimming pool view that makes your dining even more enjoyable.",
-    imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/VqVoP-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/VqVoP-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/VqVoP-one.jpg",
-    ],
+    imageUrls: [fountainR1, fountainR2, fountainR3, fountainR4],
+
     occupancy: "50 guests",
     openingTime: "06:00 AM",
     closingTime: "11:00 PM",
@@ -803,11 +804,8 @@ export const diningOptions = {
     subtitle: "Relaxing Dining and Entertainment",
     description:
       "You can also enjoy the swimming pool view that makes your dining even more enjoyable. Corporate Madhusala Bar of private ambience provides you the best sitting with your associates. Designed in an exclusive way, the bar assures a relaxing environment for the guests. Hanging Garden Bar with cultural dance, fun, and entertainment gives you a memorable time during your stay. Located between a beautiful garden and swimming pool view, the bar provides a relaxing environment.",
-    imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/oij7R-vqvop-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/oij7R-vqvop-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/oij7R-vqvop-one.jpg",
-    ],
+    imageUrls: [fountainR1, fountainR2, fountainR3, fountainR4],
+
     occupancy: "80 guests",
     openingTime: "06:00 AM",
     closingTime: "11:00 PM",
@@ -820,11 +818,7 @@ export const diningOptions = {
     subtitle: "Private Ambience for Corporate Gatherings",
     description:
       "Corporate Madhusala Bar of private ambience provides you the best sitting with your associates. Designed in an exclusive way, the bar assures a relaxing environment for the guests.",
-    imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/z9VkB-three.jpg",
-      "https://www.hotelichchha.com/images/subpackage/z9VkB-three.jpg",
-      "https://www.hotelichchha.com/images/subpackage/z9VkB-three.jpg",
-    ],
+    imageUrls: [bar2, bar3],
     occupancy: "40 guests",
     openingTime: "04:00 PM",
     closingTime: "11:00 PM",
@@ -837,12 +831,7 @@ export const diningOptions = {
     subtitle: "Relaxing Environment by the Pool",
     description:
       "Designed in an exclusive way, the bar assures a relaxing environment for the guests. Hanging Garden Bar with cultural dance, fun, and entertainment gives you a memorable time during your stay. Located between a beautiful garden and swimming pool view, the bar provides a relaxing environment.",
-
-    imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/XDgPW-vqvop-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/XDgPW-vqvop-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/XDgPW-vqvop-one.jpg",
-    ],
+    imageUrls: [bar2, bar3],
     occupancy: "30 guests",
     openingTime: "04:00 PM",
     closingTime: "11:00 PM",

@@ -98,7 +98,7 @@ const ReusableSlider = ({ images, className }) => {
     });
 
     // Start autosliding
-    intervalRef.current = setInterval(nextSlide, 5000); // 5000 milliseconds = 5 seconds
+    intervalRef.current = setInterval(nextSlide, 20000); // 20000 milliseconds = 20 seconds
 
     // Cleanup function to clear the interval when the component unmounts or changes
     return () => clearInterval(intervalRef.current);
@@ -107,7 +107,7 @@ const ReusableSlider = ({ images, className }) => {
   useEffect(() => {
     // Clear and reset the interval whenever the current image index changes
     clearInterval(intervalRef.current);
-    intervalRef.current = setInterval(nextSlide, 5000);
+    intervalRef.current = setInterval(nextSlide, 20000);
   }, [currentImageIndex]);
 
   const nextSlide = () => {
