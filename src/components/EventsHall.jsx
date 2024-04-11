@@ -71,7 +71,6 @@ const EventsHall = () => {
       </section>
       <Footer />
       {showEnquiryForm && <EnquiryForm onClose={toggleEnquiryForm} />}{" "}
-      {/* Render EnquiryForm if showEnquiryForm is true */}
     </>
   );
 };

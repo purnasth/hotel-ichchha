@@ -17,6 +17,11 @@ import slider4 from "../assets/slider/slider4.webp";
 import slider5 from "../assets/slider/slider5.webp";
 import slider6 from "../assets/slider/slider6.webp";
 
+import dlx1 from "../assets/rooms/dlx1.webp";
+import dlx2 from "../assets/rooms/dlx2.webp";
+import dlx3 from "../assets/rooms/dlx3.webp";
+import dlx4 from "../assets/rooms/dlx4.webp";
+
 export {
   HiArrowLongRight,
   MdOutlineInsertEmoticon,
@@ -316,12 +321,20 @@ export const accomodationContents = [
         router: "/accommodation/deluxe",
         images: [
           {
-            src: "https://www.hotelichchha.com/images/slideshow/UVh7T-ichchha-room.jpg",
+            src: dlx1,
             title: "The Homely Ambience",
           },
           {
-            src: "https://s3-alpha-sig.figma.com/img/84cf/a38a/65923184216c09d7f3dcab6961136f45?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H~ZakV3Kt5v697SLSpU9WQu7M6fvc90iqu0RcguhVcp6m-IlzBmpFaWEEnTdmqXXNVD4ZkD80O8kP0CTdL0IVNlykFb~L3jc~wu2uMhtuyx4RStFVvuAIp-nL4sQe2otFmce3TbcBclgNf~Aq0iYymLjVOtf7IswSI89Ntk~2kdMxKfwDs1Cg-ErHEHuZzNweWtOKnWJYCBvpG0Y7KZHOjJieytpn-hkMCYO~jOLKwIA2yV8w30syheqjbHlzLhp-Uy3uyv9q9wODFUzTtqd1zg-tYpuHiPJepWV9OdnJV0RVZ6qfR~eqLcYhezGrjaO879siYdKK2nr~uwKg8V4Jg__",
-            title: "The Hotel Ichchha",
+            src: dlx2,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx3,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx4,
+            title: "The Homely Ambience",
           },
         ],
         overview: [
@@ -378,12 +391,20 @@ export const accomodationContents = [
         router: "/accommodation/super-deluxe",
         images: [
           {
-            src: "https://www.hotelichchha.com/images/slideshow/UVh7T-ichchha-room.jpg",
+            src: dlx1,
             title: "The Homely Ambience",
           },
           {
-            src: "https://s3-alpha-sig.figma.com/img/84cf/a38a/65923184216c09d7f3dcab6961136f45?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H~ZakV3Kt5v697SLSpU9WQu7M6fvc90iqu0RcguhVcp6m-IlzBmpFaWEEnTdmqXXNVD4ZkD80O8kP0CTdL0IVNlykFb~L3jc~wu2uMhtuyx4RStFVvuAIp-nL4sQe2otFmce3TbcBclgNf~Aq0iYymLjVOtf7IswSI89Ntk~2kdMxKfwDs1Cg-ErHEHuZzNweWtOKnWJYCBvpG0Y7KZHOjJieytpn-hkMCYO~jOLKwIA2yV8w30syheqjbHlzLhp-Uy3uyv9q9wODFUzTtqd1zg-tYpuHiPJepWV9OdnJV0RVZ6qfR~eqLcYhezGrjaO879siYdKK2nr~uwKg8V4Jg__",
-            title: "The Hotel Ichchha",
+            src: dlx2,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx3,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx4,
+            title: "The Homely Ambience",
           },
         ],
         overview: [
@@ -838,9 +859,10 @@ export const eventVenues = {
       "Step into the grandeur of Janaki Hall at Hotel Ichchha, a venue that epitomizes elegance and charm. With its opulent decor, facilities, and versatile space, it’s the perfect setting for any prestigious event. Whether hosting a gala, conference, or wedding, Janaki Hall transforms every occasion into a memorable, world-class experience.",
     enquiryLink: "Enquiry",
     imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
-      "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
-      "https://www.hotelichchha.com/images/subpackage/wPAgH-pix8e-three.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/UhsUs-hall2.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/gNdjb-2.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/grmPi-g2.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/3Q6av-hall.jpg",
     ],
     amenities: [
       "Theatre: 100 pax",
@@ -856,9 +878,10 @@ export const eventVenues = {
       "Ascend to the zenith of luxury with Jyamire Hall at Hotel Ichchha, a beacon of unparalleled sophistication. This majestic hall is a masterpiece, crafted to host the most prestigious international events. With its stunning interiors, state-of-the-art acoustics, and ambient lighting, it creates an atmosphere of exclusivity and grandeur, ensuring every event is nothing short of legendary.",
     enquiryLink: "Enquiry",
     imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/MXzer-one.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/UhsUs-hall2.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/gNdjb-2.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/grmPi-g2.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/3Q6av-hall.jpg",
     ],
     // amenities: ["Mandap", "Pavilion", "Meeting rooms", "Garden venue"],
     amenities: [
@@ -875,9 +898,10 @@ export const eventVenues = {
       "Narayani Hall at Hotel Ichchha is where grandeur meets innovation, a prestigious venue that redefines the essence of high-profile events. With its breathtaking design, advanced technological integrations, and impeccable service, it stands as a testament to next-level luxury. Here, every event is transformed into an extraordinary spectacle, setting a new benchmark for elegance and sophistication in the world of hospitality.",
     enquiryLink: "Enquiry",
     imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/JOe9E-one.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/UhsUs-hall2.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/gNdjb-2.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/grmPi-g2.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/3Q6av-hall.jpg",
     ],
     // amenities: ["Meeting rooms", "Pool Bar", "Courtyard"],
     amenities: [
@@ -894,9 +918,10 @@ export const eventVenues = {
       "Balmiki Hall at Hotel Ichchha is a marvel of architectural beauty and functional elegance, designed to host events that leave a lasting impression. With its luxurious decor, state-of-the-art amenities, and adaptable space, it’s the ideal backdrop for any distinguished gathering. Here, every event is elevated to an art form, ensuring guests experience the pinnacle of refinement and grace.",
     enquiryLink: "Enquiry",
     imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
-      "https://www.hotelichchha.com/images/subpackage/KvveA-one.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/UhsUs-hall2.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/gNdjb-2.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/grmPi-g2.jpg",
+      "https://www.hotelichchha.com/images/gallery/galleryimages/3Q6av-hall.jpg",
     ],
     // amenities: ["Meeting rooms", "Pool Bar", "Courtyard"],
     amenities: [
