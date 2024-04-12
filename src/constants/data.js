@@ -39,6 +39,9 @@ import spa2 from "../assets/recreation/spa2.webp";
 import spa3 from "../assets/recreation/spa3.webp";
 import spa4 from "../assets/recreation/spa4.webp";
 
+import jacuzzi1 from "../assets/recreation/jacuzzi1.webp";
+import jacuzzi2 from "../assets/recreation/jacuzzi2.webp";
+
 import ground1 from "../assets/recreation/ground1.webp";
 import ground2 from "../assets/recreation/ground2.webp";
 
@@ -1050,11 +1053,7 @@ export const recreationVenues = {
   steamSaunaJacuzzi: {
     id: "steamSaunaJacuzzi",
     title: "Steam, Sauna, Jacuzzi",
-    imageUrls: [
-      "https://www.hotelichchha.com/images/subpackage/HffJa-hke0k-six.jpg",
-      "https://www.hotelichchha.com/images/subpackage/HffJa-hke0k-six.jpg",
-      "https://www.hotelichchha.com/images/subpackage/HffJa-hke0k-six.jpg",
-    ],
+    imageUrls: [jacuzzi2, jacuzzi1],
     description:
       "Relax and enjoy a treat at Hotel Ichchha with a uniquely cultured, nurturing and optimal pampering environment for total refreshment. Each one of our unique spa services nourishes and heals your body, replaces trace minerals. Time-honored Massage techniques of ancient era are expertly crafted on the hands of our Therapists. Enjoy services such as manicure, pedicure and makeup artist offered by our hotel.",
     amenities: ["Steam Room", "Sauna", "Jacuzzi", "Spa Services"],

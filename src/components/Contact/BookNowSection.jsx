@@ -22,14 +22,23 @@ const BookNowSection = () => {
           </div>
         </div>
         <div className="flex">
-          <button
+          {/* <button
             type="submit"
             className="w-full group flex items-center justify-center gap-2 hover:bg-navy hover:text-ivory bg-goldLight text-navy px-6 py-2 rounded-full text-base transition-all duration-150 ease-linear"
             onClick={handleBookNow}
           >
             Book Now
             <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-300" />
-          </button>
+          </button> */}
+          <a
+            href="https://www.hotelichchha.com/result.php?hotel_code=8fE7Jg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full group flex items-center justify-center gap-2 hover:bg-navy hover:text-ivory bg-goldLight text-navy px-6 py-2 rounded-full text-base transition-all duration-150 ease-linear"
+          >
+            Book Now
+            <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-300" />
+          </a>
         </div>
         <div className="flex flex-row items-center gap-5 relative">
           <label htmlFor="check-out-date">Check-Out Date</label>

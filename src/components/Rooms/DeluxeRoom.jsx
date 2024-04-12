@@ -96,7 +96,9 @@ const DeluxeRoom = () => {
 
                 <div className="pt-12 w-full">
                   <a
-                    href=""
+                    href="https://www.hotelichchha.com/result.php?hotel_code=8fE7Jg"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group flex items-center justify-center gap-2 w-full bg-navy text-ivory hover:text-navy hover:bg-ivory px-6 py-4 rounded-full text-lg transition-all duration-300 ease-linear"
                   >
                     Book Now

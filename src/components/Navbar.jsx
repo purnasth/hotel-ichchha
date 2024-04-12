@@ -15,6 +15,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import ichchha from "../assets/ichchha.webp";
+import Logo from "./ui/Logo";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -78,25 +79,27 @@ const Navbar = () => {
             </a>
           </div>
 
-          <a
-            href="/"
-            className="absolute left-1/2 -translate-x-1/2 logo-wrapper"
-          >
-            <img
-              src={logo}
-              alt="logo"
-              className={`object-contain transition-all duration-${duration}  ${
-                visible
-                  ? "w-auto h-28 mt-0 p-2 -translate-y-1"
-                  : "scale-0 -translate-y-6 bg-transparent"
-              } ${
-                window.scrollY > 0
-                  ? "w-auto h-12 scale-75 p-4 -translate-y-0"
-                  : // ? "filter-black w-16 h-12 object-contain scale-150 -mt-[4px] p-2"
-                    ""
-              }`}
-            />
-          </a>
+          <h1>
+            <a
+              href="/"
+              className="absolute left-1/2 -translate-x-1/2 logo-wrapper"
+            >
+              <img
+                src={logo}
+                alt="logo"
+                className={`object-contain transition-all duration-${duration}  ${
+                  visible
+                    ? "w-auto h-28 mt-0 p-2 -translate-y-1"
+                    : "scale-0 -translate-y-6 bg-transparent"
+                } ${
+                  window.scrollY > 0
+                    ? "w-auto h-12 scale-75 p-4 -translate-y-0"
+                    : // ? "filter-black w-16 h-12 object-contain scale-150 -mt-[4px] p-2"
+                      ""
+                }`}
+              />
+            </a>
+          </h1>
 
           <div
             className={`flex items-center gap-2 cursor-pointer transition-all duration-${duration} text-gold ${
@@ -241,17 +244,8 @@ const Navbar = () => {
               </div>
             </div>
             <div className="w-1/3 flex items-center justify-center flex-col gap-1 bg-pink-gold h-full ">
-              <a href="/">
-                <img
-                  src={logo}
-                  alt="Footer Logo"
-                  className="w-40 h-auto object-contain mb-4"
-                  // style={{
-                  //   filter:
-                  //     "brightness(0) saturate(100%) invert(0%) sepia(82%) saturate(7492%) hue-rotate(123deg) brightness(77%) contrast(93%)",
-                  // }}
-                />
-              </a>
+              <Logo />
+
               <p className="mb-4">Hotel Ichchha</p>
               <p> Simara, Bara, Nepal</p>
               <p>+977-9802738099</p>
