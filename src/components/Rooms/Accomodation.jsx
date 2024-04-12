@@ -92,7 +92,8 @@ const Accomodation = () => {
 
   const renderSlides = () => {
     return accomodationContents[0].accomodation.map((room, index) => (
-      <div
+      <a
+        href={room.router}
         key={room.id}
         className={`w-full transition-transform duration-700 ease-in-out p-6 py-16 border-0 outline-0 focus:border-0 focus:outline-none ${
           index === centerIndex ? "scale-[1.2]" : "scale-90"
@@ -109,7 +110,7 @@ const Accomodation = () => {
         </div>
         <h3 className="text-xl font-bold mt-4">{room.title}</h3>
         <p className="text-base">{room.description}</p>
-      </div>
+      </a>
     ));
   };
 
