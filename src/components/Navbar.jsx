@@ -79,11 +79,8 @@ const Navbar = () => {
             </a>
           </div>
 
-          <h1>
-            <a
-              href="/"
-              className="absolute left-1/2 -translate-x-1/2 logo-wrapper"
-            >
+          <h1 className="absolute left-1/2 -translate-x-1/2 logo-wrapper">
+            <a href="/">
               <img
                 src={logo}
                 alt="logo"
@@ -252,8 +249,9 @@ const Navbar = () => {
               <p>info@hotelichchha.com</p>
               <div className="footer-about-social-list mt-6 text-2xl">
                 <a
-                  href="https://www.facebook.com/ichchhahotel/"
+                  href="https://www.facebook.com/ichchahotel"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block mr-4"
                 >
                   <FaFacebook />
@@ -268,6 +266,7 @@ const Navbar = () => {
                 <a
                   href="https://www.tripadvisor.com/Hotel_Review-g21156991-d11283455-Reviews-Hotel_Ichchha-Pipara_Simara_Narayani_Zone_Central_Region.html"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block"
                 >
                   <FaTripadvisor />

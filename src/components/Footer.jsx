@@ -25,13 +25,23 @@ const Footer = () => {
                 info@hotelichchha.com
               </a>
               <div className="footer-about-social-list mt-6 text-2xl">
-                <a href="#" className="inline-block mr-4">
+                <a
+                  href="https://www.facebook.com/ichchahotel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mr-4"
+                >
                   <FaFacebook />
                 </a>
                 <a href="#" className="inline-block mr-4">
                   <FaInstagram />
                 </a>
-                <a href="#" className="inline-block">
+                <a
+                  href="https://www.tripadvisor.com/Hotel_Review-g21156991-d11283455-Reviews-Hotel_Ichchha-Pipara_Simara_Narayani_Zone_Central_Region.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
                   <FaTripadvisor />
                 </a>
               </div>
