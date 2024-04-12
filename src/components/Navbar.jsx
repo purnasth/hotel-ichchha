@@ -243,10 +243,28 @@ const Navbar = () => {
             <div className="w-1/3 flex items-center justify-center flex-col gap-1 bg-pink-gold h-full ">
               <Logo />
 
-              <p className="mb-4">Hotel Ichchha</p>
-              <p> Simara, Bara, Nepal</p>
-              <p>+977-9802738099</p>
-              <p>info@hotelichchha.com</p>
+              {/* <a href="/">
+                Hotel Ichchha
+              </a> */}
+              <a
+                href="https://maps.app.goo.gl/dJurNnE6cBLguX1cA"
+                target="_blank"
+                rel="noopener"
+              >
+                {" "}
+                Simara, Bara, Nepal
+              </a>
+              <a href="tel:+9779802738099" target="_blank" rel="noopener">
+                +977-9802738099
+              </a>
+              <a
+                href="mailto:info@hotelichchha.com"
+                target="_blank"
+                rel="noopener"
+              >
+                info@hotelichchha.com
+              </a>
+
               <div className="footer-about-social-list mt-6 text-2xl">
                 <a
                   href="https://www.facebook.com/ichchahotel"

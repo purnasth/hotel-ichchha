@@ -109,7 +109,11 @@ const Contact = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="">
+                  <a
+                    href="https://www.instagram.com/hotel_ichchha"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaInstagram />
                   </a>
                 </li>
