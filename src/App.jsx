@@ -26,6 +26,7 @@ import Recreation from "./components/Recreation";
 import BackToTop from "./components/BackToTop";
 import ExploreFacilitiesButton from "./components/Facilities/ExploreFacilitiesButton";
 import PremiumRoom from "./components/Rooms/PremiumRoom";
+import JuniorSuite from "./components/Rooms/JuniorSuite";
 // import Lenis from "@studio-freight/lenis";
 
 const App = () => {
@@ -65,9 +66,10 @@ const App = () => {
               path="/accommodation/super-deluxe"
               element={<SuperDeluxeRoom />}
             />
+            <Route path="/accommodation/premium" element={<PremiumRoom />} />
             <Route
-              path="/accommodation/premium"
-              element={<PremiumRoom />}
+              path="/accommodation/junior-suite"
+              element={<JuniorSuite />}
             />
             <Route path="/restaurants" element={<Restaurant />} />
             <Route path="/events" element={<EventsHall />} />

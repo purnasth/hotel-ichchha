@@ -586,6 +586,67 @@ export const accomodationContents = [
           "Our Junior Suite offers spacious accommodation with a cozy living room, perfect for relaxation and comfort.",
         url: "https://www.hotelichchha.com/images/subpackage/image/9gKt1-one.jpg",
         router: "/accommodation/junior-suite",
+        images: [
+          {
+            src: dlx1,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx2,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx3,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx4,
+            title: "The Homely Ambience",
+          },
+        ],
+        overview: [
+          {
+            title: "Overview",
+            content: [
+              "Indulge in the refined luxury of Hotel Ichchha Junior Suites, where international flair meets intimate comfort. These suites are a sanctuary of sophistication, offering a blend of modern elegance and timeless charm. With premium amenities and bespoke services, our Junior Suites are designed to provide an unforgettable experience for the global connoisseur.",
+            ],
+          },
+        ],
+        policies: [
+          {
+            title: "Child Policies",
+            content: [
+              "Child 0 - 4 yrs. sharing parent's room free of charge on same plan as adults.",
+              "Child age 5 - 10 yrs. sharing parent's room will be charged 50% adult meal rate.",
+              "Breakfast - US$ 8/ INR 500.",
+            ],
+          },
+        ],
+        amenities: [
+          "Air conditioning",
+          "Bathrobe",
+          "Coffee and tea set",
+          "Desk",
+          "Hairdryer",
+          "Minibar",
+          "Pillow service",
+          "Safe",
+          "Slippers",
+          "Storage cabinet",
+          "Telephone",
+          "Television",
+          "Toilet",
+          "Towel service",
+          "Twin bed/double bed",
+          "Wi-Fi",
+        ],
+        roomDetails: {
+          "Room Size": { icon: ichchha, value: "100 sq. feet" },
+          "Bed Type": { icon: "FaBed", value: "King Size" },
+          "Starting Price": { icon: "FaDollarSign", value: "USD 200" },
+          Occupancy: { icon: "FaUser", value: "2 adults + 1 child" },
+          Smoking: { icon: "FaSmoking", value: "Yes" },
+        },
       },
       {
         id: "executiveSuite",
