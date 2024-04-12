@@ -516,6 +516,67 @@ export const accomodationContents = [
           "Indulge in luxury and comfort with our Premium Room, designed to offer a lavish experience for our guests.",
         url: "https://www.hotelichchha.com/images/subpackage/image/5842r-room-banner.jpg",
         router: "/accommodation/premium",
+        images: [
+          {
+            src: dlx1,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx2,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx3,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx4,
+            title: "The Homely Ambience",
+          },
+        ],
+        overview: [
+          {
+            title: "Overview",
+            content: [
+              "Immerse yourself in the epitome of elegance with Hotel Ichchha Premium Rooms. Tailored for the world traveler, these rooms boast an exquisite fusion of comfort and style, complete with luxurious amenities and impeccable service. Surrender to the allure of sophistication and let us redefine your travel experience.",
+            ],
+          },
+        ],
+        policies: [
+          {
+            title: "Child Policies",
+            content: [
+              "Child 0 - 4 yrs. sharing parent's room free of charge on same plan as adults.",
+              "Child age 5 - 10 yrs. sharing parent's room will be charged 50% adult meal rate.",
+              "Breakfast - US$ 8/ INR 500.",
+            ],
+          },
+        ],
+        amenities: [
+          "Air conditioning",
+          "Bathrobe",
+          "Coffee and tea set",
+          "Desk",
+          "Hairdryer",
+          "Minibar",
+          "Pillow service",
+          "Safe",
+          "Slippers",
+          "Storage cabinet",
+          "Telephone",
+          "Television",
+          "Toilet",
+          "Towel service",
+          "Twin bed/double bed",
+          "Wi-Fi",
+        ],
+        roomDetails: {
+          "Room Size": { icon: ichchha, value: "100 sq. feet" },
+          "Bed Type": { icon: "FaBed", value: "King Size" },
+          "Starting Price": { icon: "FaDollarSign", value: "USD 200" },
+          Occupancy: { icon: "FaUser", value: "2 adults + 1 child" },
+          Smoking: { icon: "FaSmoking", value: "Yes" },
+        },
       },
       {
         id: "juniorSuite",

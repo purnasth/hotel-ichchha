@@ -1,5 +1,4 @@
 import React from "react";
-import { logo } from "../constants/data";
 import { FaFacebook, FaInstagram, FaTripadvisor } from "react-icons/fa";
 import Logo from "./ui/Logo";
 
