@@ -21,7 +21,6 @@ import SuperDeluxeRoom from "./components/Rooms/SuperDeluxeRoom";
 import Restaurant from "./components/Restaurant";
 import EventsHall from "./components/EventsHall";
 import Contact from "./components/Contact";
-import IchchhaFacilities from "./components/IchchhaFacilities";
 import Recreation from "./components/Recreation";
 import BackToTop from "./components/BackToTop";
 import ExploreFacilitiesButton from "./components/Facilities/ExploreFacilitiesButton";
@@ -73,7 +72,6 @@ const App = () => {
             />
             <Route path="/restaurants" element={<Restaurant />} />
             <Route path="/events" element={<EventsHall />} />
-            <Route path="/facilities" element={<IchchhaFacilities />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/nearby" element={<NearbyLocations />} />
             <Route path="/recreation" element={<Recreation />} />
