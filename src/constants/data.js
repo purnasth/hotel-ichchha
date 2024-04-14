@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg";
 import introVideo from "../assets/intro_video.mp4";
 import ichchha from "../assets/ichchha.webp";
 import ichchha1 from "../assets/ichchha1.jpg";
-import { MdOutlineInsertEmoticon } from "react-icons/md";
+import { MdAtm, MdOutlineInsertEmoticon } from "react-icons/md";
 import {
   FaBed,
   FaRulerCombined,
@@ -78,6 +78,26 @@ import g21 from "../assets/gallery/g21.webp";
 import g22 from "../assets/gallery/g22.webp";
 import g23 from "../assets/gallery/g23.webp";
 import g24 from "../assets/gallery/g24.webp";
+
+// icons for facilities
+import { CgGym } from "react-icons/cg";
+import { GrSpa } from "react-icons/gr";
+import { FaSwimmingPool } from "react-icons/fa";
+import { RiRestaurant2Fill } from "react-icons/ri";
+import { MdOutlineSportsBar } from "react-icons/md";
+import { MdOutlineMeetingRoom } from "react-icons/md";
+import { PiBroomBold } from "react-icons/pi";
+import { FaWifi } from "react-icons/fa";
+import { BiSolidParking } from "react-icons/bi";
+import { MdOutlineLocalLaundryService } from "react-icons/md";
+import { LuConciergeBell } from "react-icons/lu";
+import { MdOutlineBusinessCenter } from "react-icons/md";
+import { GiKidSlide } from "react-icons/gi";
+import { MdLocalAirport } from "react-icons/md";
+import { MdOutlinePets } from "react-icons/md";
+import { MdLocalAtm } from "react-icons/md";
+import { FaCar } from "react-icons/fa";
+import { FaUserDoctor } from "react-icons/fa6";
 
 export {
   HiArrowLongRight,
@@ -778,68 +798,77 @@ export const hotelFacilities = [
 ];
 
 export const facilitiesSectionIcon = {
+  airportTransfer: {
+    icon: MdLocalAirport,
+    title: "Airport Pickup",
+  },
+  carHire: {
+    icon: FaCar,
+    title: "Car Hire",
+  },
+  atm: {
+    icon: MdLocalAtm,
+    title: "ATM",
+  },
   spa: {
-    icon: "url_to_spa_icon",
+    icon: GrSpa,
     title: "Spa",
   },
   gym: {
-    icon: "url_to_gym_icon",
+    icon: CgGym,
     title: "Gym",
   },
+  childcare: {
+    icon: GiKidSlide,
+    title: "Kids Play Area",
+  },
   pool: {
-    icon: "url_to_pool_icon",
+    icon: FaSwimmingPool,
     title: "Pool",
   },
   restaurant: {
-    icon: "url_to_restaurant_icon",
+    icon: RiRestaurant2Fill,
     title: "Restaurant",
   },
   bar: {
-    icon: "url_to_bar_icon",
+    icon: MdOutlineSportsBar,
     title: "Bar",
   },
+  wifi: {
+    icon: FaWifi,
+    title: "Wifi",
+  },
+  doctor: {
+    icon: FaUserDoctor,
+    title: "Doctor on Call",
+  },
   conferenceRoom: {
-    icon: "url_to_conference_room_icon",
+    icon: MdOutlineMeetingRoom,
     title: "Conference Room",
   },
   roomService: {
-    icon: "url_to_room_service_icon",
+    icon: PiBroomBold,
     title: "Room Service",
   },
-  wifi: {
-    icon: "url_to_wifi_icon",
-    title: "Wifi",
-  },
   parking: {
-    icon: "url_to_parking_icon",
+    icon: BiSolidParking,
     title: "Parking",
   },
   laundry: {
-    icon: "url_to_laundry_icon",
+    icon: MdOutlineLocalLaundryService,
     title: "Laundry",
   },
   concierge: {
-    icon: "url_to_concierge_icon",
+    icon: LuConciergeBell,
     title: "Concierge",
   },
   businessCenter: {
-    icon: "url_to_business_center_icon",
+    icon: MdOutlineBusinessCenter,
     title: "Business Center",
   },
-  childcare: {
-    icon: "url_to_childcare_icon",
-    title: "Childcare",
-  },
-  airportTransfer: {
-    icon: "url_to_airport_transfer_icon",
-    title: "Airport Transfer",
-  },
-  valetParking: {
-    icon: "url_to_valet_parking_icon",
-    title: "Valet Parking",
-  },
+
   petFriendly: {
-    icon: "url_to_pet_friendly_icon",
+    icon: MdOutlinePets,
     title: "Pet Friendly",
   },
 };
@@ -1308,36 +1337,36 @@ export const contactFormData = {
       label: "Full Name",
       type: "text",
       placeholder: "Enter your full name",
-      required: true
+      required: true,
     },
     {
       id: "email",
       label: "Email Address",
       type: "email",
       placeholder: "Enter your email address",
-      required: true
+      required: true,
     },
     {
       id: "contactNumber",
       label: "Contact Number",
       type: "tel",
       placeholder: "Enter your contact number",
-      required: true
+      required: true,
     },
     {
       id: "subject",
       label: "Subject",
       type: "text",
       placeholder: "Enter the subject",
-      required: true
-    }
+      required: true,
+    },
   ],
   textarea: {
     id: "message",
     label: "Message",
     placeholder: "Enter your message",
-    required: true
-  }
+    required: true,
+  },
 };
 
 export default contactFormData;
