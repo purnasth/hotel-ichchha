@@ -1255,3 +1255,48 @@ export const sliderImages = [
       "Seamless Transitions: Our Indoor-Outdoor Spaces Embrace Nature's Beauty",
   },
 ];
+
+export const enquiryFormData = [
+  {
+    name: "eventTitle",
+    label: "Event Title",
+    type: "text",
+    required: true,
+  },
+  {
+    name: "date",
+    label: "Event Date",
+    type: "date",
+    required: true,
+  },
+  {
+    name: "pax",
+    label: "Number of Pax",
+    type: "number",
+    required: true,
+  },
+  {
+    name: "name",
+    label: "Full Name",
+    type: "text",
+    required: true,
+  },
+  {
+    name: "email",
+    label: "Email Address",
+    type: "email",
+    required: true,
+  },
+  {
+    name: "contact",
+    label: "Contact Number",
+    type: "number",
+    required: true,
+  },
+  {
+    name: "message",
+    label: "Message",
+    type: "textarea",
+    required: true,
+  },
+];
