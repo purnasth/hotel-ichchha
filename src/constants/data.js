@@ -1300,3 +1300,44 @@ export const enquiryFormData = [
     required: true,
   },
 ];
+
+export const contactFormData = {
+  fields: [
+    {
+      id: "name",
+      label: "Full Name",
+      type: "text",
+      placeholder: "Enter your full name",
+      required: true
+    },
+    {
+      id: "email",
+      label: "Email Address",
+      type: "email",
+      placeholder: "Enter your email address",
+      required: true
+    },
+    {
+      id: "contactNumber",
+      label: "Contact Number",
+      type: "tel",
+      placeholder: "Enter your contact number",
+      required: true
+    },
+    {
+      id: "subject",
+      label: "Subject",
+      type: "text",
+      placeholder: "Enter the subject",
+      required: true
+    }
+  ],
+  textarea: {
+    id: "message",
+    label: "Message",
+    placeholder: "Enter your message",
+    required: true
+  }
+};
+
+export default contactFormData;
