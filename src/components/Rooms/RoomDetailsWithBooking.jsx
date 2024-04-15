@@ -4,7 +4,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 const RoomDetailsWithBooking = ({ roomDetails, bookingLink }) => {
   return (
     <div className="ml-auto w-1/2 h-[80vh] sticky top-6">
-      <div className="bg-gold/30 text-xl p-12">
+      <div className="bg-gold/30 text-xl p-12 pt-6">
         {Object.entries(roomDetails).map(([key, { icon: Icon, value }]) => (
           <div key={key}>
             <ul className="flex items-center justify-between gap-2 py-8">

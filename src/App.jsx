@@ -24,6 +24,7 @@ import ExploreFacilitiesButton from "./components/Facilities/ExploreFacilitiesBu
 import PremiumRoom from "./components/Rooms/PremiumRoom";
 import JuniorSuite from "./components/Rooms/JuniorSuite";
 import NotFound from "./components/ui/NotFound";
+import ExecutiveSuite from "./components/Rooms/ExecutiveSuite";
 
 const App = () => {
   return (
@@ -42,6 +43,11 @@ const App = () => {
           />
           <Route path="/accommodation/premium" element={<PremiumRoom />} />
           <Route path="/accommodation/junior-suite" element={<JuniorSuite />} />
+          <Route
+            path="/accommodation/executive-suite"
+            element={<ExecutiveSuite />}
+          />
+
           <Route path="/restaurants" element={<Restaurant />} />
           <Route path="/events" element={<EventsHall />} />
           <Route path="/testimonials" element={<Testimonials />} />
