@@ -49,7 +49,7 @@ const Suites = () => {
                         href={suite.router}
                         className={`bg-goldLight text-navy group-hover:text-ivory group-hover:bg-navy px-4 py-1 rounded-full text-2xl transition-all duration-${duration} ease-linear`}
                       >
-                        <HiArrowLongRight />
+                        <HiArrowLongRight className="group-hover:scale-x-150 group-hover:translate-x-0 transition-all duration-150 ease-linear"/>
                       </button>
                     </div>
                   </div>

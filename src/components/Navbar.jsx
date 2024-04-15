@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full transition-all duration-${duration} z-50 ${
+        className={`fixed top-0 w-full transition-all duration-${duration} z-40 ${
           window.scrollY > 0 ? "bg-bg-gold-light" : ""
         } ${visible ? "" : "-translate-y-full"}`}
       >

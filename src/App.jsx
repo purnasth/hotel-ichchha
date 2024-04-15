@@ -23,6 +23,7 @@ import BackToTop from "./components/BackToTop";
 import ExploreFacilitiesButton from "./components/Facilities/ExploreFacilitiesButton";
 import PremiumRoom from "./components/Rooms/PremiumRoom";
 import JuniorSuite from "./components/Rooms/JuniorSuite";
+import NotFound from "./components/ui/NotFound";
 
 const App = () => {
   return (
@@ -48,6 +49,7 @@ const App = () => {
           <Route path="/recreation" element={<Recreation />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <BackToTop />
