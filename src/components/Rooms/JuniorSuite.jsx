@@ -1,7 +1,5 @@
 import React from "react";
-import Navbar from "../Navbar.jsx";
 import { accomodationContents } from "../../constants/data.js";
-import Footer from "../Footer.jsx";
 import { HiArrowLongRight } from "react-icons/hi2";
 import HeroSliderCarousel from "../HeroSliderCarousel.jsx";
 
@@ -13,8 +11,6 @@ const JuniorSuite = () => {
 
   return (
     <>
-      <Navbar />
-
       <HeroSliderCarousel
         images={juniorSuite.images}
         className="w-screen h-screen object-cover"
@@ -112,7 +108,6 @@ const JuniorSuite = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

@@ -1,14 +1,10 @@
 import React from "react";
 import AboutHome from "./About/AboutHome";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import { messageFromChairman, ourTeamMembers } from "../constants/data";
-import { logo } from "../constants/data";
 
 const About = () => {
   return (
     <>
-      <Navbar />
       <AboutHome />
 
       <section className="bg-bg-gold-dark">
@@ -141,7 +137,6 @@ const About = () => {
           ))}
         </div>
       </section> */}
-      <Footer />
     </>
   );
 };

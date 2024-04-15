@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import { eventVenues } from "../constants/data";
-import { MdOutlineInsertEmoticon } from "react-icons/md";
 import ReusableSlider from "./ReusableSlider";
 import EnquiryForm from "./Contact/EnquiryForm";
 
@@ -15,7 +12,6 @@ const EventsHall = () => {
 
   return (
     <>
-      <Navbar />
       <section className="bg-bg-gold-light">
         <div className="container">
           <div className="flexCenter flex-col w-3/4 mx-auto">
@@ -69,7 +65,6 @@ const EventsHall = () => {
           ))}
         </div>
       </section>
-      <Footer />
       {showEnquiryForm && <EnquiryForm onClose={toggleEnquiryForm} />}{" "}
     </>
   );

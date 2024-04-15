@@ -1,125 +1,46 @@
-import React, { useState } from "react";
-import { MdOutlineInsertEmoticon } from "react-icons/md";
+import React from "react";
 import { HiArrowLongRight } from "react-icons/hi2";
+import contactFormData from "../../constants/data";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    contactNumber: "", // Added contact number field
-    subject: "",
-    message: "",
-    purpose: "Room Booking",
-    captcha: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add form submission logic here
-    console.log("Form submitted:", formData);
-    // Reset form fields after submission
-    setFormData({
-      name: "",
-      email: "",
-      contactNumber: "", // Reset contact number field
-      subject: "",
-      message: "",
-      purpose: "Room Booking",
-      captcha: "",
-    });
-  };
-
   return (
     <div className="bg-bg-gold-light/60 text-2xl p-12">
       <p className="mb-4">
         Can't find the contact and information you're looking for? Write to us
         via this quick form.
       </p>
-      <form onSubmit={handleSubmit} className="flex flex-wrap justify-between">
-        <div className="w-full md:w-1/2">
-          <ul className="py-8 flex flex-col gap-4">
-            <li className="w-full pr-2">
-              <label htmlFor="Name" className="text-base text-navy">
-                Full Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                className="text-xl w-full py-2 border-b border-ivory focus:outline-none focus:border-gold bg-transparent text-navy bg-red-600"
-                required
-              />
-            </li>
-            <li className="w-full pr-2">
-              <label htmlFor="Email" className="text-base text-navy">
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="text-xl w-full py-2 border-b border-ivory focus:outline-none focus:border-gold bg-transparent text-navy"
-                required
-              />
-            </li>
-          </ul>
-        </div>
-        <div className="w-full md:w-1/2">
-          <ul className="py-8 flex flex-col gap-4">
-            <li className="w-full pl-2">
-              <label htmlFor="ContactNumber" className="text-base text-navy">
-                Contact Number
-              </label>
-              <input
-                type="tel"
-                id="contactNumber"
-                name="contactNumber"
-                value={formData.contactNumber}
-                onChange={handleChange}
-                className="text-xl w-full py-2 border-b border-ivory focus:outline-none focus:border-gold bg-transparent text-navy"
-                required
-              />
-            </li>
-            <li className="w-full pl-2">
-              <label htmlFor="Subject" className="text-base text-navy">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                className="text-xl w-full py-2 border-b border-ivory focus:outline-none focus:border-gold bg-transparent text-navy"
-                required
-              />
-            </li>
-          </ul>
-        </div>
+      <form className="flex flex-wrap justify-between">
+        {contactFormData.fields.map((field) => (
+          <div key={field.id} className="w-full md:w-1/2">
+            <ul className="py-8 flex flex-col gap-4">
+              <li className="w-full pr-2">
+                <label htmlFor={field.id} className="text-base text-navy">
+                  {field.label}
+                </label>
+                <input
+                  type={field.type}
+                  id={field.id}
+                  name={field.id}
+                  className="text-xl w-full py-2 border-b border-navy/30 focus:outline-none focus:border-gold bg-transparent text-navy"
+                  required={field.required}
+                />
+              </li>
+            </ul>
+          </div>
+        ))}
         <li className="w-full list-none">
-          <label htmlFor="Message" className="text-base text-navy">
-            Message
+          <label
+            htmlFor={contactFormData.textarea.id}
+            className="text-base text-navy"
+          >
+            {contactFormData.textarea.label}
           </label>
           <textarea
-            id="message"
-            name="message"
+            id={contactFormData.textarea.id}
+            name={contactFormData.textarea.id}
             rows="2"
-            value={formData.message}
-            onChange={handleChange}
-            className="text-xl w-full py-2 border-b border-ivory focus:outline-none focus:border-gold bg-transparent text-navy"
-            required
+            className="text-xl w-full py-2 border-b border-navy/30 focus:outline-none focus:border-gold bg-transparent text-navy"
+            required={contactFormData.textarea.required}
           ></textarea>
         </li>
         <div className="w-full mt-4">

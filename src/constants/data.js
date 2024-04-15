@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg";
 import introVideo from "../assets/intro_video.mp4";
 import ichchha from "../assets/ichchha.webp";
 import ichchha1 from "../assets/ichchha1.jpg";
-import { MdOutlineInsertEmoticon } from "react-icons/md";
+import { MdAtm, MdOutlineInsertEmoticon } from "react-icons/md";
 import {
   FaBed,
   FaRulerCombined,
@@ -78,6 +78,26 @@ import g21 from "../assets/gallery/g21.webp";
 import g22 from "../assets/gallery/g22.webp";
 import g23 from "../assets/gallery/g23.webp";
 import g24 from "../assets/gallery/g24.webp";
+
+// icons for facilities
+import { CgGym } from "react-icons/cg";
+import { GrSpa } from "react-icons/gr";
+import { FaSwimmingPool } from "react-icons/fa";
+import { RiRestaurant2Fill } from "react-icons/ri";
+import { MdOutlineSportsBar } from "react-icons/md";
+import { MdOutlineMeetingRoom } from "react-icons/md";
+import { PiBroomBold } from "react-icons/pi";
+import { FaWifi } from "react-icons/fa";
+import { BiSolidParking } from "react-icons/bi";
+import { MdOutlineLocalLaundryService } from "react-icons/md";
+import { LuConciergeBell } from "react-icons/lu";
+import { MdOutlineBusinessCenter } from "react-icons/md";
+import { GiKidSlide } from "react-icons/gi";
+import { MdLocalAirport } from "react-icons/md";
+import { MdOutlinePets } from "react-icons/md";
+import { MdLocalAtm } from "react-icons/md";
+import { FaCar } from "react-icons/fa";
+import { FaUserDoctor } from "react-icons/fa6";
 
 export {
   HiArrowLongRight,
@@ -192,33 +212,84 @@ export const navLinksEvents = [
   },
 ];
 
+import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { AiFillInstagram } from "react-icons/ai";
+
 export const socialLinks = [
   {
     id: "facebook",
     title: "Facebook",
-    link: "https://www.facebook.com/ichchhahotel/",
+    link: "https://www.facebook.com/ichchahotel",
+    icon: FaFacebookF,
   },
   {
     id: "instagram",
     title: "Instagram",
-    link: "https://www.instagram.com/hotel_ichchha/?hl=en",
+    link: "https://www.instagram.com/hotel_ichchha",
+    icon: AiFillInstagram,
   },
   {
     id: "twitter",
     title: "Twitter",
     link: "https://twitter.com/hotelichchha",
+    icon: FaXTwitter,
   },
   {
     id: "linkedin",
     title: "Linkedin",
     link: "https://www.linkedin.com/company/hotel-ichchha",
+    icon: FaLinkedinIn,
   },
   {
     id: "youtube",
     title: "Youtube",
     link: "https://www.youtube.com/watch?v=R_Fhk2a4uII",
+    icon: FaYoutube,
   },
 ];
+
+import { GrLocation } from "react-icons/gr";
+import { TbPhone } from "react-icons/tb";
+import { HiOutlineMail } from "react-icons/hi";
+
+export const contactAddressLinks = [
+  {
+    id: "location",
+    link: "https://maps.app.goo.gl/dJurNnE6cBLguX1cA",
+    text: "Simara, Bara, Nepal",
+    icon: GrLocation,
+  },
+  {
+    id: "phoneNumbers",
+    icon: TbPhone,
+    numbers: [
+      {
+        link: "tel:+9779802738099",
+        text: "+977-9802738099",
+      },
+      // {
+      //   link: "tel:+9779855029592",
+      //   text: "+977-9855029592",
+      // },
+    ],
+  },
+  {
+    id: "emails",
+    icon: HiOutlineMail,
+    addresses: [
+      {
+        link: "mailto:info@hotelichchha.com",
+        text: "info@hotelichchha.com",
+      },
+      // {
+      //   link: "mailto:reservation@hotelichchha.com",
+      //   text: "reservation@hotelichchha.com",
+      // },
+    ],
+  },
+];
+
 export const aboutContents = [
   {
     id: "aboutTitle",
@@ -358,6 +429,11 @@ export const ourTeamMembers = [
   // Add more team members as needed
 ];
 
+import { IoBed, IoPricetagSharp } from "react-icons/io5";
+
+import { MdFamilyRestroom } from "react-icons/md";
+import { IoMdResize } from "react-icons/io";
+
 export const accomodationContents = [
   {
     id: "accomodationTitle",
@@ -431,11 +507,11 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: ichchha, value: "100 sq. feet" },
-          "Bed Type": { icon: "FaBed", value: "King Size" },
-          "Starting Price": { icon: "FaDollarSign", value: "USD 200" },
-          Occupancy: { icon: "FaUser", value: "2 adults + 1 child" },
-          Smoking: { icon: "FaSmoking", value: "Yes" },
+          "Room Size": { icon: IoMdResize, value: "100 sq. feet" },
+          "Bed Type": { icon: IoBed, value: "King Size" },
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 200" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
+          Smoking: { icon: FaSmoking, value: "Yes" },
         },
       },
       {
@@ -778,68 +854,77 @@ export const hotelFacilities = [
 ];
 
 export const facilitiesSectionIcon = {
+  airportTransfer: {
+    icon: MdLocalAirport,
+    title: "Airport Pickup",
+  },
+  carHire: {
+    icon: FaCar,
+    title: "Car Hire",
+  },
+  atm: {
+    icon: MdLocalAtm,
+    title: "ATM",
+  },
   spa: {
-    icon: "url_to_spa_icon",
+    icon: GrSpa,
     title: "Spa",
   },
   gym: {
-    icon: "url_to_gym_icon",
+    icon: CgGym,
     title: "Gym",
   },
+  childcare: {
+    icon: GiKidSlide,
+    title: "Kids Play Area",
+  },
   pool: {
-    icon: "url_to_pool_icon",
+    icon: FaSwimmingPool,
     title: "Pool",
   },
   restaurant: {
-    icon: "url_to_restaurant_icon",
+    icon: RiRestaurant2Fill,
     title: "Restaurant",
   },
   bar: {
-    icon: "url_to_bar_icon",
+    icon: MdOutlineSportsBar,
     title: "Bar",
   },
+  wifi: {
+    icon: FaWifi,
+    title: "Wifi",
+  },
+  doctor: {
+    icon: FaUserDoctor,
+    title: "Doctor on Call",
+  },
   conferenceRoom: {
-    icon: "url_to_conference_room_icon",
+    icon: MdOutlineMeetingRoom,
     title: "Conference Room",
   },
   roomService: {
-    icon: "url_to_room_service_icon",
+    icon: PiBroomBold,
     title: "Room Service",
   },
-  wifi: {
-    icon: "url_to_wifi_icon",
-    title: "Wifi",
-  },
   parking: {
-    icon: "url_to_parking_icon",
+    icon: BiSolidParking,
     title: "Parking",
   },
   laundry: {
-    icon: "url_to_laundry_icon",
+    icon: MdOutlineLocalLaundryService,
     title: "Laundry",
   },
   concierge: {
-    icon: "url_to_concierge_icon",
+    icon: LuConciergeBell,
     title: "Concierge",
   },
   businessCenter: {
-    icon: "url_to_business_center_icon",
+    icon: MdOutlineBusinessCenter,
     title: "Business Center",
   },
-  childcare: {
-    icon: "url_to_childcare_icon",
-    title: "Childcare",
-  },
-  airportTransfer: {
-    icon: "url_to_airport_transfer_icon",
-    title: "Airport Transfer",
-  },
-  valetParking: {
-    icon: "url_to_valet_parking_icon",
-    title: "Valet Parking",
-  },
+
   petFriendly: {
-    icon: "url_to_pet_friendly_icon",
+    icon: MdOutlinePets,
     title: "Pet Friendly",
   },
 };
@@ -1255,3 +1340,89 @@ export const sliderImages = [
       "Seamless Transitions: Our Indoor-Outdoor Spaces Embrace Nature's Beauty",
   },
 ];
+
+export const enquiryFormData = [
+  {
+    name: "eventTitle",
+    label: "Event Title",
+    type: "text",
+    required: true,
+  },
+  {
+    name: "date",
+    label: "Event Date",
+    type: "date",
+    required: true,
+  },
+  {
+    name: "pax",
+    label: "Number of Pax",
+    type: "number",
+    required: true,
+  },
+  {
+    name: "name",
+    label: "Full Name",
+    type: "text",
+    required: true,
+  },
+  {
+    name: "email",
+    label: "Email Address",
+    type: "email",
+    required: true,
+  },
+  {
+    name: "contact",
+    label: "Contact Number",
+    type: "number",
+    required: true,
+  },
+  {
+    name: "message",
+    label: "Message",
+    type: "textarea",
+    required: true,
+  },
+];
+
+export const contactFormData = {
+  fields: [
+    {
+      id: "name",
+      label: "Full Name",
+      type: "text",
+      placeholder: "Enter your full name",
+      required: true,
+    },
+    {
+      id: "email",
+      label: "Email Address",
+      type: "email",
+      placeholder: "Enter your email address",
+      required: true,
+    },
+    {
+      id: "contactNumber",
+      label: "Contact Number",
+      type: "tel",
+      placeholder: "Enter your contact number",
+      required: true,
+    },
+    {
+      id: "subject",
+      label: "Subject",
+      type: "text",
+      placeholder: "Enter the subject",
+      required: true,
+    },
+  ],
+  textarea: {
+    id: "message",
+    label: "Message",
+    placeholder: "Enter your message",
+    required: true,
+  },
+};
+
+export default contactFormData;

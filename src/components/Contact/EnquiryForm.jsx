@@ -1,47 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { enquiryFormData } from "../../constants/data";
 
 const EnquiryForm = ({ onClose }) => {
-  const [formData, setFormData] = useState({
-    eventTitle: "",
-    date: "",
-    pax: "",
-    name: "",
-    email: "",
-    contact: "",
-    message: "",
-  });
   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
     setShowForm(true);
   }, []);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add form submission logic here
-    console.log("Form submitted:", formData);
-    onClose(); // Close the form popup after submission
+    onClose();
   };
 
   const handleClose = () => {
-    setShowForm(false); // Hide the form before closing
+    setShowForm(false);
     setTimeout(() => {
-      onClose(); // Close the form popup after animation completes
-    }, 700); // Use the same duration as the transition for consistency
+      onClose();
+    }, 700);
   };
 
   const handleFormClick = (e) => {
-    e.stopPropagation(); // Prevent propagation of click event
+    e.stopPropagation();
   };
 
   const duration = 700;
@@ -75,104 +57,28 @@ const EnquiryForm = ({ onClose }) => {
         </button>
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label htmlFor="eventTitle" className="text-base text-navy">
-                Event Title
-              </label>
-              <input
-                type="text"
-                id="eventTitle"
-                name="eventTitle"
-                value={formData.eventTitle}
-                onChange={handleChange}
-                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="date" className="text-base text-navy">
-                Event Date
-              </label>
-              <input
-                type="date"
-                id="date"
-                name="date"
-                value={formData.date}
-                onChange={handleChange}
-                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="pax" className="text-base text-navy">
-                Number of Pax
-              </label>
-              <input
-                type="number"
-                id="pax"
-                name="pax"
-                value={formData.pax}
-                onChange={handleChange}
-                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="name" className="text-base text-navy">
-                Full Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="text-base text-navy">
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="contact" className="text-base text-navy">
-                Contact Number
-              </label>
-              <input
-                type="tel"
-                id="contact"
-                name="contact"
-                value={formData.contact}
-                onChange={handleChange}
-                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
-                required
-              />
-            </div>
-            <div className="col-span-2">
-              <label htmlFor="message" className="text-base text-navy">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                value={formData.message}
-                onChange={handleChange}
-                className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
-                required
-              ></textarea>
-            </div>
+            {enquiryFormData.map((field) => (
+              <div key={field.name}>
+                <label htmlFor={field.name} className="text-base text-navy">
+                  {field.label}
+                </label>
+                {field.type === "textarea" ? (
+                  <textarea
+                    id={field.name}
+                    name={field.name}
+                    rows="4"
+                    className="text-xl w-[200%] py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
+                  />
+                ) : (
+                  <input
+                    type={field.type}
+                    id={field.name}
+                    name={field.name}
+                    className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
+                  />
+                )}
+              </div>
+            ))}
           </div>
           <div className="w-full mt-8">
             <button

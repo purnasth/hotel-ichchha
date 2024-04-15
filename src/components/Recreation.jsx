@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import { recreationVenues } from "../constants/data";
 import { MdOutlineInsertEmoticon } from "react-icons/md";
 import ReusableSlider from "./ReusableSlider";
@@ -15,7 +13,6 @@ const Recreation = () => {
 
   return (
     <>
-      <Navbar />
       <section className="bg-bg-gold-light">
         <div className="container">
           <div className="container flexCenter flex-col w-3/4 mx-auto">
@@ -71,7 +68,6 @@ const Recreation = () => {
           </div>
         ))}
       </section>
-      <Footer />
       {showEnquiryForm && <EnquiryForm onClose={toggleEnquiryForm} />}
     </>
   );

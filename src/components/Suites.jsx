@@ -1,8 +1,6 @@
 import React from "react";
-import Navbar from "./Navbar";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { accomodationContents } from "../constants/data.js";
-import Footer from "./Footer.jsx";
 
 const Suites = () => {
   const accomodationData = accomodationContents[0];
@@ -10,7 +8,6 @@ const Suites = () => {
 
   return (
     <>
-      <Navbar />
       <section className="bg-bg-gold-light">
         <div className="container mx-auto">
           <div className="flexCenter flex-col w-3/4 mx-auto">
@@ -52,7 +49,7 @@ const Suites = () => {
                         href={suite.router}
                         className={`bg-goldLight text-navy group-hover:text-ivory group-hover:bg-navy px-4 py-1 rounded-full text-2xl transition-all duration-${duration} ease-linear`}
                       >
-                        <HiArrowLongRight />
+                        <HiArrowLongRight className="group-hover:scale-x-150 group-hover:translate-x-0 transition-all duration-150 ease-linear"/>
                       </button>
                     </div>
                   </div>
@@ -62,7 +59,6 @@ const Suites = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

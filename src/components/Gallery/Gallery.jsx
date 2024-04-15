@@ -12,13 +12,10 @@ import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-fullscreen.css";
 import "lightgallery/css/lg-share.css";
 import { galleryImages } from "../../constants/data.js";
-import Navbar from "../Navbar.jsx";
-import Footer from "../Footer.jsx";
 
 const Gallery = () => {
   return (
     <>
-      <Navbar />
       <section>
         <section className="container flexCenter flex-col w-3/4 mx-auto pt-16">
           <h3 className="text-navy font-medium">Photo Gallery</h3>
@@ -26,10 +23,10 @@ const Gallery = () => {
             Glimpse of Hotel Ichchha - Discover Beauty Beyond Words
           </h4>
           <p className="text-base text-center">
-            Immerse yourself in luxury, comfort, and
-            personalized service. From elegant rooms to impeccable amenities,
-            discover hospitality at its finest. Elevate your stay with us.
-            Welcome to a world of unparalleled indulgence.
+            Immerse yourself in luxury, comfort, and personalized service. From
+            elegant rooms to impeccable amenities, discover hospitality at its
+            finest. Elevate your stay with us. Welcome to a world of
+            unparalleled indulgence.
           </p>
         </section>
 
@@ -57,7 +54,6 @@ const Gallery = () => {
           ))}
         </LightGallery>
       </section>
-      <Footer />
     </>
   );
 };
