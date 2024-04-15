@@ -429,6 +429,11 @@ export const ourTeamMembers = [
   // Add more team members as needed
 ];
 
+import { IoBed, IoPricetagSharp } from "react-icons/io5";
+
+import { MdFamilyRestroom } from "react-icons/md";
+import { IoMdResize } from "react-icons/io";
+
 export const accomodationContents = [
   {
     id: "accomodationTitle",
@@ -502,11 +507,11 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: ichchha, value: "100 sq. feet" },
-          "Bed Type": { icon: "FaBed", value: "King Size" },
-          "Starting Price": { icon: "FaDollarSign", value: "USD 200" },
-          Occupancy: { icon: "FaUser", value: "2 adults + 1 child" },
-          Smoking: { icon: "FaSmoking", value: "Yes" },
+          "Room Size": { icon: IoMdResize, value: "100 sq. feet" },
+          "Bed Type": { icon: IoBed, value: "King Size" },
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 200" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
+          Smoking: { icon: FaSmoking, value: "Yes" },
         },
       },
       {
