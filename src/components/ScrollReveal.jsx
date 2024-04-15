@@ -1,7 +1,4 @@
-import React, { useEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import SplitType from "split-type";
+import React from "react";
 
 function ScrollReveal({
   heading,
@@ -11,46 +8,15 @@ function ScrollReveal({
   paraColor,
   highlightColor,
 }) {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    const splitTypes = document.querySelectorAll(".reveal-type");
-
-    splitTypes.forEach((splitType) => {
-      const text = new SplitType(splitType, {
-        types: "chars, words",
-      });
-
-      gsap.from(text.chars, {
-        scrollTrigger: {
-          trigger: splitType,
-          // start: "top 80%",
-          start: "top 100%",
-          // end: "top 20%",
-          end: "top 100%",
-          scrub: true,
-          markers: false,
-        },
-        opacity: 0.2,
-        stagger: 0.1,
-        color: textColor,
-      });
-    });
-
-    // Set the scroll duration to be slower
-    gsap.to(window, {
-      len: 10000, // Adjust the scroll duration as needed
-      scrollTrigger: {
-        scrub: 1, // Set scrub to 1 for a smooth scroll animation
-      },
-    });
-  }, [heading, subheading, para, paraColor, textColor]);
-
   return (
     <>
       <div className="font-kalnia leading-normal font-medium reveal-type flexCenter flex-col w-3/4 mx-auto mb-8">
         <h3 className={`text-${textColor} text-navy font-medium`}>{heading}</h3>
-        <h4 className={`text-${highlightColor} text-3xl text-center font-normal`}>{subheading}</h4>
+        <h4
+          className={`text-${highlightColor} text-3xl text-center font-normal`}
+        >
+          {subheading}
+        </h4>
         <p className={`text-${paraColor} text-lg text-center`}>{para}</p>
       </div>
     </>
@@ -68,4 +34,12 @@ para="Embark on a journey of your business, leisure, pilgrimage, or adventure to
 textColor="text-navy"
 highlightColor="text-navy"
 /> */
+{/* <ScrollReveal
+heading={accomodationContents[0].title}
+subheading={accomodationContents[0].subheading}
+para={accomodationContents[0].description}
+textColor="text-navy"
+highlightColor="text-navy"
+paraColor="text-navy"
+/> */}
 }

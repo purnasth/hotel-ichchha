@@ -26,27 +26,8 @@ import BackToTop from "./components/BackToTop";
 import ExploreFacilitiesButton from "./components/Facilities/ExploreFacilitiesButton";
 import PremiumRoom from "./components/Rooms/PremiumRoom";
 import JuniorSuite from "./components/Rooms/JuniorSuite";
-// import Lenis from "@studio-freight/lenis";
 
 const App = () => {
-  // useEffect(() => {
-  //   const lenis = new Lenis();
-
-  //   // lenis.on("scroll", (e) => {
-  //   //   console.log(e);
-  //   // });
-
-  //   function raf(time) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   }
-  //   requestAnimationFrame(raf);
-
-  //   return () => {
-  //     // Cleanup if needed
-  //   };
-  // }, []);
-
   return (
     <Router>
       <>
