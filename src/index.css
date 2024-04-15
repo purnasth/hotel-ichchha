@@ -164,7 +164,7 @@
     }
 
     .photobanner {
-        animation: bannermove 20s linear infinite;
+        animation: bannermove 120s linear infinite;
     }
 
 }
