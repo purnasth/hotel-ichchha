@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import NearbyMapComponent from "./Nearby/NearbyMapComponent";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import ContactForm from "./Contact/Form";
 import TripAdvisorWidget from "./TripAdvisorWidget";
 import SocialLinks from "./ui/SocialLinks";
@@ -24,7 +22,6 @@ const Contact = () => {
   };
   return (
     <>
-      <Navbar />
       <section className="bg-bg-gold-light">
         <div className="container mx-auto">
           <div className="flexCenter flex-col w-3/4 mx-auto">
@@ -96,8 +93,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 };

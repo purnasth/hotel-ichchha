@@ -1,13 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import { diningOptions } from "../constants/data";
 import ReusableSlider from "./ReusableSlider";
 
 const Restaurant = () => {
   return (
     <>
-      <Navbar />
       <section className="bg-bg-gold-light">
         <div className="container">
           <div className="flexCenter flex-col w-3/4 mx-auto">
@@ -73,7 +70,6 @@ const Restaurant = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

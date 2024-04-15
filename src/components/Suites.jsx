@@ -1,8 +1,6 @@
 import React from "react";
-import Navbar from "./Navbar";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { accomodationContents } from "../constants/data.js";
-import Footer from "./Footer.jsx";
 
 const Suites = () => {
   const accomodationData = accomodationContents[0];
@@ -10,7 +8,6 @@ const Suites = () => {
 
   return (
     <>
-      <Navbar />
       <section className="bg-bg-gold-light">
         <div className="container mx-auto">
           <div className="flexCenter flex-col w-3/4 mx-auto">
@@ -62,7 +59,6 @@ const Suites = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };
