@@ -577,11 +577,11 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: ichchha, value: "100 sq. feet" },
-          "Bed Type": { icon: "FaBed", value: "King Size" },
-          "Starting Price": { icon: "FaDollarSign", value: "USD 200" },
-          Occupancy: { icon: "FaUser", value: "2 adults + 1 child" },
-          Smoking: { icon: "FaSmoking", value: "Yes" },
+          "Room Size": { icon: IoMdResize, value: "200 sq. feet" },
+          "Bed Type": { icon: IoBed, value: "King Size" },
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 300" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
+          Smoking: { icon: FaSmoking, value: "Yes" },
         },
       },
       {
@@ -647,11 +647,11 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: ichchha, value: "100 sq. feet" },
-          "Bed Type": { icon: "FaBed", value: "King Size" },
-          "Starting Price": { icon: "FaDollarSign", value: "USD 200" },
-          Occupancy: { icon: "FaUser", value: "2 adults + 1 child" },
-          Smoking: { icon: "FaSmoking", value: "Yes" },
+          "Room Size": { icon: IoMdResize, value: "200 sq. feet" },
+          "Bed Type": { icon: IoBed, value: "King Size" },
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 350" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
+          Smoking: { icon: FaSmoking, value: "Yes" },
         },
       },
       {
@@ -717,11 +717,11 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: ichchha, value: "100 sq. feet" },
-          "Bed Type": { icon: "FaBed", value: "King Size" },
-          "Starting Price": { icon: "FaDollarSign", value: "USD 200" },
-          Occupancy: { icon: "FaUser", value: "2 adults + 1 child" },
-          Smoking: { icon: "FaSmoking", value: "Yes" },
+          "Room Size": { icon: IoMdResize, value: "200 sq. feet" },
+          "Bed Type": { icon: IoBed, value: "King Size" },
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 300" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
+          Smoking: { icon: FaSmoking, value: "Yes" },
         },
       },
       {
@@ -732,6 +732,67 @@ export const accomodationContents = [
           "Elegance meets comfort in our Executive Suite, featuring a large bedroom and a separate living room for your convenience.",
         url: "https://www.hotelichchha.com/images/subpackage/image/x64rS-room-2.jpg",
         router: "/accommodation/executive-suite",
+        images: [
+          {
+            src: dlx1,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx2,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx3,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx4,
+            title: "The Homely Ambience",
+          },
+        ],
+        overview: [
+          {
+            title: "Overview",
+            content: [
+              "Light, bright and with a smart layout that enhances the feeling of spaciousness, our rooms feature all the world class furniture, air conditioning, amenities, toiletries and technology. Super deluxe rooms are ingeniously designed with splendid interiors. The junior suite rooms are spacious rooms with a cozy living room separated by a partial wall. The executive rooms feature a large bedroom and a living room. Elegantly decorated with opulent interiors and varnished in soft tones, all the rooms are spacious with classy comfortable beds.",
+            ],
+          },
+        ],
+        policies: [
+          {
+            title: "Child Policies",
+            content: [
+              "Child 0 - 4 yrs. sharing parent's room free of charge on same plan as adults.",
+              "Child age 5 - 10 yrs. sharing parent's room will be charged 50% adult meal rate.",
+              "Breakfast - US$ 8/ INR 500.",
+            ],
+          },
+        ],
+        amenities: [
+          "Air conditioning",
+          "Bathrobe",
+          "Coffee and tea set",
+          "Desk",
+          "Hairdryer",
+          "Minibar",
+          "Pillow service",
+          "Safe",
+          "Slippers",
+          "Storage cabinet",
+          "Telephone",
+          "Television",
+          "Toilet",
+          "Towel service",
+          "Twin bed/double bed",
+          "Wi-Fi",
+        ],
+        roomDetails: {
+          "Room Size": { icon: IoMdResize, value: "200 sq. feet" },
+          "Bed Type": { icon: IoBed, value: "King Size" },
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 300" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
+          Smoking: { icon: FaSmoking, value: "Yes" },
+        },
       },
     ],
   },
