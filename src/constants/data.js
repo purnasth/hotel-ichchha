@@ -212,33 +212,84 @@ export const navLinksEvents = [
   },
 ];
 
+import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { AiFillInstagram } from "react-icons/ai";
+
 export const socialLinks = [
   {
     id: "facebook",
     title: "Facebook",
-    link: "https://www.facebook.com/ichchhahotel/",
+    link: "https://www.facebook.com/ichchahotel",
+    icon: FaFacebookF,
   },
   {
     id: "instagram",
     title: "Instagram",
-    link: "https://www.instagram.com/hotel_ichchha/?hl=en",
+    link: "https://www.instagram.com/hotel_ichchha",
+    icon: AiFillInstagram,
   },
   {
     id: "twitter",
     title: "Twitter",
     link: "https://twitter.com/hotelichchha",
+    icon: FaXTwitter,
   },
   {
     id: "linkedin",
     title: "Linkedin",
     link: "https://www.linkedin.com/company/hotel-ichchha",
+    icon: FaLinkedinIn,
   },
   {
     id: "youtube",
     title: "Youtube",
     link: "https://www.youtube.com/watch?v=R_Fhk2a4uII",
+    icon: FaYoutube,
   },
 ];
+
+import { GrLocation } from "react-icons/gr";
+import { TbPhone } from "react-icons/tb";
+import { HiOutlineMail } from "react-icons/hi";
+
+export const contactAddressLinks = [
+  {
+    id: "location",
+    link: "https://maps.app.goo.gl/dJurNnE6cBLguX1cA",
+    text: "Simara, Bara, Nepal (View Map)",
+    icon: GrLocation,
+  },
+  {
+    id: "phoneNumbers",
+    icon: TbPhone,
+    numbers: [
+      {
+        link: "tel:+9779802738099",
+        text: "+977-9802738099",
+      },
+      // {
+      //   link: "tel:+9779855029592",
+      //   text: "+977-9855029592",
+      // },
+    ],
+  },
+  {
+    id: "emails",
+    icon: HiOutlineMail,
+    addresses: [
+      {
+        link: "mailto:info@hotelichchha.com",
+        text: "info@hotelichchha.com",
+      },
+      // {
+      //   link: "mailto:reservation@hotelichchha.com",
+      //   text: "reservation@hotelichchha.com",
+      // },
+    ],
+  },
+];
+
 export const aboutContents = [
   {
     id: "aboutTitle",

@@ -3,13 +3,10 @@ import { gsap } from "gsap";
 import NearbyMapComponent from "./Nearby/NearbyMapComponent";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { MdOutlineInsertEmoticon } from "react-icons/md";
 import ContactForm from "./Contact/Form";
-import { GrLocation } from "react-icons/gr";
-import { TbPhone } from "react-icons/tb";
-import { HiOutlineMail } from "react-icons/hi";
-import { FaFacebook, FaInstagram, FaTripadvisor } from "react-icons/fa";
 import TripAdvisorWidget from "./TripAdvisorWidget";
+import SocialLinks from "./ui/SocialLinks";
+import ContactAddressLinks from "./ui/ContactAddressLinks";
 
 const Contact = () => {
   useEffect(() => {
@@ -81,142 +78,15 @@ const Contact = () => {
 
               <h5 className="text-3xl leading-loose py-4">Find Us</h5>
 
-              <ul className="text-base flex items-start flex-col justify-start gap-2">
-                <li className="flex items-center justify-start gap-2">
-                  <GrLocation />
-                  <a href="">Simara, Bara, Nepal (View Map)</a>
-                </li>
-                <li className="flex items-center justify-start gap-2">
-                  <TbPhone />
-                  <a href="">+977 9802738092 </a> {","}{" "}
-                  <a href="">+977 9855029592</a>
-                </li>
-                <li className="flex items-center justify-start gap-2">
-                  <HiOutlineMail />
-                  <a href="">info@hotelichchha.com</a> {","}{" "}
-                  <a href="">reservation@hotelichchha.com</a>
-                </li>
-              </ul>
+              <ContactAddressLinks />
 
-              <ul className="mt-6 text-2xl flex items-center justify-start gap-4 mb-4">
-                <li>
-                  <a
-                    href="https://www.facebook.com/ichchahotel"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaFacebook />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/hotel_ichchha"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaInstagram />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.tripadvisor.com/Hotel_Review-g21156991-d11283455-Reviews-Hotel_Ichchha-Pipara_Simara_Narayani_Zone_Central_Region.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaTripadvisor />
-                  </a>
-                </li>
-              </ul>
+              <SocialLinks />
 
               <div className="mt-12">
                 <h5 className="text-3xl leading-loose py-4">Review Us</h5>
 
                 <TripAdvisorWidget />
               </div>
-
-              {/* 
-              <h5 className="text-3xl leading-loose py-4">Information</h5>
-              <ul>
-                <li className="mb-2">
-                  Lorem ipsum dolor, sit amet consectetur
-                </li>
-                <li>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Cumque, quod.
-                </li>
-              </ul>
-
-              <h5 className="text-3xl leading-loose py-4">Amenities</h5>
-              <div className="flex items-start gap-20">
-                <ul className="flex items-start justify-center flex-col gap-5">
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Air conditioning
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Bathrobe
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Coffee and tea set
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Desk
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Hairdryer
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Minibar
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Pillow service
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Safe
-                  </li>
-                </ul>
-                <ul className="flex items-start justify-center flex-col gap-5">
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Slippers
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Storage cabinet
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Telephone
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Television
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Toilet
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Towel service
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Twin bed/double bed
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <MdOutlineInsertEmoticon />
-                    Wi-Fi
-                  </li>
-                </ul>
-              </div> */}
             </div>
             <div className="ml-auto w-1/2 h-full sticky top-6">
               <ContactForm />

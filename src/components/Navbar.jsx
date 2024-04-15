@@ -1,21 +1,16 @@
 import React, { useState, useEffect } from "react";
 
 import {
-  HiArrowLongRight,
   logo,
   navLinks,
   navLinksRooms,
   navLinksEvents,
-  socialLinks,
 } from "../constants/data";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaTripadvisor,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import ichchha from "../assets/ichchha.webp";
 import Logo from "./ui/Logo";
+import SocialLinks from "./ui/SocialLinks";
+import ContactAddressLinks from "./ui/ContactAddressLinks";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -243,53 +238,9 @@ const Navbar = () => {
             <div className="w-1/3 flex items-center justify-center flex-col gap-1 bg-pink-gold h-full ">
               <Logo />
 
-              {/* <a href="/">
-                Hotel Ichchha
-              </a> */}
-              <a
-                href="https://maps.app.goo.gl/dJurNnE6cBLguX1cA"
-                target="_blank"
-                rel="noopener"
-              >
-                {" "}
-                Simara, Bara, Nepal
-              </a>
-              <a href="tel:+9779802738099" target="_blank" rel="noopener">
-                +977-9802738099
-              </a>
-              <a
-                href="mailto:info@hotelichchha.com"
-                target="_blank"
-                rel="noopener"
-              >
-                info@hotelichchha.com
-              </a>
+              <ContactAddressLinks />
 
-              <div className="footer-about-social-list mt-6 text-2xl">
-                <a
-                  href="https://www.facebook.com/ichchahotel"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mr-4"
-                >
-                  <FaFacebook />
-                </a>
-                <a
-                  href="https://www.instagram.com/hotel_ichchha/?hl=en"
-                  target="_blank"
-                  className="inline-block mr-4"
-                >
-                  <FaInstagram />
-                </a>
-                <a
-                  href="https://www.tripadvisor.com/Hotel_Review-g21156991-d11283455-Reviews-Hotel_Ichchha-Pipara_Simara_Narayani_Zone_Central_Region.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block"
-                >
-                  <FaTripadvisor />
-                </a>
-              </div>
+              <SocialLinks />
             </div>
           </div>
         </div>
