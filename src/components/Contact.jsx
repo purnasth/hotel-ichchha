@@ -78,7 +78,9 @@ const Contact = () => {
 
               <h5 className="text-3xl leading-loose py-4">Find Us</h5>
 
-              <ContactAddressLinks />
+              <div className="space-y-2">
+                <ContactAddressLinks />
+              </div>
 
               <SocialLinks />
 

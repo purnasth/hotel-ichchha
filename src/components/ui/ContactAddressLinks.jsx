@@ -20,7 +20,7 @@ const ContactAddressLinks = ({ showAll = true }) => {
             >
               {link.icon && <link.icon className="text-base" />}
               <a href={link.link} target="_blank" rel="noopener">
-                {link.text}
+                {link.text} (View Map)
               </a>
             </li>
           )}

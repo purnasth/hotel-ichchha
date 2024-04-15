@@ -257,7 +257,7 @@ export const contactAddressLinks = [
   {
     id: "location",
     link: "https://maps.app.goo.gl/dJurNnE6cBLguX1cA",
-    text: "Simara, Bara, Nepal (View Map)",
+    text: "Simara, Bara, Nepal",
     icon: GrLocation,
   },
   {
