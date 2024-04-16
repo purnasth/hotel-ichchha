@@ -72,18 +72,18 @@ const Navbar = () => {
             </a>
           </div>
 
-          <h1 className="absolute left-1/2 -translate-x-1/2 logo-wrapper">
+          <h1 className="absolute left-1/2 -translate-x-1/2">
             <a href="/">
               <img
                 src={logo}
                 alt="logo"
                 className={`object-contain transition-all duration-${duration}  ${
                   visible
-                    ? "w-auto h-28 mt-0 p-2 -translate-y-1"
+                    ? "w-auto h-20 md:h-28 mt-0 p-2 -translate-y-0"
                     : "scale-0 -translate-y-6 bg-transparent"
                 } ${
                   window.scrollY > 0
-                    ? "w-auto h-12 scale-75 p-4 -translate-y-0"
+                    ? "w-auto h-12 md:scale-75 p-4 translate-y-0 mt-0"
                     : // ? "filter-black w-16 h-12 object-contain scale-150 -mt-[4px] p-2"
                       ""
                 }`}
@@ -126,8 +126,8 @@ const Navbar = () => {
         </div>
 
         {/* <div className="h-px w-full bg-gradient-to-r from-navy/30 via-transparent to-navy/30" /> */}
-        <div className="h-px w-1/4 md:w-2/5 lg:w-[45%] bg-gradient-to-r from-navy/30 to-transparent absolute left-0" />
-        <div className="h-px w-1/4 md:w-2/5 lg:w-[45%] bg-gradient-to-l from-navy/30 to-transparent absolute right-0" />
+        <div className="h-px w-1/4 md:w-2/5 lg:w-[43%] bg-gradient-to-r from-navy/30 to-navy/30 absolute left-0" />
+        <div className="h-px w-1/4 md:w-2/5 lg:w-[43%] bg-gradient-to-l from-navy/30 to-navy/30 absolute right-0" />
       </nav>
 
       <div
