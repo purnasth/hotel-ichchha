@@ -443,6 +443,7 @@ export const accomodationContents = [
     description:
       // "Light, bright and with a smart layout that enhances the feeling of spaciousness, our rooms feature all the world class furniture, air conditioning, amenities, toiletries and technology. Super deluxe rooms are ingeniously designed with splendid interiors. The junior suite rooms are spacious rooms with a cozy living room separated by a partial wall. The executive rooms feature a large bedroom and a living room. Elegantly decorated with opulent interiors and varnished in soft tones, all the rooms are spacious with classy comfortable beds.",
       "Hotel Ichchha rooms and suites are a symphony of luxury and comfort, designed to enchant every guest where luxury embraces elegance, Hotel Ichchha offers an exquisite blend of comfort and grandeur. Experience unparalleled hospitality and serene elegance in every stay.",
+    rojaiLink: "https://www.hotelichchha.com/result.php?hotel_code=8fE7Jg",
     accomodation: [
       {
         id: "deluxeRoom",

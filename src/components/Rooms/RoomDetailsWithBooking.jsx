@@ -1,7 +1,7 @@
 import React from "react";
 import { HiArrowLongRight } from "react-icons/hi2";
 
-const RoomDetailsWithBooking = ({ roomDetails, bookingLink }) => {
+const RoomDetailsWithBooking = ({ roomDetails, rojaiLink }) => {
   return (
     <div className="ml-auto w-1/2 h-[80vh] sticky top-6">
       <div className="bg-gold/30 text-xl p-12 pt-6">
@@ -20,7 +20,7 @@ const RoomDetailsWithBooking = ({ roomDetails, bookingLink }) => {
 
         <div className="pt-12 w-full">
           <a
-            href={bookingLink}
+            href={rojaiLink}
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center justify-center gap-2 w-full bg-navy text-ivory hover:text-navy hover:bg-ivory px-6 py-4 rounded-full text-lg transition-all duration-300 ease-linear"

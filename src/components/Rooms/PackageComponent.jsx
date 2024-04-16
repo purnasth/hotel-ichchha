@@ -1,5 +1,6 @@
 import React from "react";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { accomodationContents } from "../../constants/data.js";
 import RoomDetailsWithBooking from "./RoomDetailsWithBooking";
 
 const PackageComponent = ({ room }) => {
@@ -60,7 +61,7 @@ const PackageComponent = ({ room }) => {
           </div>
           <RoomDetailsWithBooking
             roomDetails={room.roomDetails}
-            bookingLink={room.bookingLink}
+            rojaiLink={accomodationContents[0].rojaiLink}
           />
         </div>
       </div>
