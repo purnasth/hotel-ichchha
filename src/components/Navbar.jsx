@@ -11,6 +11,7 @@ import ichchha from "../assets/ichchha.webp";
 import Logo from "./ui/Logo";
 import SocialLinks from "./ui/SocialLinks";
 import ContactAddressLinks from "./ui/ContactAddressLinks";
+import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -47,16 +48,12 @@ const Navbar = () => {
         } ${visible ? "" : "-translate-y-full"}`}
       >
         <div
-          className={`z-40 flex items-start justify-between
+          className={`z-40 flex items-start justify-between py-6 px-4 md:px-8
            ${
              visible
                ? "bg-gradient-to-t from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0)] "
                : "bg-transparent"
-           }${
-            window.scrollY > 0
-              ? "flex items-center justify-between py-6 px-8"
-              : "p-6 px-8"
-          } 
+           }${window.scrollY > 0 ? "flex items-center justify-between" : ""} 
           `}
         >
           <div
@@ -68,9 +65,10 @@ const Navbar = () => {
               href="https://wa.me/+9779802738099"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-base"
+              className="flex items-center gap-2 text-base lg:text-lg "
             >
-              <FaWhatsapp className="text-2xl text-gold" /> 9802738099
+              <FaWhatsapp className="text-3xl text-gold" />{" "}
+              <span className="hidden md:block">9802738099</span>
             </a>
           </div>
 
@@ -99,7 +97,9 @@ const Navbar = () => {
             } ${window.scrollY > 0 ? "filter-black" : ""}`}
             onClick={toggleNav}
           >
-            <span className="text-base lg:text-xl select-none">Menu</span>
+            <span className="hidden md:block text-base lg:text-xl select-none">
+              Menu
+            </span>
             <svg
               className="w-8 h-8 text-gold"
               fill="currentColor"
@@ -126,12 +126,12 @@ const Navbar = () => {
         </div>
 
         {/* <div className="h-px w-full bg-gradient-to-r from-navy/30 via-transparent to-navy/30" /> */}
-        <div className="h-px w-[45%] bg-gradient-to-r from-navy/30 to-transparent absolute left-0" />
-        <div className="h-px w-[45%] bg-gradient-to-l from-navy/30 to-transparent absolute right-0" />
+        <div className="h-px w-1/4 md:w-2/5 lg:w-[45%] bg-gradient-to-r from-navy/30 to-transparent absolute left-0" />
+        <div className="h-px w-1/4 md:w-2/5 lg:w-[45%] bg-gradient-to-l from-navy/30 to-transparent absolute right-0" />
       </nav>
 
       <div
-        className="fixed inset-0 bg-gradient flex justify-center items-center transition-all duration-${duration} z-50 max-h-screen"
+        className={`fixed inset-0 transition-all duration-500 z-50 max-h-screen bg-pink-gold`}
         style={{
           // transform: isNavOpen ? "translateY(0)" : "translateY(-100%)",
           transform: isNavOpen ? "translateY(0)" : "translateY(0)",
@@ -139,63 +139,53 @@ const Navbar = () => {
           pointerEvents: isNavOpen ? "auto" : "none",
         }}
       >
-        <div className="absolute top-0 bottom-0 left-0 right-0 z-50">
-          <button
-            onClick={closeNav}
-            className="absolute top-0 right-0 py-6 px-8 text-navy"
+        <button
+          onClick={closeNav}
+          className="absolute top-0 right-0 px-4 py-6 md:py-6 md:px-8 text-gold z-10"
+        >
+          <IoClose className="text-4xl" />
+        </button>
+        <div className="flex w-full items-center flex-col lg:flex-row justify-between max-h-screen md:h-screen overflow-y-auto">
+          <div
+            className="relative w-full lg:w-2/3 h-full bg-pink-gold text-ivory order-2 lg:order-1"
+            style={{
+              backgroundImage: `url(${ichchha})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-          <div className="flex w-full items-center justify-between h-screen">
-            <div
-              className="relative flex justify-between w-2/3 pl-36 h-full text-ivory"
-              style={{
-                backgroundImage: `url(${ichchha})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <div className="overlay absolute inset-0 bg-black opacity-80 z-0"></div>
-              <ul className="flex flex-1 flex-col items-start justify-center gap-8 z-10 text-ivory/90 font-medium">
+            <div className="overlay absolute inset-0 bg-black opacity-80 z-0"></div>
+            <div className="container flex flex-col md:flex-row items-center justify-center gap-16 py-12 md:px-12 md:py-24 lg:p-24 h-full">
+              <ul className="flex flex-1 flex-row md:flex-col flex-wrap items-start justify-center gap-8 z-10 text-ivory/90 font-medium">
                 {navLinks.map((link) => (
                   <li
-                    className="peer peer-hover:opacity-50 hover:translate-x-4 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                    className="peer peer-hover:opacity-50 hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear"
                     key={link.id}
                   >
-                    <a href={link.link} className="text-4xl font-title">
+                    <a
+                      href={link.link}
+                      className="text-xl md:text-3xl lg:text-4xl font-extrabold"
+                    >
                       {link.title}
                     </a>
                   </li>
                 ))}
               </ul>
-              <div className="flex flex-1 justify-center flex-col gap-20 z-10">
-                <ul className="flex flex-col items-start gap-4">
+              <div className="flex flex-1 justify-center flex-col gap-10 md:gap-20 z-10">
+                <ul className="flex flex-col items-center md:items-start gap-4">
                   {navLinksRooms.map((category) => (
                     <li key={category.id} className="group list-none">
                       <a
                         href={category.link}
-                        className="text-4xl font-title hover:translate-x-2 hover:tracking-wider hover:text-goldLight transition-all duration-300 ease-linear"
+                        className="block text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-extrabold hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear"
                       >
                         {category.title}
                       </a>
-                      <ul className="mt-4 flex flex-col items-start gap-4">
+                      <ul className="mt-4 flex flex-col flex-wrap items-center justify-center md:items-start gap-4">
                         {category.subLinks.map((subLink) => (
                           <li
                             key={subLink.id}
-                            className="peer peer-hover:opacity-50  hover:translate-x-2 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                            className="text-sm peer peer-hover:opacity-50 hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear"
                           >
                             <a href={subLink.link}>{subLink.title}</a>
                           </li>
@@ -210,15 +200,15 @@ const Navbar = () => {
                     <li key={category.id} className="group list-none">
                       <a
                         href={category.link}
-                        className="text-4xl font-title hover:translate-x-2 hover:tracking-wider hover:text-goldLight transition-all duration-300 ease-linear"
+                        className="block text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-extrabold hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear"
                       >
                         {category.title}
                       </a>
-                      <ul className="mt-4 flex flex-col items-start gap-4">
+                      <ul className="mt-4 flex flex-col flex-wrap items-center justify-center md:items-start gap-4">
                         {category.subLinks.map((subLink) => (
                           <li
                             key={subLink.id}
-                            className="peer peer-hover:opacity-50 hover:translate-x-2 hover:tracking-widest hover:text-goldLight transition-all duration-300 ease-linear"
+                            className="text-sm peer peer-hover:opacity-50 hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear"
                           >
                             {/* <a href={`${subLink.link}`}>
                               {subLink.title}
@@ -235,13 +225,13 @@ const Navbar = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-1/3 flex items-center justify-center flex-col gap-1 bg-pink-gold h-full ">
-              <Logo />
+          </div>
+          <div className="w-full md:w-1/3 flex items-center justify-center flex-col gap-1 bg-pink-gold h-full order-1 lg:order-2 p-12 md:p-0">
+            <Logo />
 
-              <ContactAddressLinks />
+            <ContactAddressLinks />
 
-              <SocialLinks />
-            </div>
+            <SocialLinks />
           </div>
         </div>
       </div>

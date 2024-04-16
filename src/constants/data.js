@@ -121,7 +121,7 @@ export const navLinks = [
   },
   {
     id: "restaurants",
-    title: "Restaurant & Bars",
+    title: "Restro & Bars",
     link: "/restaurants",
   },
   {
