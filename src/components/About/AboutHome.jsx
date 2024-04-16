@@ -26,7 +26,7 @@ const AboutHome = () => {
             </div>
           ))}
 
-          <div className="video mt-28 h-xl h-[35rem] overflow-hidden">
+          <div className="video mt-28 h-full lg:h-[35rem] overflow-hidden">
             <video
               className="w-full h-full object-cover"
               autoPlay

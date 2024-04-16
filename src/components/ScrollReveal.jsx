@@ -10,14 +10,20 @@ function ScrollReveal({
 }) {
   return (
     <>
-      <div className="font-kalnia leading-normal font-medium reveal-type flexCenter flex-col w-3/4 mx-auto mb-8">
-        <h3 className={`text-${textColor} text-navy font-medium`}>{heading}</h3>
+      <div className="font-kalnia leading-normal font-medium reveal-type flexCenter flex-col w-full lg:w-3/4 mx-auto mb-8 text-center space-y-4">
+        <h3
+          className={`text-${textColor} text-3xl md:text-4xl lg:text-5xl text-navy font-medium`}
+        >
+          {heading}
+        </h3>
         <h4
-          className={`text-${highlightColor} text-3xl text-center font-normal`}
+          className={`text-${highlightColor} text-lg md:text-2xl lg:text-3xl text-center font-normal`}
         >
           {subheading}
         </h4>
-        <p className={`text-${paraColor} text-lg text-center`}>{para}</p>
+        <p className={`text-${paraColor} hidden md:block text-lg text-center`}>
+          {para}
+        </p>
       </div>
     </>
   );
@@ -34,12 +40,14 @@ para="Embark on a journey of your business, leisure, pilgrimage, or adventure to
 textColor="text-navy"
 highlightColor="text-navy"
 /> */
-{/* <ScrollReveal
+  {
+    /* <ScrollReveal
 heading={accomodationContents[0].title}
 subheading={accomodationContents[0].subheading}
 para={accomodationContents[0].description}
 textColor="text-navy"
 highlightColor="text-navy"
 paraColor="text-navy"
-/> */}
+/> */
+  }
 }

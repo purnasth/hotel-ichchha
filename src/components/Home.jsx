@@ -15,7 +15,7 @@ const Home = () => {
       <BookNowSection />
       <HeroSliderCarousel
         images={sliderImages}
-        className="w-screen lg:h-screen min-h-96 object-cover"
+        className="w-screen lg:h-full min-h-96 object-cover"
       />
 
       <AboutHome />
