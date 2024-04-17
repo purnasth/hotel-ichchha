@@ -95,16 +95,16 @@ const Accomodation = () => {
       <a
         href={room.router}
         key={room.id}
-        className={`w-full transition-transform duration-700 ease-in-out p-6 py-16 border-0 outline-0 focus:border-0 focus:outline-none ${
-          index === centerIndex ? "scale-[1.2]" : "scale-90"
+        className={`w-full transition-transform duration-700 ease-in-out p-6 lg:px-8 md:py-16 border-0 outline-0 focus:border-0 focus:outline-none ${
+          index === centerIndex ? "md:scale-[1.2]" : "md:scale-80"
         }`}
       >
         <div className="overflow-hidden rounded-lg">
           <img
             src={room.url}
             alt={room.title}
-            className={`w-full h-96 rounded-lg object-cover transition-transform duration-700 ease-in-out ${
-              index === centerIndex ? "scale-100" : "scale-150"
+            className={`w-full h-full md:h-48 lg:h-64 xl:h-96 rounded-lg object-cover transition-transform duration-700 ease-in-out ${
+              index === centerIndex ? "scale-100" : "scale-110"
             }`}
           />
         </div>
