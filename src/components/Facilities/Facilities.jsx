@@ -30,7 +30,7 @@ const Facilities = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 md:mt-28">
         {otherFacilities.map((facility) => (
           <div
             key={facility.id}
@@ -51,7 +51,7 @@ const Facilities = () => {
                 <h3 className="text-3xl font-medium mb-24 group-hover:mb-0 transition-all duration-300">
                   {facility.title}
                 </h3>
-                <p className="text-ivory my-4">{facility.description}</p>
+                <p className="text-ivory my-4 line-clamp-4">{facility.description}</p>
                 <a href={facility.router} className="text-ivory bg-transparent border border-solid border-ivory px-4 py-2 mt-2 hover:bg-ivory hover:text-navy transition duration-300 ease-in-out">
                   View More
                 </a>

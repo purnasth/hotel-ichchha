@@ -13,18 +13,17 @@ const Testimonials = () => {
     setTimeout(() => {
       setSelectedPerson(person);
       setIsVisible(true);
+      // Scroll to the display section
+      const displaySection = document.getElementById("testimonials-display");
+      if (displaySection) {
+        displaySection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }, 400);
   };
 
   return (
-    <section id="testimonials" className="bg-bg-gold-dark px-0">
+    <section id="testimonials" className="bg-bg-gold-dark pt-32">
       <div className="container mx-auto">
-        {/* <div className="flexCenter flex-col w-3/4 p-4 mx-auto text-navy text-center">
-          <h3 className="font-medium">{testimonialContents[0].title}</h3>
-          <h4 className="">{testimonialContents[0].subheading}</h4>
-          <p className="text-lg">{testimonialContents[0].description}</p>
-        </div> */}
-
         <ScrollReveal
           heading={testimonialContents[0].title}
           subheading={testimonialContents[0].subheading}
@@ -33,13 +32,13 @@ const Testimonials = () => {
           highlightColor="text-navy"
           paraColor="text-navy"
         />
-        <div className="flex mt-24">
-          <div className="w-1/4 h-96 overflow-y-auto bg-ivory/10">
+        <div className="flex flex-col md:flex-row gap-8 mt-12 md:mt-24">
+          <div className="w-full md:w-1/4 h-80 md:h-96 overflow-y-auto bg-ivory/10">
             {testimonialContents[0].testimonials.map((testimonial) => (
-              <div
+              <button
                 key={testimonial.id}
                 onClick={() => handlePersonClick(testimonial.author)}
-                className={`cursor-pointer transition-all duration-400 ease-linear ${
+                className={`w-full cursor-pointer transition-all duration-400 ease-linear ${
                   selectedPerson === testimonial.author ? "bg-gold/30" : ""
                 }`}
               >
@@ -56,27 +55,32 @@ const Testimonials = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </button>
             ))}
           </div>
-          <div className="w-3/4 h-96 overflow-y-auto">
+          <div className="w-full md:w-3/4 h-96 overflow-y-auto">
             <div
+              id="testimonials-display"
               className={`px-4 ${
                 isVisible
-                  ? "scale-100 translate-x-0"
-                  : "scale-0  -translate-x-full"
-              } transition-transform duration-700`}
+                  ? "scale-100 translate-y-0 md:translate-y-0 md:translate-x-0"
+                  : "scale-0 -translate-y-full md:translate-y-0 md:-translate-x-full"
+              } transition-transform duration-700 scroll-my-0 md:scroll-my-64`}
             >
               {testimonialContents[0].testimonials
                 .filter((testimonial) => testimonial.author === selectedPerson)
                 .map((testimonial) => (
-                  <div key={testimonial.id} className="px-6">
-                    <p className="text-xl">{testimonial.content}</p>
-                    <div className="flex items-center justify-start gap-12 mt-12">
-                      <p className="text-xl font-bold">
+                  <div key={testimonial.id} className="md:px-6">
+                    <p className="text-justify md:text-pretty text-xl">
+                      {testimonial.content}
+                    </p>
+                    <div className="flex items-center justify-between md:justify-start gap-12 mt-12">
+                      <p className="text-base md:text-xl font-bold">
                         - {testimonial.author}
                       </p>
-                      <p className="text-base">- via {testimonial.source}</p>
+                      <p className="text-sm md:text-base">
+                        - via {testimonial.source}
+                      </p>
                     </div>
                   </div>
                 ))}

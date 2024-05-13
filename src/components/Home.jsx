@@ -7,7 +7,7 @@ import AboutHome from "./About/AboutHome";
 import HeroSliderCarousel from "./HeroSliderCarousel";
 import GalleryHome from "./Gallery/GalleryHome";
 import BookNowSection from "./Contact/BookNowSection";
-import {sliderImages} from "../constants/data";
+import { sliderImages } from "../constants/data";
 
 const Home = () => {
   return (

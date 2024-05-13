@@ -20,13 +20,28 @@ const GalleryHome = () => {
 
   const settings = {
     dots: false,
+    arrows: false,
+    autoplay: true,
     infinite: true,
     speed: 1000,
-    autoplay: true,
     autoplaySpeed: 3000,
     slidesToShow: 5,
     slidesToScroll: 1,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (

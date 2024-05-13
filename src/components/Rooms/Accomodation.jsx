@@ -95,21 +95,29 @@ const Accomodation = () => {
       <a
         href={room.router}
         key={room.id}
-        className={`w-full transition-transform duration-700 ease-in-out p-6 lg:px-8 md:py-16 border-0 outline-0 focus:border-0 focus:outline-none ${
+        className={`relative w-full transition-transform duration-700 ease-in-out p-4 sm:px-2 lg:px-6 xl:px-10 md:py-16 border-0 outline-0 focus:border-0 focus:outline-none ${
           index === centerIndex ? "md:scale-[1.2]" : "md:scale-80"
         }`}
       >
-        <div className="overflow-hidden rounded-lg">
-          <img
-            src={room.url}
-            alt={room.title}
-            className={`w-full h-full md:h-48 lg:h-64 xl:h-96 rounded-lg object-cover transition-transform duration-700 ease-in-out ${
-              index === centerIndex ? "scale-100" : "scale-110"
-            }`}
-          />
+        <div className="overflow-hidden rounded-lg group">
+          <div className="relative">
+            <img
+              src={room.url}
+              alt={room.title}
+              className={`w-full h-full md:h-48 lg:h-64 xl:h-96 rounded-lg object-cover transition-transform duration-700 ease-in-out ${
+                index === centerIndex ? "scale-105" : "scale-110"
+              } group-hover:scale-100 `}
+            />
+            <div className="absolute inset-0 bg-black transition-opacity duration-300 ease-linear opacity-10 group-hover:opacity-40 "></div>
+            <div className="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear">
+              <p className="text-ivory font-bold text-base md:text-lg translate-y-full group-hover:-translate-y-6 transition-all duration-300 ease-linear">
+                Explore More
+              </p>
+            </div>
+          </div>
         </div>
-        <h3 className="text-xl font-bold mt-4">{room.title}</h3>
-        <p className="text-base">{room.description}</p>
+        <h3 className="text-xl font-bold mt-6">{room.title}</h3>
+        <p className="text-sm md:text-base mt-2 line-clamp-2">{room.description}</p>
       </a>
     ));
   };
@@ -126,6 +134,12 @@ const Accomodation = () => {
     responsive: [
       {
         breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
         },
@@ -161,7 +175,7 @@ const Accomodation = () => {
           </div>
         </div>
       </div>
-      <div className="my-16 px-10">
+      <div className="my-4 md:my-16 sm:px-2 lg:px-4 xl:px-10">
         <Slider {...settings} ref={sliderRef}>
           {renderSlides()}
         </Slider>

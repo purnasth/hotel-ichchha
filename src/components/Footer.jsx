@@ -74,7 +74,7 @@ const Footer = () => {
                   info@hotelichchha.com
                 </a>
               </ul>
-              <h3 className="font-bold text-lg my-8">
+              <h3 className="hidden md:block font-bold text-lg my-8">
                 Conference & Events Booking
               </h3>
               <ul className="flex flex-col list-none space-y-2">
@@ -96,7 +96,7 @@ const Footer = () => {
                 </a>
               </ul>
             </div>
-            <div className="footer-column">
+            <div className="hidden lg:block footer-column">
               <h3 className="font-bold text-lg mb-8">Dining Reservation</h3>
               <ul className="flex flex-col list-none space-y-2">
                 <li className="flex gap-2 flex-wrap">
@@ -159,7 +159,7 @@ const Footer = () => {
       </section>
       <div className="container w-full h-px bg-gradient-to-l from-transparent via-navy/50 to-transparent -translate-y-20" />
       <div className="container mx-auto py-4 -translate-y-20">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between gap-3 px-6 md:px-0">
           <p className="text-sm">&copy; 2024 Hotel Ichchha Pvt. Ltd.</p>
           <p className="text-sm">
             Website by{" "}

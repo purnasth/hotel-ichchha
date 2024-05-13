@@ -12,16 +12,18 @@ function ScrollReveal({
     <>
       <div className="font-kalnia leading-normal font-medium reveal-type flexCenter flex-col w-full lg:w-3/4 mx-auto mb-8 text-center space-y-4">
         <h3
-          className={`text-${textColor} text-3xl md:text-4xl lg:text-5xl text-navy font-medium`}
+          className={`text-${textColor} text-2xl md:text-4xl lg:text-5xl text-navy font-medium`}
         >
           {heading}
         </h3>
         <h4
-          className={`text-${highlightColor} text-lg md:text-2xl lg:text-3xl text-center font-normal`}
+          className={`text-${highlightColor} hidden sm:block text-base sm:text-lg md:text-2xl lg:text-3xl text-center font-normal`}
         >
           {subheading}
         </h4>
-        <p className={`text-${paraColor} hidden md:block text-lg text-center`}>
+        <p
+          className={`text-${paraColor} text-sm text-justify md:text-lg md:text-center`}
+        >
           {para}
         </p>
       </div>
