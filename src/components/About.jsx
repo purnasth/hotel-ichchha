@@ -5,34 +5,37 @@ import { messageFromChairman, ourTeamMembers } from "../constants/data";
 const About = () => {
   return (
     <>
+      <div className="py-6"></div>
       <AboutHome />
 
       <section className="bg-bg-gold-dark">
         {messageFromChairman.map((message) => (
           <div
             key={message.id}
-            className="flexCenter flex-col w-full md:w-3/4 mx-auto"
+            className="flexCenter flex-col container mx-auto"
           >
-            <h3 className="text-4xl font-medium text-center">
+            <h3 className="text-2xl md:text-4xl font-medium text-center">
               {message.title}
             </h3>
-            <h4 className="text-2xl text-center mb-20">{message.subheading}</h4>
+            <h4 className="text-lg md:text-2xl text-center mb-20">
+              {message.subheading}
+            </h4>
 
-            <div className="flex align-center justify-between gap-12 my-8">
-              <div className="flex items-start flex-col gap-0 max-h-[400px] sticky top-6">
-                <div className="w-72 h-80 rounded-md overflow-hidden">
+            <div className="flex align-center justify-between flex-col lg:flex-row md:gap-12 my-8">
+              <div className="flex items-center lg:items-start flex-col gap-0 h-auto lg:max-h-[400px] sticky top-6 z-10">
+                <div className="w-auto h-56 sm:h-64 md:h-80 lg:w-64 lg:h-80 xl:w-72 xl:h-80 rounded-md overflow-hidden">
                   <img
                     src={message.image}
                     alt="Ichchha Hotel"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
-                <h2 className="text-2xl font-medium mt-8">
+                <h2 className="text-lg md:text-2xl font-medium mt-8">
                   {message.fullName}
                 </h2>
-                <span>{message.position}</span>
+                <span className="text-sm md:text-base">{message.position}</span>
               </div>
-              <div className="flex items-start flex-col gap-4 justify-center">
+              <div className="flex items-start flex-col gap-4 justify-center z-20 bg-bg-gold-dark pt-12 md:pt-0">
                 <p className="text-lg text-justify">{message.description}</p>
                 <p className="text-lg text-justify">
                   We are a 5-Star Deluxe Hotel; nevertheless, we have all the
