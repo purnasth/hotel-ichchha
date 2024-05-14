@@ -44,6 +44,7 @@ const GallerySlider = () => {
                   className={`relative ${
                     index % 2 === 0 ? "w-96" : "w-52"
                   } h-64 mr-4 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer`}
+                  loading="lazy"
                 />
               </a>
             ))}

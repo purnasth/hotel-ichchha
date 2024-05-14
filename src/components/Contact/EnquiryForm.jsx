@@ -52,6 +52,8 @@ const EnquiryForm = ({ onClose }) => {
           type="button"
           onClick={handleClose}
           className="text-navy hover:text-goldLight transition-all duration-500 text-2xl absolute top-4 right-4 z-10"
+          title="Close"
+          aria-label="Close"
         >
           <IoClose />
         </button>
@@ -84,6 +86,8 @@ const EnquiryForm = ({ onClose }) => {
             <button
               type="submit"
               className="w-full group flex items-center justify-center gap-2 bg-goldLight text-navy hover:bg-navy hover:text-ivory px-6 py-4 rounded-full text-lg transition-all duration-300 ease-linear"
+              title="Submit"
+              aria-label="Submit"
             >
               Submit
               <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-300 ease-linear" />

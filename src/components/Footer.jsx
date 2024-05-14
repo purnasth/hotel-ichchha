@@ -4,6 +4,63 @@ import SocialLinks from "./ui/SocialLinks";
 import ContactAddressLinks from "./ui/ContactAddressLinks";
 
 const Footer = () => {
+  const quickLinks = [
+    { id: 1, text: "About Us", href: "/about" },
+    { id: 2, text: "Rooms & Suites", href: "/accommodation" },
+    { id: 3, text: "Restaurant & Bar", href: "/restaurants" },
+    { id: 4, text: "Conference & Events", href: "/events" },
+    { id: 5, text: "Services & Facilities", href: "/recreation" },
+  ];
+
+  const otaLinks = [
+    {
+      id: 1,
+      text: "TripAdvisor",
+      href: "https://www.tripadvisor.com/Hotel_Review-g21156991-d11283455-Reviews-Hotel_Ichchha-Pipara_Simara_Narayani_Zone_Central_Region.html",
+    },
+    {
+      id: 2,
+      text: "MakeMyTrip",
+      href: "https://www.makemytrip.com/hotels-international/nepal/narayani-hotels/hotel_ichchha-details.html",
+    },
+    { id: 3, text: "Booking.com", href: "https://www.booking.com/" },
+    { id: 4, text: "Expedia", href: "https://www.expedia.com/" },
+    { id: 5, text: "Agoda", href: "https://www.agoda.com/" },
+  ];
+
+  const bookingFooterContents = [
+    {
+      id: 1,
+      title: "Room Booking",
+      links: [
+        { id: 1, text: "+9779855029591", href: "tel:+9779855029591" },
+        { id: 2, text: "+9779802738092", href: "tel:+9779802738092" },
+        { id: 3, text: "+9779855029592", href: "tel:+9779855029592" },
+        {
+          id: 4,
+          text: "info@hotelichchha.com",
+          href: "mailto:info@hotelichchha.com",
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: "Conference & Events Booking",
+      links: [
+        { id: 1, text: "+977-9855029591", href: "tel:+9779855029591" },
+        {
+          id: 2,
+          text: "info@hotelichchha.com",
+          href: "mailto:info@hotelichchha.com",
+        },
+      ],
+    },
+  ];
+
+const currentYear = new Date().getFullYear();
+  const author = "Longtail e-media";
+  const owner = "Hotel Ichchha Pvt. Ltd.";
+
   return (
     <div className="bg-pink-gold text-navy">
       <section>
@@ -11,148 +68,55 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="flex flex-col gap-2">
               <Logo />
-
               <ContactAddressLinks />
-
               <SocialLinks />
             </div>
             <div className="footer-column">
               <h3 className="font-bold text-lg mb-8">Quick Links</h3>
               <ul className="list-none space-y-4">
-                <li className="text-navy hover:text-gold hover:translate-x-2 hover:font-bold transition-all duration-300 ease-in">
-                  <a href="/about">About Us</a>
-                </li>
-                <li className="text-navy hover:text-gold hover:translate-x-2 hover:font-bold transition-all duration-300 ease-in">
-                  <a href="/accommodation">Rooms & Suites</a>
-                </li>
-                <li className="text-navy hover:text-gold hover:translate-x-2 hover:font-bold transition-all duration-300 ease-in">
-                  <a href="/restaurants">Restaurant & Bar</a>
-                </li>
-                <li className="text-navy hover:text-gold hover:translate-x-2 hover:font-bold transition-all duration-300 ease-in">
-                  <a href="/events">Conference & Events</a>
-                </li>
-                <li className="text-navy hover:text-gold hover:translate-x-2 hover:font-bold transition-all duration-300 ease-in">
-                  <a href="/recreation">Services & Facilities</a>
-                </li>
+                {quickLinks.map((link) => (
+                  <li
+                    key={link.id}
+                    className="text-navy hover:text-gold hover:translate-x-2 hover:font-bold transition-all duration-300 ease-in"
+                  >
+                    <a href={link.href}>{link.text}</a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="footer-column">
-              <h3 className="font-bold text-lg mb-8">Room Booking</h3>
-              <ul className="flex flex-col list-none space-y-2">
-                <li className="flex gap-2 flex-wrap">
-                  <a
-                    href="tel:+9779855029591"
-                    target="_blank"
-                    rel="noopener"
-                    className="text-navy hover:text-gold transition-all duration-300 ease-in"
+              <h3 className="font-bold text-lg mb-8">OTA Links</h3>
+              <ul className="list-none space-y-4">
+                {otaLinks.map((link) => (
+                  <li
+                    key={link.id}
+                    className="text-navy hover:text-gold hover:translate-x-2 hover:font-bold transition-all duration-300 ease-in"
                   >
-                    +9779855029591
-                  </a>
-                  <a
-                    href="tel:+9779802738092"
-                    target="_blank"
-                    rel="noopener"
-                    className="text-navy hover:text-gold transition-all duration-300 ease-in"
-                  >
-                    +9779802738092
-                  </a>
-                  <a
-                    href="tel:+9779855029592"
-                    target="_blank"
-                    rel="noopener"
-                    className="text-navy hover:text-gold transition-all duration-300 ease-in"
-                  >
-                    +9779855029592
-                  </a>
-                </li>
-                <a
-                  href="mailto:info@hotelichchha.com"
-                  target="_blank"
-                  rel="noopener"
-                  className="text-navy hover:text-gold transition-all duration-300 ease-in"
-                >
-                  info@hotelichchha.com
-                </a>
-              </ul>
-              <h3 className="hidden md:block font-bold text-lg my-8">
-                Conference & Events Booking
-              </h3>
-              <ul className="flex flex-col list-none space-y-2">
-                <a
-                  href="tel:+9779855029591"
-                  target="_blank"
-                  rel="noopener"
-                  className="text-navy hover:text-gold transition-all duration-300 ease-in"
-                >
-                  +977-9855029591
-                </a>
-                <a
-                  href="mailto:info@hotelichchha.com"
-                  target="_blank"
-                  rel="noopener"
-                  className="text-navy hover:text-gold transition-all duration-300 ease-in"
-                >
-                  info@hotelichchha.com
-                </a>
+                    <a href={link.href}>{link.text}</a>
+                  </li>
+                ))}
               </ul>
             </div>
-            <div className="hidden lg:block footer-column">
-              <h3 className="font-bold text-lg mb-8">Dining Reservation</h3>
-              <ul className="flex flex-col list-none space-y-2">
-                <li className="flex gap-2 flex-wrap">
-                  <a
-                    href="tel:+9779855029591"
-                    target="_blank"
-                    rel="noopener"
-                    className="text-navy hover:text-gold transition-all duration-300 ease-in"
-                  >
-                    +9779855029591
-                  </a>
-                  <a
-                    href="tel:+9779802738092"
-                    target="_blank"
-                    rel="noopener"
-                    className="text-navy hover:text-gold transition-all duration-300 ease-in"
-                  >
-                    +9779802738092
-                  </a>
-                  <a
-                    href="tel:+9779855029592"
-                    target="_blank"
-                    rel="noopener"
-                    className="text-navy hover:text-gold transition-all duration-300 ease-in"
-                  >
-                    +9779855029592
-                  </a>
-                </li>
-                <a
-                  href="mailto:info@hotelichchha.com"
-                  target="_blank"
-                  rel="noopener"
-                  className="text-navy hover:text-gold transition-all duration-300 ease-in"
-                >
-                  info@hotelichchha.com
-                </a>
-              </ul>
-              <h3 className="font-bold text-lg my-8">Recreation</h3>
-              <ul className="flex flex-col list-none space-y-2">
-                <a
-                  href="tel:+9779855029591"
-                  target="_blank"
-                  rel="noopener"
-                  className="text-navy hover:text-gold transition-all duration-300 ease-in"
-                >
-                  +977-9855029591
-                </a>
-                <a
-                  href="mailto:info@hotelichchha.com"
-                  target="_blank"
-                  rel="noopener"
-                  className="text-navy hover:text-gold transition-all duration-300 ease-in"
-                >
-                  info@hotelichchha.com
-                </a>
-              </ul>
+            <div className="footer-column">
+              {bookingFooterContents.map((section) => (
+                <div key={section.id}>
+                  <h3 className="font-bold text-lg mb-8">{section.title}</h3>
+                  <ul className="flex flex-wrap items-center justify-start gap-2 list-none mb-8">
+                    {section.links.map((link) => (
+                      <li key={link.id} className="flex gap-2 flex-wrap">
+                        <a
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener"
+                          className="text-navy hover:text-gold transition-all duration-300 ease-in"
+                        >
+                          {link.text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -160,7 +124,9 @@ const Footer = () => {
       <div className="container w-full h-px bg-gradient-to-l from-transparent via-navy/50 to-transparent -translate-y-20" />
       <div className="container mx-auto py-4 -translate-y-20">
         <div className="flex flex-col md:flex-row justify-between gap-3 px-6 md:px-4">
-          <p className="text-sm">&copy; 2024 Hotel Ichchha Pvt. Ltd.</p>
+          <p className="text-sm">
+            &copy; {currentYear} {owner}
+          </p>
           <p className="text-sm">
             Website by{" "}
             <a
@@ -168,7 +134,7 @@ const Footer = () => {
               target="_blank"
               className="underline"
             >
-              Longtail e-media
+              {author}
             </a>
           </p>
         </div>

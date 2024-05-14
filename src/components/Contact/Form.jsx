@@ -47,6 +47,8 @@ const ContactForm = () => {
           <button
             type="submit"
             className="w-full group flex items-center justify-center gap-2 bg-navy text-ivory hover:bg-goldLight hover:text-navy px-6 py-4 rounded-full text-lg transition-all duration-150 ease-linear"
+            title="Send Message"
+            aria-label="Send Message"
           >
             Send Message
             <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-300" />

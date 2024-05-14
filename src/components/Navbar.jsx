@@ -65,7 +65,9 @@ const Navbar = () => {
               href="https://wa.me/+9779802738099"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-base lg:text-lg "
+              className="flex items-center gap-2 text-base lg:text-lg"
+              title="WhatsApp"
+              aria-label="WhatsApp"
             >
               <FaWhatsapp className="text-3xl text-gold" />{" "}
               <span className="hidden md:block">9802738099</span>
@@ -79,11 +81,11 @@ const Navbar = () => {
                 alt="logo"
                 className={`object-contain transition-all duration-${duration}  ${
                   visible
-                    ? "w-auto h-20 md:h-28 mt-0 p-2 -translate-y-0"
+                    ? "w-40 h-20 md:h-28 mt-0 p-2 -translate-y-0"
                     : "scale-0 -translate-y-6 bg-transparent"
                 } ${
                   window.scrollY > 0
-                    ? "w-auto h-12 md:scale-75 p-4 translate-y-0 mt-0"
+                    ? "w-36 h-12 md:scale-75 p-4 translate-y-0 mt-0"
                     : // ? "filter-black w-16 h-12 object-contain scale-150 -mt-[4px] p-2"
                       ""
                 }`}
@@ -91,11 +93,13 @@ const Navbar = () => {
             </a>
           </h1>
 
-          <div
+          <button
             className={`flex items-center gap-2 cursor-pointer transition-all duration-${duration} text-gold ${
               visible ? "scale-100 translate-x-0" : "scale-0 -translate-x-full"
             } ${window.scrollY > 0 ? "filter-black" : ""}`}
             onClick={toggleNav}
+            title="Menu"
+            aria-label="Menu"
           >
             <span className="hidden md:block text-base lg:text-xl select-none">
               Menu
@@ -122,7 +126,7 @@ const Navbar = () => {
                 ></path>
               )}
             </svg>
-          </div>
+          </button>
         </div>
 
         {/* <div className="h-px w-full bg-gradient-to-r from-navy/30 via-transparent to-navy/30" /> */}
@@ -142,6 +146,8 @@ const Navbar = () => {
         <button
           onClick={closeNav}
           className="absolute top-0 right-0 px-4 py-6 md:py-6 md:px-8 text-gold z-10"
+          title="Close"
+          aria-label="Close"
         >
           <IoClose className="text-4xl" />
         </button>

@@ -39,6 +39,8 @@ const BackToTop = () => {
         showButton ? "scale-100 translate-y-0" : "scale-0 translate-y-20"
       } z-50 fixed bottom-4 right-4 bg-goldLight backdrop-blur-md text-navy p-3 rounded-full shadow-lg transition-all duration-500 ease-in-out hover:bg-ivory`}
       onClick={scrollToTop}
+      title="Back to Top"
+      aria-label="Back to Top"
     >
       <HiOutlineArrowNarrowRight className="w-6 h-6 -rotate-90 animate-arrow-up" />
     </button>

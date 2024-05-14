@@ -63,6 +63,8 @@ const Recreation = () => {
                 {/* <button
                   onClick={toggleEnquiryForm}
                   className="bg-goldLight text-navy hover:bg-navy hover:text-ivory px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
+                  title="Enquiry"
+                  aria-label="Enquiry"
                 >
                   Enquiry
                 </button> */}
