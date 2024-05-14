@@ -78,6 +78,7 @@ const GalleryHome = () => {
               src={selectedImage.url}
               alt={selectedImage.alt}
               className="w-full h-full object-contain"
+              loading="lazy"
             />
           </div>
         </div>
