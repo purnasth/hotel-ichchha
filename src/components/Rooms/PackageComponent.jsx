@@ -2,27 +2,33 @@ import React from "react";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { accomodationContents } from "../../constants/data.js";
 import RoomDetailsWithBooking from "./RoomDetailsWithBooking";
+import ScrollReveal from "../ScrollReveal";
 
 const PackageComponent = ({ room }) => {
   return (
     <section className="bg-bg-gold-light">
-      <div className="container mb-24">
-        <div className="flexCenter flex-col w-3/4 mx-auto mb-32">
-          <h3 className="text-navy font-medium">{room.title}</h3>
-          <h4 className="text-3xl text-center">{room.subtitle}</h4>
-          <p className="text-base text-center">{room.description}</p>
-        </div>
+      <div className="container">
+        <ScrollReveal
+          heading={room.title}
+          subheading={room.subtitle}
+          para={room.description}
+          textColor="text-navy"
+          highlightColor="text-navy"
+          paraColor="text-navy"
+        />
 
-        <div className="flex justify-between">
-          <div className="w-1/2 max-w-lg">
-            <h5 className="text-3xl leading-loose pb-4">
+        <div className="flex flex-col md:flex-row gap-16 my-8 md:my-24 md:gap-12 justify-between">
+          <div className="w-full md:w-1/2 max-w-lg">
+            <h5 className="text-2xl md:text-3xl leading-loose pb-4 font-medium">
               {room.overview[0].title}
             </h5>
-            <p className="pb-4">{room.overview[0].content}</p>
+            <p className="pb-4 text-justify md:text-pretty">
+              {room.overview[0].content}
+            </p>
 
             {room.policies.map((policyCategory) => (
               <div key={policyCategory.title}>
-                <h5 className="text-3xl leading-loose py-4">
+                <h5 className="text-2xl md:text-3xl leading-loose py-4 font-medium">
                   {policyCategory.title}
                 </h5>
                 <ul className="list-decimal ml-4">
@@ -35,8 +41,10 @@ const PackageComponent = ({ room }) => {
               </div>
             ))}
 
-            <h5 className="text-3xl leading-loose py-6">Room Amenities</h5>
-            <div className="flex items-start gap-20">
+            <h5 className="text-2xl md:text-3xl leading-loose py-6 font-medium">
+              Room Amenities
+            </h5>
+            <div className="flex items-start gap-20 text-xs sm:text-sm md:text-base">
               <ul className="flex items-start justify-center flex-col gap-5">
                 {room.amenities
                   .slice(0, Math.ceil(room.amenities.length / 2))

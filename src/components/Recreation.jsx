@@ -3,6 +3,7 @@ import { recreationVenues } from "../constants/data";
 import { MdOutlineInsertEmoticon } from "react-icons/md";
 import ReusableSlider from "./ReusableSlider";
 import EnquiryForm from "./Contact/EnquiryForm";
+import ScrollReveal from "./ScrollReveal";
 
 const Recreation = () => {
   const [showEnquiryForm, setShowEnquiryForm] = useState(false);
@@ -14,45 +15,47 @@ const Recreation = () => {
   return (
     <>
       <section className="bg-bg-gold-light">
-        <div className="container">
-          <div className="container flexCenter flex-col w-3/4 mx-auto">
-            <h3 className="text-navy font-medium">
-              Discover Our Exciting Recreation
-            </h3>
-            <h4 className="text-3xl text-center">
-              Unwind, Recharge, and Explore: Your Adventure Awaits in Every
-              Recreational Endeavor.
-            </h4>
-            <p className="text-base text-center">
-              Escape to Hotel Ichchha recreational oasis. Unwind with luxurious
-              spa treatments, energize in our state-of-the-art gym, or bask by
-              the serene poolside. Our dedicated leisure concierge ensures every
-              moment is pure bliss. Perfect for relaxation seekers and adventure
-              enthusiasts.
-            </p>
-          </div>
+        <div className="my-12 md:my-0">
+          <ScrollReveal
+            heading="Discover Our Exciting Recreation"
+            subheading="Unwind, Recharge, and Explore: Your Adventure Awaits in Every
+            Recreational Endeavor."
+            para="Escape to Hotel Ichchha recreational oasis. Unwind with luxurious
+            spa treatments, energize in our state-of-the-art gym, or bask by
+            the serene poolside. Our dedicated leisure concierge ensures every
+            moment is pure bliss. Perfect for relaxation seekers and adventure
+            enthusiasts."
+            textColor="text-navy"
+            highlightColor="text-navy"
+            paraColor="text-navy"
+          />
         </div>
         {Object.values(recreationVenues).map((venue, index) => (
           <div
             key={venue.id}
-            className={`flex items-center gap-10 mt-32 mx-auto ${
-              index % 2 === 0 ? "" : "flex-row-reverse"
+            className={`flex items-center flex-col gap-10 mt-16 mx-auto ${
+              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             }`}
           >
             <div className="w-full">
               <ReusableSlider
                 images={venue.imageUrls}
-                className="w-full h-96 object-cover"
+                className="w-full h-64 sm:h-96 lg:h-80 xl:h-96 object-cover"
               />
             </div>
             <div className="w-full">
               <div className="mt-0">
-                <h4 className="mb-2">{venue.title}</h4>
-                <p>{venue.description}</p>
+                <h4 className="text-xl lg:text-3xl mb-2">{venue.title}</h4>
+                <p className="text-xs sm:text-sm lg:text-base text-justify">
+                  {venue.description}
+                </p>
                 <ul className="flex items-center gap-4 py-4">
                   {venue.amenities.map((amenity, index) => (
-                    <li key={index} className="flex items-center gap-2">
-                      <MdOutlineInsertEmoticon />
+                    <li
+                      key={index}
+                      className="flex items-center gap-2 text-xs sm:text-sm xl:text-base"
+                    >
+                      <MdOutlineInsertEmoticon className="text-base" />
                       {amenity}
                     </li>
                   ))}

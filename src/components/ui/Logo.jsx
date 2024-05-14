@@ -9,7 +9,7 @@ const Logo = () => {
           <img
             src={logo}
             alt="Footer Logo"
-            className="w-40 h-auto object-contain mb-4"
+            className="w-40 h-24 object-contain mb-4"
             // style={{
             //   filter:
             //     "brightness(0) saturate(100%) invert(0%) sepia(82%) saturate(7492%) hue-rotate(123deg) brightness(77%) contrast(93%)",

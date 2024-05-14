@@ -7,7 +7,7 @@ import AboutHome from "./About/AboutHome";
 import HeroSliderCarousel from "./HeroSliderCarousel";
 import GalleryHome from "./Gallery/GalleryHome";
 import BookNowSection from "./Contact/BookNowSection";
-import {sliderImages} from "../constants/data";
+import { sliderImages } from "../constants/data";
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       <BookNowSection />
       <HeroSliderCarousel
         images={sliderImages}
-        className="w-screen h-screen object-cover"
+        className="w-screen lg:h-screen min-h-96 object-cover"
       />
 
       <AboutHome />

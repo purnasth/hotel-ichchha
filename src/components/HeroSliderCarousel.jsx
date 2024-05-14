@@ -30,7 +30,7 @@ const HeroSliderCarousel = ({ images, className }) => {
       <Slider
         {...settings}
         ref={sliderRef}
-        className="max-w-screen overflow-hidden bg-bg-gold-light"
+        className="overflow-hidden bg-bg-gold-light"
       >
         {images.map((image, index) => (
           <div key={index} className="relative">
@@ -38,7 +38,7 @@ const HeroSliderCarousel = ({ images, className }) => {
             <img src={image.src} alt={image.title} className={className} />
             <div className="overlay absolute bottom-0 w-full h-80 bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.8)]" />
             <div className="absolute left-0 bottom-0 text-gold w-full p-2">
-              <h3 className="max-w-4xl mx-auto text-4xl font-title font-medium p-8 text-center drop-shadow-xl">
+              <h3 className="max-w-4xl mx-auto text-lg md:text-3xl lg:text-4xl font-body font-extrabold p-2 md:p-8 text-center drop-shadow-xl">
                 {image.title}
               </h3>
             </div>

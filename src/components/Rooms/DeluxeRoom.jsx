@@ -13,7 +13,7 @@ const DeluxeRoom = () => {
     <>
       <HeroSliderCarousel
         images={deluxeRoom.images}
-        className="w-screen h-screen object-cover"
+        className="w-full h-96 md:h-screen object-cover"
       />
 
       <PackageComponent room={deluxeRoom} />
