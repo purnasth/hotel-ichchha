@@ -159,7 +159,7 @@ const Footer = () => {
       </section>
       <div className="container w-full h-px bg-gradient-to-l from-transparent via-navy/50 to-transparent -translate-y-20" />
       <div className="container mx-auto py-4 -translate-y-20">
-        <div className="flex flex-col md:flex-row justify-between gap-3 px-6 md:px-0">
+        <div className="flex flex-col md:flex-row justify-between gap-3 px-6 md:px-4">
           <p className="text-sm">&copy; 2024 Hotel Ichchha Pvt. Ltd.</p>
           <p className="text-sm">
             Website by{" "}

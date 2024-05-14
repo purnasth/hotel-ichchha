@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { eventVenues } from "../constants/data";
 import ReusableSlider from "./ReusableSlider";
 import EnquiryForm from "./Contact/EnquiryForm";
+import ScrollReveal from "./ScrollReveal";
 
 const EventsHall = () => {
   const [showEnquiryForm, setShowEnquiryForm] = useState(false);
@@ -13,41 +14,47 @@ const EventsHall = () => {
   return (
     <>
       <section className="bg-bg-gold-light">
+        <div className="my-12 md:my-0">
+          <ScrollReveal
+            heading="Conference & Events"
+            subheading="Where every occasion sparkles with Ichchha touch"
+            para="Elevate your events at Hotel Ichchha versatile halls. From
+            intimate gatherings to grand celebrations, our spaces offer luxury
+            and convenience. Your memorable moments, our impeccable service.
+            Welcome to perfection."
+            textColor="text-navy"
+            highlightColor="text-navy"
+            paraColor="text-navy"
+          />
+        </div>
         <div className="container">
-          <div className="flexCenter flex-col w-3/4 mx-auto">
-            <h3 className="text-navy font-medium">Conference & Events</h3>
-            <h4 className="text-3xl text-center">
-              Where every occasion sparkles with Ichchha touch
-            </h4>
-            <p className="text-base text-center">
-              Elevate your events at Hotel Ichchha versatile halls. From
-              intimate gatherings to grand celebrations, our spaces offer luxury
-              and convenience. Your memorable moments, our impeccable service.
-              Welcome to perfection.
-            </p>
-          </div>
           {Object.values(eventVenues).map((venue, index) => (
             <div
               key={venue.id}
               id={venue.id}
-              className={`flex items-center gap-10 mt-32 max-w-5xl mx-auto ${
-                index % 2 === 0 ? "" : "flex-row-reverse"
+              className={`flex items-center flex-col gap-10 mt-16 mx-auto ${
+                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
               }`}
             >
               <div className="w-full">
                 <ReusableSlider
                   images={venue.imageUrls}
                   alt={venue.title}
-                  className="w-full h-80 object-cover"
+                  className="w-full h-64 sm:h-96 lg:h-80 xl:h-96 object-cover"
                 />
               </div>
               <div className="w-full">
                 <div className="mt-0">
-                  <h4 className="mb-2">{venue.title}</h4>
-                  <p>{venue.description}</p>
+                  <h4 className="text-xl lg:text-3xl mb-2">{venue.title}</h4>
+                  <p className="text-xs sm:text-sm lg:text-base text-justify">
+                    {venue.description}
+                  </p>
                   <ul className="flex items-center gap-4 py-4">
                     {venue.amenities.map((amenity, index) => (
-                      <li key={index} className="flex items-center gap-2">
+                      <li
+                        key={index}
+                        className="flex items-center gap-2 text-xs sm:text-sm xl:text-base"
+                      >
                         {/* <MdOutlineInsertEmoticon /> */}
                         {amenity}
                       </li>

@@ -30,7 +30,7 @@ const HeroSliderCarousel = ({ images, className }) => {
       <Slider
         {...settings}
         ref={sliderRef}
-        className="max-w-screen overflow-hidden bg-bg-gold-light"
+        className="overflow-hidden bg-bg-gold-light"
       >
         {images.map((image, index) => (
           <div key={index} className="relative">

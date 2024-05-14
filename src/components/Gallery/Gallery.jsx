@@ -12,28 +12,32 @@ import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-fullscreen.css";
 import "lightgallery/css/lg-share.css";
 import { galleryImages } from "../../constants/data.js";
+import ScrollReveal from "../ScrollReveal";
 
 const Gallery = () => {
   return (
     <>
       <section>
-        <section className="container flexCenter flex-col w-3/4 mx-auto pt-16">
-          <h3 className="text-navy font-medium">Photo Gallery</h3>
-          <h4 className="text-3xl text-center">
-            Glimpse of Hotel Ichchha - Discover Beauty Beyond Words
-          </h4>
-          <p className="text-base text-center">
-            Immerse yourself in luxury, comfort, and personalized service. From
-            elegant rooms to impeccable amenities, discover hospitality at its
-            finest. Elevate your stay with us. Welcome to a world of
-            unparalleled indulgence.
-          </p>
+        {/* <div className="py-6 md:p-0"></div> */}
+
+        <section className="py-8 md:pt-0 md:pb-20">
+          <ScrollReveal
+            heading="Photo Gallery"
+            subheading="Glimpse of Hotel Ichchha - Discover Beauty Beyond Words"
+            para="Immerse yourself in luxury, comfort, and personalized service. From
+          elegant rooms to impeccable amenities, discover hospitality at its
+          finest. Elevate your stay with us. Welcome to a world of
+          unparalleled indulgence."
+            textColor="text-navy"
+            highlightColor="text-navy"
+            paraColor="text-navy"
+          />
         </section>
 
         <LightGallery
           plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen, lgShare]}
           mode="lg-fade"
-          elementClassNames="w-full grid grid-cols-2 lg:grid-cols-4 gap-4"
+          elementClassNames="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
           options={{
             thumbnail: true,
             autoplay: true,

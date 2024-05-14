@@ -5,7 +5,7 @@ import { messageFromChairman, ourTeamMembers } from "../constants/data";
 const About = () => {
   return (
     <>
-      <div className="py-6"></div>
+      <div className="bg-bg-gold-light py-6 md:p-0"></div>
       <AboutHome />
 
       <section className="bg-bg-gold-dark">

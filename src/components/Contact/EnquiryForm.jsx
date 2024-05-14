@@ -30,7 +30,7 @@ const EnquiryForm = ({ onClose }) => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full h-full  flex items-center justify-center z-50 transition-all duration-${duration} ${
+      className={`p-2 fixed top-0 left-0 w-full h-full  flex items-center justify-center z-50 transition-all duration-${duration} ${
         showForm
           ? "opacity-100 bg-black/60 backdrop-blur-sm"
           : "opacity-0 bg-black pointer-events-none backdrop-blur-3xl"
@@ -38,16 +38,16 @@ const EnquiryForm = ({ onClose }) => {
       onClick={handleClose}
     >
       <div
-        className={`bg-bg-gold-light p-8 rounded-md transition-all duration-${duration} ${
+        className={`bg-bg-gold-light p-4 md:p-8 rounded-md transition-all duration-${duration} ${
           showForm
             ? "scale-100 translate-y-0 opacity-100"
             : "scale-0 -translate-y-full opacity-0"
         }`}
         onClick={handleFormClick}
       >
-        <h2 className="text-3xl text-center font-semibold mb-12">
+        <h3 className="text-3xl text-center font-semibold mb-12">
           Enquiry Form
-        </h2>
+        </h3>
         <button
           type="button"
           onClick={handleClose}
@@ -56,7 +56,7 @@ const EnquiryForm = ({ onClose }) => {
           <IoClose />
         </button>
         <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-96 md:h-auto overflow-x-hidden overflow-y-auto">
             {enquiryFormData.map((field) => (
               <div key={field.name}>
                 <label htmlFor={field.name} className="text-base text-navy">

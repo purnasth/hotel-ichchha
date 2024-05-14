@@ -10,7 +10,7 @@ function ScrollReveal({
 }) {
   return (
     <>
-      <div className="font-kalnia leading-normal font-medium reveal-type flexCenter flex-col w-full lg:w-3/4 mx-auto mb-8 text-center space-y-4">
+      <div className="font-kalnia leading-normal reveal-type flexCenter flex-col w-full lg:w-3/4 mx-auto mb-8 text-center space-y-0 lg:space-y-4">
         <h3
           className={`text-${textColor} text-2xl md:text-4xl lg:text-5xl text-navy font-medium`}
         >

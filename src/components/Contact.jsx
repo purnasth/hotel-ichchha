@@ -5,6 +5,7 @@ import ContactForm from "./Contact/Form";
 import TripAdvisorWidget from "./TripAdvisorWidget";
 import SocialLinks from "./ui/SocialLinks";
 import ContactAddressLinks from "./ui/ContactAddressLinks";
+import ScrollReveal from "./ScrollReveal";
 
 const Contact = () => {
   useEffect(() => {
@@ -22,28 +23,23 @@ const Contact = () => {
   };
   return (
     <>
+      <div className="bg-bg-gold-light py-6 md:p-0"></div>
+
       <section className="bg-bg-gold-light">
         <div className="container mx-auto">
-          <div className="flexCenter flex-col w-3/4 mx-auto">
-            {/* <h2></h2> */}
-            <h3 className="text-navy font-medium">
-              How to get to Hotel Ichchha?
-            </h3>
-            <h4 className="text-center">
-              Reach Out, Connect, and Spark Possibilities - Your Gateway to
-              Seamless Communication.
-            </h4>
-            <p className="text-lg text-center">
-              {/* Would you like to find our how to get to us or you have a question
-              you need to ask? Call us or e-mail us, here are all the contact
-              information you need to know. */}
-              Have any inquiries? Reach out to Hotel Ichchha dedicated team.
-              Whether it's booking accommodations, event planning, or dietary
-              preferences, we're here to ensure your experience is seamless and
-              memorable. Connect with us today for personalized service and
-              support!"
-            </p>
-          </div>
+          <ScrollReveal
+            heading="How to get to Hotel Ichchha?"
+            subheading="Reach Out, Connect, and Spark Possibilities - Your Gateway to
+            Seamless Communication."
+            para="Have any inquiries? Reach out to Hotel Ichchha dedicated team.
+            Whether it's booking accommodations, event planning, or dietary
+            preferences, we're here to ensure your experience is seamless and
+            memorable. Connect with us today for personalized service and
+            support!"
+            textColor="text-navy"
+            highlightColor="text-navy"
+            paraColor="text-navy"
+          />
         </div>
         <div className="mt-28">
           <NearbyMapComponent />
@@ -52,8 +48,8 @@ const Contact = () => {
 
       <section className="bg-bg-gold-dark">
         <div className="container">
-          <div className="flex justify-between">
-            <div className="w-1/2 max-w-lg">
+          <div className="flex flex-col md:flex-row gap-12 md:gap-0 justify-between">
+            <div className="w-full md:w-1/2 max-w-lg">
               {/* <h5 className="text-3xl leading-loose pb-4">
                 About Hotel Ichchha
               </h5>
@@ -87,7 +83,7 @@ const Contact = () => {
                 <TripAdvisorWidget />
               </div>
             </div>
-            <div className="ml-auto w-1/2 h-full sticky top-6">
+            <div className="ml-auto w-full md:w-1/2 h-full sticky top-6">
               <ContactForm />
             </div>
           </div>
