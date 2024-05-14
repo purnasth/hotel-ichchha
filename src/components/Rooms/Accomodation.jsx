@@ -117,7 +117,9 @@ const Accomodation = () => {
           </div>
         </div>
         <h3 className="text-xl font-bold mt-6">{room.title}</h3>
-        <p className="text-sm md:text-base mt-2 line-clamp-2">{room.description}</p>
+        <p className="text-sm md:text-base mt-2 line-clamp-2">
+          {room.description}
+        </p>
       </a>
     ));
   };
@@ -184,12 +186,16 @@ const Accomodation = () => {
         <button
           className="group bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-xl transition-all duration-300 ease-linear"
           onClick={() => sliderRef.current.slickPrev()}
+          title="Previous"
+          aria-label="Previous"
         >
           <HiArrowLongLeft className="group-hover:-translate-x-2 transition-all duration-150 ease-linear" />
         </button>
         <button
           className="group bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-xl transition-all duration-300 ease-linear"
           onClick={() => sliderRef.current.slickNext()}
+          title="Next"
+          aria-label="Next"
         >
           <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-150 ease-linear" />
         </button>

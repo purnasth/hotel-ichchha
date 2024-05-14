@@ -63,12 +63,16 @@ const Hero = () => {
         <button
           onClick={handlePrev}
           className="bg-gray-800 text-white px-3 py-1 rounded-full"
+          title="Previous"
+          aria-label="Previous"
         >
           Prev
         </button>
         <button
           onClick={handleNext}
           className="bg-gray-800 text-white px-3 py-1 rounded-full"
+          title="Next"
+          aria-label="Next"
         >
           Next
         </button>

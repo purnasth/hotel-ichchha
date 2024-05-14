@@ -69,6 +69,8 @@ const GalleryHome = () => {
             <button
               className="close-button absolute top-0 right-4 m-4 text-white text-5xl focus:outline-none"
               onClick={closeModal}
+              title="Close"
+              aria-label="Close"
             >
               &times;
             </button>

@@ -91,11 +91,13 @@ const Navbar = () => {
             </a>
           </h1>
 
-          <div
+          <button
             className={`flex items-center gap-2 cursor-pointer transition-all duration-${duration} text-gold ${
               visible ? "scale-100 translate-x-0" : "scale-0 -translate-x-full"
             } ${window.scrollY > 0 ? "filter-black" : ""}`}
             onClick={toggleNav}
+            title="Menu"
+            aria-label="Menu"
           >
             <span className="hidden md:block text-base lg:text-xl select-none">
               Menu
@@ -122,7 +124,7 @@ const Navbar = () => {
                 ></path>
               )}
             </svg>
-          </div>
+          </button>
         </div>
 
         {/* <div className="h-px w-full bg-gradient-to-r from-navy/30 via-transparent to-navy/30" /> */}
@@ -142,6 +144,8 @@ const Navbar = () => {
         <button
           onClick={closeNav}
           className="absolute top-0 right-0 px-4 py-6 md:py-6 md:px-8 text-gold z-10"
+          title="Close"
+          aria-label="Close"
         >
           <IoClose className="text-4xl" />
         </button>

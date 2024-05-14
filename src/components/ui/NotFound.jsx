@@ -11,6 +11,8 @@ const NotFound = () => {
       <button
         onClick={() => window.history.back()}
         className="w-auto group flex items-center justify-center gap-2 hover:bg-navy hover:text-ivory bg-goldLight text-navy px-6 py-2 rounded-full text-base transition-all duration-300 ease-linear"
+        title="Go Back"
+        aria-label="Go Back"
       >
         <HiArrowLongLeft className="group-hover:scale-x-[2] group-hover:-translate-x-1 transition-all duration-150 ease-linear" />
         Go Back

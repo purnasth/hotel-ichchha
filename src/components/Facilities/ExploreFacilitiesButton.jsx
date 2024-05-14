@@ -34,6 +34,8 @@ const ExploreFacilitiesButton = () => {
           showButton ? "scale-100 translate-y-0" : "scale-0 translate-y-20"
         }`}
         onClick={toggleNavbar}
+        title="Explore Facilities"
+        aria-label="Explore Facilities"
       >
         <PiCallBell className="w-6 h-6 text-navy" />
       </button>
@@ -75,7 +77,12 @@ const FacilitiesNavbar = ({ showNavbar, onClose }) => {
       >
         <div className="sticky top-0 bg-bg-gold-light flex justify-between p-6">
           <h4 className="text-2xl">Facilities</h4>
-          <button className="-mr-4" onClick={onClose}>
+          <button
+            className="-mr-4"
+            onClick={onClose}
+            title="Close"
+            aria-label="Close"
+          >
             <IoClose className="text-2xl" />
           </button>
         </div>

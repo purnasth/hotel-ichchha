@@ -33,14 +33,16 @@ const Testimonials = () => {
           paraColor="text-navy"
         />
         <div className="flex flex-col md:flex-row gap-8 mt-12 md:mt-24">
-          <div className="w-full md:w-1/4 h-80 md:h-96 overflow-y-auto bg-ivory/10">
+          <div className="w-full md:w-1/4 h-80 md:h-96 overflow-y-auto bg-ivory/40">
             {testimonialContents[0].testimonials.map((testimonial) => (
               <button
                 key={testimonial.id}
                 onClick={() => handlePersonClick(testimonial.author)}
                 className={`w-full cursor-pointer transition-all duration-400 ease-linear ${
-                  selectedPerson === testimonial.author ? "bg-gold/30" : ""
+                  selectedPerson === testimonial.author ? "bg-gold/50" : ""
                 }`}
+                title="View Testimonial"
+                aria-label="View Testimonial"
               >
                 <div className="flex items-center justify-start gap-4 p-6 py-4 border-b-[1px] border-navy/10 ">
                   <img
@@ -49,8 +51,10 @@ const Testimonials = () => {
                     className="w-16 h-16 object-cover rounded-full"
                   />
                   <div className="flex items-start flex-col gap-0">
-                    <p className="text-xl font-bold">{testimonial.author}</p>
-                    <p className="text-base text-navy/50">
+                    <p className="text-base md:text-xl font-bold">
+                      {testimonial.author}
+                    </p>
+                    <p className="text-sm md:text-base text-navy/90">
                       - via {testimonial.source}
                     </p>
                   </div>
@@ -74,7 +78,7 @@ const Testimonials = () => {
                     <p className="text-justify md:text-pretty text-xl">
                       {testimonial.content}
                     </p>
-                    <div className="flex items-center justify-between md:justify-start gap-12 mt-12">
+                    <div className="flex items-center justify-between gap-12 mt-12">
                       <p className="text-base md:text-xl font-bold">
                         - {testimonial.author}
                       </p>
