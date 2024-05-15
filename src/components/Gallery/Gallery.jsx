@@ -4,13 +4,11 @@ import lgZoom from "lightgallery/plugins/zoom";
 import lgVideo from "lightgallery/plugins/video";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgFullscreen from "lightgallery/plugins/fullscreen";
-import lgShare from "lightgallery/plugins/share";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-video.css";
 import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-fullscreen.css";
-import "lightgallery/css/lg-share.css";
 import { galleryImages } from "../../constants/data.js";
 import ScrollReveal from "../ScrollReveal";
 
@@ -35,7 +33,7 @@ const Gallery = () => {
         </section>
 
         <LightGallery
-          plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen, lgShare]}
+          plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
           mode="lg-fade"
           elementClassNames="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
           options={{

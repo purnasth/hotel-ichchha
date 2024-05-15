@@ -4,13 +4,11 @@ import lgZoom from "lightgallery/plugins/zoom";
 import lgVideo from "lightgallery/plugins/video";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgFullscreen from "lightgallery/plugins/fullscreen";
-import lgShare from "lightgallery/plugins/share";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-video.css";
 import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-fullscreen.css";
-import "lightgallery/css/lg-share.css";
 import { galleryImages } from "../../constants/data.js";
 
 const GallerySlider = () => {
@@ -20,7 +18,7 @@ const GallerySlider = () => {
         <div className="flex items-center justify-center">
           <LightGallery
             id="lightGallery"
-            plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen, lgShare]}
+            plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
             mode="lg-fade"
             elementClassNames="photobanner whitespace-nowrap flex items-center gap-0 md:gap-4 h-32 md:h-64 hover:animation-paused"
             options={{
