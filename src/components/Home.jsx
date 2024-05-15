@@ -5,9 +5,10 @@ import Facilities from "./Facilities/Facilities";
 import NearbyLocations from "./Nearby";
 import AboutHome from "./About/AboutHome";
 import HeroSliderCarousel from "./HeroSliderCarousel";
-import GalleryHome from "./Gallery/GalleryHome";
+// import GalleryHome from "./Gallery/GalleryHome";
 import BookNowSection from "./Contact/BookNowSection";
 import { sliderImages } from "../constants/data";
+import GallerySlider from "./Gallery/GallerySlider";
 
 const Home = () => {
   return (
@@ -23,7 +24,8 @@ const Home = () => {
       <Facilities />
       <Testimonials />
       <NearbyLocations />
-      <GalleryHome />
+      {/* <GalleryHome /> */}
+      <GallerySlider />
     </>
   );
 };

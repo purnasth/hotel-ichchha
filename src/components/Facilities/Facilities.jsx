@@ -41,7 +41,7 @@ const Facilities = () => {
             <img
               src={facility.icon}
               alt={facility.title}
-              className="w-full h-full shadow-md transition duration-700 ease-in-out transform group-hover:scale-150 object-cover"
+              className="w-full h-[70vh] shadow-md transition duration-700 ease-in-out transform group-hover:scale-150 object-cover"
             />
             <div className="absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.4)] w-full h-full"></div>
             <div

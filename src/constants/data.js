@@ -451,7 +451,7 @@ export const accomodationContents = [
         subtitle: "",
         description:
           "The Deluxe Room offers a comfortable stay with modern amenities and elegant decoration.",
-        url: "https://www.hotelichchha.com/images/subpackage/image/JqbZx-deluxeroom.jpg",
+        imageUrl: dlx3,
         category: "deluxe",
         router: "/accommodation/deluxe",
         images: [
@@ -522,7 +522,7 @@ export const accomodationContents = [
         subtitle: "",
         description:
           "Experience luxury and sophistication in our Super Deluxe Room, featuring splendid interiors and top-notch facilities.",
-        url: "https://www.hotelichchha.com/images/subpackage/image/ewcPn-super.jpg",
+        imageUrl: dlx4,
         category: "super-deluxe",
         router: "/accommodation/super-deluxe",
         images: [
@@ -593,7 +593,7 @@ export const accomodationContents = [
         subtitle: "",
         description:
           "Indulge in luxury and comfort with our Premium Room, designed to offer a lavish experience for our guests.",
-        url: "https://www.hotelichchha.com/images/subpackage/image/5842r-room-banner.jpg",
+        imageUrl: dlx2,
         category: "premium",
         router: "/accommodation/premium",
         images: [
@@ -664,7 +664,7 @@ export const accomodationContents = [
         subtitle: "",
         description:
           "Our Junior Suite offers spacious accommodation with a cozy living room, perfect for relaxation and comfort.",
-        url: "https://www.hotelichchha.com/images/subpackage/image/9gKt1-one.jpg",
+        imageUrl: dlx1,
         category: "junior-suite",
         router: "/accommodation/junior-suite",
         images: [
@@ -735,7 +735,7 @@ export const accomodationContents = [
         subtitle: "",
         description:
           "Elegance meets comfort in our Executive Suite, featuring a large bedroom and a separate living room for your convenience.",
-        url: "https://www.hotelichchha.com/images/subpackage/image/x64rS-room-2.jpg",
+        imageUrl: slider2,
         category: "executive-suite",
         router: "/accommodation/executive-suite",
         images: [
@@ -868,7 +868,7 @@ export const hotelFacilities = [
     title: "Restaurant & Bar",
     description:
       "Perfect place to indulge in the finest wines and signature cocktails with friends and family.",
-    icon: "https://www.hotelichchha.com/images/services/MWHKx-gallery-bar.jpg",
+    icon: bar2,
     router: "/restaurants",
   },
   {
@@ -876,7 +876,7 @@ export const hotelFacilities = [
     title: "Conference & Events",
     description:
       "Remember us for your various events and make your events well managed and fulfilled.",
-    icon: "https://www.hotelichchha.com/images/services/S1FZI-gallery-hall.jpg",
+    icon: g3,
     router: "/events",
   },
   {
@@ -884,7 +884,7 @@ export const hotelFacilities = [
     title: "Health & Spa",
     description:
       "Relax yourself from your stressful works and get a cool spa massage from professional masseurs.",
-    icon: "https://www.hotelichchha.com/images/services/FqRR6-spa.jpg",
+    icon: g16,
     router: "/recreation",
   },
   {
@@ -892,7 +892,7 @@ export const hotelFacilities = [
     title: "Swimming Pool",
     description:
       "Enjoy memorable time in our swimming pool. Have fun with your family and friends.",
-    icon: "https://www.hotelichchha.com/images/services/fIIuL-pool.jpg",
+    icon: g18,
     router: "/recreation",
   },
   {
@@ -900,7 +900,7 @@ export const hotelFacilities = [
     title: "Mini Casino",
     description:
       "A perfect place to relive your days with exciting games along with the family.",
-    icon: "https://www.hotelichchha.com/images/services/fWNzQ-casino.jpg",
+    icon: g10,
     router: "/recreation",
   },
   // {

@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const BookNowSection = () => {
   return (
-    <div className="fixed bottom-0 w-full lg:bg-bg-gold-light p-4 z-30">
+    <div className="fixed bottom-0 w-full 5xl:bg-bg-gold-light p-4 z-30">
       <div className="container flex justify-around items-center">
-        <div className="hidden lg:flex flex-row items-center gap-3 relative">
+        <div className="hidden flex-row items-center gap-3 relative">
           <label htmlFor="check-in-date">Check-In Date</label>
           <div className="relative">
             <input
@@ -30,7 +30,7 @@ const BookNowSection = () => {
             <HiArrowLongRight className="group-hover:scale-x-150 group-hover:translate-x-1 transition-all duration-150 ease-linear" />
           </Link>
         </div>
-        <div className="hidden lg:flex flex-row items-center gap-5 relative">
+        <div className="hidden flex-row items-center gap-5 relative">
           <label htmlFor="check-out-date">Check-Out Date</label>
           <div className="relative">
             <input

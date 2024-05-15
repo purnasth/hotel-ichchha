@@ -103,9 +103,9 @@ const Accomodation = () => {
         <div className="overflow-hidden rounded-lg group">
           <div className="relative">
             <img
-              src={room.url}
+              src={room.imageUrl}
               alt={room.title}
-              className={`w-full h-full md:h-48 lg:h-64 xl:h-96 rounded-lg object-cover transition-transform duration-700 ease-in-out ${
+              className={`w-full h-64 md:h-48 lg:h-64 xl:h-96 rounded-lg object-cover transition-transform duration-700 ease-in-out ${
                 index === centerIndex ? "scale-105" : "scale-110"
               } group-hover:scale-100 `}
             />
