@@ -34,7 +34,7 @@ const HeroSliderCarousel = ({ images, className }) => {
       >
         {images.map((image, index) => (
           <div key={index} className="relative">
-            <div className="overlay absolute h-64 inset-0 bg-gradient-to-b from-[rgba(255,255,255,1)] to-[rgba(255,255,255,0)] z-0"></div>
+            <div className="overlay absolute h-32 sm:h-48 md:h-64 inset-0 bg-gradient-to-b from-[rgba(255,255,255,1)] to-[rgba(255,255,255,0)] z-0"></div>
             <img src={image.src} alt={image.title} className={className} />
             <div className="overlay absolute bottom-0 w-full h-80 bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.8)]" />
             <div className="absolute left-0 bottom-0 text-gold w-full p-2">

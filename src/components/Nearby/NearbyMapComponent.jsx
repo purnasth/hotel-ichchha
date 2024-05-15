@@ -44,16 +44,17 @@ function NearbyMapComponent() {
               <span className="font-bold">{location.name}</span>
               <span className="ml-2">{location.distance}</span>
               <br />
-              <a
-                href="#"
+              <button
                 className="text-blue-600"
                 onClick={(e) => {
                   e.preventDefault();
                   handleLocationClick(location);
                 }}
+                title="Get Direction"
+                aria-label="Get Direction"
               >
                 Get Direction
-              </a>
+              </button>
             </li>
           ))}
         </ul>

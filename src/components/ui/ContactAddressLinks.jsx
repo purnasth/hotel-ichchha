@@ -1,5 +1,6 @@
 import React from "react";
 import { contactAddressLinks } from "../../constants/data";
+import { Link } from "react-router-dom";
 
 const ContactAddressLinks = ({ showAll = true }) => {
   // Filter out phone numbers and email addresses if showAll is false
@@ -19,9 +20,9 @@ const ContactAddressLinks = ({ showAll = true }) => {
               className="mt-3 flex items-center justify-start gap-2 text-navy hover:text-gold transition-all duration-300 ease-linear"
             >
               {link.icon && <link.icon className="text-base" />}
-              <a href={link.link} target="_blank" rel="noopener">
+              <Link to={link.link} target="_blank" rel="noopener">
                 {link.text} (View Map)
-              </a>
+              </Link>
             </li>
           )}
           {link.numbers && showAll && (
@@ -33,14 +34,14 @@ const ContactAddressLinks = ({ showAll = true }) => {
                     className="flex items-center justify-start gap-2 text-navy hover:text-gold transition-all duration-300 ease-linear"
                   >
                     {link.icon && <link.icon className="text-base" />}
-                    <a
-                      href={number.link}
+                    <Link
+                      to={number.link}
                       target="_blank"
                       rel="noopener"
                       className="-ml-[2px]"
                     >
                       {number.text}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -55,9 +56,9 @@ const ContactAddressLinks = ({ showAll = true }) => {
                     className="flex items-center justify-start gap-2 text-navy hover:text-gold transition-all duration-300 ease-linear"
                   >
                     {link.icon && <link.icon className="text-base" />}
-                    <a href={address.link} target="_blank" rel="noopener">
+                    <Link to={address.link} target="_blank" rel="noopener">
                       {address.text}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

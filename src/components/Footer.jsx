@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "./ui/Logo";
 import SocialLinks from "./ui/SocialLinks";
 import ContactAddressLinks from "./ui/ContactAddressLinks";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const quickLinks = [
@@ -79,7 +80,7 @@ const currentYear = new Date().getFullYear();
                     key={link.id}
                     className="text-navy hover:text-gold hover:translate-x-2 hover:font-bold transition-all duration-300 ease-in"
                   >
-                    <a href={link.href}>{link.text}</a>
+                    <Link to={link.href}>{link.text}</Link>
                   </li>
                 ))}
               </ul>
@@ -92,7 +93,7 @@ const currentYear = new Date().getFullYear();
                     key={link.id}
                     className="text-navy hover:text-gold hover:translate-x-2 hover:font-bold transition-all duration-300 ease-in"
                   >
-                    <a href={link.href}>{link.text}</a>
+                    <Link to={link.href}>{link.text}</Link>
                   </li>
                 ))}
               </ul>
@@ -104,14 +105,14 @@ const currentYear = new Date().getFullYear();
                   <ul className="flex flex-wrap items-center justify-start gap-2 list-none mb-8">
                     {section.links.map((link) => (
                       <li key={link.id} className="flex gap-2 flex-wrap">
-                        <a
-                          href={link.href}
+                        <Link
+                          to={link.href}
                           target="_blank"
                           rel="noopener"
                           className="text-navy hover:text-gold transition-all duration-300 ease-in"
                         >
                           {link.text}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -129,13 +130,13 @@ const currentYear = new Date().getFullYear();
           </p>
           <p className="text-sm">
             Website by{" "}
-            <a
-              href="https://longtail.info/"
+            <Link
+              to="https://longtail.info/"
               target="_blank"
               className="underline"
             >
               {author}
-            </a>
+            </Link>
           </p>
         </div>
       </div>
