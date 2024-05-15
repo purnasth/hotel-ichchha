@@ -452,6 +452,7 @@ export const accomodationContents = [
         description:
           "The Deluxe Room offers a comfortable stay with modern amenities and elegant decoration.",
         url: "https://www.hotelichchha.com/images/subpackage/image/JqbZx-deluxeroom.jpg",
+        category: "deluxe",
         router: "/accommodation/deluxe",
         images: [
           {
@@ -522,6 +523,7 @@ export const accomodationContents = [
         description:
           "Experience luxury and sophistication in our Super Deluxe Room, featuring splendid interiors and top-notch facilities.",
         url: "https://www.hotelichchha.com/images/subpackage/image/ewcPn-super.jpg",
+        category: "super-deluxe",
         router: "/accommodation/super-deluxe",
         images: [
           {
@@ -592,6 +594,7 @@ export const accomodationContents = [
         description:
           "Indulge in luxury and comfort with our Premium Room, designed to offer a lavish experience for our guests.",
         url: "https://www.hotelichchha.com/images/subpackage/image/5842r-room-banner.jpg",
+        category: "premium",
         router: "/accommodation/premium",
         images: [
           {
@@ -662,6 +665,7 @@ export const accomodationContents = [
         description:
           "Our Junior Suite offers spacious accommodation with a cozy living room, perfect for relaxation and comfort.",
         url: "https://www.hotelichchha.com/images/subpackage/image/9gKt1-one.jpg",
+        category: "junior-suite",
         router: "/accommodation/junior-suite",
         images: [
           {
@@ -732,6 +736,7 @@ export const accomodationContents = [
         description:
           "Elegance meets comfort in our Executive Suite, featuring a large bedroom and a separate living room for your convenience.",
         url: "https://www.hotelichchha.com/images/subpackage/image/x64rS-room-2.jpg",
+        category: "executive-suite",
         router: "/accommodation/executive-suite",
         images: [
           {

@@ -15,16 +15,17 @@ import Home from "./components/Home";
 import Suites from "./components/Suites";
 import DeluxeRoom from "./components/Rooms/DeluxeRoom";
 import SuperDeluxeRoom from "./components/Rooms/SuperDeluxeRoom";
+import PremiumRoom from "./components/Rooms/PremiumRoom";
+import JuniorSuite from "./components/Rooms/JuniorSuite";
+import ExecutiveSuite from "./components/Rooms/ExecutiveSuite";
 import Restaurant from "./components/Restaurant";
 import EventsHall from "./components/EventsHall";
 import Contact from "./components/Contact";
 import Recreation from "./components/Recreation";
 import BackToTop from "./components/BackToTop";
 import ExploreFacilitiesButton from "./components/Facilities/ExploreFacilitiesButton";
-import PremiumRoom from "./components/Rooms/PremiumRoom";
-import JuniorSuite from "./components/Rooms/JuniorSuite";
 import NotFound from "./components/ui/NotFound";
-import ExecutiveSuite from "./components/Rooms/ExecutiveSuite";
+import AccommodationDynamic from "./components/AccommodationDynamic";
 
 const App = () => {
   return (
@@ -36,7 +37,7 @@ const App = () => {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/accommodation" element={<Suites />} />
-          <Route path="/accommodation/deluxe" element={<DeluxeRoom />} />
+          {/* <Route path="/accommodation/deluxe" element={<DeluxeRoom />} />
           <Route
             path="/accommodation/super-deluxe"
             element={<SuperDeluxeRoom />}
@@ -46,6 +47,10 @@ const App = () => {
           <Route
             path="/accommodation/executive-suite"
             element={<ExecutiveSuite />}
+          /> */}
+          <Route
+            path="/accommodation/:category"
+            element={<AccommodationDynamic />}
           />
 
           <Route path="/restaurants" element={<Restaurant />} />
