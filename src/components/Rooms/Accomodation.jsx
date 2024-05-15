@@ -79,6 +79,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { accomodationContents } from "../../constants/data.js";
 import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 import ScrollReveal from "../ScrollReveal";
+import { Link } from "react-router-dom";
 
 const Accomodation = () => {
   const sliderRef = useRef(null);
@@ -92,8 +93,8 @@ const Accomodation = () => {
 
   const renderSlides = () => {
     return accomodationContents[0].accomodation.map((room, index) => (
-      <a
-        href={room.router}
+      <Link
+        to={room.router}
         key={room.id}
         className={`relative w-full transition-transform duration-700 ease-in-out p-4 sm:px-2 lg:px-6 xl:px-10 md:py-16 border-0 outline-0 focus:border-0 focus:outline-none ${
           index === centerIndex ? "md:scale-[1.2]" : "md:scale-80"
@@ -120,7 +121,7 @@ const Accomodation = () => {
         <p className="text-sm md:text-base mt-2 line-clamp-2">
           {room.description}
         </p>
-      </a>
+      </Link>
     ));
   };
 

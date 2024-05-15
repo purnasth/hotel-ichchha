@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import {
   logo,
   navLinks,
@@ -12,6 +11,7 @@ import Logo from "./ui/Logo";
 import SocialLinks from "./ui/SocialLinks";
 import ContactAddressLinks from "./ui/ContactAddressLinks";
 import { IoClose } from "react-icons/io5";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -61,8 +61,8 @@ const Navbar = () => {
               visible ? "scale-100 translate-x-0" : "scale-0 translate-x-full"
             } ${window.scrollY > 0 ? "filter-black" : ""}`}
           >
-            <a
-              href="https://wa.me/+9779802738099"
+            <Link
+              to="https://wa.me/+9779802738099"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-base lg:text-lg"
@@ -71,11 +71,11 @@ const Navbar = () => {
             >
               <FaWhatsapp className="text-3xl text-gold" />{" "}
               <span className="hidden md:block">9802738099</span>
-            </a>
+            </Link>
           </div>
 
           <h1 className="absolute left-1/2 -translate-x-1/2">
-            <a href="/">
+            <Link to="/">
               <img
                 src={logo}
                 alt="logo"
@@ -90,7 +90,7 @@ const Navbar = () => {
                       ""
                 }`}
               />
-            </a>
+            </Link>
           </h1>
 
           <button
@@ -167,13 +167,18 @@ const Navbar = () => {
                   <li
                     className="peer peer-hover:opacity-50 hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear"
                     key={link.id}
+                    onClick={closeNav}
                   >
-                    <a
-                      href={link.link}
-                      className="text-xl md:text-3xl lg:text-4xl font-extrabold"
+                    <NavLink
+                      to={link.link}
+                      className={({ isActive }) =>
+                        `text-xl md:text-3xl lg:text-4xl font-extrabold ${
+                          isActive ? "text-gold" : ""
+                        }`
+                      }
                     >
                       {link.title}
-                    </a>
+                    </NavLink>
                   </li>
                 ))}
               </ul>
@@ -181,19 +186,32 @@ const Navbar = () => {
                 <ul className="flex flex-col items-center md:items-start gap-4">
                   {navLinksRooms.map((category) => (
                     <li key={category.id} className="group list-none">
-                      <a
-                        href={category.link}
-                        className="block text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-extrabold hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear"
+                      <NavLink
+                        to={category.link}
+                        onClick={closeNav}
+                        className={({ isActive }) =>
+                          `block text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-extrabold hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear ${
+                            isActive ? "text-gold" : ""
+                          }`
+                        }
                       >
                         {category.title}
-                      </a>
+                      </NavLink>
                       <ul className="mt-4 flex flex-col flex-wrap items-center justify-center md:items-start gap-4">
                         {category.subLinks.map((subLink) => (
                           <li
                             key={subLink.id}
+                            onClick={closeNav}
                             className="text-sm peer peer-hover:opacity-50 hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear"
                           >
-                            <a href={subLink.link}>{subLink.title}</a>
+                            <NavLink
+                              to={subLink.link}
+                              className={({ isActive }) =>
+                                `${isActive ? "text-gold" : ""}`
+                              }
+                            >
+                              {subLink.title}
+                            </NavLink>
                           </li>
                         ))}
                       </ul>
@@ -204,25 +222,36 @@ const Navbar = () => {
                 <ul className="flex flex-col items-start gap-4">
                   {navLinksEvents.map((category) => (
                     <li key={category.id} className="group list-none">
-                      <a
-                        href={category.link}
-                        className="block text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-extrabold hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear"
+                      <NavLink
+                        to={category.link}
+                        onClick={closeNav}
+                        className={({ isActive }) =>
+                          `block text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-extrabold hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear ${
+                            isActive ? "text-gold" : ""
+                          }`
+                        }
                       >
                         {category.title}
-                      </a>
+                      </NavLink>
                       <ul className="mt-4 flex flex-col flex-wrap items-center justify-center md:items-start gap-4">
                         {category.subLinks.map((subLink) => (
                           <li
                             key={subLink.id}
                             className="text-sm peer peer-hover:opacity-50 hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear"
+                            onClick={closeNav}
                           >
                             {/* <a href={`${subLink.link}`}>
                               {subLink.title}
                             </a> */}
 
-                            <a href={`/events#${subLink.id}`}>
+                            <NavLink
+                              to={`/events#${subLink.id}`}
+                              // className={({ isActive }) =>
+                              //   `${isActive ? "text-gold" : ""}`
+                              // }
+                            >
                               {subLink.title}
-                            </a>
+                            </NavLink>
                           </li>
                         ))}
                       </ul>

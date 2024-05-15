@@ -2,6 +2,7 @@ import React from "react";
 import { diningOptions } from "../constants/data";
 import ReusableSlider from "./ReusableSlider";
 import ScrollReveal from "./ScrollReveal";
+import { Link } from "react-router-dom";
 
 const Restaurant = () => {
   return (
@@ -49,12 +50,12 @@ const Restaurant = () => {
                         Next
                       </button>
                     </div> */}
-                    <a
-                      href=""
+                    <Link
+                      to="#"
                       className="bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-sm md:text-base transition-all duration-300 ease-linear"
                     >
                       View Menu
-                    </a>
+                    </Link>
                   </div>
                   <div className="flex items-start sm:items-center justify-between gap-4 flex-col sm:flex-row">
                     {/* <p>{option.subtitle}</p> */}

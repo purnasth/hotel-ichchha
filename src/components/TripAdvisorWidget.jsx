@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const TripAdvisorWidget = () => {
   useEffect(() => {
@@ -20,15 +21,15 @@ const TripAdvisorWidget = () => {
     <div id="TA_cdswritereviewlg465" className="TA_cdswritereviewlg">
       <ul id="DaUw9LqnJBEU" className="TA_links 9KAp72F4FJK">
         <li id="paaRI3NJkIq" className="Zs5Sx2p">
-          <a
+          <Link
             target="_blank"
-            href="https://www.tripadvisor.com/Hotel_Review-g21156991-d11283455-Reviews-Hotel_Ichchha-Pipara_Simara_Narayani_Zone_Central_Region.html"
+            to="https://www.tripadvisor.com/Hotel_Review-g21156991-d11283455-Reviews-Hotel_Ichchha-Pipara_Simara_Narayani_Zone_Central_Region.html"
           >
             <img
               src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
               alt="TripAdvisor"
             />
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

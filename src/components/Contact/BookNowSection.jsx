@@ -1,6 +1,7 @@
 import React from "react";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { accomodationContents } from "../../constants/data.js";
+import { Link } from "react-router-dom";
 
 const BookNowSection = () => {
   return (
@@ -19,15 +20,15 @@ const BookNowSection = () => {
           </div>
         </div>
         <div className="flex">
-          <a
-            href={accomodationContents[0].rojaiLink}
+          <Link
+            to={accomodationContents[0].rojaiLink}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full group flex items-center justify-center gap-2 hover:bg-navy hover:text-ivory bg-goldLight text-navy px-6 py-3 rounded-full text-base transition-all duration-300 ease-linear"
           >
             Book Now
             <HiArrowLongRight className="group-hover:scale-x-150 group-hover:translate-x-1 transition-all duration-150 ease-linear" />
-          </a>
+          </Link>
         </div>
         <div className="hidden lg:flex flex-row items-center gap-5 relative">
           <label htmlFor="check-out-date">Check-Out Date</label>

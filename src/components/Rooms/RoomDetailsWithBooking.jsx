@@ -1,5 +1,6 @@
 import React from "react";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 const RoomDetailsWithBooking = ({ roomDetails, rojaiLink }) => {
   return (
@@ -19,15 +20,15 @@ const RoomDetailsWithBooking = ({ roomDetails, rojaiLink }) => {
         ))}
 
         <div className="pt-12 w-full">
-          <a
-            href={rojaiLink}
+          <Link
+            to={rojaiLink}
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center justify-center gap-2 w-full bg-navy text-ivory hover:text-navy hover:bg-ivory px-6 py-4 rounded-full text-lg transition-all duration-300 ease-linear"
           >
             Book Now
             <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-300" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

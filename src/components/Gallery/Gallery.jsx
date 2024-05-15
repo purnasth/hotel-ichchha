@@ -44,7 +44,7 @@ const Gallery = () => {
           }}
         >
           {galleryImages.map((image) => (
-            <a
+            <div
               key={image.id}
               className="group gallery-item overflow-hidden"
               data-src={image.url}
@@ -55,7 +55,7 @@ const Gallery = () => {
                 alt={image.alt}
                 loading="lazy"
               />
-            </a>
+            </div>
           ))}
         </LightGallery>
       </section>

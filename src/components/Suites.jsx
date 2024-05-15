@@ -2,6 +2,7 @@ import React from "react";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { accomodationContents } from "../constants/data.js";
 import ScrollReveal from "./ScrollReveal";
+import { Link } from "react-router-dom";
 
 const Suites = () => {
   const accomodationData = accomodationContents[0];
@@ -24,8 +25,8 @@ const Suites = () => {
           <div className="mt-12 md:mt-32">
             <div className="border-[1px] border-navy/40 rounded-3xl overflow-hidden">
               {accomodationData.accomodation.map((suite, index) => (
-                <a
-                  href={suite.router}
+                <Link
+                  to={suite.router}
                   key={suite.id}
                   className={`${
                     index !== accomodationData.accomodation.length - 1
@@ -64,7 +65,7 @@ const Suites = () => {
                       </button>
                     </div>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
           </div>

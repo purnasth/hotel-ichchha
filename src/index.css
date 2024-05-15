@@ -7,7 +7,7 @@
     --para: 1.25rem;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 0.25em;
     border-radius: 100vw;
 }
@@ -29,7 +29,7 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: #ca8e0e;
-}
+} */
 
 @tailwind base;
 @tailwind components;
@@ -189,5 +189,11 @@
 
     .container {
         @apply mx-auto w-full 2xl:max-w-7xl;
+    }
+
+    * {
+        scrollbar-width: thin;
+        /* scrollbar-color: #E9C279 #FFFFF0; */
+        scrollbar-color: #E9C279 #fffbf3;
     }
 }

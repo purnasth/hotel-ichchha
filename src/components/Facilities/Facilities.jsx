@@ -1,6 +1,7 @@
 import React from "react";
 import { hotelFacilities } from "../../constants/data.js";
 import ScrollReveal from "../ScrollReveal";
+import { Link } from "react-router-dom";
 
 const Facilities = () => {
   const facilitiesTitle = hotelFacilities.find(
@@ -51,10 +52,15 @@ const Facilities = () => {
                 <h3 className="text-3xl font-medium mb-24 group-hover:mb-0 transition-all duration-300">
                   {facility.title}
                 </h3>
-                <p className="text-ivory my-4 line-clamp-4">{facility.description}</p>
-                <a href={facility.router} className="text-ivory bg-transparent border border-solid border-ivory px-4 py-2 mt-2 hover:bg-ivory hover:text-navy transition duration-300 ease-in-out">
+                <p className="text-ivory my-4 line-clamp-4">
+                  {facility.description}
+                </p>
+                <Link
+                  to={facility.router}
+                  className="text-ivory bg-transparent border border-solid border-ivory px-4 py-2 mt-2 hover:bg-ivory hover:text-navy transition duration-300 ease-in-out"
+                >
                   View More
-                </a>
+                </Link>
               </div>
             </div>
           </div>
