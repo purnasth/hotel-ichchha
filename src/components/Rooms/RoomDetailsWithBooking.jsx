@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const RoomDetailsWithBooking = ({ roomDetails, rojaiLink }) => {
   return (
-    <div className="ml-auto w-full md:w-1/2 h-full sticky top-6">
+    <div className="ml-auto w-full lg:w-1/2 h-full sticky top-6">
       <div className="bg-gold/30 text-sm md:text-xl p-6 md:p-12 pt-6">
         {Object.entries(roomDetails).map(([key, { icon: Icon, value }]) => (
           <div key={key}>

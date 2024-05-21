@@ -4,6 +4,7 @@ import { accomodationContents } from "../constants/data.js";
 import NotFound from "./ui/NotFound";
 import HeroSliderCarousel from "./HeroSliderCarousel";
 import PackageComponent from "./Rooms/PackageComponent";
+import ExploreRooms from "./ui/ExploreRooms.jsx";
 
 const AccommodationDynamic = () => {
   const { category } = useParams();
@@ -16,6 +17,10 @@ const AccommodationDynamic = () => {
     return <NotFound />;
   }
 
+  const otherRooms = accomodationData.accomodation.filter(
+    (otherRoom) => otherRoom.category !== category
+  );
+
   return (
     <>
       <HeroSliderCarousel
@@ -23,6 +28,8 @@ const AccommodationDynamic = () => {
         className="w-full h-96 md:h-screen object-cover"
       />
       <PackageComponent room={room} />
+
+      <ExploreRooms otherRooms={otherRooms} />
     </>
   );
 };

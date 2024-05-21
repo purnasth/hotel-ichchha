@@ -17,12 +17,12 @@ const PackageComponent = ({ room }) => {
           paraColor="text-navy"
         />
 
-        <div className="flex flex-col md:flex-row gap-16 my-8 md:my-24 md:gap-12 justify-between">
-          <div className="w-full md:w-1/2 max-w-lg">
+        <div className="flex flex-col lg:flex-row gap-16 my-8 lg:my-24 lg:gap-12 justify-between">
+          <div className="w-full lg:w-1/2 lg:max-w-lg">
             <h5 className="text-2xl md:text-3xl leading-loose pb-4 font-medium">
               {room.overview[0].title}
             </h5>
-            <p className="pb-4 text-justify md:text-pretty">
+            <p className="pb-4 text-justify lg:text-pretty">
               {room.overview[0].content}
             </p>
 
@@ -41,10 +41,10 @@ const PackageComponent = ({ room }) => {
               </div>
             ))}
 
-            <h5 className="text-2xl md:text-3xl leading-loose py-6 font-medium">
+            <h5 className="text-2xl lg:text-3xl leading-loose py-6 font-medium">
               Room Amenities
             </h5>
-            <div className="flex items-start gap-20 text-xs sm:text-sm md:text-base">
+            <div className="flex items-start just gap-12 md:gap-48 lg:gap-20 text-xs sm:text-sm lg:text-base">
               <ul className="flex items-start justify-center flex-col gap-5">
                 {room.amenities
                   .slice(0, Math.ceil(room.amenities.length / 2))

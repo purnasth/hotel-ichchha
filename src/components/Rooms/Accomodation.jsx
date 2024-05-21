@@ -105,15 +105,20 @@ const Accomodation = () => {
             <img
               src={room.imageUrl}
               alt={room.title}
-              className={`w-full h-64 md:h-48 lg:h-64 xl:h-96 rounded-lg object-cover transition-transform duration-700 ease-in-out ${
+              className={`w-full h-64 md:h-48 lg:h-64 xl:h-80 2xl:h-96 rounded-lg object-cover transition-transform duration-700 ease-in-out ${
                 index === centerIndex ? "scale-105" : "scale-110"
               } group-hover:scale-100 `}
             />
             <div className="absolute inset-0 bg-black transition-opacity duration-300 ease-linear opacity-10 group-hover:opacity-40 "></div>
             <div className="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear">
-              <p className="text-ivory font-bold text-base md:text-lg translate-y-full group-hover:-translate-y-6 transition-all duration-300 ease-linear">
-                Explore More
-              </p>
+              <Link
+                to={room.router}
+                className="bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base translate-y-full group-hover:-translate-y-6 transition-all duration-300 ease-linear"
+                title="Explore"
+                aria-label="Explore"
+              >
+                Explore
+              </Link>
             </div>
           </div>
         </div>

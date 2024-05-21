@@ -511,11 +511,14 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: IoMdResize, value: "100 sq. feet" },
+          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
           "Bed Type": { icon: IoBed, value: "King Size" },
-          "Starting Price": { icon: IoPricetagSharp, value: "USD 200" },
-          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
-          Smoking: { icon: FaSmoking, value: "Yes" },
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 60 / night" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 adults" },
+          "Airport Pickup & Drop": {
+            icon: MdLocalAirport,
+            value: "On Request",
+          },
         },
       },
       {
@@ -582,11 +585,14 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: IoMdResize, value: "200 sq. feet" },
+          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
           "Bed Type": { icon: IoBed, value: "King Size" },
-          "Starting Price": { icon: IoPricetagSharp, value: "USD 300" },
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 70 / night" },
           Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
-          Smoking: { icon: FaSmoking, value: "Yes" },
+          "Airport Pickup & Drop": {
+            icon: MdLocalAirport,
+            value: "On Request",
+          },
         },
       },
       {
@@ -653,11 +659,14 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: IoMdResize, value: "200 sq. feet" },
+          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
           "Bed Type": { icon: IoBed, value: "King Size" },
-          "Starting Price": { icon: IoPricetagSharp, value: "USD 350" },
-          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
-          Smoking: { icon: FaSmoking, value: "Yes" },
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 75 / night" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
+          "Airport Pickup & Drop": {
+            icon: MdLocalAirport,
+            value: "On Request",
+          },
         },
       },
       {
@@ -724,11 +733,14 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: IoMdResize, value: "200 sq. feet" },
+          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
           "Bed Type": { icon: IoBed, value: "King Size" },
-          "Starting Price": { icon: IoPricetagSharp, value: "USD 300" },
-          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
-          Smoking: { icon: FaSmoking, value: "Yes" },
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 100 / night" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
+          "Airport Pickup & Drop": {
+            icon: MdLocalAirport,
+            value: "On Request",
+          },
         },
       },
       {
@@ -795,11 +807,14 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: IoMdResize, value: "200 sq. feet" },
+          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
           "Bed Type": { icon: IoBed, value: "King Size" },
-          "Starting Price": { icon: IoPricetagSharp, value: "USD 300" },
-          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
-          Smoking: { icon: FaSmoking, value: "Yes" },
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 140 / night" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
+          "Airport Pickup & Drop": {
+            icon: MdLocalAirport,
+            value: "On Request",
+          },
         },
       },
     ],

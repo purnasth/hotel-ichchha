@@ -36,7 +36,7 @@ const Suites = () => {
                 >
                   <div className="flex w-full md:w-1/3">
                     <img
-                      src={suite.url}
+                      src={suite.imageUrl}
                       alt={suite.title}
                       className={`w-full h-64 sm:h-96 md:h-60 object-cover origin-left transition-all duration-${duration} md:group-hover:scale-x-105`}
                     />
