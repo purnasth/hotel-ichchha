@@ -34,9 +34,9 @@ const Footer = () => {
       id: 1,
       title: "Room Booking",
       links: [
-        { id: 1, text: "+9779855029591", href: "tel:+9779855029591" },
-        { id: 2, text: "+9779802738092", href: "tel:+9779802738092" },
-        { id: 3, text: "+9779855029592", href: "tel:+9779855029592" },
+        { id: 1, text: "+977-053 520591", href: "tel:+977053520591" },
+        { id: 2, text: "+977-053 520592", href: "tel:+977053520592" },
+        { id: 3, text: "+977-053 520593", href: "tel:+977053520593" },
         {
           id: 4,
           text: "info@hotelichchha.com",
@@ -48,7 +48,7 @@ const Footer = () => {
       id: 2,
       title: "Conference & Events Booking",
       links: [
-        { id: 1, text: "+977-9855029591", href: "tel:+9779855029591" },
+        { id: 1, text: "+977-053 520591", href: "tel:+977053520591" },
         {
           id: 2,
           text: "info@hotelichchha.com",
@@ -58,9 +58,9 @@ const Footer = () => {
     },
   ];
 
-const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
   const author = "Longtail e-media";
-  const owner = "Hotel Ichchha Pvt. Ltd.";
+  const owner = "Hotel Ichchha Ltd.";
 
   return (
     <div className="bg-pink-gold text-navy">

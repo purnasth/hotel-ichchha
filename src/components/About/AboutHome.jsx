@@ -26,7 +26,7 @@ const AboutHome = () => {
             </div>
           ))}
 
-          <div className="video mt-12 md:mt-28 h-full lg:h-[35rem] overflow-hidden">
+          <div className="video mt-12 md:mt-28 h-full lg:h-[35rem] overflow-hidden outline outline-1 outline-goldLight -outline-offset-[12px]">
             <video
               className="w-full h-full object-cover"
               autoPlay
@@ -43,7 +43,8 @@ const AboutHome = () => {
                 srcLang="en"
                 label="english_captions"
               ></track>
-              A beautiful video of Hotel Ichchha in the background portraying the beauty of the hotel.
+              A beautiful video of Hotel Ichchha in the background portraying
+              the beauty of the hotel.
             </video>
             {/* <img src={ichchha} alt="" className="w-full h-full object-cover" /> */}
           </div>

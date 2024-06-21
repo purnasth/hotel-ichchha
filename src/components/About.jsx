@@ -1,6 +1,7 @@
 import React from "react";
 import AboutHome from "./About/AboutHome";
-import { messageFromChairman, ourTeamMembers } from "../constants/data";
+import { messageFromCEO, ourTeamMembers } from "../constants/data";
+import BODTeam from "./ui/BODTeam";
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
       <AboutHome />
 
       <section className="bg-bg-gold-dark">
-        {messageFromChairman.map((message) => (
+        {messageFromCEO.map((message) => (
           <div
             key={message.id}
             className="flexCenter flex-col container mx-auto"
@@ -30,43 +31,35 @@ const About = () => {
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
-                <h2 className="text-lg md:text-2xl font-medium mt-8">
+                <h2 className="text-lg md:text-xl font-medium mt-4 mb-2">
                   {message.fullName}
                 </h2>
                 <span className="text-sm md:text-base">{message.position}</span>
               </div>
-              <div className="flex items-start flex-col gap-4 justify-center z-20 bg-bg-gold-dark pt-12 md:pt-0">
-                <p className="text-lg text-justify">{message.description}</p>
+              <div className="space-y-8 z-20 bg-bg-gold-dark pt-12 md:pt-0">
                 <p className="text-lg text-justify">
-                  We are a 5-Star Deluxe Hotel; nevertheless, we have all the
-                  facilities as well as the infrastructure as that of a 5-Star
-                  property and we are aiming for the same so as to fulfill the
-                  need of high-end clients in this region. Meanwhile, we have
-                  expanded our wing at Amlekhgunj as Garden Safari Resort which
-                  is under construction and at the completion phase, located
-                  just next to the entrance of Parsa National Park.
+                  Namaste, <br />I am Rewanta Prasad Dhaubhadel, affectionately
+                  known as REBU by my friends, family, and colleagues. With a
+                  rich heritage in hospitality spanning 27 years, I bring a
+                  wealth of experience to the table. My journey began with a
+                  Hotel Management Degree at the prestigious Swiss Hotel
+                  Management School, followed by hospitality trainings and
+                  professional stints in Switzerland, honing my skills in cities
+                  like Geneva, Lausanne, and Monteux.
                 </p>
                 <p className="text-lg text-justify">
-                  Since this area has already been developed as an industrial
-                  area having Birgunj-Pathlaiya Industrial Corridor already in
-                  place, new developments have been going on such as domestic as
-                  well as Indian/foreign tourism, agro tourism, infrastructure
-                  projects run by the government like Nijgadh-Kathmandu
-                  Expressway connecting the whole Terai Region to the Capital
-                  city of Nepal in just a little over 1-hour drive and Nijgadh
-                  International Airport, all favoring rapid growth of tourism in
-                  this part of the country.
+                  Returning to Nepal, I am committed to imparting my knowledge
+                  to the next generation of hoteliers at GATE College. My tenure
+                  includes notable roles at esteemed establishments such as
+                  Hotel Royal Singi, where I've contributed to the thriving
+                  hospitality landscape of Kathmandu Valley.
                 </p>
                 <p className="text-lg text-justify">
-                  We believe that these enterprises will provide opportunities
-                  for future sustainable growth in tourism and travel trade
-                  industry of Nepal. We also recognize and embrace our
-                  obligation to become good corporate citizens. We are highly
-                  dedicated to maintain corporate transparency and act ethically
-                  in all aspects of our business. We will play whatever role
-                  possible to make the world a better place to live. We will do
-                  all that we can to provide good services to our valued
-                  customers.
+                  Driven by a passion for elevating Nepal's hospitality sector,
+                  I now proudly serve as the CEO of Hotel Ichchha - Simara. In
+                  this capacity, I am dedicated to leveraging the untapped
+                  potential of Simara's burgeoning economy, positioning it as a
+                  premier destination for hospitality ventures.
                 </p>
               </div>
             </div>
@@ -102,6 +95,8 @@ const About = () => {
           </div>
         ))}
       </section>
+
+      {/* <BODTeam ourTeamMembers={ourTeamMembers} /> */}
       {/* <section className="bg-bg-gold-light">
         <div className="flexCenter flex-col w-3/4 mx-auto">
           <h3 className="text-navy font-medium">

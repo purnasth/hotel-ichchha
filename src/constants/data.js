@@ -3,7 +3,12 @@ import logo from "../assets/logo.svg";
 import introVideo from "../assets/intro_video.mp4";
 import ichchha from "../assets/ichchha.webp";
 import ichchha1 from "../assets/ichchha1.webp";
-import { MdAtm, MdOutlineInsertEmoticon } from "react-icons/md";
+import {
+  MdAtm,
+  MdOutlineInsertEmoticon,
+  MdOutlineRoomService,
+} from "react-icons/md";
+import { TbElevator } from "react-icons/tb";
 import {
   FaBed,
   FaRulerCombined,
@@ -18,7 +23,8 @@ import slider4 from "../assets/slider/slider4.webp";
 import slider5 from "../assets/slider/slider5.webp";
 import slider6 from "../assets/slider/slider6.webp";
 
-import chariman from "../assets/others/chairman.webp";
+import chairman from "../assets/others/chairman.webp";
+import ceo from "../assets/others/ceo.webp";
 
 import dlx1 from "../assets/rooms/dlx1.webp";
 import dlx2 from "../assets/rooms/dlx2.webp";
@@ -267,8 +273,8 @@ export const contactAddressLinks = [
     icon: TbPhone,
     numbers: [
       {
-        link: "tel:+9779802738099",
-        text: "+977-9802738099",
+        link: "tel:+9779841431788",
+        text: "+977-9841431788",
       },
       // {
       //   link: "tel:+9779855029592",
@@ -296,27 +302,27 @@ export const aboutContents = [
   {
     id: "aboutTitle",
     title: "Hotel Ichchha",
-    subtitle: "Five Star Hotel in Simara, Bara",
+    // subtitle: "Five Star Hotel in Simara, Bara",
+    subtitle: "Nepal's First 5-Star Hotel in Simara",
     subheading:
-      "The hotel aims to cater and accommodate business and leisure travelers passing through the zone. ",
+      // "The hotel aims to cater and accommodate business and leisure travelers passing through the zone. ",
+      "Epitomizes luxury and sophistication, offering exceptional comfort, convenience, enjoyment, and services.",
     description:
-      "The homely ambience, facilities and amenities within the premises make your stay a memorable and luxurious one. We are one of the leading hospitality providers assuring our best services. Centrally located, its an ideal choice for business travelers, pilgrimage tour, recreational tours, etc. The best choice for destination wedding to make your special moments more memorable. With a total of 90 rooms, Hotel Ichchha is best suited for all your requirements.",
-    // "Hotel Ichchha is a verdant oasis in the heart of Simara.The hotel aims to cater and accommodate business and leisure travelers passing through the zone.",
+      // "The homely ambience, facilities and amenities within the premises make your stay a memorable and luxurious one. We are one of the leading hospitality providers assuring our best services. Centrally located, its an ideal choice for business travelers, pilgrimage tour, recreational tours, etc. The best choice for destination wedding to make your special moments more memorable. With a total of 90 rooms, Hotel Ichchha is best suited for all your requirements.",
+      "Being a top hospitality provider, we guarantee our finest offerings due to its convenient location, it is a great option for business, leisure, and pilgrimage trips. The ideal option for a destination wedding that will enhance the memory of your special moments. Hotel Ichchha is perfectly suited for all your needs with a total of 100 rooms.",
   },
 ];
 
-export const messageFromChairman = [
+export const messageFromCEO = [
   {
-    id: "chairmanMessage",
-    image: chariman,
+    id: "ceoMessage",
+    image: ceo,
     title: "Message from the Chairman",
-    fullName: "Ichchha Bahadur Wagle",
-    position: "Executive Chairman",
+    fullName: "Rewanta Prasad Dhaubhadel",
+    position: "Chief Executive Officer (CEO)",
     subtitle: "",
     subheading:
       "We are committed to providing the best hospitality services to our guests.",
-    description:
-      "First and foremost, I would like to thank each and every one of you for your kind and encouraging support in creating Hotel Ichchha, first 5-Star Deluxe Hotel in Terai Region with its own hospitality brand. Your support to our organization has allowed us to transform a non- tourist Market to a new Tourist Market exploring and promoting a variety of tourist destinations and activities in this region such as Jungle Safari at Parsa National Park, religious visits to Gadimai Temple as well as Janaki Temple at Janakpur to name a few. From the beginning, we have been able to provide ample services to our valued customers.",
 
     associatedVentures: [
       {
@@ -382,53 +388,34 @@ export const messageFromChairman = [
 export const ourTeamMembers = [
   {
     id: 1,
-    name: "Purna Shrestha",
-    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
-    position: "CEO",
+    name: "Ichchha Bahadur Wagle",
+    image: chairman,
+    position: "Chairman",
+    description:
+      "Former Chairman/President at Nepal land and housing developers Association NLHDA , Academic Institute Sector with more than 25 Years of Experience In real-estate and Hospitality field.",
   },
   {
     id: 2,
-    name: "Purna Shrestha",
+    name: "Moonsun Wagle",
     image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
-    position: "CTO",
+    position: "Director",
+    description:
+      "More than 5 Years of Experience in Human Resources and Administrative Department.",
   },
   {
     id: 3,
-    name: "Purna Shrestha",
+    name: "Sushila Basnet",
     image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
-    position: "COO",
+    position: "Director",
+    description: "More than 8 Years of Experience in Hotel Management.",
   },
   {
     id: 4,
-    name: "Purna Shrestha",
-    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
-    position: "COO",
-  },
-  {
-    id: 5,
-    name: "Purna Shrestha",
-    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
+    name: "Rewanta Prasad Dhaubhadel",
+    image: ceo,
     position: "CEO",
+    description: "More than 27 Years of Experience in Hospitality Sector.",
   },
-  {
-    id: 26,
-    name: "Purna Shrestha",
-    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
-    position: "CTO",
-  },
-  {
-    id: 7,
-    name: "Purna Shrestha",
-    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
-    position: "COO",
-  },
-  {
-    id: 8,
-    name: "Purna Shrestha",
-    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
-    position: "COO",
-  },
-  // Add more team members as needed
 ];
 
 import { IoBed, IoPricetagSharp } from "react-icons/io5";
@@ -938,6 +925,18 @@ export const hotelFacilities = [
 ];
 
 export const facilitiesSectionIcon = {
+  roomService: {
+    icon: MdOutlineRoomService,
+    title: "Room Service",
+  },
+  wifi: {
+    icon: FaWifi,
+    title: "Wifi",
+  },
+  parking: {
+    icon: BiSolidParking,
+    title: "Parking",
+  },
   airportTransfer: {
     icon: MdLocalAirport,
     title: "Airport Pickup",
@@ -974,10 +973,11 @@ export const facilitiesSectionIcon = {
     icon: MdOutlineSportsBar,
     title: "Bar",
   },
-  wifi: {
-    icon: FaWifi,
-    title: "Wifi",
+  elevator: {
+    icon: TbElevator,
+    title: "Eleveator",
   },
+
   doctor: {
     icon: FaUserDoctor,
     title: "Doctor on Call",
@@ -986,14 +986,7 @@ export const facilitiesSectionIcon = {
     icon: MdOutlineMeetingRoom,
     title: "Conference Room",
   },
-  roomService: {
-    icon: PiBroomBold,
-    title: "Room Service",
-  },
-  parking: {
-    icon: BiSolidParking,
-    title: "Parking",
-  },
+
   laundry: {
     icon: MdOutlineLocalLaundryService,
     title: "Laundry",
@@ -1006,7 +999,6 @@ export const facilitiesSectionIcon = {
     icon: MdOutlineBusinessCenter,
     title: "Business Center",
   },
-
   petFriendly: {
     icon: MdOutlinePets,
     title: "Pet Friendly",
@@ -1143,39 +1135,49 @@ export const nearbyLocations = [
     map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7099.910196047883!2d84.96976494252185!3d27.157702956007654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eb548a698be7cf%3A0x94b1a58231a84514!2sSimara%20Airport%2C%20Airport%20Rd%2044412%2C%20Gadhimai%2044400!3m2!1d27.1636195!2d84.9795716!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1710325185542!5m2!1sen!2snp",
   },
   {
-    name: "Gadhi Mai",
-    distance: "5.6km",
-    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d113698.23358256779!2d84.89524728553098!3d27.059544645031096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eca934d6b2d40b%3A0xbd0542d8b9c9c42d!2sGadhimai%20Temple%2C%20Mahagadhimai%2044405!3m2!1d26.993407299999998!2d85.047285!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1710325470591!5m2!1sen!2snp",
-  },
-  {
     name: "Parsa National Park",
     distance: "10km",
-    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7099.910196047883!2d84.96976494252185!3d27.157702956007654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eb548a698be7cf%3A0x94b1a58231a84514!2sSimara%20Airport%2C%20Airport%20Rd%2044412%2C%20Gadhimai%2044400!3m2!1d27.1636195!2d84.9795716!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1710325185542!5m2!1sen!2snp",
+    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d56782.44209133866!2d84.93814900736696!3d27.190796926650844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x39eb535236165399%3A0xdc0d41898b014444!2sParsa%20National%20Park%20office%2C%20Aadhabhar!3m2!1d27.229912799999997!2d84.9875371!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1718965315339!5m2!1sen!2snp",
+  },
+  {
+    name: "Gadhi Mai",
+    distance: "5.6km",
+    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d14199.65051154928!2d84.97681520417143!3d27.159039115945166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x39eb5413c39e2b51%3A0x462210bc77760af2!2sGadhimai!3m2!1d27.155378799999998!2d85.0025539!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1718965386391!5m2!1sen!2snp",
   },
   {
     name: "Raxaul India Border",
     distance: "23km",
-    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7099.910196047883!2d84.96976494252185!3d27.157702956007654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eb548a698be7cf%3A0x94b1a58231a84514!2sSimara%20Airport%2C%20Airport%20Rd%2044412%2C%20Gadhimai%2044400!3m2!1d27.1636195!2d84.9795716!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1710325185542!5m2!1sen!2snp",
-  },
-  {
-    name: "Churiya Mai",
-    distance: "25km",
-    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7099.910196047883!2d84.96976494252185!3d27.157702956007654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eb548a698be7cf%3A0x94b1a58231a84514!2sSimara%20Airport%2C%20Airport%20Rd%2044412%2C%20Gadhimai%2044400!3m2!1d27.1636195!2d84.9795716!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1710325185542!5m2!1sen!2snp",
-  },
-  {
-    name: "Shahid Smarak",
-    distance: "40km",
-    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7099.910196047883!2d84.96976494252185!3d27.157702956007654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eb548a698be7cf%3A0x94b1a58231a84514!2sSimara%20Airport%2C%20Airport%20Rd%2044412%2C%20Gadhimai%2044400!3m2!1d27.1636195!2d84.9795716!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1710325185542!5m2!1sen!2snp",
-  },
-  {
-    name: "Bharat Tal",
-    distance: "60km",
-    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7099.910196047883!2d84.96976494252185!3d27.157702956007654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eb548a698be7cf%3A0x94b1a58231a84514!2sSimara%20Airport%2C%20Airport%20Rd%2044412%2C%20Gadhimai%2044400!3m2!1d27.1636195!2d84.9795716!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1710325185542!5m2!1sen!2snp",
+    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d113703.33099392835!2d84.81894451684289!3d27.05451572077609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3993514b6ce04c81%3A0xcfbc360960f0a174!2sBada%20Pareuwa%2C%20Raxaul%2C%20India!3m2!1d26.983549399999998!2d84.8400874!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1718965569426!5m2!1sen!2snp",
   },
   {
     name: "Janaki Mandir",
     distance: "139km",
-    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7099.910196047883!2d84.96976494252185!3d27.157702956007654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eb548a698be7cf%3A0x94b1a58231a84514!2sSimara%20Airport%2C%20Airport%20Rd%2044412%2C%20Gadhimai%2044400!3m2!1d27.1636195!2d84.9795716!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1710325185542!5m2!1sen!2snp",
+    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d455177.3704433453!2d85.13754818030847!3d26.964580950679775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39ec40069de3d507%3A0x5e9842f10a951d7f!2sJanaki%20Mandir%2C%20Janaki%20chok%2C%20Janakpur!3m2!1d26.7303858!2d85.9255589!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1718965689760!5m2!1sen!2snp",
+  },
+  {
+    name: "Churiya Mai",
+    distance: "25km",
+    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d113499.64147685505!2d84.90536808699359!3d27.254800788194302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eb4c73d23bb11f%3A0xeac15dc3704ec904!2sChuriya%20Mai%20Temple%2C%20E%20W%2C%20Mahendra%20Highway%2C%20Amlekhganj!3m2!1d27.3578042!2d84.99789469999999!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1718965724170!5m2!1sen!2snp",
+  },
+  {
+    name: "Bharat Tal",
+    distance: "60km",
+    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d227222.45534750115!2d85.06464976129212!3d27.145248750716785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eb7d00331c2f21%3A0xdb5d55fef860623e!2sBharat%20Tal%2C%20Karmaiya!3m2!1d27.1094667!2d85.4729515!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1718965927026!5m2!1sen!2snp",
+  },
+  {
+    name: "Shahid Smarak",
+    distance: "40km",
+    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d226911.90130191727!2d84.83633188193605!3d27.297584516621157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eb4a6b9c8bd9c7%3A0x4d3cdb2cdbe529c6!2sShahid%20Smarak%20Park%2C%20Hetauda!3m2!1d27.4430853!2d84.9999735!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1718965978079!5m2!1sen!2snp",
+  },
+  {
+    name: "Kathmandu",
+    distance: "118km",
+    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d453283.50883757987!2d84.81378025017577!3d27.429463924039567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39eb1854ae720fbd%3A0xa2ea2b72d0755e57!2sKathmandu!3m2!1d27.6999456!2d85.31327639999999!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1718966007288!5m2!1sen!2snp",
+  },
+  {
+    name: "Birgunj",
+    distance: "22km",
+    map: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d113667.9190377558!2d84.83424648160265!3d27.08943406415545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39935446b21c98cb%3A0x42938e30ff4f6cb5!2sBirgunj!3m2!1d27.044900499999997!2d84.86721709999999!4m5!1s0x39eb54f2f90e0a47%3A0x76bed6bd117eda97!2sHotel%20Ichchha%2C%20Pipara%20Simara%2044400!3m2!1d27.1516505!2d84.973591!5e0!3m2!1sen!2snp!4v1718966136229!5m2!1sen!2snp",
   },
 ];
 
