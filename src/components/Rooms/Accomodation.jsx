@@ -117,7 +117,8 @@ const Accomodation = () => {
                 title="Explore"
                 aria-label="Explore"
               >
-                Explore
+                {/* Explore */}
+                <HiArrowLongRight />
               </Link>
             </div>
           </div>

@@ -1,54 +1,8 @@
-import React, { useRef } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from "react";
+import { HiArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 
 const ExploreRooms = ({ otherRooms }) => {
-  const sliderRef = useRef(null);
-
-  const settings = {
-    dots: false,
-    arrows: false,
-    autoplay: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 1536,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-    ],
-  };
-
   const handleExploreClick = () => {
     window.scrollTo({
       top: 0,
@@ -59,12 +13,10 @@ const ExploreRooms = ({ otherRooms }) => {
   return (
     <section className="bg-bg-gold-light pt-0 lg:px-0">
       <div className="container text-center space-y-6 lg:space-y-10">
-        <h3 className={`text-navy text-2xl md:text-4xl capitalize`}>
+        <h3 className="text-navy text-2xl md:text-4xl capitalize">
           Explore other Rooms
         </h3>
-        <p
-          className={`text-navy text-sm text-justify md:text-lg md:text-center`}
-        >
+        <p className="text-navy text-sm text-justify md:text-lg md:text-center">
           Hotel Ichchha rooms and suites are a symphony of luxury and comfort,
           designed to enchant every guest where luxury embraces elegance, Hotel
           Ichchha offers an exquisite blend of comfort and grandeur. Experience
@@ -73,38 +25,50 @@ const ExploreRooms = ({ otherRooms }) => {
           amenities and elegant decoration.
         </p>
       </div>
-      <div className="mt-12 md:mt-24 mx-0">
-        <Slider {...settings} ref={sliderRef}>
-          {otherRooms.map((room) => (
-            <div key={room.id} className="p-0 sm:p-2 md:p-4">
-              <div className="group relative rounded-lg overflow-hidden">
-                <img
-                  src={room.imageUrl}
-                  alt={room.title}
-                  className={`w-full h-64 md:h-48 lg:h-64 2xl:h-72 rounded-lg object-cover transition-transform duration-700 ease-in-out group-hover:scale-100 `}
-                />
-                <div className="absolute inset-0 bg-black transition-opacity duration-300 ease-linear opacity-10 group-hover:opacity-40 rounded-lg "></div>
-                <div className="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear">
-                  <Link
-                    to={room.router}
-                    onClick={handleExploreClick}
-                    className="bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base translate-y-full group-hover:-translate-y-6 transition-all duration-300 ease-linear"
-                    title="Explore"
-                    aria-label="Explore"
-                  >
-                    Explore
-                  </Link>
+      <div className="container mx-auto">
+        <div className="mt-12 md:mt-32">
+          <div className="border-[1px] border-navy/40 rounded-3xl overflow-hidden">
+            {otherRooms.map((room, index) => (
+              <Link
+                to={room.router}
+                onClick={handleExploreClick}
+                className={`${
+                  index !== otherRooms.length - 1
+                    ? "mb-8 border-b-[1px]"
+                    : "mb-0 border-b-0"
+                } md:mb-0 border-navy/30 flex items-center flex-col md:flex-row justify-between gap-0 bg-bg-gold-dark hover:bg-goldLight/80 group transition-all duration-300`}
+              >
+                <div className="flex w-full md:w-1/3">
+                  <img
+                    src={room.imageUrl}
+                    alt={room.title}
+                    className="w-full h-64 sm:h-96 md:h-60 object-cover origin-left transition-all duration-300 md:group-hover:scale-x-105"
+                  />
                 </div>
-              </div>
-              <h3 className="text-xl font-bold mt-6">{room.title}</h3>
-              <p className="text-sm md:text-base mt-2 line-clamp-2 mb-8">
-                {room.description}
-              </p>
-            </div>
-          ))}
-        </Slider>
+                <div className="py-12 px-4 flex items-center justify-between md:p-12 w-full md:w-2/3 gap-10 transition-all duration-300 md:group-hover:translate-x-4">
+                  <div className="flex items-start flex-col gap-2 md:gap-5">
+                    <h4 className="text-2xl md:text-3xl">{room.title}</h4>
+                    <p className="text-base max-w-md line-clamp-2">
+                      {room.description}
+                    </p>
+                  </div>
+                  <div className="flex transition-all duration-300 md:group-hover:translate-x-4">
+                    <div
+                      className="bg-goldLight text-navy group-hover:text-ivory group-hover:bg-navy px-4 py-1 rounded-full text-2xl transition-all duration-300 ease-linear"
+                      title="Explore More"
+                      aria-label="Explore More"
+                    >
+                      <HiArrowLongRight className="md:group-hover:scale-x-150 group-hover:translate-x-0 transition-all duration-300 ease-linear" />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
 };
+
 export default ExploreRooms;
