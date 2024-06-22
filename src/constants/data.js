@@ -25,6 +25,8 @@ import slider6 from "../assets/slider/slider6.webp";
 
 import chairman from "../assets/others/chairman.webp";
 import ceo from "../assets/others/ceo.webp";
+import director1 from "../assets/others/director1.webp";
+import director2 from "../assets/others/director2.webp";
 
 import dlx1 from "../assets/rooms/dlx1.webp";
 import dlx2 from "../assets/rooms/dlx2.webp";
@@ -397,7 +399,7 @@ export const ourTeamMembers = [
   {
     id: 2,
     name: "Moonsun Wagle",
-    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
+    image: director1,
     position: "Director",
     description:
       "More than 5 Years of Experience in Human Resources and Administrative Department.",
@@ -405,7 +407,7 @@ export const ourTeamMembers = [
   {
     id: 3,
     name: "Sushila Basnet",
-    image: "https://cdt.org/files/2015/10/2015-10-06-FB-person.png",
+    image: director2,
     position: "Director",
     description: "More than 8 Years of Experience in Hotel Management.",
   },

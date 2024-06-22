@@ -96,7 +96,7 @@ const About = () => {
         ))}
       </section>
 
-      {/* <BODTeam ourTeamMembers={ourTeamMembers} /> */}
+      <BODTeam ourTeamMembers={ourTeamMembers} />
       {/* <section className="bg-bg-gold-light">
         <div className="flexCenter flex-col w-3/4 mx-auto">
           <h3 className="text-navy font-medium">

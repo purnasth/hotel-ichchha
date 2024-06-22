@@ -1,82 +1,49 @@
 import React from "react";
 
-const BODTeam = ({ ourTeamMembers }) => {
-  const chairman = ourTeamMembers.find(
-    (member) => member.position === "Chairman"
+const TeamMemberCard = ({ member }) => {
+  return (
+    <div className="group overflow-hidden relative w-80 h-96 text-center shadow-lg transition-all duration-300 ease-linear rounded-xl">
+      <img
+        src={member.image}
+        alt={member.name}
+        className="size-full object-cover"
+      />
+      <div className="absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.8)] opacity-70 size-full group-hover:opacity-100 transition-all duration-300 ease-linear" />
+      <div className="absolute -translate-y-24 group-hover:-translate-y-56 transition-all duration-300 ease-linear p-4">
+        <h4 className="text-ivory font-body text-xl font-medium">
+          {member.name}
+        </h4>
+        <h5 className="text-ivory/90 font-body text-base">{member.position}</h5>
+        <p className="text-ivory/90 text-sm mt-2 group-hover:mt-6 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear">
+          {member.description}
+        </p>
+      </div>
+    </div>
   );
-  const directors = ourTeamMembers.filter(
-    (member) => member.position === "Director"
-  );
-  const ceo = ourTeamMembers.find((member) => member.position === "CEO");
+};
 
+const BODTeam = ({ ourTeamMembers }) => {
   return (
     <section className="bg-bg-gold-light">
       <div className="flexCenter flex-col w-3/4 mx-auto">
         <h3 className="text-navy font-medium">
           Get to Know the Faces Behind Our Success
         </h3>
-        <h4 className="text-base text-center">
+        <h4 className="text-base text-center font-body">
           Unveil the Talented Individuals Who Embark on a Collective Mission to
           Elevate Your Experience at Hotel Ichchha
         </h4>
       </div>
       <div className="mt-32 flex flex-col gap-16 items-center">
-        <div className="group overflow-hidden relative size-80 text-center text-white shadow-lg transition-all duration-300 ease-linear">
-          <img
-            src={chairman.image}
-            alt={chairman.name}
-            className="size-full object-cover"
-          />
-          <div className="absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.8)] size-full "></div>
-          <div className="absolute -translate-y-20 group-hover:-translate-y-52 transition-all duration-300 ease-linear">
-            <h4 className="font-body text-2xl font-medium">{chairman.name}</h4>
-            <h5 className="font-body text-2xl mb-6">{chairman.position}</h5>
-            <p className="text-sm mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear">
-              {chairman.description}
-            </p>
-          </div>
-        </div>
-        <div className="flex justify-center space-x-16">
-          {directors.map((director) => (
-            <div key={director.id} className="flex flex-col items-center">
-              <div className="group overflow-hidden relative size-80 text-center text-white shadow-lg transition-all duration-300 ease-linear">
-                <img
-                  src={director.image}
-                  alt={director.name}
-                  className="size-full object-cover"
-                />
-                <div className="absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.8)] size-full "></div>
-                <div className="absolute -translate-y-20 group-hover:-translate-y-52 transition-all duration-300 ease-linear">
-                  <h4 className="font-body text-2xl font-medium">
-                    {director.name}
-                  </h4>
-                  <h5 className="font-body text-2xl mb-6">
-                    {director.position}
-                  </h5>
-                  <p className="text-sm mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear">
-                    {director.description}
-                  </p>
-                </div>
-              </div>
+        <TeamMemberCard member={ourTeamMembers[0]} />
+        <div className="flex justify-center space-x-32">
+          {ourTeamMembers.slice(1, 3).map((member, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <TeamMemberCard member={member} />
             </div>
           ))}
         </div>
-
-        <div className="group overflow-hidden relative size-80 text-center text-white shadow-lg transition-all duration-300 ease-linear">
-          <img
-            src={ceo.image}
-            alt={ceo.name}
-            className="size-full object-cover"
-          />
-          <div className="absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-[rgba(0,0,0,0.8)] size-full "></div>
-          <div className="absolute -translate-y-20 group-hover:-translate-y-52 transition-all duration-300 ease-linear">
-            <h4 className="font-body text-2xl font-medium">{ceo.name}</h4>
-            <h5 className="font-body text-2xl mb-6">{ceo.position}</h5>
-            <p className="text-sm mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear">
-              {ceo.description}
-            </p>
-          </div>
-        </div>
+        <TeamMemberCard member={ourTeamMembers[3]} />
       </div>
     </section>
   );
