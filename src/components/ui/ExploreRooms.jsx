@@ -3,13 +3,6 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 
 const ExploreRooms = ({ otherRooms }) => {
-  const handleExploreClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <section className="bg-bg-gold-light pt-0 lg:px-0">
       <div className="container text-center space-y-6 lg:space-y-10">
@@ -30,8 +23,8 @@ const ExploreRooms = ({ otherRooms }) => {
           <div className="border-[1px] border-navy/40 rounded-3xl overflow-hidden">
             {otherRooms.map((room, index) => (
               <Link
+                key={room.id}
                 to={room.router}
-                onClick={handleExploreClick}
                 className={`${
                   index !== otherRooms.length - 1
                     ? "mb-8 border-b-[1px]"

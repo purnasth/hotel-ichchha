@@ -21,11 +21,13 @@ import BackToTop from "./components/BackToTop";
 import ExploreFacilitiesButton from "./components/Facilities/ExploreFacilitiesButton";
 import NotFound from "./components/ui/NotFound";
 import AccommodationDynamic from "./components/AccommodationDynamic";
+import RouterToTop from "./components/ui/RouterToTop";
 
 const App = () => {
   return (
     <>
       <Router>
+        <RouterToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
