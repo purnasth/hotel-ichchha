@@ -6,9 +6,11 @@ import ScrollReveal from "./ScrollReveal";
 
 const EventsHall = () => {
   const [showEnquiryForm, setShowEnquiryForm] = useState(false);
+  const [selectedEventTitle, setSelectedEventTitle] = useState("");
   const sectionRefs = useRef([]);
 
-  const toggleEnquiryForm = () => {
+  const toggleEnquiryForm = (eventTitle = "") => {
+    setSelectedEventTitle(eventTitle);
     setShowEnquiryForm((prevState) => !prevState);
   };
 
@@ -129,7 +131,7 @@ const EventsHall = () => {
                     ))}
                   </ul>
                   <button
-                    onClick={toggleEnquiryForm}
+                    onClick={() => toggleEnquiryForm(venue.title)}
                     className="bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
                     title="Enquiry"
                     aria-label="Enquiry"
@@ -142,7 +144,12 @@ const EventsHall = () => {
           ))}
         </div>
       </section>
-      {showEnquiryForm && <EnquiryForm onClose={toggleEnquiryForm} />}
+      {showEnquiryForm && (
+        <EnquiryForm
+          onClose={() => toggleEnquiryForm()}
+          selectedEventTitle={selectedEventTitle}
+        />
+      )}
     </>
   );
 };

@@ -3,7 +3,7 @@ import { IoClose } from "react-icons/io5";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { enquiryFormData } from "../../constants/data";
 
-const EnquiryForm = ({ onClose }) => {
+const EnquiryForm = ({ onClose, selectedEventTitle }) => {
   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
@@ -77,6 +77,9 @@ const EnquiryForm = ({ onClose }) => {
                     id={field.name}
                     name={field.name}
                     className="text-xl w-full py-2 border-b border-navy/20 focus:outline-none focus:border-goldLight bg-transparent text-navy"
+                    defaultValue={
+                      field.name === "eventTitle" ? selectedEventTitle : ""
+                    }
                   />
                 )}
               </div>
