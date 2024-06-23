@@ -173,10 +173,15 @@ export const navLinksRooms = [
         title: "Super Deluxe Rooms",
         link: "/accommodation/super-deluxe",
       },
+      // {
+      //   id: "premiumRoom",
+      //   title: "Premium Rooms",
+      //   link: "/accommodation/premium",
+      // },
       {
-        id: "premiumRoom",
-        title: "Premium Rooms",
-        link: "/accommodation/premium",
+        id: "miniSuite",
+        title: "Mini Suite",
+        link: "/accommodation/mini-suite",
       },
       {
         id: "juniorSuite",
@@ -187,6 +192,11 @@ export const navLinksRooms = [
         id: "executiveSuite",
         title: "Executive Rooms",
         link: "/accommodation/executive-suite",
+      },
+      {
+        id: "presidentialApartment",
+        title: "Presidential Apartment",
+        link: "/accommodation/presidential-apartment",
       },
     ],
   },
@@ -500,9 +510,9 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
-          "Bed Type": { icon: IoBed, value: "King Size" },
           "Starting Price": { icon: IoPricetagSharp, value: "USD 60 / night" },
+          "Total Rooms": { icon: IoBed, value: "55 rooms" },
+          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
           Occupancy: { icon: MdFamilyRestroom, value: "2 adults" },
           "Airport Pickup & Drop": {
             icon: MdLocalAirport,
@@ -574,9 +584,9 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
-          "Bed Type": { icon: IoBed, value: "King Size" },
           "Starting Price": { icon: IoPricetagSharp, value: "USD 70 / night" },
+          "Total Rooms": { icon: IoBed, value: "30 rooms" },
+          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
           Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
           "Airport Pickup & Drop": {
             icon: MdLocalAirport,
@@ -584,15 +594,89 @@ export const accomodationContents = [
           },
         },
       },
+      // {
+      //   id: "premiumRoom",
+      //   title: "Premium Room",
+      //   subtitle: "",
+      //   description:
+      //     "Indulge in luxury and comfort with our Premium Room, designed to offer a lavish experience for our guests.",
+      //   imageUrl: dlx2,
+      //   category: "premium",
+      //   router: "/accommodation/premium",
+      //   images: [
+      //     {
+      //       src: dlx1,
+      //       title: "The Homely Ambience",
+      //     },
+      //     {
+      //       src: dlx2,
+      //       title: "The Homely Ambience",
+      //     },
+      //     {
+      //       src: dlx3,
+      //       title: "The Homely Ambience",
+      //     },
+      //     {
+      //       src: dlx4,
+      //       title: "The Homely Ambience",
+      //     },
+      //   ],
+      //   overview: [
+      //     {
+      //       title: "Overview",
+      //       content: [
+      //         "Immerse yourself in the epitome of elegance with Hotel Ichchha Premium Rooms. Tailored for the world traveler, these rooms boast an exquisite fusion of comfort and style, complete with luxurious amenities and impeccable service. Surrender to the allure of sophistication and let us redefine your travel experience.",
+      //       ],
+      //     },
+      //   ],
+      //   policies: [
+      //     {
+      //       title: "Child Policies",
+      //       content: [
+      //         "Child 0 - 4 yrs. sharing parent's room free of charge on same plan as adults.",
+      //         "Child age 5 - 10 yrs. sharing parent's room will be charged 50% adult meal rate.",
+      //         "Breakfast - US$ 8/ INR 500.",
+      //       ],
+      //     },
+      //   ],
+      //   amenities: [
+      //     "Air conditioning",
+      //     "Bathrobe",
+      //     "Coffee and tea set",
+      //     "Desk",
+      //     "Hairdryer",
+      //     "Minibar",
+      //     "Pillow service",
+      //     "Safe",
+      //     "Slippers",
+      //     "Storage cabinet",
+      //     "Telephone",
+      //     "Television",
+      //     "Toilet",
+      //     "Towel service",
+      //     "Twin bed/double bed",
+      //     "Wi-Fi",
+      //   ],
+      //   roomDetails: {
+      //     "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
+      //     "Bed Type": { icon: IoBed, value: "King Size" },
+      //     "Starting Price": { icon: IoPricetagSharp, value: "USD 75 / night" },
+      //     Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
+      //     "Airport Pickup & Drop": {
+      //       icon: MdLocalAirport,
+      //       value: "On Request",
+      //     },
+      //   },
+      // },
       {
-        id: "premiumRoom",
-        title: "Premium Room",
+        id: "miniSuite",
+        title: "Mini Suite",
         subtitle: "",
         description:
-          "Indulge in luxury and comfort with our Premium Room, designed to offer a lavish experience for our guests.",
+          "Indulge in luxury and comfort with our Mini Suite, designed to offer a lavish experience for our guests.",
         imageUrl: dlx2,
-        category: "premium",
-        router: "/accommodation/premium",
+        category: "mini-suite",
+        router: "/accommodation/mini-suite",
         images: [
           {
             src: dlx1,
@@ -648,10 +732,10 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 85 / night" },
+          "Total Rooms": { icon: IoBed, value: "7 rooms" },
           "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
-          "Bed Type": { icon: IoBed, value: "King Size" },
-          "Starting Price": { icon: IoPricetagSharp, value: "USD 75 / night" },
-          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 children" },
           "Airport Pickup & Drop": {
             icon: MdLocalAirport,
             value: "On Request",
@@ -722,9 +806,9 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
-          "Bed Type": { icon: IoBed, value: "King Size" },
           "Starting Price": { icon: IoPricetagSharp, value: "USD 100 / night" },
+          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
+          "Total Rooms": { icon: IoBed, value: "6 rooms" },
           Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
           "Airport Pickup & Drop": {
             icon: MdLocalAirport,
@@ -796,9 +880,83 @@ export const accomodationContents = [
           "Wi-Fi",
         ],
         roomDetails: {
-          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
-          "Bed Type": { icon: IoBed, value: "King Size" },
           "Starting Price": { icon: IoPricetagSharp, value: "USD 140 / night" },
+          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
+          "Total Rooms": { icon: IoBed, value: "2 rooms" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
+          "Airport Pickup & Drop": {
+            icon: MdLocalAirport,
+            value: "On Request",
+          },
+        },
+      },
+      {
+        id: "presidentialApartment",
+        title: "Presidential Apartment",
+        subtitle: "",
+        description:
+          "Experience the epitome of luxury in our Presidential Apartment, featuring a spacious living room, dining area, and a large bedroom.",
+        imageUrl: slider2,
+        category: "presidential-apartment",
+        router: "/accommodation/presidential-apartment",
+        images: [
+          {
+            src: dlx1,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx2,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx3,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx4,
+            title: "The Homely Ambience",
+          },
+        ],
+        overview: [
+          {
+            title: "Overview",
+            content: [
+              "Light, bright and with a smart layout that enhances the feeling of spaciousness, our rooms feature all the world class furniture, air conditioning, amenities, toiletries and technology. Super deluxe rooms are ingeniously designed with splendid interiors. The junior suite rooms are spacious rooms with a cozy living room separated by a partial wall. The executive rooms feature a large bedroom and a living room. Elegantly decorated with opulent interiors and varnished in soft tones, all the rooms are spacious with classy comfortable beds.",
+            ],
+          },
+        ],
+        policies: [
+          {
+            title: "Child Policies",
+            content: [
+              "Child 0 - 4 yrs. sharing parent's room free of charge on same plan as adults.",
+              "Child age 5 - 10 yrs. sharing parent's room will be charged 50% adult meal rate.",
+              "Breakfast - US$ 8/ INR 500.",
+            ],
+          },
+        ],
+        amenities: [
+          "Air conditioning",
+          "Bathrobe",
+          "Coffee and tea set",
+          "Desk",
+          "Hairdryer",
+          "Minibar",
+          "Pillow service",
+          "Safe",
+          "Slippers",
+          "Storage cabinet",
+          "Telephone",
+          "Television",
+          "Toilet",
+          "Towel service",
+          "Twin bed/double bed",
+          "Wi-Fi",
+        ],
+        roomDetails: {
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 180 / night" },
+          "Room Size": { icon: IoMdResize, value: "325 sq. feet" },
+          "Total Rooms": { icon: IoBed, value: "1 room" },
           Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
           "Airport Pickup & Drop": {
             icon: MdLocalAirport,

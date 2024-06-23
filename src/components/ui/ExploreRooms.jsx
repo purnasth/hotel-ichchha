@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ExploreRooms = ({ otherRooms }) => {
   return (
-    <section className="bg-bg-gold-light pt-0 lg:px-0">
+    <section className="bg-bg-gold-dark/50 lg:px-0">
       <div className="container text-center space-y-6 lg:space-y-10">
         <h3 className="text-navy text-2xl md:text-4xl capitalize">
           Explore other Rooms
