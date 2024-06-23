@@ -22,21 +22,21 @@ const About = () => {
               {message.subheading}
             </h4>
 
-            <div className="flex align-center justify-between flex-col lg:flex-row md:gap-12 my-8">
-              <div className="flex items-center lg:items-start flex-col gap-0 h-auto lg:max-h-[400px] sticky top-6 z-10">
-                <div className="w-auto h-56 sm:h-64 md:h-80 lg:w-64 lg:h-80 xl:w-72 xl:h-80 rounded-md overflow-hidden">
+            <div className="flex align-center justify-between flex-col lg:flex-row md:gap-12 md:my-8">
+              <div className="flex items-center lg:items-start flex-col gap-0 h-auto lg:max-h-[400px] md:sticky top-6">
+                <div className="w-auto h-96 sm:h-64 md:h-80 lg:w-64 lg:h-80 xl:w-72 xl:h-80 rounded-md overflow-hidden">
                   <img
                     src={message.image}
                     alt="Ichchha Hotel"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
-                <h2 className="text-lg md:text-xl font-medium mt-4 mb-2">
+                <h3 className="text-lg md:text-xl font-medium mt-4 mb-2">
                   {message.fullName}
-                </h2>
+                </h3>
                 <span className="text-sm md:text-base">{message.position}</span>
               </div>
-              <div className="space-y-8 z-20 bg-bg-gold-dark pt-12 md:pt-0">
+              <div className="space-y-8 bg-bg-gold-dark pt-12 md:pt-0">
                 <p className="text-lg text-justify">
                   Namaste, <br />I am Rewanta Prasad Dhaubhadel, affectionately
                   known as REBU by my friends, family, and colleagues. With a

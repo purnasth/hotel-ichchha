@@ -25,18 +25,18 @@ const TeamMemberCard = ({ member }) => {
 const BODTeam = ({ ourTeamMembers }) => {
   return (
     <section className="bg-bg-gold-light">
-      <div className="flexCenter flex-col w-3/4 mx-auto">
-        <h3 className="text-navy font-medium">
+      <div className="p-2 flexCenter flex-col w-full md:w-3/4 mx-auto">
+        <h3 className="text-2xl md:text-4xl font-medium text-center">
           Get to Know the Faces Behind Our Success
         </h3>
-        <h4 className="text-base text-center font-body">
+        <h4 className="text-lg text-justify">
           Unveil the Talented Individuals Who Embark on a Collective Mission to
           Elevate Your Experience at Hotel Ichchha
         </h4>
       </div>
-      <div className="mt-32 flex flex-col gap-16 items-center">
+      <div className="mt-12 md:mt-32 flex flex-col gap-16 items-center">
         <TeamMemberCard member={ourTeamMembers[0]} />
-        <div className="flex justify-center space-x-32">
+        <div className="flex items-center flex-col md:flex-row justify-center gap-16 md:space-x-32">
           {ourTeamMembers.slice(1, 3).map((member, index) => (
             <div key={index} className="flex flex-col items-center">
               <TeamMemberCard member={member} />
