@@ -9,10 +9,10 @@ const ContactForm = () => {
         Can't find the contact and information you're looking for? Write to us
         via this quick form.
       </p>
-      <form className="flex flex-wrap justify-between">
+      <form className="mt-12 flex flex-wrap justify-between">
         {contactFormData.fields.map((field) => (
           <div key={field.id} className="w-full md:w-1/2">
-            <ul className="py-8 flex flex-col gap-4">
+            <ul className="pb-8 flex flex-col gap-4">
               <li className="w-full pr-2">
                 <label htmlFor={field.id} className="text-base text-navy">
                   {field.label}
@@ -43,7 +43,7 @@ const ContactForm = () => {
             required={contactFormData.textarea.required}
           ></textarea>
         </li>
-        <div className="w-full mt-4">
+        <div className="w-full mt-12">
           <button
             type="submit"
             className="w-full group flex items-center justify-center gap-2 bg-navy text-ivory hover:bg-goldLight hover:text-navy px-6 py-4 rounded-full text-lg transition-all duration-150 ease-linear"
