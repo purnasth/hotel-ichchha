@@ -16,17 +16,26 @@ const Footer = () => {
   const otaLinks = [
     {
       id: 1,
+      text: "Rojai",
+      href: "https://www.hotelichchha.com/result.php?hotel_code=8fE7Jg",
+    },
+    {
+      id: 2,
       text: "TripAdvisor",
       href: "https://www.tripadvisor.com/Hotel_Review-g21156991-d11283455-Reviews-Hotel_Ichchha-Pipara_Simara_Narayani_Zone_Central_Region.html",
     },
     {
-      id: 2,
+      id: 3,
       text: "MakeMyTrip",
       href: "https://www.makemytrip.com/hotels-international/nepal/narayani-hotels/hotel_ichchha-details.html",
     },
-    { id: 3, text: "Booking.com", href: "https://www.booking.com/" },
-    { id: 4, text: "Expedia", href: "https://www.expedia.com/" },
-    { id: 5, text: "Agoda", href: "https://www.agoda.com/" },
+    // { id: 3, text: "Booking.com", href: "https://www.booking.com/" },
+    {
+      id: 4,
+      text: "Expedia",
+      href: "https://www.expedia.com/Gadhimai-Hotels-Hotel-Ichchha.h16289796.Hotel-Information",
+    },
+    // { id: 5, text: "Agoda", href: "https://www.agoda.com/" },
   ];
 
   const bookingFooterContents = [
