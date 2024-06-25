@@ -111,7 +111,7 @@ const Accomodation = () => {
             />
             <div className="absolute inset-0 bg-black transition-opacity duration-300 ease-linear opacity-10 group-hover:opacity-40 "></div>
             <div className="absolute inset-0 flex items-end justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear">
-              <Link
+              <button
                 to={room.router}
                 className="bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base translate-y-full group-hover:-translate-y-6 transition-all duration-300 ease-linear"
                 title="Explore"
@@ -119,7 +119,7 @@ const Accomodation = () => {
               >
                 {/* Explore */}
                 <HiArrowLongRight />
-              </Link>
+              </button>
             </div>
           </div>
         </div>

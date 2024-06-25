@@ -62,7 +62,7 @@ const Navbar = () => {
             } ${window.scrollY > 0 ? "filter-black" : ""}`}
           >
             <Link
-              to="https://wa.me/+9779841431788"
+              to="https://wa.me/+9779855029590"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-base lg:text-lg"
@@ -70,7 +70,7 @@ const Navbar = () => {
               aria-label="WhatsApp"
             >
               <FaWhatsapp className="text-3xl text-gold" />{" "}
-              <span className="hidden md:block">9841431788</span>
+              <span className="hidden md:block">9855029590</span>
             </Link>
           </div>
 

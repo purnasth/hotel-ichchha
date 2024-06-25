@@ -27,13 +27,13 @@ const ContactAddressLinks = ({ showAll = true }) => {
           )}
           {link.numbers && showAll && (
             <li className="flex items-start justify-start gap-2">
-              <ul className="text-base flex items-start justify-start gap-2">
+              <ul className="text-base flex items-center justify-start gap-2">
+                {link.icon && <link.icon className="text-base" />}
                 {link.numbers.map((number, index) => (
                   <li
                     key={index}
                     className="flex items-center justify-start gap-2 text-navy hover:text-gold transition-all duration-300 ease-linear"
                   >
-                    {link.icon && <link.icon className="text-base" />}
                     <Link
                       to={number.link}
                       target="_blank"
@@ -42,6 +42,7 @@ const ContactAddressLinks = ({ showAll = true }) => {
                     >
                       {number.text}
                     </Link>
+                    {index < link.numbers.length - 1 && " |"}
                   </li>
                 ))}
               </ul>
