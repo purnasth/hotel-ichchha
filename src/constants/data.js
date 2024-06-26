@@ -28,6 +28,8 @@ import ceo from "../assets/others/ceo.webp";
 import director1 from "../assets/others/director1.webp";
 import director2 from "../assets/others/director2.webp";
 
+import js1 from "../assets/others/safari.webp";
+
 import dlx1 from "../assets/rooms/dlx1.webp";
 import dlx2 from "../assets/rooms/dlx2.webp";
 import dlx3 from "../assets/rooms/dlx3.webp";
@@ -1090,7 +1092,7 @@ export const hotelFacilities = [
     title: "Adventure Activities",
     description:
       "An exciting experience is to spotting and viewing wildlife on a jeep safari. Prepare yourself for a magnificent glance to capture on camera.",
-    icon: "https://www.hotelichchha.com/images/services/fY4Ra-safari.jpg",
+    icon: js1,
     router: "/recreation",
   },
 ];
@@ -1581,7 +1583,7 @@ export const sliderImages = [
 export const enquiryFormData = [
   {
     name: "eventTitle",
-    label: "Event Title",
+    label: "Event Venue",
     type: "text",
     required: true,
   },
