@@ -1581,7 +1581,7 @@ export const sliderImages = [
 export const enquiryFormData = [
   {
     name: "eventTitle",
-    label: "Event Title",
+    label: "Event Venue",
     type: "text",
     required: true,
   },
