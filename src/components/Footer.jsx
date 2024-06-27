@@ -14,11 +14,11 @@ const Footer = () => {
   ];
 
   const otaLinks = [
-    {
-      id: 1,
-      text: "Rojai",
-      href: "https://www.hotelichchha.com/result.php?hotel_code=8fE7Jg",
-    },
+    // {
+    //   id: 1,
+    //   text: "Rojai",
+    //   href: "https://www.hotelichchha.com/result.php?hotel_code=8fE7Jg",
+    // },
     {
       id: 2,
       text: "TripAdvisor",
