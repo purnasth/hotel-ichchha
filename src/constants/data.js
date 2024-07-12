@@ -195,11 +195,11 @@ export const navLinksRooms = [
         title: "Executive Suite",
         link: "/accommodation/executive-suite",
       },
-      {
-        id: "presidentialSuite",
-        title: "Presidential Suite",
-        link: "/accommodation/presidential-suite",
-      },
+      // {
+      //   id: "presidentialSuite",
+      //   title: "Presidential Suite",
+      //   link: "/accommodation/presidential-suite",
+      // },
     ],
   },
 ];
@@ -977,80 +977,82 @@ export const accomodationContents = [
           },
         },
       },
-      {
-        id: "presidentialSuite",
-        title: "Presidential Suite",
-        subtitle: "",
-        description:
-          "Experience the epitome of luxury in our Presidential Suite, featuring a spacious living room, dining area, and a large bedroom.",
-        imageUrl: slider2,
-        category: "presidential-suite",
-        router: "/accommodation/presidential-suite",
-        images: [
-          {
-            src: dlx1,
-            title: "The Homely Ambience",
-          },
-          {
-            src: dlx2,
-            title: "The Homely Ambience",
-          },
-          {
-            src: dlx3,
-            title: "The Homely Ambience",
-          },
-          {
-            src: dlx4,
-            title: "The Homely Ambience",
-          },
-        ],
-        overview: [
-          {
-            title: "Overview",
-            content: [
-              "Light, bright and with a smart layout that enhances the feeling of spaciousness, our rooms feature all the world class furniture, air conditioning, amenities, toiletries and technology. Super deluxe rooms are ingeniously designed with splendid interiors. The junior suite rooms are spacious rooms with a cozy living room separated by a partial wall. The executive rooms feature a large bedroom and a living room. Elegantly decorated with opulent interiors and varnished in soft tones, all the rooms are spacious with classy comfortable beds.",
-            ],
-          },
-        ],
-        policies: [
-          {
-            title: "Child Policies",
-            content: [
-              "Child 0 - 4 yrs. sharing parent's room free of charge on same plan as adults.",
-              "Child age 5 - 10 yrs. sharing parent's room will be charged 50% adult meal rate.",
-              "Breakfast - US$ 8/ INR 500.",
-            ],
-          },
-        ],
-        amenities: [
-          "Air conditioning",
-          "Bathrobe",
-          "Coffee and tea set",
-          "Desk",
-          "Hairdryer",
-          "Minibar",
-          "Pillow service",
-          "Safe",
-          "Slippers",
-          "Storage cabinet",
-          "Telephone",
-          "Television",
-          "Toilet",
-          "Towel service",
-          "Twin bed/double bed",
-          "Wi-Fi",
-        ],
-        roomDetails: {
-          "Starting Price": { icon: IoPricetagSharp, value: "USD 180 / night" },
-          "Room Size": { icon: IoMdResize, value: "325 sq. feet" },
-          "Total Rooms": { icon: IoBed, value: "1 room" },
-          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
-          "Airport Pickup & Drop": {
-            icon: MdLocalAirport,
-            value: "On Request",
-          },
-        },
-      },
+      // ! Uncomment the code below to add the Presidential Suite
+      // {
+      //   id: "presidentialSuite",
+      //   title: "Presidential Suite",
+      //   subtitle: "",
+      //   description:
+      //     "Experience the epitome of luxury in our Presidential Suite, featuring a spacious living room, dining area, and a large bedroom.",
+      //   imageUrl: slider2,
+      //   category: "presidential-suite",
+      //   router: "/accommodation/presidential-suite",
+      //   images: [
+      //     {
+      //       src: dlx1,
+      //       title: "The Homely Ambience",
+      //     },
+      //     {
+      //       src: dlx2,
+      //       title: "The Homely Ambience",
+      //     },
+      //     {
+      //       src: dlx3,
+      //       title: "The Homely Ambience",
+      //     },
+      //     {
+      //       src: dlx4,
+      //       title: "The Homely Ambience",
+      //     },
+      //   ],
+      //   overview: [
+      //     {
+      //       title: "Overview",
+      //       content: [
+      //         "Light, bright and with a smart layout that enhances the feeling of spaciousness, our rooms feature all the world class furniture, air conditioning, amenities, toiletries and technology. Super deluxe rooms are ingeniously designed with splendid interiors. The junior suite rooms are spacious rooms with a cozy living room separated by a partial wall. The executive rooms feature a large bedroom and a living room. Elegantly decorated with opulent interiors and varnished in soft tones, all the rooms are spacious with classy comfortable beds.",
+      //       ],
+      //     },
+      //   ],
+      //   policies: [
+      //     {
+      //       title: "Child Policies",
+      //       content: [
+      //         "Child 0 - 4 yrs. sharing parent's room free of charge on same plan as adults.",
+      //         "Child age 5 - 10 yrs. sharing parent's room will be charged 50% adult meal rate.",
+      //         "Breakfast - US$ 8/ INR 500.",
+      //       ],
+      //     },
+      //   ],
+      //   amenities: [
+      //     "Air conditioning",
+      //     "Bathrobe",
+      //     "Coffee and tea set",
+      //     "Desk",
+      //     "Hairdryer",
+      //     "Minibar",
+      //     "Pillow service",
+      //     "Safe",
+      //     "Slippers",
+      //     "Storage cabinet",
+      //     "Telephone",
+      //     "Television",
+      //     "Toilet",
+      //     "Towel service",
+      //     "Twin bed/double bed",
+      //     "Wi-Fi",
+      //   ],
+      //   roomDetails: {
+      //     "Starting Price": { icon: IoPricetagSharp, value: "USD 180 / night" },
+      //     "Room Size": { icon: IoMdResize, value: "325 sq. feet" },
+      //     "Total Rooms": { icon: IoBed, value: "1 room" },
+      //     Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
+      //     "Airport Pickup & Drop": {
+      //       icon: MdLocalAirport,
+      //       value: "On Request",
+      //     },
+      //   },
+      // },
+      // ! Uncomment the code above to add the Presidential Suite
     ],
   },
 ];
