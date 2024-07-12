@@ -175,15 +175,15 @@ export const navLinksRooms = [
         title: "Super Deluxe Rooms",
         link: "/accommodation/super-deluxe",
       },
-      // {
-      //   id: "premiumRoom",
-      //   title: "Premium Rooms",
-      //   link: "/accommodation/premium",
-      // },
       {
-        id: "miniSuite",
-        title: "Mini Suite",
-        link: "/accommodation/mini-suite",
+        id: "tripleBedRoom",
+        title: "Triple Bed Room",
+        link: "/accommodation/triple-bedroom",
+      },
+      {
+        id: "premiumSuite",
+        title: "Premium Suite",
+        link: "/accommodation/premium-suite",
       },
       {
         id: "juniorSuite",
@@ -192,13 +192,13 @@ export const navLinksRooms = [
       },
       {
         id: "executiveSuite",
-        title: "Executive Rooms",
+        title: "Executive Suite",
         link: "/accommodation/executive-suite",
       },
       {
-        id: "presidentialApartment",
-        title: "Presidential Apartment",
-        link: "/accommodation/presidential-apartment",
+        id: "presidentialSuite",
+        title: "Presidential Suite",
+        link: "/accommodation/presidential-suite",
       },
     ],
   },
@@ -524,7 +524,7 @@ export const accomodationContents = [
         ],
         roomDetails: {
           "Starting Price": { icon: IoPricetagSharp, value: "USD 60 / night" },
-          "Total Rooms": { icon: IoBed, value: "55 rooms" },
+          "Total Rooms": { icon: IoBed, value: "14 rooms" },
           "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
           Occupancy: { icon: MdFamilyRestroom, value: "2 adults" },
           "Airport Pickup & Drop": {
@@ -598,7 +598,81 @@ export const accomodationContents = [
         ],
         roomDetails: {
           "Starting Price": { icon: IoPricetagSharp, value: "USD 70 / night" },
-          "Total Rooms": { icon: IoBed, value: "30 rooms" },
+          "Total Rooms": { icon: IoBed, value: "47 rooms" },
+          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
+          "Airport Pickup & Drop": {
+            icon: MdLocalAirport,
+            value: "On Request",
+          },
+        },
+      },
+      {
+        id: "tripleBedRoom",
+        title: "Triple Bed Room",
+        subtitle: "",
+        description:
+          "Experience luxury and sophistication in our Triple Bed Room, featuring splendid interiors and top-notch facilities.",
+        imageUrl: dlx4,
+        category: "triple-bedroom",
+        router: "/accommodation/triple-bedroom",
+        images: [
+          {
+            src: dlx1,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx2,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx3,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx4,
+            title: "The Homely Ambience",
+          },
+        ],
+        overview: [
+          {
+            title: "Overview",
+            content: [
+              "Discover unparalleled opulence in Hotel Ichchha Super Deluxe Rooms, where global standards of luxury meet personalized comfort. Each room is a masterpiece of design, featuring lavish furnishings, cutting-edge technology, and panoramic views that promise to leave you spellbound. Our commitment to excellence ensures every moment is imbued with splendor and sophistication.",
+            ],
+          },
+        ],
+        policies: [
+          {
+            title: "Child Policies",
+            content: [
+              "Child 0 - 4 yrs. sharing parent's room free of charge on same plan as adults.",
+              "Child age 5 - 10 yrs. sharing parent's room will be charged 50% adult meal rate.",
+              "Breakfast - US$ 8/ INR 500.",
+            ],
+          },
+        ],
+        amenities: [
+          "Air conditioning",
+          "Bathrobe",
+          "Coffee and tea set",
+          "Desk",
+          "Hairdryer",
+          "Minibar",
+          "Pillow service",
+          "Safe",
+          "Slippers",
+          "Storage cabinet",
+          "Telephone",
+          "Television",
+          "Toilet",
+          "Towel service",
+          "Twin bed/double bed",
+          "Wi-Fi",
+        ],
+        roomDetails: {
+          "Starting Price": { icon: IoPricetagSharp, value: "USD 90 / night" },
+          "Total Rooms": { icon: IoBed, value: "11 rooms" },
           "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
           Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
           "Airport Pickup & Drop": {
@@ -682,14 +756,14 @@ export const accomodationContents = [
       //   },
       // },
       {
-        id: "miniSuite",
-        title: "Mini Suite",
+        id: "premiumSuite",
+        title: "Premium Suite",
         subtitle: "",
         description:
-          "Indulge in luxury and comfort with our Mini Suite, designed to offer a lavish experience for our guests.",
+          "Indulge in luxury and comfort with our Premium Suite, designed to offer a lavish experience for our guests.",
         imageUrl: dlx2,
-        category: "mini-suite",
-        router: "/accommodation/mini-suite",
+        category: "premium-suite",
+        router: "/accommodation/premium-suite",
         images: [
           {
             src: dlx1,
@@ -712,7 +786,7 @@ export const accomodationContents = [
           {
             title: "Overview",
             content: [
-              "Immerse yourself in the epitome of elegance with Hotel Ichchha Premium Rooms. Tailored for the world traveler, these rooms boast an exquisite fusion of comfort and style, complete with luxurious amenities and impeccable service. Surrender to the allure of sophistication and let us redefine your travel experience.",
+              "Immerse yourself in the epitome of elegance with Hotel Ichchha Premium Suites. Tailored for the world traveler, these rooms boast an exquisite fusion of comfort and style, complete with luxurious amenities and impeccable service. Surrender to the allure of sophistication and let us redefine your travel experience.",
             ],
           },
         ],
@@ -746,7 +820,7 @@ export const accomodationContents = [
         ],
         roomDetails: {
           "Starting Price": { icon: IoPricetagSharp, value: "USD 85 / night" },
-          "Total Rooms": { icon: IoBed, value: "7 rooms" },
+          "Total Rooms": { icon: IoBed, value: "24 rooms" },
           "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
           Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 children" },
           "Airport Pickup & Drop": {
@@ -821,7 +895,7 @@ export const accomodationContents = [
         roomDetails: {
           "Starting Price": { icon: IoPricetagSharp, value: "USD 100 / night" },
           "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
-          "Total Rooms": { icon: IoBed, value: "6 rooms" },
+          "Total Rooms": { icon: IoBed, value: "2 rooms" },
           Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
           "Airport Pickup & Drop": {
             icon: MdLocalAirport,
@@ -895,7 +969,7 @@ export const accomodationContents = [
         roomDetails: {
           "Starting Price": { icon: IoPricetagSharp, value: "USD 140 / night" },
           "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
-          "Total Rooms": { icon: IoBed, value: "2 rooms" },
+          "Total Rooms": { icon: IoBed, value: "1 room" },
           Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
           "Airport Pickup & Drop": {
             icon: MdLocalAirport,
@@ -904,14 +978,14 @@ export const accomodationContents = [
         },
       },
       {
-        id: "presidentialApartment",
-        title: "Presidential Apartment",
+        id: "presidentialSuite",
+        title: "Presidential Suite",
         subtitle: "",
         description:
-          "Experience the epitome of luxury in our Presidential Apartment, featuring a spacious living room, dining area, and a large bedroom.",
+          "Experience the epitome of luxury in our Presidential Suite, featuring a spacious living room, dining area, and a large bedroom.",
         imageUrl: slider2,
-        category: "presidential-apartment",
-        router: "/accommodation/presidential-apartment",
+        category: "presidential-suite",
+        router: "/accommodation/presidential-suite",
         images: [
           {
             src: dlx1,
