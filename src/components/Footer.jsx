@@ -46,8 +46,8 @@ const Footer = () => {
         { id: 1, text: "+977 980-2738095", href: "tel:+9779802738095" },
         {
           id: 4,
-          text: "info@hotelichchha.com",
-          href: "mailto:info@hotelichchha.com",
+          text: "sales@hotelichchha.com",
+          href: "mailto:sales@hotelichchha.com",
         },
       ],
     },
@@ -59,8 +59,8 @@ const Footer = () => {
         { id: 2, text: "+977 980-2738090", href: "tel:+9779802738090" },
         {
           id: 3,
-          text: "info@hotelichchha.com",
-          href: "mailto:info@hotelichchha.com",
+          text: "sales@hotelichchha.com",
+          href: "mailto:sales@hotelichchha.com",
         },
       ],
     },
