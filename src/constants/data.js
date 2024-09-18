@@ -242,25 +242,25 @@ export const socialLinks = [
   {
     id: "facebook",
     title: "Facebook",
-    link: "https://www.facebook.com/ichchahotel",
+    link: "https://www.facebook.com/HotelIchchha/",
     icon: FaFacebookF,
   },
   {
     id: "instagram",
     title: "Instagram",
-    link: "https://www.instagram.com/hotel_ichchha",
+    link: "https://www.instagram.com/hotel_ichchha/",
     icon: AiFillInstagram,
   },
   {
     id: "twitter",
-    title: "Twitter",
-    link: "https://twitter.com/hotelichchha",
+    title: "X.com",
+    link: "https://x.com/IchchhaHotel",
     icon: FaXTwitter,
   },
   {
     id: "linkedin",
     title: "Linkedin",
-    link: "https://www.linkedin.com/company/hotel-ichchha",
+    link: "https://www.linkedin.com/company/71654116/",
     icon: FaLinkedinIn,
   },
   {
