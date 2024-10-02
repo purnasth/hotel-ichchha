@@ -22,8 +22,10 @@ import ExploreFacilitiesButton from "./components/Facilities/ExploreFacilitiesBu
 import NotFound from "./components/ui/NotFound";
 import AccommodationDynamic from "./components/AccommodationDynamic";
 import RouterToTop from "./components/ui/RouterToTop";
+import useLenisScroll from "./hooks/useLenisScroll";
 
 const App = () => {
+  useLenisScroll();
   return (
     <>
       <Router>
