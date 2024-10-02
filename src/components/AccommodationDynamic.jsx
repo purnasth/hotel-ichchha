@@ -25,7 +25,7 @@ const AccommodationDynamic = () => {
     <>
       <HeroSliderCarousel
         images={room.images}
-        className="w-full h-96 md:h-screen object-cover"
+        className="w-full h-96 md:h-screen object-cover object-bottom"
       />
       <PackageComponent room={room} />
 

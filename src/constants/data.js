@@ -36,6 +36,15 @@ import dlx1 from "../assets/rooms/dlx1.webp";
 import dlx2 from "../assets/rooms/dlx2.webp";
 import dlx3 from "../assets/rooms/dlx3.webp";
 import dlx4 from "../assets/rooms/dlx4.webp";
+import dlx5 from "../assets/rooms/dlx5.webp";
+import dlx6 from "../assets/rooms/dlx6.webp";
+
+import suite1 from "../assets/rooms/suites/suite1.webp";
+import suite2 from "../assets/rooms/suites/suite2.webp";
+import suite3 from "../assets/rooms/suites/suite3.webp";
+import suite4 from "../assets/rooms/suites/suite4.webp";
+import suite5 from "../assets/rooms/suites/suite5.webp";
+import suite6 from "../assets/rooms/suites/suite6.webp";
 
 import fountainR1 from "../assets/restaurant/fountainR1.webp";
 import fountainR2 from "../assets/restaurant/fountainR2.webp";
@@ -547,10 +556,14 @@ export const accomodationContents = [
         subtitle: "",
         description:
           "Experience luxury and sophistication in our Super Deluxe Room, featuring splendid interiors and top-notch facilities.",
-        imageUrl: dlx4,
+        imageUrl: dlx6,
         category: "super-deluxe",
         router: "/accommodation/super-deluxe",
         images: [
+          {
+            src: dlx6,
+            title: "The Homely Ambience",
+          },
           {
             src: dlx1,
             title: "The Homely Ambience",
@@ -561,10 +574,6 @@ export const accomodationContents = [
           },
           {
             src: dlx3,
-            title: "The Homely Ambience",
-          },
-          {
-            src: dlx4,
             title: "The Homely Ambience",
           },
         ],
@@ -622,12 +631,16 @@ export const accomodationContents = [
         subtitle: "",
         description:
           "Indulge in luxury and comfort with our Premium Room, designed to offer a lavish experience for our guests.",
-        imageUrl: dlx2,
+        imageUrl: dlx5,
         category: "premium",
         router: "/accommodation/premium",
         images: [
           {
-            src: dlx1,
+            src: dlx5,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx6,
             title: "The Homely Ambience",
           },
           {
@@ -771,24 +784,20 @@ export const accomodationContents = [
         subtitle: "",
         description:
           "Indulge in luxury and comfort with our Premium Junior Suite, designed to offer a lavish experience for our guests.",
-        imageUrl: dlx4,
+        imageUrl: suite2,
         category: "premium-suite",
         router: "/accommodation/premium-suite",
         images: [
           {
-            src: dlx1,
+            src: suite2,
             title: "The Homely Ambience",
           },
           {
-            src: dlx2,
+            src: suite6,
             title: "The Homely Ambience",
           },
           {
-            src: dlx3,
-            title: "The Homely Ambience",
-          },
-          {
-            src: dlx4,
+            src: suite5,
             title: "The Homely Ambience",
           },
         ],
@@ -811,6 +820,8 @@ export const accomodationContents = [
           },
         ],
         amenities: [
+          "Fruits Basket",
+          "Minibar",
           "Wi-Fi",
           "Air conditioning",
           "Coffee and tea set",
@@ -833,7 +844,7 @@ export const accomodationContents = [
           },
           "Total Rooms": { icon: IoBed, value: "8 rooms" },
           "Room Size": { icon: MdSpaceDashboard, value: "215 sq. feet" },
-          Occupancy: { icon: MdFamilyRestroom, value: "1 / 2 / (2+1) guests" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 guests" },
           Complimentary: {
             icon: FaHandHoldingHeart,
             value: "Gym, Swimming Pool, Airport Pickup & Drop",
@@ -846,24 +857,20 @@ export const accomodationContents = [
         subtitle: "",
         description:
           "Our Deluxe Suite is designed to offer a luxurious and comfortable experience for our guests.",
-        imageUrl: dlx3,
+        imageUrl: suite6,
         category: "deluxe-suite",
         router: "/accommodation/deluxe-suite",
         images: [
           {
-            src: dlx1,
+            src: suite6,
             title: "The Homely Ambience",
           },
           {
-            src: dlx2,
+            src: suite2,
             title: "The Homely Ambience",
           },
           {
-            src: dlx3,
-            title: "The Homely Ambience",
-          },
-          {
-            src: dlx4,
+            src: suite5,
             title: "The Homely Ambience",
           },
         ],
@@ -910,7 +917,7 @@ export const accomodationContents = [
           },
           "Total Rooms": { icon: IoBed, value: "1 room" },
           "Room Size": { icon: MdSpaceDashboard, value: "215 sq. feet" },
-          Occupancy: { icon: MdFamilyRestroom, value: "1 / 2 / (2+1) guests" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 guests" },
           Complimentary: {
             icon: FaHandHoldingHeart,
             value: "Gym, Swimming Pool, Airport Pickup & Drop",
@@ -923,24 +930,28 @@ export const accomodationContents = [
         subtitle: "",
         description:
           "Our Honeymoon Suite is designed to offer a romantic and luxurious experience for couples.",
-        imageUrl: dlx1,
+        imageUrl: suite4,
         category: "honeymoon-suite",
         router: "/accommodation/honeymoon-suite",
         images: [
           {
-            src: dlx1,
+            src: suite3,
             title: "The Homely Ambience",
           },
           {
-            src: dlx2,
+            src: suite1,
             title: "The Homely Ambience",
           },
           {
-            src: dlx3,
+            src: suite4,
             title: "The Homely Ambience",
           },
           {
-            src: dlx4,
+            src: suite6,
+            title: "The Homely Ambience",
+          },
+          {
+            src: suite5,
             title: "The Homely Ambience",
           },
         ],
@@ -987,7 +998,7 @@ export const accomodationContents = [
           },
           "Total Rooms": { icon: IoBed, value: "1 room" },
           "Room Size": { icon: MdSpaceDashboard, value: "215 sq. feet" },
-          Occupancy: { icon: MdFamilyRestroom, value: "1 / 2 / (2+1) guests" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 guests" },
           Complimentary: {
             icon: FaHandHoldingHeart,
             value: "Gym, Swimming Pool, Airport Pickup & Drop",
@@ -1005,19 +1016,23 @@ export const accomodationContents = [
         router: "/accommodation/executive-suite",
         images: [
           {
-            src: dlx1,
+            src: slider2,
             title: "The Homely Ambience",
           },
           {
-            src: dlx2,
+            src: suite2,
             title: "The Homely Ambience",
           },
           {
-            src: dlx3,
+            src: suite3,
             title: "The Homely Ambience",
           },
           {
-            src: dlx4,
+            src: suite4,
+            title: "The Homely Ambience",
+          },
+          {
+            src: suite5,
             title: "The Homely Ambience",
           },
         ],
@@ -1065,7 +1080,7 @@ export const accomodationContents = [
           },
           "Total Rooms": { icon: IoBed, value: "1 room" },
           "Room Size": { icon: MdSpaceDashboard, value: "215 sq. feet" },
-          Occupancy: { icon: MdFamilyRestroom, value: "1 / 2 / (2+1) guests" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 guests" },
           Complimentary: {
             icon: FaHandHoldingHeart,
             value: "Gym, Swimming Pool, Airport Pickup & Drop",
