@@ -13,7 +13,7 @@ const Facilities = () => {
   );
 
   return (
-    <section id="facilities" className="bg-bg-gold-light">
+    <section id="facilities-section" className="bg-bg-gold-light">
       <div className="container">
         {/* <div className="flexCenter flex-col w-3/4 mx-auto mb-8">
           <h3 className="text-navy font-medium">{facilitiesTitle.title}</h3>

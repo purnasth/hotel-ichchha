@@ -135,6 +135,7 @@ const EventsHall = () => {
                     className="bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
                     title="Enquiry"
                     aria-label="Enquiry"
+                    type="button"
                   >
                     Enquiry
                   </button>

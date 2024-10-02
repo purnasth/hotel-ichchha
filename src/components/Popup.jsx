@@ -26,6 +26,7 @@ const Popup = () => {
           }`}
         >
           <button
+            type="button"
             onClick={closePopup}
             className="text-white hover:text-white/50 transition-all duration-500 text-4xl absolute top-4 right-4 z-10"
             title="Close"

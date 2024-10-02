@@ -54,6 +54,7 @@ const Suites = () => {
                       className={`flex transition-all duration-${duration} md:group-hover:translate-x-4`}
                     >
                       <button
+                        type="button"
                         href={suite.router}
                         className={`bg-goldLight text-navy group-hover:text-ivory group-hover:bg-navy px-4 py-1 rounded-full text-2xl transition-all duration-300 ease-linear`}
                         title="Explore More"

@@ -34,10 +34,12 @@ const Navbar = () => {
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
+    document.body.style.overflow = !isNavOpen ? "hidden" : "auto";
   };
 
   const closeNav = () => {
     setIsNavOpen(false);
+    document.body.style.overflow = "auto";
   };
 
   return (
@@ -100,6 +102,7 @@ const Navbar = () => {
             onClick={toggleNav}
             title="Menu"
             aria-label="Menu"
+            type="button"
           >
             <span className="hidden md:block text-base lg:text-xl select-none">
               Menu
@@ -144,6 +147,7 @@ const Navbar = () => {
         }}
       >
         <button
+          type="button"
           onClick={closeNav}
           className="absolute top-0 right-0 px-4 py-6 md:py-6 md:px-8 text-gold z-10"
           title="Close"
@@ -190,14 +194,14 @@ const Navbar = () => {
                         to={category.link}
                         onClick={closeNav}
                         className={({ isActive }) =>
-                          `block text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-extrabold hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear ${
+                          `block text-center md:text-left text-xl md:text-3xl lg:text-4xl font-extrabold hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear ${
                             isActive ? "text-gold" : ""
                           }`
                         }
                       >
                         {category.title}
                       </NavLink>
-                      <ul className="mt-4 flex flex-col flex-wrap items-center justify-center md:items-start gap-4">
+                      <ul className="mt-6 md:mt-4 flex flex-row md:flex-col flex-wrap items-center justify-center md:items-start gap-8 gap-y-4 md:gap-4 px-4 md:px-0">
                         {category.subLinks.map((subLink) => (
                           <li
                             key={subLink.id}
@@ -226,14 +230,14 @@ const Navbar = () => {
                         to={category.link}
                         onClick={closeNav}
                         className={({ isActive }) =>
-                          `block text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-extrabold hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear ${
+                          `block text-center md:text-left text-xl md:text-3xl lg:text-4xl font-extrabold hover:translate-x-2 hover:text-goldLight transition-all duration-300 ease-linear ${
                             isActive ? "text-gold" : ""
                           }`
                         }
                       >
                         {category.title}
                       </NavLink>
-                      <ul className="mt-4 flex flex-col flex-wrap items-center justify-center md:items-start gap-4">
+                      <ul className="mt-6 md:mt-4 flex flex-row md:flex-col flex-wrap items-center justify-center md:items-start gap-8 gap-y-4 md:gap-4 px-4 md:px-0">
                         {category.subLinks.map((subLink) => (
                           <li
                             key={subLink.id}

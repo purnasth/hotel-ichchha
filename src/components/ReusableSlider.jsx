@@ -153,6 +153,7 @@ const ReusableSlider = ({ images, className }) => {
       )}
       <div className={`flexCenter w-full mt-4`}>
         <button
+          type="button"
           onClick={prevSlide}
           className="group bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
           title="Previous"
@@ -161,6 +162,7 @@ const ReusableSlider = ({ images, className }) => {
           <HiArrowLongLeft className="group-hover:-translate-x-2 transition-all duration-150 ease-linear" />
         </button>
         <button
+          type="button"
           onClick={nextSlide}
           className="group bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base transition-all duration-300 ease-linear"
           title="Next"

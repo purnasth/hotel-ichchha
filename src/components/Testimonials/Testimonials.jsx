@@ -43,6 +43,7 @@ const Testimonials = () => {
                 }`}
                 title="View Testimonial"
                 aria-label="View Testimonial"
+                type="button"
               >
                 <div className="flex items-center justify-start gap-4 p-6 py-4 border-b-[1px] border-navy/10 ">
                   <img

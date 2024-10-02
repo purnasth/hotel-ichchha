@@ -4,17 +4,19 @@ import introVideo from "../assets/intro_video.mp4";
 import ichchha from "../assets/ichchha.webp";
 import ichchha1 from "../assets/ichchha1.webp";
 import {
-  MdAtm,
+  // MdAtm,
   MdOutlineInsertEmoticon,
   MdOutlineRoomService,
+  MdSpaceDashboard,
 } from "react-icons/md";
 import { TbElevator } from "react-icons/tb";
 import {
-  FaBed,
-  FaRulerCombined,
-  FaDollarSign,
-  FaUser,
-  FaSmoking,
+  // FaBed,
+  // FaRulerCombined,
+  // FaDollarSign,
+  // FaUser,
+  // FaSmoking,
+  FaHandHoldingHeart,
 } from "react-icons/fa";
 import slider1 from "../assets/slider/slider1.webp";
 import slider2 from "../assets/slider/slider2.webp";
@@ -98,7 +100,7 @@ import { FaSwimmingPool } from "react-icons/fa";
 import { RiRestaurant2Fill } from "react-icons/ri";
 import { MdOutlineSportsBar } from "react-icons/md";
 import { MdOutlineMeetingRoom } from "react-icons/md";
-import { PiBroomBold } from "react-icons/pi";
+// import { PiBroomBold } from "react-icons/pi";
 import { FaWifi } from "react-icons/fa";
 import { BiSolidParking } from "react-icons/bi";
 import { MdOutlineLocalLaundryService } from "react-icons/md";
@@ -176,19 +178,24 @@ export const navLinksRooms = [
         link: "/accommodation/super-deluxe",
       },
       {
-        id: "tripleBedRoom",
-        title: "Triple Bed Room",
-        link: "/accommodation/triple-bedroom",
+        id: "premiumRoom",
+        title: "Premium Rooms",
+        link: "/accommodation/premium",
       },
       {
         id: "premiumSuite",
-        title: "Premium Suite",
+        title: "Premium Junior Suite",
         link: "/accommodation/premium-suite",
       },
       {
-        id: "juniorSuite",
-        title: "Junior Suite",
-        link: "/accommodation/junior-suite",
+        id: "deluxeSuite",
+        title: "Deluxe Suite",
+        link: "/accommodation/deluxe-suite",
+      },
+      {
+        id: "honeymoonSuite",
+        title: "Honeymoon Suite",
+        link: "/accommodation/honeymoon-suite",
       },
       {
         id: "executiveSuite",
@@ -500,17 +507,16 @@ export const accomodationContents = [
             content: [
               "Child 0 - 4 yrs. sharing parent's room free of charge on same plan as adults.",
               "Child age 5 - 10 yrs. sharing parent's room will be charged 50% adult meal rate.",
-              "Breakfast - US$ 8/ INR 500.",
+              "Breakfast - USD 5.",
             ],
           },
         ],
         amenities: [
+          "Wi-Fi",
           "Air conditioning",
-          "Bathrobe",
           "Coffee and tea set",
           "Desk",
           "Hairdryer",
-          "Minibar",
           "Pillow service",
           "Safe",
           "Slippers",
@@ -520,16 +526,18 @@ export const accomodationContents = [
           "Toilet",
           "Towel service",
           "Twin bed/double bed",
-          "Wi-Fi",
         ],
         roomDetails: {
-          "Starting Price": { icon: IoPricetagSharp, value: "USD 60 / night" },
+          "Starting Price": {
+            icon: IoPricetagSharp,
+            value: "USD 55 / night",
+          },
           "Total Rooms": { icon: IoBed, value: "14 rooms" },
-          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
-          Occupancy: { icon: MdFamilyRestroom, value: "2 adults" },
-          "Airport Pickup & Drop": {
-            icon: MdLocalAirport,
-            value: "On Request",
+          "Room Size": { icon: MdSpaceDashboard, value: "215 sq. feet" },
+          Occupancy: { icon: MdFamilyRestroom, value: "1 / 2 / (2+1) guests" },
+          Complimentary: {
+            icon: FaHandHoldingHeart,
+            value: "Gym, Swimming Pool, Airport Pickup & Drop",
           },
         },
       },
@@ -579,12 +587,11 @@ export const accomodationContents = [
           },
         ],
         amenities: [
+          "Wi-Fi",
           "Air conditioning",
-          "Bathrobe",
           "Coffee and tea set",
           "Desk",
           "Hairdryer",
-          "Minibar",
           "Pillow service",
           "Safe",
           "Slippers",
@@ -594,28 +601,30 @@ export const accomodationContents = [
           "Toilet",
           "Towel service",
           "Twin bed/double bed",
-          "Wi-Fi",
         ],
         roomDetails: {
-          "Starting Price": { icon: IoPricetagSharp, value: "USD 70 / night" },
-          "Total Rooms": { icon: IoBed, value: "47 rooms" },
-          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
-          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
-          "Airport Pickup & Drop": {
-            icon: MdLocalAirport,
-            value: "On Request",
+          "Starting Price": {
+            icon: IoPricetagSharp,
+            value: "USD 65 / night",
+          },
+          "Total Rooms": { icon: IoBed, value: "55 rooms" },
+          "Room Size": { icon: MdSpaceDashboard, value: "215 sq. feet" },
+          Occupancy: { icon: MdFamilyRestroom, value: "1 / 2 / (2+1) guests" },
+          Complimentary: {
+            icon: FaHandHoldingHeart,
+            value: "Gym, Swimming Pool, Airport Pickup & Drop",
           },
         },
       },
       {
-        id: "tripleBedRoom",
-        title: "Triple Bed Room",
+        id: "premiumRoom",
+        title: "Premium Room",
         subtitle: "",
         description:
-          "Experience luxury and sophistication in our Triple Bed Room, featuring splendid interiors and top-notch facilities.",
-        imageUrl: dlx4,
-        category: "triple-bedroom",
-        router: "/accommodation/triple-bedroom",
+          "Indulge in luxury and comfort with our Premium Room, designed to offer a lavish experience for our guests.",
+        imageUrl: dlx2,
+        category: "premium",
+        router: "/accommodation/premium",
         images: [
           {
             src: dlx1,
@@ -638,7 +647,7 @@ export const accomodationContents = [
           {
             title: "Overview",
             content: [
-              "Discover unparalleled opulence in Hotel Ichchha Super Deluxe Rooms, where global standards of luxury meet personalized comfort. Each room is a masterpiece of design, featuring lavish furnishings, cutting-edge technology, and panoramic views that promise to leave you spellbound. Our commitment to excellence ensures every moment is imbued with splendor and sophistication.",
+              "Immerse yourself in the epitome of elegance with Hotel Ichchha Premium Rooms. Tailored for the world traveler, these rooms boast an exquisite fusion of comfort and style, complete with luxurious amenities and impeccable service. Surrender to the allure of sophistication and let us redefine your travel experience.",
             ],
           },
         ],
@@ -653,12 +662,11 @@ export const accomodationContents = [
           },
         ],
         amenities: [
+          "Wi-Fi",
           "Air conditioning",
-          "Bathrobe",
           "Coffee and tea set",
           "Desk",
           "Hairdryer",
-          "Minibar",
           "Pillow service",
           "Safe",
           "Slippers",
@@ -668,16 +676,18 @@ export const accomodationContents = [
           "Toilet",
           "Towel service",
           "Twin bed/double bed",
-          "Wi-Fi",
         ],
         roomDetails: {
-          "Starting Price": { icon: IoPricetagSharp, value: "USD 90 / night" },
-          "Total Rooms": { icon: IoBed, value: "11 rooms" },
-          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
-          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 child" },
-          "Airport Pickup & Drop": {
-            icon: MdLocalAirport,
-            value: "On Request",
+          "Starting Price": {
+            icon: IoPricetagSharp,
+            value: "USD 85 / night",
+          },
+          "Total Rooms": { icon: IoBed, value: "16 rooms" },
+          "Room Size": { icon: MdSpaceDashboard, value: "215 sq. feet" },
+          Occupancy: { icon: MdFamilyRestroom, value: "2 / (2+1) guests" },
+          Complimentary: {
+            icon: FaHandHoldingHeart,
+            value: "Gym, Swimming Pool, Airport Pickup & Drop",
           },
         },
       },
@@ -757,11 +767,11 @@ export const accomodationContents = [
       // },
       {
         id: "premiumSuite",
-        title: "Premium Suite",
+        title: "Premium Junior Suite",
         subtitle: "",
         description:
-          "Indulge in luxury and comfort with our Premium Suite, designed to offer a lavish experience for our guests.",
-        imageUrl: dlx2,
+          "Indulge in luxury and comfort with our Premium Junior Suite, designed to offer a lavish experience for our guests.",
+        imageUrl: dlx4,
         category: "premium-suite",
         router: "/accommodation/premium-suite",
         images: [
@@ -786,7 +796,7 @@ export const accomodationContents = [
           {
             title: "Overview",
             content: [
-              "Immerse yourself in the epitome of elegance with Hotel Ichchha Premium Suites. Tailored for the world traveler, these rooms boast an exquisite fusion of comfort and style, complete with luxurious amenities and impeccable service. Surrender to the allure of sophistication and let us redefine your travel experience.",
+              "Immerse yourself in the epitome of elegance with Hotel Ichchha Premium Junior Suites. Tailored for the world traveler, these rooms boast an exquisite fusion of comfort and style, complete with luxurious amenities and impeccable service. Surrender to the allure of sophistication and let us redefine your travel experience.",
             ],
           },
         ],
@@ -801,12 +811,11 @@ export const accomodationContents = [
           },
         ],
         amenities: [
+          "Wi-Fi",
           "Air conditioning",
-          "Bathrobe",
           "Coffee and tea set",
           "Desk",
           "Hairdryer",
-          "Minibar",
           "Pillow service",
           "Safe",
           "Slippers",
@@ -816,28 +825,30 @@ export const accomodationContents = [
           "Toilet",
           "Towel service",
           "Twin bed/double bed",
-          "Wi-Fi",
         ],
         roomDetails: {
-          "Starting Price": { icon: IoPricetagSharp, value: "USD 85 / night" },
-          "Total Rooms": { icon: IoBed, value: "24 rooms" },
-          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
-          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 1 children" },
-          "Airport Pickup & Drop": {
-            icon: MdLocalAirport,
-            value: "On Request",
+          "Starting Price": {
+            icon: IoPricetagSharp,
+            value: "USD 100 / night",
+          },
+          "Total Rooms": { icon: IoBed, value: "8 rooms" },
+          "Room Size": { icon: MdSpaceDashboard, value: "215 sq. feet" },
+          Occupancy: { icon: MdFamilyRestroom, value: "1 / 2 / (2+1) guests" },
+          Complimentary: {
+            icon: FaHandHoldingHeart,
+            value: "Gym, Swimming Pool, Airport Pickup & Drop",
           },
         },
       },
       {
-        id: "juniorSuite",
-        title: "Junior Suite",
+        id: "deluxeSuite",
+        title: "Deluxe Suite",
         subtitle: "",
         description:
-          "Our Junior Suite offers spacious accommodation with a cozy living room, perfect for relaxation and comfort.",
-        imageUrl: dlx1,
-        category: "junior-suite",
-        router: "/accommodation/junior-suite",
+          "Our Deluxe Suite is designed to offer a luxurious and comfortable experience for our guests.",
+        imageUrl: dlx3,
+        category: "deluxe-suite",
+        router: "/accommodation/deluxe-suite",
         images: [
           {
             src: dlx1,
@@ -860,7 +871,7 @@ export const accomodationContents = [
           {
             title: "Overview",
             content: [
-              "Indulge in the refined luxury of Hotel Ichchha Junior Suites, where international flair meets intimate comfort. These suites are a sanctuary of sophistication, offering a blend of modern elegance and timeless charm. With premium amenities and bespoke services, our Junior Suites are designed to provide an unforgettable experience for the global connoisseur.",
+              "Indulge in the epitome of luxury with Hotel Ichchha Deluxe Suites. Designed to offer a lavish experience, these suites feature opulent interiors, modern amenities, and personalized service. Revel in the spacious layout, savor the exquisite decor, and let us craft a dreamy escape for you and your beloved.",
             ],
           },
         ],
@@ -875,12 +886,13 @@ export const accomodationContents = [
           },
         ],
         amenities: [
+          "Fruits Basket",
+          "Minibar",
+          "Wi-Fi",
           "Air conditioning",
-          "Bathrobe",
           "Coffee and tea set",
           "Desk",
           "Hairdryer",
-          "Minibar",
           "Pillow service",
           "Safe",
           "Slippers",
@@ -890,16 +902,95 @@ export const accomodationContents = [
           "Toilet",
           "Towel service",
           "Twin bed/double bed",
-          "Wi-Fi",
         ],
         roomDetails: {
-          "Starting Price": { icon: IoPricetagSharp, value: "USD 100 / night" },
-          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
-          "Total Rooms": { icon: IoBed, value: "2 rooms" },
-          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
-          "Airport Pickup & Drop": {
-            icon: MdLocalAirport,
-            value: "On Request",
+          "Starting Price": {
+            icon: IoPricetagSharp,
+            value: "USD 140 / night",
+          },
+          "Total Rooms": { icon: IoBed, value: "1 room" },
+          "Room Size": { icon: MdSpaceDashboard, value: "215 sq. feet" },
+          Occupancy: { icon: MdFamilyRestroom, value: "1 / 2 / (2+1) guests" },
+          Complimentary: {
+            icon: FaHandHoldingHeart,
+            value: "Gym, Swimming Pool, Airport Pickup & Drop",
+          },
+        },
+      },
+      {
+        id: "honeymoonSuite",
+        title: "Honeymoon Suite",
+        subtitle: "",
+        description:
+          "Our Honeymoon Suite is designed to offer a romantic and luxurious experience for couples.",
+        imageUrl: dlx1,
+        category: "honeymoon-suite",
+        router: "/accommodation/honeymoon-suite",
+        images: [
+          {
+            src: dlx1,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx2,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx3,
+            title: "The Homely Ambience",
+          },
+          {
+            src: dlx4,
+            title: "The Homely Ambience",
+          },
+        ],
+        overview: [
+          {
+            title: "Overview",
+            content: [
+              "Celebrate love in the lap of luxury with Hotel Ichchha Honeymoon Suites. Designed to create unforgettable memories, these suites offer an intimate setting with plush furnishings, modern amenities, and personalized service. Revel in the romantic ambiance, savor the exquisite decor, and let us craft a dreamy escape for you and your beloved.",
+            ],
+          },
+        ],
+        policies: [
+          {
+            title: "Child Policies",
+            content: [
+              "Child 0 - 4 yrs. sharing parent's room free of charge on same plan as adults.",
+              "Child age 5 - 10 yrs. sharing parent's room will be charged 50% adult meal rate.",
+              "Breakfast - US$ 8/ INR 500.",
+            ],
+          },
+        ],
+        amenities: [
+          "Fruits Basket",
+          "Minibar",
+          "Wi-Fi",
+          "Air conditioning",
+          "Coffee and tea set",
+          "Desk",
+          "Hairdryer",
+          "Pillow service",
+          "Safe",
+          "Slippers",
+          "Storage cabinet",
+          "Telephone",
+          "Television",
+          "Toilet",
+          "Towel service",
+          "Twin bed/double bed",
+        ],
+        roomDetails: {
+          "Starting Price": {
+            icon: IoPricetagSharp,
+            value: "USD 150 / night",
+          },
+          "Total Rooms": { icon: IoBed, value: "1 room" },
+          "Room Size": { icon: MdSpaceDashboard, value: "215 sq. feet" },
+          Occupancy: { icon: MdFamilyRestroom, value: "1 / 2 / (2+1) guests" },
+          Complimentary: {
+            icon: FaHandHoldingHeart,
+            value: "Gym, Swimming Pool, Airport Pickup & Drop",
           },
         },
       },
@@ -949,12 +1040,14 @@ export const accomodationContents = [
           },
         ],
         amenities: [
+          "Bathtub",
+          "Fruits Basket",
+          "Minibar",
+          "Wi-Fi",
           "Air conditioning",
-          "Bathrobe",
           "Coffee and tea set",
           "Desk",
           "Hairdryer",
-          "Minibar",
           "Pillow service",
           "Safe",
           "Slippers",
@@ -964,16 +1057,18 @@ export const accomodationContents = [
           "Toilet",
           "Towel service",
           "Twin bed/double bed",
-          "Wi-Fi",
         ],
         roomDetails: {
-          "Starting Price": { icon: IoPricetagSharp, value: "USD 140 / night" },
-          "Room Size": { icon: IoMdResize, value: "215 sq. feet" },
+          "Starting Price": {
+            icon: IoPricetagSharp,
+            value: "USD 180 / night",
+          },
           "Total Rooms": { icon: IoBed, value: "1 room" },
-          Occupancy: { icon: MdFamilyRestroom, value: "2 adults + 2 children" },
-          "Airport Pickup & Drop": {
-            icon: MdLocalAirport,
-            value: "On Request",
+          "Room Size": { icon: MdSpaceDashboard, value: "215 sq. feet" },
+          Occupancy: { icon: MdFamilyRestroom, value: "1 / 2 / (2+1) guests" },
+          Complimentary: {
+            icon: FaHandHoldingHeart,
+            value: "Gym, Swimming Pool, Airport Pickup & Drop",
           },
         },
       },

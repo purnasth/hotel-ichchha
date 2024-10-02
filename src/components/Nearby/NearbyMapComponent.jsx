@@ -52,6 +52,7 @@ function NearbyMapComponent() {
                 }}
                 title="Get Direction"
                 aria-label="Get Direction"
+                type="button"
               >
                 Get Direction
               </button>

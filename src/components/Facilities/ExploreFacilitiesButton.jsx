@@ -36,6 +36,7 @@ const ExploreFacilitiesButton = () => {
         onClick={toggleNavbar}
         title="Explore Facilities"
         aria-label="Explore Facilities"
+        type="button"
       >
         <PiCallBell className="w-6 h-6 text-navy" />
       </button>
@@ -82,6 +83,7 @@ const FacilitiesNavbar = ({ showNavbar, onClose }) => {
             onClick={onClose}
             title="Close"
             aria-label="Close"
+            type="button"
           >
             <IoClose className="text-2xl" />
           </button>

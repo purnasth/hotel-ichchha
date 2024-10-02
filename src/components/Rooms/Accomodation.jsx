@@ -116,6 +116,7 @@ const Accomodation = () => {
                 className="bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-base translate-y-full group-hover:-translate-y-6 transition-all duration-300 ease-linear"
                 title="Explore"
                 aria-label="Explore"
+                type="button"
               >
                 {/* Explore */}
                 <HiArrowLongRight />
@@ -195,6 +196,7 @@ const Accomodation = () => {
           onClick={() => sliderRef.current.slickPrev()}
           title="Previous"
           aria-label="Previous"
+          type="button"
         >
           <HiArrowLongLeft className="group-hover:-translate-x-2 transition-all duration-150 ease-linear" />
         </button>
@@ -203,6 +205,7 @@ const Accomodation = () => {
           onClick={() => sliderRef.current.slickNext()}
           title="Next"
           aria-label="Next"
+          type="button"
         >
           <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-150 ease-linear" />
         </button>
