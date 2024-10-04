@@ -1259,8 +1259,8 @@ export const hotelFacilities = [
     router: "/recreation",
   },
   {
-    id: "miniCasino",
-    title: "Mini Casino",
+    id: "megaMillion",
+    title: "Mega Million",
     description:
       "A perfect place to relive your days with exciting games along with the family.",
     icon: g10,
@@ -1699,8 +1699,8 @@ export const recreationVenues = {
     amenities: ["Gaming Floor", "Blackjack", "Kids Play Area"],
   },
   casino: {
-    id: "casino",
-    title: "Casino",
+    id: "megaMillion",
+    title: "Mega Million",
     imageUrls: [casino1, casino2, casino3, casino4],
     description:
       "Relax and enjoy a treat at Hotel Ichchha with a uniquely cultured, nurturing and optimal pampering environment for total refreshment. Each one of our unique spa services nourishes and heals your body, replaces trace minerals. Time-honored Massage techniques of ancient era are expertly crafted on the hands of our Therapists. Enjoy services such as manicure, pedicure and makeup artist offered by our hotel.",
