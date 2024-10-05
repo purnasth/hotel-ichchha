@@ -125,7 +125,7 @@ const Accomodation = () => {
           </div>
         </div>
         <h3 className="text-xl font-bold mt-6">{room.title}</h3>
-        <p className="text-sm md:text-base mt-2 line-clamp-2">
+        <p className="text-sm text-pretty mt-2 line-clamp-2">
           {room.description}
         </p>
       </Link>
@@ -185,12 +185,12 @@ const Accomodation = () => {
           </div>
         </div>
       </div>
-      <div className="my-4 md:my-16 sm:px-2 lg:px-4 xl:px-10">
+      <div className="my-4 md:mt-12 sm:px-2 lg:px-4 xl:px-0">
         <Slider {...settings} ref={sliderRef}>
           {renderSlides()}
         </Slider>
       </div>
-      <div className="flexCenter mt-4">
+      <div className="flexCenter mt-10">
         <button
           className="group bg-goldLight text-navy hover:text-ivory hover:bg-navy px-4 py-1 rounded-full text-xl transition-all duration-300 ease-linear"
           onClick={() => sliderRef.current.slickPrev()}
