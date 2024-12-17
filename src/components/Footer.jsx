@@ -139,11 +139,12 @@ const Footer = () => {
           <p className="text-sm">
             Website by{" "}
             <Link
-              to="https://longtail.info/"
+              to="https://www.purnashrestha.com.np/"
               target="_blank"
               className="underline"
             >
-              {author}
+{/*               {author} */}
+              Purna Shrestha
             </Link>
           </p>
         </div>
