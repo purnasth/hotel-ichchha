@@ -1,3 +1,5 @@
+## This is the dynamic branch with the api integration
+
 <img src="https://hotel-ichchha.pages.dev/assets/logo-DtgyrQVb.svg" alt="Hotel Ichchha" width="300"/>
 
 Welcome to **Hotel Ichchha**, a luxurious five-star hotel located in Simara, Bara.
