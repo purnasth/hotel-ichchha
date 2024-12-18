@@ -143,8 +143,7 @@ const Footer = () => {
               target="_blank"
               className="underline"
             >
-{/*               {author} */}
-              Purna Shrestha
+              {author}
             </Link>
           </p>
         </div>

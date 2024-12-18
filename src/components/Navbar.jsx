@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
   logo,
-  navLinks,
-  navLinksRooms,
-  navLinksEvents,
 } from "../constants/data";
 import { FaWhatsapp } from "react-icons/fa";
 import ichchha from "../assets/ichchha.webp";
@@ -12,6 +9,125 @@ import SocialLinks from "./ui/SocialLinks";
 import ContactAddressLinks from "./ui/ContactAddressLinks";
 import { IoClose } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
+
+const navLinks = [
+  {
+    id: "home",
+    title: "Home",
+    link: "/home",
+  },
+  {
+    id: "about",
+    title: "About",
+    link: "/about",
+  },
+  {
+    id: "restaurants",
+    title: "Restro & Bars",
+    link: "/restaurants",
+  },
+  {
+    id: "recreation",
+    title: "Recreation",
+    link: "/recreation",
+  },
+  // {
+  //   id: "facilities",
+  //   title: "Facilities",
+  //   link: "/facilities",
+  // },
+  {
+    id: "gallery",
+    title: "Gallery",
+    link: "/gallery",
+  },
+
+  {
+    id: "contact",
+    title: "Contact",
+    link: "/contact",
+  },
+];
+
+const navLinksRooms = [
+  {
+    id: 1,
+    title: "Rooms & Suites",
+    link: "/accommodation",
+    subLinks: [
+      {
+        id: "deluxeRoom",
+        title: "Deluxe Rooms",
+        link: "/accommodation/deluxe",
+      },
+      {
+        id: "superDeluxeRoom",
+        title: "Super Deluxe Rooms",
+        link: "/accommodation/super-deluxe",
+      },
+      {
+        id: "premiumRoom",
+        title: "Premium Rooms",
+        link: "/accommodation/premium",
+      },
+      {
+        id: "premiumSuite",
+        title: "Premium Junior Suite",
+        link: "/accommodation/premium-suite",
+      },
+      {
+        id: "deluxeSuite",
+        title: "Deluxe Suite",
+        link: "/accommodation/deluxe-suite",
+      },
+      {
+        id: "honeymoonSuite",
+        title: "Honeymoon Suite",
+        link: "/accommodation/honeymoon-suite",
+      },
+      {
+        id: "executiveSuite",
+        title: "Executive Suite",
+        link: "/accommodation/executive-suite",
+      },
+      // {
+      //   id: "presidentialSuite",
+      //   title: "Presidential Suite",
+      //   link: "/accommodation/presidential-suite",
+      // },
+    ],
+  },
+];
+
+const navLinksEvents = [
+  {
+    id: 1,
+    title: "Conference & Events",
+    link: "/events",
+    subLinks: [
+      {
+        id: "janakiHall",
+        title: "Janaki Hall",
+        link: "/events#janakiHall",
+      },
+      {
+        id: "jyamireHall",
+        title: "Jyamire Hall",
+        link: "/events#jyamireHall",
+      },
+      {
+        id: "narayaniHall",
+        title: "Narayani Hall",
+        link: "/events#narayaniHall",
+      },
+      {
+        id: "balmikiHall",
+        title: "Balmiki Hall",
+        link: "/events#balmikiHall",
+      },
+    ],
+  },
+];
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -33,7 +149,7 @@ const Navbar = () => {
   }, [prevScrollPos]);
 
   const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
+    setIsNavOpen(!isNavOpen);``
     document.body.style.overflow = !isNavOpen ? "hidden" : "auto";
   };
 
