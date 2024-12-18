@@ -295,7 +295,7 @@ export const contactAddressLinks = [
   {
     id: "location",
     link: "https://maps.app.goo.gl/dJurNnE6cBLguX1cA",
-    text: "Simara, Bara, Nepal",
+    title: "Simara, Bara, Nepal",
     icon: GrLocation,
   },
   {
@@ -304,23 +304,23 @@ export const contactAddressLinks = [
     numbers: [
       {
         link: "tel:+977053520591",
-        text: "+977-053 520591",
+        title: "+977-053 520591",
       },
       {
         link: "tel:+977053520592",
-        text: "92",
+        title: "92",
       },
       {
         link: "tel:+977053520593",
-        text: "93",
+        title: "93",
       },
       {
         link: "tel:+977053520594",
-        text: "94",
+        title: "94",
       },
 
-      // { id: 2, text: "+977-053 520592", href: "tel:+977053520592" },
-      // { id: 3, text: "+977-053 520593", href: "tel:+977053520593" },
+      // { id: 2, title: "+977-053 520592", href: "tel:+977053520592" },
+      // { id: 3, title: "+977-053 520593", href: "tel:+977053520593" },
     ],
   },
   {
@@ -329,11 +329,11 @@ export const contactAddressLinks = [
     addresses: [
       {
         link: "mailto:info@hotelichchha.com",
-        text: "info@hotelichchha.com",
+        title: "info@hotelichchha.com",
       },
       // {
       //   link: "mailto:reservation@hotelichchha.com",
-      //   text: "reservation@hotelichchha.com",
+      //   title: "reservation@hotelichchha.com",
       // },
     ],
   },

@@ -19,16 +19,14 @@ const ContactAddressLinks = ({ showAll = true }) => {
               key={link.id}
               className="mt-3 flex items-center justify-start gap-2 text-navy hover:text-gold transition-all duration-300 ease-linear"
             >
-              {link.icon && <link.icon className="text-base" />}
               <Link to={link.link} target="_blank" rel="noopener">
-                {link.text} (View Map)
+                {link.title} (View Map)
               </Link>
             </li>
           )}
           {link.numbers && showAll && (
             <li className="flex items-start justify-start gap-2">
               <ul className="text-base flex items-center justify-start gap-2">
-                {link.icon && <link.icon className="text-base" />}
                 {link.numbers.map((number, index) => (
                   <li
                     key={index}
@@ -40,7 +38,7 @@ const ContactAddressLinks = ({ showAll = true }) => {
                       rel="noopener"
                       className="-ml-[2px]"
                     >
-                      {number.text}
+                      {number.title}
                     </Link>
                     {index < link.numbers.length - 1 && " |"}
                   </li>
@@ -56,9 +54,8 @@ const ContactAddressLinks = ({ showAll = true }) => {
                     key={index}
                     className="flex items-center justify-start gap-2 text-navy hover:text-gold transition-all duration-300 ease-linear"
                   >
-                    {link.icon && <link.icon className="text-base" />}
                     <Link to={address.link} target="_blank" rel="noopener">
-                      {address.text}
+                      {address.title}
                     </Link>
                   </li>
                 ))}

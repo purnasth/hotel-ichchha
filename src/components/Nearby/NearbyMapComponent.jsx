@@ -1,12 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { nearbyLocations } from "../../constants/data";
+import useFetchApi from "../../hooks/useFetchApi";
 
-function NearbyMapComponent() {
+const NearbyMapComponent = () => {
+  const {
+    data: nearbyLocations = [],
+    loading,
+    error,
+  } = useFetchApi("https://hotelichchha.com/api/api_nearby.php");
+
   const [isMapOpen, setIsMapOpen] = useState(true);
-  const [mapUrl, setMapUrl] = useState(nearbyLocations[0]?.map || "");
-  const [selectedLocation, setSelectedLocation] = useState(
-    nearbyLocations[0] || null
-  );
+  const [mapUrl, setMapUrl] = useState("");
+  const [selectedLocation, setSelectedLocation] = useState(null);
+
+  useEffect(() => {
+    if (nearbyLocations && nearbyLocations.length > 0) {
+      setMapUrl(nearbyLocations[0]?.map || "");
+      setSelectedLocation(nearbyLocations[0] || null);
+    }
+  }, [nearbyLocations]);
 
   const openMapModal = (url, location) => {
     setMapUrl(url);
@@ -25,14 +36,16 @@ function NearbyMapComponent() {
     openMapModal(location.map, location);
   };
 
-  useEffect(() => {
-    if (selectedLocation) {
-      setMapUrl(selectedLocation.map);
-    }
-  }, [selectedLocation]);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
 
   return (
-    <div className="flex justify-between items-center flex-col md:flex-row gap-8 mt-20 md:p-12">
+    <div className="flex justify-between items-center flex-col md:flex-row gap-8 md:p-12">
       <div className="w-full md:w-1/5 pl-6 h-64 md:h-auto overflow-y-auto">
         <ul>
           {nearbyLocations.map((location) => (
@@ -60,10 +73,7 @@ function NearbyMapComponent() {
           ))}
         </ul>
       </div>
-      <div
-        className="w-full lg:w-4/5 my-8 lg:m-0 lg:p-8"
-        // ref={mapRef}
-      >
+      <div className="w-full lg:w-4/5 my-8 lg:m-0 lg:p-8">
         {isMapOpen && (
           <div
             id="mapSection"
@@ -80,6 +90,6 @@ function NearbyMapComponent() {
       </div>
     </div>
   );
-}
+};
 
 export default NearbyMapComponent;

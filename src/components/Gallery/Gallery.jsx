@@ -26,7 +26,7 @@ const Gallery = () => {
   }
 
   return (
-    <section>
+    <section className="bg-bg-gold-light">
       {/* Scroll Reveal Section */}
       <section className="py-8 md:pt-0 md:pb-20">
         <ScrollReveal
