@@ -7,10 +7,24 @@ import AboutHome from "./About/AboutHome";
 import HeroSliderCarousel from "./HeroSliderCarousel";
 // import GalleryHome from "./Gallery/GalleryHome";
 import BookNowSection from "./Contact/BookNowSection";
-import { sliderImages } from "../constants/data";
+// import { sliderImages } from "../constants/data";
 import GallerySlider from "./Gallery/GallerySlider";
+import useFetchApi from "../hooks/useFetchApi";
 
 const Home = () => {
+  const {
+    data: sliderImages,
+    loading,
+    error,
+  } = useFetchApi("https://hotelichchha.com/api/api_slideshow.php");
+
+  if (loading) {
+    return <></>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
   return (
     <>
       <BookNowSection />
